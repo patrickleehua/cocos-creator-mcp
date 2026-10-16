@@ -1,0 +1,357 @@
+{
+  "version": "3.7.1",
+  "mode": "preview",
+  "success": false,
+  "url": "http://localhost:7456/?scene=f319b4c6-e18b-4d92-8448-70dd58e4556d",
+  "error": "Original importing probe generated JavaScript errors",
+  "errors": [
+    "{\"exceptionId\":1,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.1\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/2d.js…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/2d.js from h…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":2,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/sorting.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.2\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/sorting.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/sorti…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/sorting.js f…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":3,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/3d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.3\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/3d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/3d.js…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/3d.js from h…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":4,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/animation.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.4\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/animation.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/anima…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/animation.js…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":5,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/audio.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.5\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/audio.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/audio…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/audio.js fro…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":6,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/base.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.6\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/base.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/base.…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/base.js from…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":7,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/dragon-bones.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.7\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/dragon-bones.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/drago…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/dragon-bones…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":8,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/gfx-webgl.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.8\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/gfx-webgl.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/gfx-w…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/gfx-webgl.js…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":9,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/gfx-webgl2.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.9\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/gfx-webgl2.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/gfx-w…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/gfx-webgl2.j…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":10,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/intersection-2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.10\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/intersection-2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/inter…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/intersection…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":11,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/light-probe.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.11\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/light-probe.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/light…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/light-probe.…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":12,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/particle.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.12\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/particle.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/parti…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/particle.js …7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":13,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/particle-2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.13\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/particle-2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/parti…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/particle-2d.…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":14,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-2d-box2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.14\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-2d-box2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/physi…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/physics-2d-b…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":15,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-2d-framework.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.15\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-2d-framework.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/physi…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/physics-2d-f…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":16,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-ammo.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.16\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-ammo.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/physi…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/physics-ammo…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":17,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-framework.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.17\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/physics-framework.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/physi…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/physics-fram…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":18,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/wait-for-ammo-instantiation.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.18\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/wait-for-ammo-instantiation.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/wait-…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/wait-for-amm…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":19,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/primitive.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.19\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/primitive.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/primi…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/primitive.js…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":20,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/profiler.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.20\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/profiler.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/profi…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/profiler.js …7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":21,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/skeletal-animation.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.21\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/skeletal-animation.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/skele…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/skeletal-ani…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":22,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/spine.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.22\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/spine.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/spine…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/spine.js fro…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":23,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/terrain.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.23\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/terrain.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/terra…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/terrain.js f…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":24,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/tiled-map.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.24\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/tiled-map.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/tiled…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/tiled-map.js…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":25,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/tween.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.25\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/tween.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/tween…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/tween.js fro…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":26,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/ui.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.26\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/ui.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/ui.js…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/ui.js from h…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":27,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/video.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.27\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/video.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/video…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/video.js fro…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "{\"exceptionId\":28,\"text\":\"Uncaught (in promise)\",\"lineNumber\":663,\"columnNumber\":15,\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"4\",\"url\":\"http://localhost:7456/scripting/systemjs/system.js\",\"lineNumber\":663,\"columnNumber\":15}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/webview.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"objectId\":\"-2317905487475937303.2.28\",\"preview\":{\"type\":\"object\",\"subtype\":\"error\",\"description\":\"Error: Error loading q-bundled:///fs/exports/webview.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)\",\"overflow\":false,\"properties\":[{\"name\":\"stack\",\"type\":\"string\",\"value\":\"Error: Error loading q-bundled:///fs/exports/webvi…calhost:7456/scripting/systemjs/system.js:664:16)\"},{\"name\":\"message\",\"type\":\"string\",\"value\":\"Error loading q-bundled:///fs/exports/webview.js f…7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\"}]}},\"executionContextId\":2}",
+    "Error: Error loading q-bundled:///fs/exports/2d.js from http://localhost:7456/scripting/x/chunks/86/86ea51a86e5d858891ef07385334b7b1017d7ca2.js (SystemJS Error#3 https://git.io/JvFET#3)\n    at HTMLScriptElement.<anonymous> (http://localhost:7456/scripting/systemjs/system.js:664:16)"
+  ],
+  "networkErrors": [
+    {
+      "requestId": "2508.16",
+      "timestamp": 240474.995246,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.17",
+      "timestamp": 240474.995506,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.18",
+      "timestamp": 240474.995667,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.19",
+      "timestamp": 240474.99581,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.20",
+      "timestamp": 240474.995975,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.21",
+      "timestamp": 240474.996175,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.22",
+      "timestamp": 240474.996484,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.23",
+      "timestamp": 240474.996681,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.24",
+      "timestamp": 240474.99689,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.25",
+      "timestamp": 240474.997108,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.26",
+      "timestamp": 240474.997325,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.27",
+      "timestamp": 240474.9975,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.28",
+      "timestamp": 240474.997701,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.29",
+      "timestamp": 240474.998083,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.30",
+      "timestamp": 240474.998305,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.31",
+      "timestamp": 240474.998514,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.32",
+      "timestamp": 240474.99879,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.33",
+      "timestamp": 240474.999031,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.34",
+      "timestamp": 240474.999304,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.35",
+      "timestamp": 240474.99955,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.36",
+      "timestamp": 240474.999753,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.37",
+      "timestamp": 240474.9999,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.38",
+      "timestamp": 240475.000076,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.39",
+      "timestamp": 240475.000246,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.40",
+      "timestamp": 240475.000375,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.41",
+      "timestamp": 240475.000503,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.42",
+      "timestamp": 240475.001167,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    },
+    {
+      "requestId": "2508.43",
+      "timestamp": 240475.001675,
+      "type": "Script",
+      "errorText": "net::ERR_FAILED",
+      "canceled": false,
+      "corsErrorStatus": {
+        "corsError": "CorsDisabledScheme",
+        "failedParameter": ""
+      }
+    }
+  ],
+  "page": {
+    "url": "http://localhost:7456/?scene=f319b4c6-e18b-4d92-8448-70dd58e4556d",
+    "readyState": "complete",
+    "title": "Cocos Creator - production-3.7.1-test",
+    "text": "Design Resolution (960X640)\nRotate\nDebug Mode:\nNone\nVerbose\nInfo\nWarn\nError\nInfo For Web Page\nWarn For Web Page\nError For Web Page\nShow FPS\nFPS:\nPause",
+    "cc": "undefined",
+    "system": "object"
+  },
+  "completedAt": "2026-10-16T21:04:18.351Z"
+}

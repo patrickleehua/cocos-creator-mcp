@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-16T21:06:53.633Z",
+  "kind": "browser-observer-fix",
+  "status": "probe_fix_verified",
+  "productionStable": false,
+  "runtimeCommit": "3bc71a2e99f6d7fcd9f65afa3f60fa56b0fd7e29",
+  "runtimeSources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "comparison": {
+    "version": "3.7.1",
+    "sameOwnedEditorSession": true,
+    "sameSceneUuid": "f319b4c6-e18b-4d92-8448-70dd58e4556d",
+    "browser": "Chrome/155.0.8059.84",
+    "freshIsolatedProfiles": true,
+    "networkCacheDisabled": true,
+    "sequence": [
+      "passive probe passed",
+      "old importing probe reproduced q-bundled dependency errors",
+      "passive probe passed again"
+    ],
+    "reproductionDifference": "The old probe only adds immediate failure on captured JavaScript errors instead of waiting 180 seconds; module loading and runtime checks are unchanged."
+  },
+  "change": {
+    "scope": "Private browser qualification harness only; MCP runtime unchanged",
+    "before": "The observer called System.import(\"cc\") while the application itself was still loading.",
+    "after": "Read global cc or an existing SystemJS registry entry without executing imports; inspect default frame contexts and retain version, UUID, Label, Canvas, frame and zero-error checks.",
+    "beforeHelperSha256": "aca4b52b8067fb87f93083f05d7b391f66d6ebebf714f98d99156a7e44838c9a",
+    "afterHelperSha256": "58e12ecb218cac5c89083a63cff1d381fa1bca41bd4e24981a184130502cc81e",
+    "reproductionHelperSha256": "1f10236578977dfdf31d3348a0c8ff34e30d923adfd7c588e76fbfa8f2eb72c9"
+  },
+  "reports": [
+    {
+      "file": "original-preview-failure.json",
+      "sha256": "556c886b2b77dc2b4551543b8a3ac74247366016f98c6b05ab49045fcbdebac2"
+    },
+    {
+      "file": "importing-probe-reproduction.json",
+      "sha256": "e5919767ccf6acfe2ec714be8a5aef7d503a0fb7000850fb576d9957e71ce918"
+    },
+    {
+      "file": "passive-preview.json",
+      "sha256": "ebfbb17bfe22802c343b628e544141adb1931c039e87f8cfe14a7e006b5ae5a6"
+    },
+    {
+      "file": "passive-preview-repeat.json",
+      "sha256": "2b5d0883ce03b5df4ca77f1386bbb5735dd5a6ae908638053d2878449e69760f"
+    }
+  ],
+  "limitations": [
+    "This is a verified observer repair, not completion of all five native version gates or the eight-hour runs.",
+    "The original failed attempt and all previously committed validation snapshots remain historical."
+  ]
+}

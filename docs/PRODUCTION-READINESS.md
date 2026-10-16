@@ -6,6 +6,8 @@
 
 本轮固定源码的本地单元 / 契约检查为 **442 通过、0 失败、0 跳过**；运行代码提交 `3bc71a2` 的 [7 项 CI 检查](https://github.com/patrickleehua/cocos-creator-mcp/actions/runs/38956381004)已通过。进度证据见[加固快照](../analysis/validation/hardening-2026-10-17/manifest.json)，其中包含失败调查及各次运行自己的源码哈希；快照明确标记为 `in_progress`，不代表五版本原生验收或八小时长测已完成。
 
+浏览器探针也需要单独验证。早期探针在页面初始化期间主动 `System.import("cc")`，产生了引擎依赖加载错误；同一编辑器、同一场景的对照复测确认，改为读取已加载的引擎后连续两次通过，旧导入探针则再次失败。现在只读取全局 `cc` 或现有 SystemJS 注册表，并检查默认 frame 上下文；引擎版本、场景 UUID、中文 Label、Canvas、渲染帧和零 JavaScript 错误的门槛保持不变。[失败与对照记录](../analysis/validation/preview-probe-2026-10-17/manifest.json)保留了两种探针的哈希。此修复属于验收工具，MCP 运行代码未改动，完整五版本验收仍需完成。
+
 ## 本轮加固
 
 - RPC 除请求数量外，还限制排队载荷、单次结果和结果缓存的字节数，见[请求预算](OPERATIONS.md#请求预算与不确定结果)。
