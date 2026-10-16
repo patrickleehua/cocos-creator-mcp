@@ -34,7 +34,7 @@
 
 本次本地完整单元与契约测试 **420/420 通过**，0 失败、0 跳过（Node.js 24）。安装器包含 56 项检查，覆盖失败回滚、目录链接、身份变化、并发安装和额外文件保留。
 
-GitHub Actions 已配置 Windows / Ubuntu × Node.js 20 / 22 / 24 的单元检查，以及打包检查。这里描述工作流配置，不能在其实际运行前标成 CI 已通过；也不能由这些作业推断 Linux Creator 已通过。
+首次源码提交 `b0f0ca5` 的 [GitHub Actions](https://github.com/patrickleehua/cocos-creator-mcp/actions/runs/38938026924) 已通过 Windows / Ubuntu × Node.js 20 / 22 / 24 的六组单元检查及打包检查，共七个任务。这里的跨系统结果属于服务、桥接与模拟契约，不证明 Linux Creator 已通过；后续提交以仓库最新 CI 状态为准。
 
 本轮最终顺序回归中，五个版本的核心、复杂引用及含真实构建取消的 extras 均通过；各次检查未发现附着于测试主进程及其直接子进程的额外控制台。3.7.3 的 20 次 SDK 重连和完整 Web 构建产物运行通过。早期并行启动 OOM、一次未复现的握手断连及导入时序失败保留在[异常记录](../analysis/validation/2026-10-17/anomalies.json)，不从验收历史中删除。该控制台检查是采样结果，不能保证未来任意构建工具都不弹窗。
 
@@ -85,7 +85,7 @@ GitHub Actions 已配置 Windows / Ubuntu × Node.js 20 / 22 / 24 的单元检�
 - [x] 维护者选择 MIT，LICENSE 与 package 元数据已添加；署名为项目贡献者。
 - [ ] 完成代码与资产来源检查；参考仓库条款包含商用及衍生限制，禁止将“可见源码”当作宽松授权。
 - [x] 检查分发范围，排除 Cocos 安装包实现、提取代码、会话 token、用户工程及本地调查目录。
-- [ ] GitHub Actions 实际运行通过；不能用本地测试结果代替托管 CI 状态。
+- [x] 首次源码提交 `b0f0ca5` 的七个 GitHub Actions 任务实际通过，链接见上文。
 - [x] 当前源码完成 420 项单元与契约检查、五版本原生回归；报告、异常和源码哈希已归档，包含 3.7.1、3.7.2。
 - [x] 源码 ZIP 在新目录完成 npm ci、CLI 和扩展安装检查；运行文件与 lockfile 哈希一致。
 - [x] 已创建公开仓库和 issue 模板，启用 GitHub 私密漏洞反馈，见 SECURITY.md。

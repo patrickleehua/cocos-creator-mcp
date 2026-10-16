@@ -1,5 +1,7 @@
 # Cocos Creator 3.7 MCP
 
+[![CI](https://github.com/patrickleehua/cocos-creator-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/patrickleehua/cocos-creator-mcp/actions/workflows/ci.yml)
+
 [简体中文](README.md) · [Feature comparison](docs/COMPARISON.md) · [Operations](docs/OPERATIONS.md) · [Stability and evidence](docs/STABILITY.md)
 
 Control Cocos Creator 3.7 projects from an MCP client through native editor APIs: inspect scenes, edit nodes and components, set typed properties and references, manage assets and prefabs, and request previews and builds.
@@ -97,7 +99,7 @@ npm ci
 npm test
 ```
 
-The current local unit/contract suite passes **420/420** tests and requires no Creator installation. GitHub Actions is configured for Windows/Ubuntu × Node.js 20/22/24 and package checks; this is a workflow configuration, not a claim that hosted CI has already run. Native integration uses marked disposable projects and remains manual.
+The current local unit/contract suite passes **420/420** tests and requires no Creator installation. The initial source commit passed all seven [hosted CI jobs](https://github.com/patrickleehua/cocos-creator-mcp/actions/runs/38938026924): Windows/Ubuntu × Node.js 20/22/24, plus package checks. The badge shows current status. Native integration uses marked disposable projects and remains manual.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), the [validation manifest](analysis/validation/manifest.json), and [release gates](docs/STABILITY.md#发布条件). Reports distinguish source hashes, stock versus backported editors, native requests, persisted results and browser execution. Long-run and fault-recovery evidence is still required before a stable-release claim.
 

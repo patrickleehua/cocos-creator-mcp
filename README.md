@@ -1,5 +1,7 @@
 # Cocos Creator 3.7 MCP
 
+[![CI](https://github.com/patrickleehua/cocos-creator-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/patrickleehua/cocos-creator-mcp/actions/workflows/ci.yml)
+
 [English](README.en.md) · [操作说明](docs/OPERATIONS.md) · [与 3.8 参考项目对照](docs/COMPARISON.md) · [稳定性与测试](docs/STABILITY.md)
 
 让支持 MCP 的 AI 客户端通过 **Cocos Creator 原生编辑器接口**操作 3.7 工程：查询场景、编辑节点和组件、设置属性与引用、管理资源和预制体，以及调用预览和构建。
@@ -145,7 +147,7 @@ npm ci
 npm test
 ```
 
-当前本地单元与契约测试 **420/420 通过**，单元测试不需要安装 Creator。已配置 GitHub Actions 的 Windows / Ubuntu、Node.js 20 / 22 / 24 检查；只有工作流在托管平台实际运行后才有 CI 通过结论。真实编辑器集成需要专用测试工程，不以模拟 Editor 的测试替代。
+当前本地单元与契约测试 **420/420 通过**，单元测试不需要安装 Creator。首次源码提交的 [GitHub CI](https://github.com/patrickleehua/cocos-creator-mcp/actions/runs/38938026924) 已通过 Windows / Ubuntu × Node.js 20 / 22 / 24 的六组检查及打包检查；最新状态见页首标识。真实编辑器集成需要专用测试工程，不以模拟 Editor 的测试替代。
 
 - [稳定性矩阵与发布条件](docs/STABILITY.md)：当前证据、未覆盖场景、复测要求。
 - [贡献指南](CONTRIBUTING.md)：开发、真实集成测试、提交问题与改动要求。
