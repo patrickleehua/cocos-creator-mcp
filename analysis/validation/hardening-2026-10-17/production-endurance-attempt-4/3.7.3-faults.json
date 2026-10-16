@@ -1,0 +1,64 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.3",
+  "startedAt": "2026-10-16T19:19:38.867Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 127,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": true,
+      "durationMs": 2204,
+      "evidence": {
+        "abruptOwnedServerExit": true,
+        "sdkReconnected": true,
+        "savedScenePreserved": true
+      }
+    },
+    {
+      "name": "real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated",
+      "passed": true,
+      "durationMs": 59374,
+      "evidence": {
+        "requestedNodes": 400,
+        "observedDuringDispatch": 1,
+        "timedOutWrite": {
+          "code": "TIMEOUT",
+          "outcome": "unknown",
+          "retryable": false
+        },
+        "expiredQueuedWrite": {
+          "code": "REQUEST_EXPIRED",
+          "outcome": "not_applied"
+        },
+        "verifiedNodes": 400,
+        "uniqueNames": 400,
+        "expiredNodeAbsent": true,
+        "healthResponsive": true,
+        "sceneQueryBytes": 190164,
+        "singleNodeReadbackMs": 74,
+        "savedAfterTimeout": true
+      }
+    },
+    {
+      "name": "native text assets round-trip Unicode names and spaces",
+      "passed": true,
+      "durationMs": 213,
+      "evidence": {
+        "unicodeAndSpaces": true,
+        "utf8ReadbackVerified": true
+      }
+    }
+  ],
+  "success": true,
+  "method": "Real 400-node compound mutation through the unmodified adapter, timeout during progress, expiring queued create, and readback barrier. No API overrides or extension reloads.",
+  "finishedAt": "2026-10-16T19:20:41.265Z"
+}

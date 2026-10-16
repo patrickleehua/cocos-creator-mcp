@@ -196,7 +196,8 @@ function editorFixture({ nativeComponents = [] } = {}) {
       case 'scene:create-prefab': return addAsset(second, 'native prefab');
       case 'asset-db:query-ready': return state.assetReady;
       case 'asset-db:query-asset-info': {
-        const info = asset(first);
+        const existingScene = first === 'scene-root' && asset('scene-asset');
+        const info = asset(first) || (existingScene ? { ...existingScene, uuid: 'scene-root' } : null);
         const pending = info && state.pendingAssetImports.get(info.uuid);
         if (pending) {
           // Model importer observations independently of wall-clock timing:
@@ -429,6 +430,60 @@ test('node creation satisfies requested components even when native create-node 
       assert.equal(result.nodes[0].components.filter(comp => comp.type === type).length, 1, 'Success response must describe the actual requested component: ' + type);
     }
   });
+});
+
+test('plain and prefab creation use an explicit scene-root parent when callers omit parent', async () => {
+  const f = editorFixture();
+  f.state.overrides.set('scene:create-node', (args, proceed) => {
+    assert.equal(args[0].parent, 'scene-root', 'Do not pass the implicit native selection state to create-node');
+    return proceed();
+  });
+  for (let index = 0; index < 12; index++) {
+    const created = await f.dispatch('node.create', { name: 'Repeated_' + index });
+    assert.equal(created.nodes[0].parentUuid, 'scene-root');
+    await f.dispatch('node.remove', { uuid: created.uuids[0] });
+  }
+  const prefab = await f.dispatch('prefab.instantiate', { asset: 'prefab-asset' });
+  assert.equal(prefab.nodes[0].parentUuid, 'scene-root');
+  assert.equal(f.nativeCalls('create-node').length, 13);
+});
+
+test('scene.save refuses a busy asset database and missing or non-scene assets before opening native save UI', async t => {
+  for (const kind of ['busy', 'missing', 'prefab', 'external', 'multiple-roots']) await t.test(kind, async () => {
+    const f = editorFixture();
+    if (kind === 'busy') f.state.assetReady = false;
+    if (kind === 'missing') f.state.assets.delete('scene-asset');
+    if (kind === 'prefab') f.state.assets.get('scene-asset').type = 'cc.Prefab';
+    if (kind === 'external') f.state.assets.get('scene-asset').url = 'db://internal/Protected.scene';
+    if (kind === 'multiple-roots') {
+      f.state.forest = true;
+      f.state.nodes.set('another-root', node('another-root', 'Other Scene'));
+    }
+    const code = { busy: 'ASSET_DB_NOT_READY', missing: 'ASSET_NOT_FOUND', prefab: 'INVALID_ASSET_TYPE', external: 'INVALID_ASSET_URL', 'multiple-roots': 'SCENE_IDENTITY_UNAVAILABLE' }[kind];
+    await assert.rejects(f.dispatch('scene.save', {}), error => error.code === code && error.details.outcome === 'not_applied');
+    assert.equal(f.nativeCalls('save-scene').length, 0);
+  });
+});
+
+test('saving an already clean registered scene does not call the native save workflow again', async () => {
+  const f = editorFixture();
+  f.state.overrides.set('scene:save-scene', () => { throw new Error('An idempotent save must not enter the interactive native workflow'); });
+  const result = await f.dispatch('scene.save', {});
+  assert.equal(result.saved, true);
+  assert.equal(result.unchanged, true);
+  assert.equal(result.scene.dirty, false);
+  assert.equal(f.nativeCalls('save-scene').length, 0);
+});
+
+test('transient scene-worker readiness is polled without repeating the eventual native write', async () => {
+  const f = editorFixture();
+  let observations = 0;
+  f.state.overrides.set('scene:query-is-ready', (_args, proceed) => ++observations < 3 ? false : proceed());
+  const result = await f.dispatch('property.set', { uuid: 'label-node', path: 'active', value: false });
+  assert.equal(result.verified, true);
+  assert(observations >= 3);
+  assert.equal(f.nativeCalls('set-property').length, 1);
+  assert.equal(f.node('label-node').dump.active.value, false);
 });
 
 test('node creation cannot succeed with requested components absent after native acknowledgement', async () => {
@@ -1114,7 +1169,7 @@ test('native false results never become successful scene/history/property/asset 
     ['asset.create', { url: 'db://assets/New.txt', content: 'text' }, 'asset-db:create-asset'],
   ];
   for (const [command, args, nativeName] of cases) await t.test(command, async () => {
-    const f = editorFixture(); f.state.overrides.set(nativeName, () => false);
+    const f = editorFixture(); if (command === 'scene.save') f.state.dirty = true; f.state.overrides.set(nativeName, () => false);
     await assert.rejects(f.dispatch(command, args), rejectsCode('EDITOR_REJECTED'));
     assert.equal(f.nativeCalls(nativeName.split(':')[1]).length, 1);
   });
@@ -1130,10 +1185,39 @@ test('native exceptions retain their error code and are never retried or replace
     });
     await assert.rejects(f.dispatch('property.set', { uuid: 'label-node', path: 'active', value: false }), rejectsCode(specific ? 'EDITOR_BUSY' : 'EDITOR_ERROR', error => {
       assert.equal(error.message, 'Native write failed');
-      if (specific) assert.deepEqual(error.details, { scene: 'scene-root' });
+      assert.equal(error.details.outcome, 'unknown');
+      assert.equal(error.details.retryable, false);
+      if (specific) assert.equal(error.details.scene, 'scene-root');
     }));
     assert.equal(f.nativeCalls('set-property').length, 1);
     assert.equal(f.node('label-node').dump.active.value, true);
+  });
+});
+
+test('write outcomes distinguish preflight rejection from failure after a native mutation, including partial writes', async () => {
+  const f = editorFixture();
+  await assert.rejects(f.dispatch('property.set', { uuid: 'label-node', path: 'active', value: 'invalid' }), error => {
+    assert.equal(error.code, 'INVALID_ARGUMENT');
+    assert.equal(error.details.outcome, 'not_applied');
+    return true;
+  });
+  assert.equal(f.nativeCalls('set-property').length, 0);
+  f.state.overrides.set('scene:set-property', () => {
+    f.node('label-node').dump.active.value = false;
+    throw Object.assign(new Error('Reply lost after the mutation'), { code: 'NATIVE_REPLY_LOST', details: { partial: true } });
+  });
+  await assert.rejects(f.dispatch('property.set', { uuid: 'label-node', path: 'active', value: false }), error => {
+    assert.equal(error.code, 'NATIVE_REPLY_LOST');
+    assert.equal(error.details.partial, true);
+    assert.equal(error.details.outcome, 'unknown');
+    assert.equal(error.details.retryable, false);
+    return true;
+  });
+  assert.equal(f.node('label-node').dump.active.value, false);
+  assert.equal(f.nativeCalls('set-property').length, 1);
+  await assert.rejects(f.dispatch('property.set', { uuid: 'missing', path: 'active', value: false }), error => {
+    assert.equal(error.details.outcome, 'not_applied', 'A later invocation must not inherit an earlier mutation flag');
+    return true;
   });
 });
 

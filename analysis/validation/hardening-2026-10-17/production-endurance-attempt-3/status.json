@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 23908,
+  "startedAt": "2026-10-16T19:09:45.530Z",
+  "phase": "qualification",
+  "status": "failed",
+  "policy": {
+    "maxParallelEditors": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 7.5,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "d1ba0bf1e464815a04fa005bf696421770b2e8f9c7126b716ea30a91d922fee9"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "1b94ad5117b3288c0ec9841533af71617b7c0573204e3ba8c52925e4d6888427"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.3",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 13948,
+      "stage": "faults",
+      "editorClosedAt": "2026-10-16T19:12:40.553Z",
+      "error": {
+        "message": ".research/native-faults-real.mjs failed (1): node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: Queue fault requires observed native mutation in progress\r\n    at file:///<WORKSPACE>/.research/native-faults-real.mjs:48:3\r\n    at async step (file:///<WORKSPACE>/.research/native-faults-real.mjs:16:100)\r\n    at async file:///<WORKSPACE>/.research/native-faults-real.mjs:39:2 {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\nPASS an abruptly terminated owned stdio server can be replaced without changing the saved scene\nSTART real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated\n",
+        "exitCode": 1
+      }
+    },
+    {
+      "version": "3.7.1",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 31364,
+      "stage": "faults",
+      "editorClosedAt": "2026-10-16T19:13:43.462Z",
+      "error": {
+        "message": ".research/native-faults-real.mjs failed (1): file:///<WORKSPACE>/src/bridge-client.mjs:94\r\n        throw new BridgeError(timedOut ? 'TIMEOUT' : 'CANCELLED',\r\n              ^\r\n\r\nBridgeError: Bridge request timed out; outcome unknown. Do not automatically retry this write.\r\n    at #operation (file:///<WORKSPACE>/src/bridge-client.mjs:94:15)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\r\n    at async file:///<WORKSPACE>/.research/native-faults-real.mjs:26:3\r\n    at async step (file:///<WORKSPACE>/.research/native-faults-real.mjs:16:100)\r\n    at async file:///<WORKSPACE>/.research/native-faults-real.mjs:25:2 {\r\n  code: 'TIMEOUT',\r\n  details: {\r\n    stage: 'rpc',\r\n    command: 'scene.save',\r\n    outcome: 'unknown',\r\n    retryable: false\r\n  }\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\n",
+        "exitCode": 1
+      }
+    },
+    {
+      "version": "3.7.2",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.0",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.4",
+      "status": "queued",
+      "phase": "qualification"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-16T19:09:49.2416527Z",
+      "availableGiB": 13.95,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 51
+    },
+    {
+      "sampledAt": "2026-10-16T19:10:04.7104584Z",
+      "availableGiB": 12.02,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 96
+    },
+    {
+      "sampledAt": "2026-10-16T19:10:18.6971824Z",
+      "availableGiB": 10.49,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 80
+    },
+    {
+      "sampledAt": "2026-10-16T19:10:34.2750340Z",
+      "availableGiB": 9.5,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 77
+    },
+    {
+      "sampledAt": "2026-10-16T19:10:49.9741808Z",
+      "availableGiB": 8.83,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 93
+    },
+    {
+      "sampledAt": "2026-10-16T19:11:04.9701768Z",
+      "availableGiB": 8.09,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 76
+    },
+    {
+      "sampledAt": "2026-10-16T19:11:19.1789730Z",
+      "availableGiB": 7.97,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    },
+    {
+      "sampledAt": "2026-10-16T19:11:34.0880560Z",
+      "availableGiB": 7.98,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-16T19:11:50.1506180Z",
+      "availableGiB": 6.52,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:12:04.6783519Z",
+      "availableGiB": 7.85,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:12:18.7898716Z",
+      "availableGiB": 7.6,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 59
+    },
+    {
+      "sampledAt": "2026-10-16T19:12:33.8104494Z",
+      "availableGiB": 7.26,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-16T19:12:48.5389000Z",
+      "availableGiB": 10.29,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 40
+    },
+    {
+      "sampledAt": "2026-10-16T19:13:03.2944929Z",
+      "availableGiB": 10.05,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 45
+    },
+    {
+      "sampledAt": "2026-10-16T19:13:18.9467608Z",
+      "availableGiB": 9.96,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 68
+    },
+    {
+      "sampledAt": "2026-10-16T19:13:33.6234511Z",
+      "availableGiB": 9.62,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 64
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 6.52,
+  "maximumCpuLoadPercent": 100,
+  "updatedAt": "2026-10-16T19:13:43.469Z",
+  "error": "3.7.3: .research/native-faults-real.mjs failed (1): node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: Queue fault requires observed native mutation in progress\r\n    at file:///<WORKSPACE>/.research/native-faults-real.mjs:48:3\r\n    at async step (file:///<WORKSPACE>/.research/native-faults-real.mjs:16:100)\r\n    at async file:///<WORKSPACE>/.research/native-faults-real.mjs:39:2 {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\nPASS an abruptly terminated owned stdio server can be replaced without changing the saved scene\nSTART real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated\n",
+  "finishedAt": "2026-10-16T19:13:43.469Z"
+}

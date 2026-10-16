@@ -1,0 +1,127 @@
+{
+  "startedAt": "2026-10-16T19:19:26.562Z",
+  "runId": "mvbcq5wj",
+  "project": "<WORKSPACE>\\.work\\production-3.7.3-test",
+  "steps": [
+    {
+      "name": "Create the reference-test scene from the installed editor template",
+      "passed": true,
+      "durationMs": 696
+    },
+    {
+      "name": "Create and compile a custom component through asset-db",
+      "passed": true,
+      "durationMs": 730,
+      "evidence": {
+        "script": "397047ac-a947-4f03-97c6-68cf387540c0",
+        "className": "McpReferences_mvbcq5wj"
+      }
+    },
+    {
+      "name": "Import PNG data and locate a native SpriteFrame subasset",
+      "passed": true,
+      "durationMs": 307,
+      "evidence": {
+        "image": "6ba8508e-eb04-4790-969e-80befad6efeb",
+        "spriteFrame": "6ba8508e-eb04-4790-969e-80befad6efeb@f9941"
+      }
+    },
+    {
+      "name": "Bind node, component, array and asset references on custom components",
+      "passed": true,
+      "durationMs": 1014
+    },
+    {
+      "name": "Bind a native Button click event to the custom component",
+      "passed": true,
+      "durationMs": 838
+    },
+    {
+      "name": "Create a prefab using the editor serializer and check internal-reference remapping",
+      "passed": true,
+      "durationMs": 422,
+      "evidence": {
+        "prefab": "ccab868f-f8b5-4cf3-8dbb-f7fb46bd9b42",
+        "identityRemap": {
+          "nodes": {
+            "69KoxjMxtGQpMkNgN2y4J/": "6andfTQ9NDmoR2MOCYVrYO",
+            "3aXsD7hCRDupE/A3r4OCaX": "8eriLyHPJPHrfnCab4W9eB",
+            "fakOh/a+RCgpo9b1HzVS82": "23Y1VVPYlNoKtrc8N78rdc"
+          },
+          "components": {
+            "7ag0sKtnlK/4wxGA//9B9s": "94I95zB7NPA4e9a/m8Mlky",
+            "9bDIrqhwJPCpl/H5rFM9IO": "ffi43fcwRF66MQwPdO4SJI",
+            "107DBCC59FQan8ZRsGUrUL": "e7ltvEJQtD855mk/KzXaB6",
+            "b46VNCgY5HUaHnQd8XYlwC": "e1lxHkXFtHR4RFOjbYPOhz",
+            "a3JHqyBJFBOYVU4d6De0B/": "920Y0E8KtLbZetP71wML8p",
+            "7e9NzRAfJBI6Irg2e9SnkW": "cbiLGRY2JBnL70EQe7QRC0",
+            "f5ZgxGfM9D8IeIn7iqR1TA": "edidW4c4RF4aC92oqaxS37"
+          }
+        }
+      }
+    },
+    {
+      "name": "Reopen the scene and validate prefab script, event and resource references",
+      "passed": true,
+      "durationMs": 1267
+    }
+  ],
+  "success": true,
+  "editor": {
+    "editorVersion": "3.7.3",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "<WORKSPACE>\\.work\\production-3.7.3-test",
+      "uuid": "e5455bac-ae23-482c-9e40-1fe4b1b98216"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "finishedAt": "2026-10-16T19:19:32.547Z",
+  "stderr": ""
+}

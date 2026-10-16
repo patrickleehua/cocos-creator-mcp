@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 2172,
+  "startedAt": "2026-10-16T18:49:32.247Z",
+  "phase": "qualification",
+  "status": "failed",
+  "policy": {
+    "maxParallelEditors": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 7.5,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "a7d8924e25c3d421e51f2c1f4e074de581445e1a6f73ea9ab1a0669ab5f3b8c2"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3753e2322786485918ec2dfffd536ec991b5d26fb48a91b1ab466f8bb9cbf616"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.3",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 16724,
+      "stage": "faults",
+      "editorClosedAt": "2026-10-16T18:51:27.892Z",
+      "error": {
+        "message": ".research/native-faults.mjs failed (1): file:///<WORKSPACE>/src/bridge-client.mjs:94\r\n        throw new BridgeError(timedOut ? 'TIMEOUT' : 'CANCELLED',\r\n              ^\r\n\r\nBridgeError: Bridge request timed out; outcome unknown. Do not automatically retry this write.\r\n    at #operation (file:///<WORKSPACE>/src/bridge-client.mjs:94:15)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\r\n    at async file:///<WORKSPACE>/.research/native-faults.mjs:45:3\r\n    at async step (file:///<WORKSPACE>/.research/native-faults.mjs:15:100)\r\n    at async file:///<WORKSPACE>/.research/native-faults.mjs:44:2 {\r\n  code: 'TIMEOUT',\r\n  details: {\r\n    stage: 'rpc',\r\n    command: 'scene.save',\r\n    outcome: 'unknown',\r\n    retryable: false\r\n  }\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART client timeout keeps native write serialized and expired queued writes never dispatch\nPASS client timeout keeps native write serialized and expired queued writes never dispatch\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\n",
+        "exitCode": 1
+      }
+    },
+    {
+      "version": "3.7.1",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 11368,
+      "stage": "soak-pilot",
+      "editorClosedAt": "2026-10-16T18:52:27.467Z",
+      "error": {
+        "message": "Another validation failed"
+      }
+    },
+    {
+      "version": "3.7.2",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.0",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.4",
+      "status": "queued",
+      "phase": "qualification"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-16T18:49:35.5375444Z",
+      "availableGiB": 6.33,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 40
+    },
+    {
+      "sampledAt": "2026-10-16T18:49:51.6252974Z",
+      "availableGiB": 6.17,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-16T18:50:05.0403870Z",
+      "availableGiB": 6.18,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 65
+    },
+    {
+      "sampledAt": "2026-10-16T18:50:21.2606734Z",
+      "availableGiB": 6.09,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-16T18:50:35.8800054Z",
+      "availableGiB": 6.24,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 70
+    },
+    {
+      "sampledAt": "2026-10-16T18:50:52.8462255Z",
+      "availableGiB": 5.7,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 93
+    },
+    {
+      "sampledAt": "2026-10-16T18:51:08.9202365Z",
+      "availableGiB": 4.75,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 96
+    },
+    {
+      "sampledAt": "2026-10-16T18:51:28.2815342Z",
+      "availableGiB": 8.29,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 88
+    },
+    {
+      "sampledAt": "2026-10-16T18:51:36.3509393Z",
+      "availableGiB": 11.64,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 80
+    },
+    {
+      "sampledAt": "2026-10-16T18:51:51.1166183Z",
+      "availableGiB": 14.38,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 74
+    },
+    {
+      "sampledAt": "2026-10-16T18:52:05.7927826Z",
+      "availableGiB": 14.31,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 48
+    },
+    {
+      "sampledAt": "2026-10-16T18:52:20.6989986Z",
+      "availableGiB": 14.04,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 58
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 4.75,
+  "maximumCpuLoadPercent": 96,
+  "updatedAt": "2026-10-16T18:52:27.474Z",
+  "error": "3.7.3: .research/native-faults.mjs failed (1): file:///<WORKSPACE>/src/bridge-client.mjs:94\r\n        throw new BridgeError(timedOut ? 'TIMEOUT' : 'CANCELLED',\r\n              ^\r\n\r\nBridgeError: Bridge request timed out; outcome unknown. Do not automatically retry this write.\r\n    at #operation (file:///<WORKSPACE>/src/bridge-client.mjs:94:15)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\r\n    at async file:///<WORKSPACE>/.research/native-faults.mjs:45:3\r\n    at async step (file:///<WORKSPACE>/.research/native-faults.mjs:15:100)\r\n    at async file:///<WORKSPACE>/.research/native-faults.mjs:44:2 {\r\n  code: 'TIMEOUT',\r\n  details: {\r\n    stage: 'rpc',\r\n    command: 'scene.save',\r\n    outcome: 'unknown',\r\n    retryable: false\r\n  }\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART client timeout keeps native write serialized and expired queued writes never dispatch\nPASS client timeout keeps native write serialized and expired queued writes never dispatch\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\n",
+  "finishedAt": "2026-10-16T18:52:27.474Z"
+}

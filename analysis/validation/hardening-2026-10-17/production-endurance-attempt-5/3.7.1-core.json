@@ -1,0 +1,128 @@
+{
+  "project": "<WORKSPACE>\\.work\\production-3.7.1-test",
+  "startedAt": "2026-10-16T19:29:57.640Z",
+  "runId": "mvbd3oui",
+  "steps": [
+    {
+      "name": "Real SDK handshake and tool discovery",
+      "passed": true,
+      "durationMs": 140,
+      "evidence": {
+        "toolNames": [
+          "editor_info",
+          "scene_query",
+          "scene_open",
+          "scene_save",
+          "scene_create",
+          "scene_history",
+          "node_query",
+          "node_edit",
+          "component_edit",
+          "property_set",
+          "asset_query",
+          "asset_edit",
+          "prefab_manage",
+          "ui_build",
+          "editor_preview",
+          "editor_logs",
+          "project_build"
+        ],
+        "runtime": {
+          "node": "14.16.0",
+          "electron": "13.1.4"
+        }
+      }
+    },
+    {
+      "name": "Create native-template scenes and open the requested asset",
+      "passed": false,
+      "durationMs": 45035,
+      "error": "scene_query: Bridge request timed out.",
+      "details": {
+        "error": {
+          "code": "TIMEOUT",
+          "message": "Bridge request timed out.",
+          "details": {
+            "stage": "rpc",
+            "command": "scene.query",
+            "outcome": "not_applied",
+            "retryable": false
+          }
+        }
+      }
+    }
+  ],
+  "success": false,
+  "editor": {
+    "editorVersion": "3.7.1",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "<WORKSPACE>\\.work\\production-3.7.1-test",
+      "uuid": "fba146c5-ac0a-4c44-be89-c658a58b391c"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "error": {
+    "message": "scene_query: Bridge request timed out.",
+    "details": {
+      "error": {
+        "code": "TIMEOUT",
+        "message": "Bridge request timed out.",
+        "details": {
+          "stage": "rpc",
+          "command": "scene.query",
+          "outcome": "not_applied",
+          "retryable": false
+        }
+      }
+    }
+  },
+  "finishedAt": "2026-10-16T19:30:44.765Z",
+  "stderr": ""
+}

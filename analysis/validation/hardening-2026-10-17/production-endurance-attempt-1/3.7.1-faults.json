@@ -1,0 +1,48 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.1",
+  "startedAt": "2026-10-16T18:50:25.442Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 357,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "client timeout keeps native write serialized and expired queued writes never dispatch",
+      "passed": true,
+      "durationMs": 2269,
+      "evidence": {
+        "timedOutWrite": {
+          "code": "TIMEOUT",
+          "outcome": "unknown",
+          "retryable": false
+        },
+        "expiredQueuedWrite": {
+          "code": "REQUEST_EXPIRED",
+          "outcome": "not_applied"
+        },
+        "nativeWriteCalls": 2,
+        "healthResponsive": true,
+        "finalActive": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": true,
+      "durationMs": 3504,
+      "evidence": {
+        "abruptOwnedServerExit": true,
+        "sdkReconnected": true,
+        "savedScenePreserved": true
+      }
+    }
+  ],
+  "success": true,
+  "finishedAt": "2026-10-16T18:50:31.741Z"
+}

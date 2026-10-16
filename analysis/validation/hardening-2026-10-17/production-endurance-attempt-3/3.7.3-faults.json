@@ -1,0 +1,39 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.3",
+  "startedAt": "2026-10-16T19:11:52.410Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 183,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": true,
+      "durationMs": 6478,
+      "evidence": {
+        "abruptOwnedServerExit": true,
+        "sdkReconnected": true,
+        "savedScenePreserved": true
+      }
+    },
+    {
+      "name": "real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated",
+      "passed": false,
+      "error": "Queue fault requires observed native mutation in progress"
+    }
+  ],
+  "success": false,
+  "method": "Real 600-node compound mutation through the unmodified adapter, timeout during progress, expiring queued create, and readback barrier. No API overrides or extension reloads.",
+  "error": {
+    "message": "Queue fault requires observed native mutation in progress",
+    "code": "ERR_ASSERTION"
+  },
+  "finishedAt": "2026-10-16T19:12:38.909Z"
+}

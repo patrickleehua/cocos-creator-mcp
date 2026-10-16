@@ -9,6 +9,9 @@ const BODY_LIMIT = 2 * 1024 * 1024;
 const BODY_TIMEOUT_MS = 10000;
 const CACHE_TTL_MS = 60000;
 const MAX_REQUESTS = 256;
+const MAX_PENDING_BYTES = 16 * 1024 * 1024;
+const MAX_CACHE_BYTES = 16 * 1024 * 1024;
+const RESPONSE_LIMIT = 8 * 1024 * 1024;
 const SOCKET_DRAIN_MS = 1000;
 const REJECT_DRAIN_MS = 1000;
 
@@ -102,6 +105,40 @@ async function startBridge(options) {
     let stopPromise;
     let port;
     let cacheTimer;
+    let pendingBytes = 0;
+    let cachedBytes = 0;
+
+    function verifyProject() {
+        if (!editor.Project || typeof editor.Project.path !== 'string' ||
+            path.resolve(editor.Project.path) !== project.path ||
+            (editor.Project.uuid === undefined ? null : editor.Project.uuid) !== project.uuid ||
+            (editor.Project.name === undefined ? null : editor.Project.name) !== project.name ||
+            !editor.App || (editor.App.version === undefined ? null : editor.App.version) !== editorVersion) {
+            const error = failure('PROJECT_CHANGED', 'Editor identity changed. Restart the project bridge before continuing.', 409);
+            error.details = { outcome: 'not_applied', retryable: false };
+            throw error;
+        }
+    }
+
+    function forget(id, entry) {
+        requests.delete(id);
+        cachedBytes -= entry.responseBytes;
+    }
+
+    function trimCache() {
+        for (const pair of requests) {
+            if (cachedBytes <= MAX_CACHE_BYTES) break;
+            if (pair[1].completedAt !== null) forget(pair[0], pair[1]);
+        }
+    }
+
+    function responseFailure(code, message) {
+        const error = failure(code, message, 500);
+        // A dispatch may already have changed the project before its result
+        // cannot be returned. Never invite a repeated mutation in this case.
+        error.details = { outcome: 'unknown', retryable: false };
+        return error;
+    }
 
     function send(res, status, value) {
         if (res.finished || res.destroyed || !res.socket || res.socket.destroyed) return;
@@ -121,29 +158,39 @@ async function startBridge(options) {
         const now = Date.now();
         requests.forEach(function (entry, id) {
             if (entry.completedAt !== null && now - entry.completedAt >= CACHE_TTL_MS) {
-                requests.delete(id);
+                forget(id, entry);
             }
         });
     }
 
-    function makeRoom() {
+    function makeRoom(bytes) {
         prune();
+        if (pendingBytes + bytes > MAX_PENDING_BYTES) {
+            throw failure('QUEUE_FULL', 'Pending RPC payloads exceed 16 MiB.', 503);
+        }
         if (requests.size < MAX_REQUESTS) return;
         // Never evict queued/running operations: retries must share their promise.
         for (const pair of requests) {
             if (pair[1].completedAt !== null) {
-                requests.delete(pair[0]);
+                forget(pair[0], pair[1]);
                 return;
             }
         }
         throw failure('QUEUE_FULL', 'Too many pending RPC requests.', 503);
     }
 
-    function enqueue(body, fingerprint) {
-        makeRoom();
-        const entry = { fingerprint: fingerprint, completedAt: null, promise: null };
+    function enqueue(body, fingerprint, bytes) {
+        makeRoom(bytes);
+        pendingBytes += bytes;
+        const entry = { fingerprint: fingerprint, completedAt: null, promise: null, responseBytes: 0 };
         const operation = tail.then(async function () {
             try {
+                if (body.deadline !== undefined && Date.now() >= body.deadline) {
+                    const error = failure('REQUEST_EXPIRED', 'RPC expired before native dispatch.', 408);
+                    error.details = { outcome: 'not_applied', retryable: false };
+                    throw error;
+                }
+                verifyProject();
                 if (getCommands().indexOf(body.command) === -1) {
                     throw failure('COMMAND_NOT_ALLOWED', 'Command is not allowed.', 403);
                 }
@@ -151,21 +198,34 @@ async function startBridge(options) {
                 // queue while an Editor mutation is still running.
                 const result = await dispatch(body.command, body.args);
                 try {
-                    return JSON.stringify({ id: body.id, ok: true, result: result }, function (key, value) {
+                    const response = JSON.stringify({ id: body.id, ok: true, result: result }, function (key, value) {
                         if (typeof value === 'function' || typeof value === 'symbol') {
                             throw new TypeError('Dispatch result contains a non-JSON value.');
                         }
                         return value === undefined ? null : value;
                     });
+                    if (Buffer.byteLength(response) > RESPONSE_LIMIT) {
+                        throw responseFailure('RESPONSE_TOO_LARGE', 'RPC response exceeds 8 MiB. Narrow the query before calling again.');
+                    }
+                    return response;
                 } catch (error) {
-                    throw failure('SERIALIZATION_ERROR', 'Dispatch result is not JSON serializable.', 500);
+                    if (error.code === 'RESPONSE_TOO_LARGE') throw error;
+                    throw responseFailure('SERIALIZATION_ERROR', 'Dispatch result is not JSON serializable.');
                 }
             } catch (error) {
-                return JSON.stringify(errorBody(body.id, error, 'DISPATCH_ERROR'));
+                const response = JSON.stringify(errorBody(body.id, error, 'DISPATCH_ERROR'));
+                if (Buffer.byteLength(response) > RESPONSE_LIMIT) {
+                    return JSON.stringify(errorBody(body.id, responseFailure('RESPONSE_TOO_LARGE', 'RPC error details exceed 8 MiB. Inspect the project before repeating a write.')));
+                }
+                return response;
             }
         });
         entry.promise = operation.then(function (response) {
+            pendingBytes -= bytes;
             entry.completedAt = Date.now();
+            entry.responseBytes = Buffer.byteLength(response);
+            cachedBytes += entry.responseBytes;
+            trimCache();
             return response;
         });
         requests.set(body.id, entry);
@@ -218,7 +278,7 @@ async function startBridge(options) {
                     return;
                 }
                 try {
-                    finish(null, JSON.parse(text));
+                    finish(null, { body: JSON.parse(text), bytes: size });
                 } catch (error) {
                     finish(failure('INVALID_JSON', 'Request body must be valid JSON.', 400));
                 }
@@ -293,6 +353,7 @@ async function startBridge(options) {
         try {
             if (stopping) throw failure('BRIDGE_STOPPING', 'Bridge is stopping.', 503);
             validateHeaders(req);
+            verifyProject();
             if (req.method === 'GET' && req.url === '/health') {
                 send(res, 200, {
                     ok: true, protocolVersion: 1, sessionId: sessionId,
@@ -314,7 +375,8 @@ async function startBridge(options) {
             if (Number(req.headers['content-length']) > BODY_LIMIT) {
                 throw failure('PAYLOAD_TOO_LARGE', 'Request body exceeds 2 MiB.', 413);
             }
-            const body = await readBody(req);
+            const payload = await readBody(req);
+            const body = payload.body;
             if (stopping) throw failure('BRIDGE_STOPPING', 'Bridge is stopping.', 503);
             if (body && typeof body.id === 'string') id = body.id;
             if (!body || typeof body !== 'object' || Array.isArray(body) ||
@@ -325,6 +387,9 @@ async function startBridge(options) {
             }
             if (body.sessionId !== sessionId) {
                 throw failure('SESSION_MISMATCH', 'RPC sessionId does not match this Editor session.', 409);
+            }
+            if (body.deadline !== undefined && (!Number.isSafeInteger(body.deadline) || body.deadline <= 0)) {
+                throw failure('INVALID_REQUEST', 'RPC deadline must be a positive Unix time in milliseconds.', 400);
             }
             if (getCommands().indexOf(body.command) === -1) {
                 throw failure('COMMAND_NOT_ALLOWED', 'Command is not allowed.', 403);
@@ -342,7 +407,7 @@ async function startBridge(options) {
             if (previous && previous.fingerprint !== fingerprint) {
                 throw failure('REQUEST_ID_CONFLICT', 'Request id was already used with different parameters.', 409);
             }
-            const response = await (previous ? previous.promise : enqueue(body, fingerprint));
+            const response = await (previous ? previous.promise : enqueue(body, fingerprint, payload.bytes));
             send(res, 200, response);
         } catch (error) {
             req.resume();

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-editor-soak",
+  "runId": "539020df-e580-4ff7-835b-7c8343f3e10e",
+  "startedAt": "2026-10-16T18:59:32.497Z",
+  "version": "3.7.3",
+  "projectUuid": "e5455bac-ae23-482c-9e40-1fe4b1b98216",
+  "platform": "win32 x64",
+  "node": "v24.21.0",
+  "requested": {
+    "durationSeconds": 1800,
+    "intervalMs": 0,
+    "cycles": 100,
+    "resourceControl": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "package.json",
+      "sha256": "e41f9b397c068c2009a70e6ff26db12069a310fcb4fa5fe6c69f9acca347e3f6"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "d1ba0bf1e464815a04fa005bf696421770b2e8f9c7126b716ea30a91d922fee9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3753e2322786485918ec2dfffd536ec991b5d26fb48a91b1ab466f8bb9cbf616"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "cycles": 100,
+  "toolCalls": 1148,
+  "connections": 11,
+  "closedClients": 11,
+  "resourcePauseMs": 60000,
+  "samples": [
+    {
+      "elapsedMs": 1164,
+      "mainPid": 26852,
+      "processes": 11,
+      "mainPrivateBytes": 493092864,
+      "mainHandles": 1115,
+      "privateBytes": 3384680448,
+      "handles": 5380
+    },
+    {
+      "elapsedMs": 63829,
+      "mainPid": 26852,
+      "processes": 11,
+      "mainPrivateBytes": 496136192,
+      "mainHandles": 1120,
+      "privateBytes": 3384561664,
+      "handles": 5397
+    },
+    {
+      "elapsedMs": 127079,
+      "mainPid": 26852,
+      "processes": 11,
+      "mainPrivateBytes": 506937344,
+      "mainHandles": 1121,
+      "privateBytes": 3395145728,
+      "handles": 5396
+    },
+    {
+      "elapsedMs": 162040,
+      "mainPid": 26852,
+      "processes": 11,
+      "mainPrivateBytes": 519000064,
+      "mainHandles": 1121,
+      "privateBytes": 3476127744,
+      "handles": 5393
+    }
+  ],
+  "success": true,
+  "status": "passed",
+  "namespace": "db://assets/McpSoak_539020dfe5804ff7835b7c8343f3e10e",
+  "elapsedMs": 163682,
+  "finishedAt": "2026-10-16T19:02:16.189Z",
+  "durationMet": false
+}

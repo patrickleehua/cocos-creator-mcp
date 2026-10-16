@@ -32,6 +32,7 @@
     "test:integration": "node scripts/integration.mjs",
     "test:references": "node scripts/integration-references.mjs",
     "test:extras": "node scripts/integration-extras.mjs",
+    "test:soak": "node scripts/soak.mjs",
     "install-extension": "node scripts/install-extension.mjs"
   },
   "dependencies": {

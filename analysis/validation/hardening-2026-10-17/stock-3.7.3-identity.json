@@ -1,0 +1,12 @@
+{
+  "version": "3.7.3",
+  "distribution": "official Windows ZIP, unpatched core app.asar, isolated test home",
+  "archiveSha256": "2efadf245e346067a119fb47898c75a20274f35cb96dacd549c9e09d88ee3014",
+  "appAsarSha256": "d413a52a88e1b9ee48efa140047c1ee085a9d4e6c5ae7fc6477b9fab05f7885f",
+  "editorRuntime": {
+    "node": "14.16.0",
+    "electron": "13.1.4"
+  },
+  "acquisition": "../../versions-download-3.7.3.json",
+  "note": "Isolated-home official add-ons may update during normal Creator startup. No system installation or editor implementation is distributed."
+}

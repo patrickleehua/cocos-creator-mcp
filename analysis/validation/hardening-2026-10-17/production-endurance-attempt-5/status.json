@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 34072,
+  "startedAt": "2026-10-16T19:28:47.154Z",
+  "phase": "qualification",
+  "status": "failed",
+  "policy": {
+    "maxParallelEditors": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 7.5,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.3",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 7116,
+      "stage": "soak-pilot",
+      "editorClosedAt": "2026-10-16T19:36:15.694Z",
+      "error": {
+        "message": "Another validation failed"
+      }
+    },
+    {
+      "version": "3.7.1",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 28812,
+      "stage": "core",
+      "editorClosedAt": "2026-10-16T19:30:49.467Z",
+      "error": {
+        "message": "scripts/integration.mjs failed (1): FAIL scene_query: Bridge request timed out. {\n  error: {\n    code: 'TIMEOUT',\n    message: 'Bridge request timed out.',\n    details: {\n      stage: 'rpc',\n      command: 'scene.query',\n      outcome: 'not_applied',\n      retryable: false\n    }\n  }\n}\n PASS Real SDK handshake and tool discovery\nReport: <WORKSPACE>\\.work\\production-endurance\\qualification\\3.7.1-core.json\n",
+        "exitCode": 1
+      }
+    },
+    {
+      "version": "3.7.2",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.0",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.4",
+      "status": "queued",
+      "phase": "qualification"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-16T19:28:50.6553070Z",
+      "availableGiB": 14.46,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 11
+    },
+    {
+      "sampledAt": "2026-10-16T19:29:06.1846938Z",
+      "availableGiB": 12.56,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 88
+    },
+    {
+      "sampledAt": "2026-10-16T19:29:20.2819198Z",
+      "availableGiB": 10.83,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-16T19:29:35.1027461Z",
+      "availableGiB": 10.06,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 57
+    },
+    {
+      "sampledAt": "2026-10-16T19:29:51.7071171Z",
+      "availableGiB": 9.24,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 88
+    },
+    {
+      "sampledAt": "2026-10-16T19:30:06.5048781Z",
+      "availableGiB": 8.71,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 85
+    },
+    {
+      "sampledAt": "2026-10-16T19:30:20.9600476Z",
+      "availableGiB": 8.73,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 48
+    },
+    {
+      "sampledAt": "2026-10-16T19:30:36.7255613Z",
+      "availableGiB": 8.08,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:30:51.6708822Z",
+      "availableGiB": 8.86,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:31:07.6512410Z",
+      "availableGiB": 10.59,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 85
+    },
+    {
+      "sampledAt": "2026-10-16T19:31:22.0953321Z",
+      "availableGiB": 10.77,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    },
+    {
+      "sampledAt": "2026-10-16T19:31:36.6704410Z",
+      "availableGiB": 10.89,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 76
+    },
+    {
+      "sampledAt": "2026-10-16T19:31:50.7527022Z",
+      "availableGiB": 11.16,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 74
+    },
+    {
+      "sampledAt": "2026-10-16T19:32:05.7350145Z",
+      "availableGiB": 11.52,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 65
+    },
+    {
+      "sampledAt": "2026-10-16T19:32:22.1511217Z",
+      "availableGiB": 10.29,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 62
+    },
+    {
+      "sampledAt": "2026-10-16T19:32:37.0103511Z",
+      "availableGiB": 9.94,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    },
+    {
+      "sampledAt": "2026-10-16T19:32:52.1100036Z",
+      "availableGiB": 9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 68
+    },
+    {
+      "sampledAt": "2026-10-16T19:33:08.9360558Z",
+      "availableGiB": 8.58,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    },
+    {
+      "sampledAt": "2026-10-16T19:33:40.0168083Z",
+      "availableGiB": 7.07,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:34:43.7059740Z",
+      "availableGiB": 7.54,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:35:15.1242968Z",
+      "availableGiB": 6.59,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 91
+    },
+    {
+      "sampledAt": "2026-10-16T19:35:31.1906225Z",
+      "availableGiB": 6.33,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    },
+    {
+      "sampledAt": "2026-10-16T19:35:46.2626734Z",
+      "availableGiB": 7.01,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 76
+    },
+    {
+      "sampledAt": "2026-10-16T19:36:01.2192873Z",
+      "availableGiB": 6.6,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 83
+    },
+    {
+      "sampledAt": "2026-10-16T19:36:15.4448458Z",
+      "availableGiB": 6.43,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 93
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 6.33,
+  "maximumCpuLoadPercent": 100,
+  "updatedAt": "2026-10-16T19:36:15.801Z",
+  "error": "3.7.1: scripts/integration.mjs failed (1): FAIL scene_query: Bridge request timed out. {\n  error: {\n    code: 'TIMEOUT',\n    message: 'Bridge request timed out.',\n    details: {\n      stage: 'rpc',\n      command: 'scene.query',\n      outcome: 'not_applied',\n      retryable: false\n    }\n  }\n}\n PASS Real SDK handshake and tool discovery\nReport: <WORKSPACE>\\.work\\production-endurance\\qualification\\3.7.1-core.json\n",
+  "finishedAt": "2026-10-16T19:36:15.801Z"
+}

@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 9856,
+  "startedAt": "2026-10-16T18:58:20.199Z",
+  "phase": "qualification",
+  "status": "failed",
+  "policy": {
+    "maxParallelEditors": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 7.5,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "d1ba0bf1e464815a04fa005bf696421770b2e8f9c7126b716ea30a91d922fee9"
+    },
+    {
+      "file": "package.json",
+      "sha256": "e41f9b397c068c2009a70e6ff26db12069a310fcb4fa5fe6c69f9acca347e3f6"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3753e2322786485918ec2dfffd536ec991b5d26fb48a91b1ab466f8bb9cbf616"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.3",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 26852,
+      "stage": "preview",
+      "editorClosedAt": "2026-10-16T19:05:33.256Z",
+      "error": {
+        "message": ".research/production-browser.mjs failed (1): node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\r\n\r\n  assert(runtime)\r\n\r\n    at file:///<WORKSPACE>/.research/production-browser.mjs:38:2 {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: null,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n ",
+        "exitCode": 1
+      }
+    },
+    {
+      "version": "3.7.1",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 25632,
+      "stage": "faults",
+      "forcedCleanup": {
+        "version": "3.7.1",
+        "ownedMain": 25632,
+        "stoppedProcessCount": 10,
+        "stoppedAt": "2026-10-16T19:02:34.0956539Z"
+      },
+      "editorClosedAt": "2026-10-16T19:02:34.407Z",
+      "error": {
+        "message": ".research/native-faults-owned.mjs failed (1): file:///<WORKSPACE>/src/bridge-client.mjs:94\r\n        throw new BridgeError(timedOut ? 'TIMEOUT' : 'CANCELLED',\r\n              ^\r\n\r\nBridgeError: Bridge request timed out; outcome unknown. Do not automatically retry this write.\r\n    at #operation (file:///<WORKSPACE>/src/bridge-client.mjs:94:15)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\r\n    at async file:///<WORKSPACE>/.research/native-faults-owned.mjs:46:3\r\n    at async step (file:///<WORKSPACE>/.research/native-faults-owned.mjs:17:100)\r\n    at async file:///<WORKSPACE>/.research/native-faults-owned.mjs:45:2 {\r\n  code: 'TIMEOUT',\r\n  details: {\r\n    stage: 'rpc',\r\n    command: 'scene.save',\r\n    outcome: 'unknown',\r\n    retryable: false\r\n  }\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART lost acknowledgement of an applied native write remains serialized and expired queued writes never dispatch\nPASS lost acknowledgement of an applied native write remains serialized and expired queued writes never dispatch\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\n",
+        "exitCode": 1
+      }
+    },
+    {
+      "version": "3.7.2",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.0",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.4",
+      "status": "queued",
+      "phase": "qualification"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-16T18:58:23.8512560Z",
+      "availableGiB": 11.71,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 37
+    },
+    {
+      "sampledAt": "2026-10-16T18:58:38.4918354Z",
+      "availableGiB": 11.28,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-16T18:58:53.7030318Z",
+      "availableGiB": 10.28,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 82
+    },
+    {
+      "sampledAt": "2026-10-16T18:59:09.6918530Z",
+      "availableGiB": 7.02,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 91
+    },
+    {
+      "sampledAt": "2026-10-16T18:59:23.4948865Z",
+      "availableGiB": 8.91,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 70
+    },
+    {
+      "sampledAt": "2026-10-16T18:59:39.4219310Z",
+      "availableGiB": 8.77,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    },
+    {
+      "sampledAt": "2026-10-16T18:59:54.6154823Z",
+      "availableGiB": 8.59,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 88
+    },
+    {
+      "sampledAt": "2026-10-16T19:00:09.1480521Z",
+      "availableGiB": 8.49,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 88
+    },
+    {
+      "sampledAt": "2026-10-16T19:00:24.8281924Z",
+      "availableGiB": 8.37,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 99
+    },
+    {
+      "sampledAt": "2026-10-16T19:00:39.9042404Z",
+      "availableGiB": 6.27,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:00:54.8438128Z",
+      "availableGiB": 8.39,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 76
+    },
+    {
+      "sampledAt": "2026-10-16T19:01:10.5177528Z",
+      "availableGiB": 8.1,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 97
+    },
+    {
+      "sampledAt": "2026-10-16T19:01:23.9839770Z",
+      "availableGiB": 8.39,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-16T19:01:39.4606410Z",
+      "availableGiB": 8.29,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 99
+    },
+    {
+      "sampledAt": "2026-10-16T19:01:53.2345374Z",
+      "availableGiB": 8.29,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 47
+    },
+    {
+      "sampledAt": "2026-10-16T19:02:08.9355471Z",
+      "availableGiB": 8.59,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 57
+    },
+    {
+      "sampledAt": "2026-10-16T19:02:25.4397643Z",
+      "availableGiB": 8.25,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 90
+    },
+    {
+      "sampledAt": "2026-10-16T19:02:38.1428357Z",
+      "availableGiB": 10.99,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 51
+    },
+    {
+      "sampledAt": "2026-10-16T19:02:54.0671178Z",
+      "availableGiB": 10.9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 94
+    },
+    {
+      "sampledAt": "2026-10-16T19:03:07.9405349Z",
+      "availableGiB": 11,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-16T19:03:23.0184402Z",
+      "availableGiB": 11.05,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 29
+    },
+    {
+      "sampledAt": "2026-10-16T19:03:40.2794023Z",
+      "availableGiB": 10.48,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-16T19:03:56.4283719Z",
+      "availableGiB": 10.51,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 66
+    },
+    {
+      "sampledAt": "2026-10-16T19:04:13.2562930Z",
+      "availableGiB": 10.21,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 82
+    },
+    {
+      "sampledAt": "2026-10-16T19:04:25.5082380Z",
+      "availableGiB": 9.88,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 90
+    },
+    {
+      "sampledAt": "2026-10-16T19:04:39.3289056Z",
+      "availableGiB": 9.71,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 59
+    },
+    {
+      "sampledAt": "2026-10-16T19:04:54.2303539Z",
+      "availableGiB": 9.45,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 63
+    },
+    {
+      "sampledAt": "2026-10-16T19:05:09.9582342Z",
+      "availableGiB": 10.39,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 68
+    },
+    {
+      "sampledAt": "2026-10-16T19:05:36.1407477Z",
+      "availableGiB": 13.07,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 6.27,
+  "maximumCpuLoadPercent": 100,
+  "updatedAt": "2026-10-16T19:05:36.635Z",
+  "error": "3.7.1: .research/native-faults-owned.mjs failed (1): file:///<WORKSPACE>/src/bridge-client.mjs:94\r\n        throw new BridgeError(timedOut ? 'TIMEOUT' : 'CANCELLED',\r\n              ^\r\n\r\nBridgeError: Bridge request timed out; outcome unknown. Do not automatically retry this write.\r\n    at #operation (file:///<WORKSPACE>/src/bridge-client.mjs:94:15)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\r\n    at async file:///<WORKSPACE>/.research/native-faults-owned.mjs:46:3\r\n    at async step (file:///<WORKSPACE>/.research/native-faults-owned.mjs:17:100)\r\n    at async file:///<WORKSPACE>/.research/native-faults-owned.mjs:45:2 {\r\n  code: 'TIMEOUT',\r\n  details: {\r\n    stage: 'rpc',\r\n    command: 'scene.save',\r\n    outcome: 'unknown',\r\n    retryable: false\r\n  }\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART lost acknowledgement of an applied native write remains serialized and expired queued writes never dispatch\nPASS lost acknowledgement of an applied native write remains serialized and expired queued writes never dispatch\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\n",
+  "finishedAt": "2026-10-16T19:05:36.635Z"
+}

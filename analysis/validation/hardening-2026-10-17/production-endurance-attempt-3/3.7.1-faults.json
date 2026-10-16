@@ -1,0 +1,41 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.1",
+  "startedAt": "2026-10-16T19:11:42.247Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 140,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": false,
+      "error": "Bridge request timed out; outcome unknown. Do not automatically retry this write.",
+      "details": {
+        "stage": "rpc",
+        "command": "scene.save",
+        "outcome": "unknown",
+        "retryable": false
+      }
+    }
+  ],
+  "success": false,
+  "method": "Real 600-node compound mutation through the unmodified adapter, timeout during progress, expiring queued create, and readback barrier. No API overrides or extension reloads.",
+  "error": {
+    "message": "Bridge request timed out; outcome unknown. Do not automatically retry this write.",
+    "code": "TIMEOUT",
+    "details": {
+      "stage": "rpc",
+      "command": "scene.save",
+      "outcome": "unknown",
+      "retryable": false
+    }
+  },
+  "finishedAt": "2026-10-16T19:13:42.399Z"
+}

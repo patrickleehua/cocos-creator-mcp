@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-16T19:35:18.952Z",
+  "version": "3.7.1",
+  "steps": [
+    {
+      "message": "query-is-ready",
+      "elapsedMs": 227,
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "message": "query-node-tree",
+      "elapsedMs": 3683,
+      "type": "undefined"
+    },
+    {
+      "message": "query-dirty",
+      "elapsedMs": 1003,
+      "type": "boolean",
+      "value": false
+    }
+  ]
+}

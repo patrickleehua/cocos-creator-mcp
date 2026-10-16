@@ -43,6 +43,23 @@ async function fixture(t, { timeout = 1500 } = {}) {
 
 const errorCode = (code) => (error) => error instanceof BridgeError && error.code === code;
 
+test('oversized RPC payloads are rejected locally before dispatch', async (t) => {
+  const f = await fixture(t);
+  await assert.rejects(f.client.call('scene.save', { content: 'x'.repeat(2 * 1024 * 1024) }), error => {
+    assert.equal(error.code, 'PAYLOAD_TOO_LARGE');
+    assert.equal(error.details.outcome, 'not_applied');
+    return true;
+  });
+  assert.equal(f.requests.filter(request => request.url === '/rpc').length, 0);
+});
+
+test('an authoritative preflight timeout keeps its not-applied outcome', async (t) => {
+  const f = await fixture(t);
+  f.state.rpc = ({ response, body }) => response.end(JSON.stringify({ id: body.id, ok: false,
+    error: { code: 'COMMAND_TIMEOUT', message: 'Preflight query timed out.', details: { outcome: 'not_applied', retryable: false } } }));
+  await assert.rejects(f.client.call('scene.save'), error => error.code === 'COMMAND_TIMEOUT' && error.details.outcome === 'not_applied');
+});
+
 test('BridgeClient authenticates health and RPC and validates response correlation', async (t) => {
   const f = await fixture(t);
   assert.deepEqual(await f.client.call('scene.save'), { command: 'scene.save', args: {} });
@@ -51,7 +68,9 @@ test('BridgeClient authenticates health and RPC and validates response correlati
   for (const request of f.requests) assert.equal(request.headers.authorization, 'Bearer secret-for-tests');
   const { body } = f.requests[1];
   assert.match(body.id, /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/u);
-  assert.deepEqual(Object.keys(body).sort(), ['args', 'command', 'id', 'sessionId']);
+  assert.deepEqual(Object.keys(body).sort(), ['args', 'command', 'deadline', 'id', 'sessionId']);
+  assert(Number.isSafeInteger(body.deadline));
+  assert(body.deadline <= Date.now() + f.client.timeout);
   assert.equal(body.sessionId, 'session-one');
 });
 

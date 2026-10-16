@@ -91,6 +91,8 @@ node scripts/integration-extras.mjs ".work/contributor-3.7.3" ".work/contributor
 | `integration-references.mjs` | Compiled custom scripts, derived image subassets, serialized references, events, prefab remapping and scene reopen. |
 | `integration-extras.mjs` | Native preview URL/refresh, filtered native logger data and registered build configuration. |
 
+For repeated native read/write, save/reopen and SDK connection lifecycle checks, use `scripts/soak.mjs`. It defaults to eight hours, requires a marked disposable fixture and writes a new report outside that fixture. See [production qualification](docs/PRODUCTION-READINESS.md) for commands, resource limits, finite pilot runs and report semantics. A short pilot or an interrupted run does not establish an eight-hour pass.
+
 Real build cancellation is an explicit additional test. It starts a native Web build, writes build output, identifies the job's own native task and waits for terminal state:
 
 ```sh

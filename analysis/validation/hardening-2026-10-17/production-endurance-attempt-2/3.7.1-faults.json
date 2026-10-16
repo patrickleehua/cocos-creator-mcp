@@ -1,0 +1,62 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.1",
+  "startedAt": "2026-10-16T19:00:27.581Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 106,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "lost acknowledgement of an applied native write remains serialized and expired queued writes never dispatch",
+      "passed": true,
+      "durationMs": 2411,
+      "evidence": {
+        "timedOutWrite": {
+          "code": "TIMEOUT",
+          "outcome": "unknown",
+          "retryable": false
+        },
+        "nativeSideEffectVerifiedBeforeTimeout": true,
+        "expiredQueuedWrite": {
+          "code": "REQUEST_EXPIRED",
+          "outcome": "not_applied"
+        },
+        "adapterWriteDispatches": 2,
+        "healthResponsive": true,
+        "finalActive": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": false,
+      "error": "Bridge request timed out; outcome unknown. Do not automatically retry this write.",
+      "details": {
+        "stage": "rpc",
+        "command": "scene.save",
+        "outcome": "unknown",
+        "retryable": false
+      }
+    }
+  ],
+  "success": false,
+  "instrumentation": "Delay the owned adapter dispatch result AFTER the normal native mutation/readback. No override of Editor.Message or other native APIs.",
+  "error": {
+    "message": "Bridge request timed out; outcome unknown. Do not automatically retry this write.",
+    "code": "TIMEOUT",
+    "details": {
+      "stage": "rpc",
+      "command": "scene.save",
+      "outcome": "unknown",
+      "retryable": false
+    }
+  },
+  "cleanupError": "Bridge request timed out; outcome unknown. Do not automatically retry this write.",
+  "finishedAt": "2026-10-16T19:02:00.113Z"
+}

@@ -1,0 +1,829 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-16T19:36:55.537Z",
+  "status": "in_progress",
+  "productionStable": false,
+  "platform": "Windows x64",
+  "targetVersions": [
+    "3.7.0",
+    "3.7.1",
+    "3.7.2",
+    "3.7.3",
+    "3.7.4"
+  ],
+  "unitTests": {
+    "tests": 442,
+    "passed": 442,
+    "failed": 0,
+    "skipped": 0,
+    "report": "unit-tests.txt"
+  },
+  "sources": [
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "scripts/create-test-project.mjs",
+      "sha256": "146a7c7dbe566b08bf20efef35db80ee4332ceddf8631ef055d56afe7ecf7e02"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "scripts/test.mjs",
+      "sha256": "5097c494f2bea30b6e4d45daaa9caaaaf782632ff4103bb19e77ad331775476e"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "tests/adapter-native-contract.test.cjs",
+      "sha256": "8793137e91af0f6325e599cfb93ae2a50b718a0c7a3e91257e2cbc187ae0b2d9"
+    },
+    {
+      "file": "tests/bridge.test.cjs",
+      "sha256": "3988dcb28b18de283a74a2a80095f2556a99be4d218d42d2d71f336bc2660478"
+    },
+    {
+      "file": "tests/client-bridge.test.mjs",
+      "sha256": "b632a647596623437588fdec03a5b4e3ce60762ddc38711617fc008ffe6e1e6b"
+    },
+    {
+      "file": "tests/extension-lifecycle.test.cjs",
+      "sha256": "1745339e741f5aa313038daa33a3a622e4eea47924b0298fbd0a84ae2dea34c7"
+    },
+    {
+      "file": "tests/extras.test.cjs",
+      "sha256": "e3a6d57a75c20f0c6a69d6d9657bc14a6889bebef46dc4d115f3292662717aeb"
+    },
+    {
+      "file": "tests/install-extension.test.mjs",
+      "sha256": "4b00ff94f460e4d1c855e55b90b44ad69a5480fc9114b90c23cb9597efa04589"
+    },
+    {
+      "file": "tests/mcp-server.test.mjs",
+      "sha256": "1c09fe5bf3a4d7c9cc5761cb0e24f8b165084def33a5fd8847ad9e08cd9395a1"
+    },
+    {
+      "file": "tests/soak.test.mjs",
+      "sha256": "5d8e22e881cd0a2a3cc407804551e48bd84d2358dc66dca32a61b6805fae3ce7"
+    },
+    {
+      "file": "tools/compare-creator.cjs",
+      "sha256": "3da1a2ffd1a8656ac4d6635fd783235cebf9e0f40fbf2f67f75da31cf247b3b2"
+    },
+    {
+      "file": "tools/inspect-creator.cjs",
+      "sha256": "21a9f221913b48270cc364168a4d297ceb1aa46e71ef1a4f60fff8824cabf92f"
+    }
+  ],
+  "reports": [
+    {
+      "file": "unit-tests.txt",
+      "sha256": "cd70e9f25d6c5f5912c9e17e908300d7533c95ae1bbbbe1c230bdf9e05426d23"
+    },
+    {
+      "file": "dependency-audit.json",
+      "sha256": "64857b61f9d4f5200251798eec0ab4b581474a672dd4deb42861e6ec1a211f6a"
+    },
+    {
+      "file": "investigation/3.7.3-create-parent-probe.json",
+      "sha256": "630532bea5fdc8a3754a1eae10e062c6399ac6825b64355427996d5781648b91"
+    },
+    {
+      "file": "investigation/3.7.3-soak-pilot.json",
+      "sha256": "0a07f8aa0c3b1051ac92396275e21026fdfe0ade6d2fc0e59ccfd571ece65295"
+    },
+    {
+      "file": "investigation/3.7.3-soak-fixed-parent.json",
+      "sha256": "6001daf4416a542819e8484aad7eb62ad8fa998f1fc91e38889e1caa603bf2cf"
+    },
+    {
+      "file": "investigation/3.7.3-soak-fixed-zero.json",
+      "sha256": "7affc406cb9e033c67faae66d5e8e4e6d6b05f757539eacdb0dbea36687a7de4"
+    },
+    {
+      "file": "investigation/production-3.7.1-readonly-after-startup.json",
+      "sha256": "e68cc21165237e46cc2b26675fbd9a353e1c018e3a6cfe28788e6ebe4001f43e"
+    },
+    {
+      "file": "investigation/production-3.7.1-startup-scene-open.json",
+      "sha256": "c3f771018c4a0ae1ccf1861ab4731339bc9352fdb50691d227a9704285f66a82"
+    },
+    {
+      "file": "investigation/production-3.7.1-startup-core.json",
+      "sha256": "7500a2fb6fbc12b81fcc067e7d00859def8766114e7f782fef3e98aad13caaa9"
+    },
+    {
+      "file": "production-endurance-attempt-1/status.json",
+      "sha256": "bfd8cec38e6381b5bb400546c4040255d16c03304836e9e13af7b04614a4e238"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.1-core.json",
+      "sha256": "33a2b910a5caeaddaef6a738926f98f63b04d04cd5ff8064338e57231d34afca"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.1-extras.json",
+      "sha256": "05317a912f66f4016849632cfd39566f812de84555d5d29923170c4b685a90e3"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.1-faults.json",
+      "sha256": "842568f7d1945934aa49fb4b9db7a933c801ce3ca13d72785dc15fc57da5b30a"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.1-references.json",
+      "sha256": "006046a6124f58bc6077d4f07009c56a55728b600b2258fcb5598e11eed9a0ad"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.1-soak-pilot.json",
+      "sha256": "e7b4104cd0554653311f748910485b3df6d441f3ecae5f01e71fe547fb486f45"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.3-core.json",
+      "sha256": "c4fb4872e6d8d4d51a896d2bf6eab8efe1e93901f60af24c90612943549c80c5"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.3-extras.json",
+      "sha256": "3390b091159730337d7e6fc8cc47a5087c80615147088618ee53c8414a97857b"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.3-faults.json",
+      "sha256": "a84185232a308d70a952060f43ee00a9df2dca0452ecd85871e437b3b6027523"
+    },
+    {
+      "file": "production-endurance-attempt-1/3.7.3-references.json",
+      "sha256": "3d539901e6e3dd5f85dc80329396eb07f7842a6b3b0c8c141fb8a18400606d22"
+    },
+    {
+      "file": "production-endurance-attempt-2/status.json",
+      "sha256": "6dd4c9c1499e73ad785ec13258f19307be2ca551a26c5c776bbb27a87c1dd999"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.1-core.json",
+      "sha256": "3407af0f4ff8f7dce0ae6f892ea837f75a6356bab051bf6d4468707a66927bd9"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.1-extras.json",
+      "sha256": "70d3ded062d441abaefce3f54ef739086ab05a1da3e4de2f48674832f4b5cb87"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.1-faults.json",
+      "sha256": "ce4298c6c7378c3e319084946f1137b5368b7dde9e87f5b6b7c3162e77bd068e"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.1-references.json",
+      "sha256": "47f2af95c7f991fecd0882a9a4967fd34b7c29bea5cb3180c1549ec59893db42"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.3-core.json",
+      "sha256": "69db880b7be03b5dd96ed84062036bd4214519e8c53797c0a68cab4b16fbcb9e"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.3-extras.json",
+      "sha256": "733a813b760baaf1fadd435770ecaff9b0204c23bf6116e932a53757dc4402b6"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.3-faults.json",
+      "sha256": "3305a64a2d0dc5d7c61a56b7f1d2167bf7595e65b355c543d1f2ecdcfc573326"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.3-references.json",
+      "sha256": "db5fa2138fe71f61b5429fa873837d21325407fbc9bb830b0ebb529562ee0b7c"
+    },
+    {
+      "file": "production-endurance-attempt-2/3.7.3-soak-pilot.json",
+      "sha256": "be9ac31dae596a62bfec5820291b6ac1f5e72ff82c1bdbd00e199e71195c5457"
+    },
+    {
+      "file": "production-endurance-attempt-3/status.json",
+      "sha256": "404b2283e7448080234f1755ec225326e2624aa581cecd1d0a2695dc679c8050"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.1-core.json",
+      "sha256": "93eaeefe33d5aa5c24a158891ec077214ab00ef04144c81f6461c89a2660bfab"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.1-extras.json",
+      "sha256": "19eedf1f897cd90dfafc8a10e289c579262ec2465298be370213fd63b2079025"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.1-faults.json",
+      "sha256": "08e4d20560e05c74f9c611873faa8ec60938c143989c842028c088a88228e34f"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.1-references.json",
+      "sha256": "56d7d31d14453c5e4c873cb6d5c208162f33ce0f88955d8f4d7dfdba2b69b56a"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.3-core.json",
+      "sha256": "357468e5809048d103c0314463a4f33d836971dcbf589860478a75203798b098"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.3-extras.json",
+      "sha256": "966c9e7efb828c6b721a6c8f745a7beacb0a415bd60ceeaafb3fecc6ad3c2514"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.3-faults.json",
+      "sha256": "8d777ff475ead6fd7895fc1b11d393688ab929f5a1625c9c180a12fbbade4637"
+    },
+    {
+      "file": "production-endurance-attempt-3/3.7.3-references.json",
+      "sha256": "3be821dfb0321d614ff87a1ec7e5cbd15e9208c8dd8d9094f39a88fdedb97e9f"
+    },
+    {
+      "file": "production-endurance-attempt-4/status.json",
+      "sha256": "9dc19ce548b0823af06fb2622b4bdebc7a4822fca7825f6719e40bef685be877"
+    },
+    {
+      "file": "production-endurance-attempt-4/3.7.1-core.json",
+      "sha256": "8dd9e7b323b125c1c5579c5d74559d61608fe6aa7368bdce00fe1b0512ddb1f5"
+    },
+    {
+      "file": "production-endurance-attempt-4/3.7.3-core.json",
+      "sha256": "d6a4c85db6302512ad7c6ca82aa6e7b19208ba27ea50e305a68c7515f1e280ef"
+    },
+    {
+      "file": "production-endurance-attempt-4/3.7.3-extras.json",
+      "sha256": "816e2018ff8dc8576eda95799ad148c1662d68aee3657a53fe6a70631e6cc5f1"
+    },
+    {
+      "file": "production-endurance-attempt-4/3.7.3-faults.json",
+      "sha256": "7234973df745cba4cf84f79e4e1a473cce88f6fa56f8eab112856562a4b9e996"
+    },
+    {
+      "file": "production-endurance-attempt-4/3.7.3-references.json",
+      "sha256": "00a6b0ab8b51207b04e7f42bac14b32d7b68ae9caf914de2e21c68deafa9994a"
+    },
+    {
+      "file": "production-endurance-attempt-4/3.7.3-soak-pilot.json",
+      "sha256": "e2dc723ceba694bb1e0875edbdcd15e67f160fabfdcafa6846df28fd9b614553"
+    },
+    {
+      "file": "production-endurance-attempt-5/status.json",
+      "sha256": "90fe36cef03374742b28cc20fd293ddbc80c3bd56c6ad31d20555851791ba85a"
+    },
+    {
+      "file": "production-endurance-attempt-5/3.7.1-core.json",
+      "sha256": "a9206990254f117e6b6f5850f5875861c68ed224a61563434835165f315d716c"
+    },
+    {
+      "file": "production-endurance-attempt-5/3.7.3-core.json",
+      "sha256": "d7f30245275268fc4a7cf07a597a650425959e960dc2fc0f2aafe9cbbfe9ceb8"
+    },
+    {
+      "file": "production-endurance-attempt-5/3.7.3-extras.json",
+      "sha256": "4d9246bae6df142c159d6be1455eadce4b7c7b0899130cd28f31041ee6a8c702"
+    },
+    {
+      "file": "production-endurance-attempt-5/3.7.3-faults.json",
+      "sha256": "acd45db4f6237c6380958020d1ec0c47ed8ed9227869bf74bfd9533e687e74a5"
+    },
+    {
+      "file": "production-endurance-attempt-5/3.7.3-references.json",
+      "sha256": "5636ba3cc0c8247a5d457a678922cf4a1b7e765d8034f1c0a76b450ba108c851"
+    },
+    {
+      "file": "production-endurance-attempt-5/3.7.3-soak-pilot.json",
+      "sha256": "93a289fe860add3e08d99602709d55744027e41df6283e80849c1518bed39ad7"
+    },
+    {
+      "file": "production-endurance/status.json",
+      "sha256": "0f74fa22f28004d7123f21e3c7b1b9efbe207ace9116184194237684c0a44f8a"
+    },
+    {
+      "file": "stock-3.7.3-identity.json",
+      "sha256": "698be438c8a9f056e6665cfd36742a342061932534d9cc1055968b37b5c1d774"
+    },
+    {
+      "file": "anomalies.json",
+      "sha256": "8104fec9a38eee2f85905d462f52d72f423f418914c13d205421979bc381a7d8"
+    }
+  ],
+  "snapshots": [
+    {
+      "label": "production-endurance-attempt-1",
+      "status": "failed",
+      "phase": "qualification",
+      "sources": [
+        {
+          "file": "src/server.mjs",
+          "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+        },
+        {
+          "file": "src/tools.mjs",
+          "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+        },
+        {
+          "file": "src/bridge-client.mjs",
+          "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+        },
+        {
+          "file": "scripts/soak.mjs",
+          "sha256": "a7d8924e25c3d421e51f2c1f4e074de581445e1a6f73ea9ab1a0669ab5f3b8c2"
+        },
+        {
+          "file": "package-lock.json",
+          "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/main.js",
+          "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/bridge.js",
+          "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/adapter.js",
+          "sha256": "3753e2322786485918ec2dfffd536ec991b5d26fb48a91b1ab466f8bb9cbf616"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/extras.js",
+          "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/scene.js",
+          "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/package.json",
+          "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+        }
+      ],
+      "jobs": [
+        {
+          "version": "3.7.3",
+          "status": "failed",
+          "stage": "faults"
+        },
+        {
+          "version": "3.7.1",
+          "status": "failed",
+          "stage": "soak-pilot"
+        },
+        {
+          "version": "3.7.2",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.0",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.4",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "label": "production-endurance-attempt-2",
+      "status": "failed",
+      "phase": "qualification",
+      "sources": [
+        {
+          "file": "src/server.mjs",
+          "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+        },
+        {
+          "file": "src/tools.mjs",
+          "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+        },
+        {
+          "file": "src/bridge-client.mjs",
+          "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+        },
+        {
+          "file": "scripts/soak.mjs",
+          "sha256": "d1ba0bf1e464815a04fa005bf696421770b2e8f9c7126b716ea30a91d922fee9"
+        },
+        {
+          "file": "package.json",
+          "sha256": "e41f9b397c068c2009a70e6ff26db12069a310fcb4fa5fe6c69f9acca347e3f6"
+        },
+        {
+          "file": "package-lock.json",
+          "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/main.js",
+          "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/bridge.js",
+          "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/adapter.js",
+          "sha256": "3753e2322786485918ec2dfffd536ec991b5d26fb48a91b1ab466f8bb9cbf616"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/extras.js",
+          "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/scene.js",
+          "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/package.json",
+          "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+        }
+      ],
+      "jobs": [
+        {
+          "version": "3.7.3",
+          "status": "failed",
+          "stage": "preview"
+        },
+        {
+          "version": "3.7.1",
+          "status": "failed",
+          "stage": "faults"
+        },
+        {
+          "version": "3.7.2",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.0",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.4",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "label": "production-endurance-attempt-3",
+      "status": "failed",
+      "phase": "qualification",
+      "sources": [
+        {
+          "file": "src/server.mjs",
+          "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+        },
+        {
+          "file": "src/tools.mjs",
+          "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+        },
+        {
+          "file": "src/bridge-client.mjs",
+          "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+        },
+        {
+          "file": "scripts/soak.mjs",
+          "sha256": "d1ba0bf1e464815a04fa005bf696421770b2e8f9c7126b716ea30a91d922fee9"
+        },
+        {
+          "file": "package.json",
+          "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+        },
+        {
+          "file": "package-lock.json",
+          "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/main.js",
+          "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/bridge.js",
+          "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/adapter.js",
+          "sha256": "1b94ad5117b3288c0ec9841533af71617b7c0573204e3ba8c52925e4d6888427"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/extras.js",
+          "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/scene.js",
+          "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/package.json",
+          "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+        }
+      ],
+      "jobs": [
+        {
+          "version": "3.7.3",
+          "status": "failed",
+          "stage": "faults"
+        },
+        {
+          "version": "3.7.1",
+          "status": "failed",
+          "stage": "faults"
+        },
+        {
+          "version": "3.7.2",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.0",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.4",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "label": "production-endurance-attempt-4",
+      "status": "failed",
+      "phase": "qualification",
+      "sources": [
+        {
+          "file": "src/server.mjs",
+          "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+        },
+        {
+          "file": "src/tools.mjs",
+          "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+        },
+        {
+          "file": "src/bridge-client.mjs",
+          "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+        },
+        {
+          "file": "scripts/soak.mjs",
+          "sha256": "d1ba0bf1e464815a04fa005bf696421770b2e8f9c7126b716ea30a91d922fee9"
+        },
+        {
+          "file": "package.json",
+          "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+        },
+        {
+          "file": "package-lock.json",
+          "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/main.js",
+          "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/bridge.js",
+          "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/adapter.js",
+          "sha256": "da74d9c0677b4ab39d80308c4b7bdaf70c219db5008aeb6c26431c3ccbefeef3"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/extras.js",
+          "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/scene.js",
+          "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/package.json",
+          "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+        }
+      ],
+      "jobs": [
+        {
+          "version": "3.7.3",
+          "status": "failed",
+          "stage": "soak-pilot"
+        },
+        {
+          "version": "3.7.1",
+          "status": "failed",
+          "stage": "core"
+        },
+        {
+          "version": "3.7.2",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.0",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.4",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "label": "production-endurance-attempt-5",
+      "status": "failed",
+      "phase": "qualification",
+      "sources": [
+        {
+          "file": "src/server.mjs",
+          "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+        },
+        {
+          "file": "src/tools.mjs",
+          "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+        },
+        {
+          "file": "src/bridge-client.mjs",
+          "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+        },
+        {
+          "file": "scripts/soak.mjs",
+          "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+        },
+        {
+          "file": "package.json",
+          "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+        },
+        {
+          "file": "package-lock.json",
+          "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/main.js",
+          "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/bridge.js",
+          "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/adapter.js",
+          "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/extras.js",
+          "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/scene.js",
+          "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/package.json",
+          "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+        }
+      ],
+      "jobs": [
+        {
+          "version": "3.7.3",
+          "status": "failed",
+          "stage": "soak-pilot"
+        },
+        {
+          "version": "3.7.1",
+          "status": "failed",
+          "stage": "core"
+        },
+        {
+          "version": "3.7.2",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.0",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.4",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "label": "production-endurance",
+      "status": "running",
+      "phase": "qualification",
+      "sources": [
+        {
+          "file": "src/server.mjs",
+          "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+        },
+        {
+          "file": "src/tools.mjs",
+          "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+        },
+        {
+          "file": "src/bridge-client.mjs",
+          "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+        },
+        {
+          "file": "scripts/soak.mjs",
+          "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+        },
+        {
+          "file": "package.json",
+          "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+        },
+        {
+          "file": "package-lock.json",
+          "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/main.js",
+          "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/bridge.js",
+          "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/adapter.js",
+          "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/extras.js",
+          "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/scene.js",
+          "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+        },
+        {
+          "file": "extensions/cocos-creator-mcp/package.json",
+          "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+        }
+      ],
+      "jobs": [
+        {
+          "version": "3.7.3",
+          "status": "waiting_for_editor"
+        },
+        {
+          "version": "3.7.1",
+          "status": "running",
+          "stage": "core"
+        },
+        {
+          "version": "3.7.2",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.0",
+          "status": "queued"
+        },
+        {
+          "version": "3.7.4",
+          "status": "queued"
+        }
+      ]
+    }
+  ],
+  "note": "This is a progress snapshot, not a completed qualification. Historical attempts keep their own source hashes; native passes are not transferred to newer source. The original 420-test five-version baseline remains unchanged in ../manifest.json."
+}

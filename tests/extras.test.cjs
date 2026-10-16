@@ -128,6 +128,14 @@ test('exposes preview.open only with the real browser-preview message and URL qu
     const noBrowserMethod = createExtras(browser.editor);
     assert.deepEqual(Object.keys(noBrowserMethod.handlers), ['preview.info']);
     noBrowserMethod.dispose();
+    for (const methods of [[null], [' '], [123], ['open', null]]) {
+        fs.writeFileSync(path.join(browser.directory, 'builtin', 'preview', 'package.json'), JSON.stringify({
+            contributions: { messages: { 'query-preview-url': { methods: methods } } },
+        }));
+        const invalidMethods = createExtras(browser.editor);
+        assert.deepEqual(Object.keys(invalidMethods.handlers), []);
+        invalidMethods.dispose();
+    }
 });
 
 test('preview.info reads the actual native URL and refresh sends reload-terminal, without claiming browser startup', async function (t) {

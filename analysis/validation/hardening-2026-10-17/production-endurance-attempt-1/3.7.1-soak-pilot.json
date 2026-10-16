@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-editor-soak",
+  "runId": "e81be164-09a1-4204-8355-4156e52bfd4d",
+  "startedAt": "2026-10-16T18:50:41.286Z",
+  "version": "3.7.1",
+  "projectUuid": "fba146c5-ac0a-4c44-be89-c658a58b391c",
+  "platform": "win32 x64",
+  "node": "v24.21.0",
+  "requested": {
+    "durationSeconds": 1800,
+    "intervalMs": 0,
+    "cycles": 100,
+    "resourceControl": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "a7d8924e25c3d421e51f2c1f4e074de581445e1a6f73ea9ab1a0669ab5f3b8c2"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3753e2322786485918ec2dfffd536ec991b5d26fb48a91b1ab466f8bb9cbf616"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "cycles": 100,
+  "toolCalls": 1148,
+  "connections": 11,
+  "closedClients": 11,
+  "resourcePauseMs": 20000,
+  "samples": [
+    {
+      "elapsedMs": 1078,
+      "mainPid": 11368,
+      "processes": 11,
+      "mainPrivateBytes": 487960576,
+      "mainHandles": 1284,
+      "privateBytes": 3281870848,
+      "handles": 5607
+    },
+    {
+      "elapsedMs": 62826,
+      "mainPid": 11368,
+      "processes": 11,
+      "mainPrivateBytes": 494383104,
+      "mainHandles": 1281,
+      "privateBytes": 3308400640,
+      "handles": 5609
+    },
+    {
+      "elapsedMs": 103717,
+      "mainPid": 11368,
+      "processes": 11,
+      "mainPrivateBytes": 490844160,
+      "mainHandles": 1276,
+      "privateBytes": 3426787328,
+      "handles": 5628
+    }
+  ],
+  "success": true,
+  "status": "passed",
+  "namespace": "db://assets/McpSoak_e81be16409a1420483554156e52bfd4d",
+  "elapsedMs": 105087,
+  "finishedAt": "2026-10-16T18:52:26.388Z",
+  "durationMet": false
+}

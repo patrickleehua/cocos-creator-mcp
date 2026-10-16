@@ -1,0 +1,50 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.3",
+  "startedAt": "2026-10-16T18:58:53.152Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 133,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "lost acknowledgement of an applied native write remains serialized and expired queued writes never dispatch",
+      "passed": true,
+      "durationMs": 2204,
+      "evidence": {
+        "timedOutWrite": {
+          "code": "TIMEOUT",
+          "outcome": "unknown",
+          "retryable": false
+        },
+        "nativeSideEffectVerifiedBeforeTimeout": true,
+        "expiredQueuedWrite": {
+          "code": "REQUEST_EXPIRED",
+          "outcome": "not_applied"
+        },
+        "adapterWriteDispatches": 2,
+        "healthResponsive": true,
+        "finalActive": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": true,
+      "durationMs": 36143,
+      "evidence": {
+        "abruptOwnedServerExit": true,
+        "sdkReconnected": true,
+        "savedScenePreserved": true
+      }
+    }
+  ],
+  "success": true,
+  "instrumentation": "Delay the owned adapter dispatch result AFTER the normal native mutation/readback. No override of Editor.Message or other native APIs.",
+  "finishedAt": "2026-10-16T18:59:31.834Z"
+}

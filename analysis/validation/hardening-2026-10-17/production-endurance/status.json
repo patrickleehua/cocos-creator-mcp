@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 20364,
+  "startedAt": "2026-10-16T19:36:36.341Z",
+  "phase": "qualification",
+  "status": "running",
+  "policy": {
+    "maxParallelEditors": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 7.5,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.3",
+      "status": "waiting_for_editor",
+      "phase": "qualification",
+      "editorPid": 22188
+    },
+    {
+      "version": "3.7.1",
+      "status": "running",
+      "phase": "qualification",
+      "editorPid": 31408,
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "1dbca2e8-f5d5-4545-84e4-79c16acaef77",
+        "dirty": false,
+        "confirmedAt": "2026-10-16T19:36:45.078Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "core"
+    },
+    {
+      "version": "3.7.2",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.0",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.4",
+      "status": "queued",
+      "phase": "qualification"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-16T19:36:39.7188866Z",
+      "availableGiB": 10.95,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 57
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 10.95,
+  "maximumCpuLoadPercent": 57,
+  "updatedAt": "2026-10-16T19:36:47.488Z"
+}

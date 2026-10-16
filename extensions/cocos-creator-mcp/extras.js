@@ -49,7 +49,7 @@ function canonical(value) {
     return '{' + Object.keys(value).sort().map(key => JSON.stringify(key) + ':' + canonical(value[key])).join(',') + '}';
 }
 
-function createExtras(editor) {
+function createExtras(editor, options) {
     if (!editor || !editor.Message || typeof editor.Message.request !== 'function') {
         throw new TypeError('Editor.Message.request is required.');
     }
@@ -66,10 +66,11 @@ function createExtras(editor) {
     }
     const has = (name, message) => record(manifests[name]) && own(manifests[name], message) &&
         record(manifests[name][message]) && Array.isArray(manifests[name][message].methods) &&
-        manifests[name][message].methods.length > 0;
+        manifests[name][message].methods.length > 0 &&
+        manifests[name][message].methods.every(method => typeof method === 'string' && method.trim());
     const call = (name, message, ...args) => Promise.resolve().then(function () {
         alive();
-        return editor.Message.request(name, message, ...args);
+        return options && options.request ? options.request(name, message, ...args) : editor.Message.request(name, message, ...args);
     });
     function alive() {
         if (disposed) fail('EXTRAS_DISPOSED', 'Extra command handlers have been disposed.');

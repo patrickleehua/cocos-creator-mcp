@@ -138,7 +138,8 @@ test('publishes discovery atomically and exposes authenticated health with a sta
     f.editor.Project.path = path.join(f.directory, 'another-project');
     f.editor.Project.uuid = 'changed';
     f.editor.App.version = 'changed';
-    assert.deepEqual((await request(f)).body, health.body);
+    expectError(await request(f), 409, 'PROJECT_CHANGED');
+    assert.deepEqual(JSON.parse(fs.readFileSync(f.bridge.sessionPath, 'utf8')), f.session);
     await f.bridge.stop();
     assert.equal(fs.existsSync(f.bridge.sessionPath), false);
     await assert.rejects(request(f), /ECONNREFUSED|ECONNRESET/);
@@ -368,6 +369,124 @@ test('caches dispatch errors and snapshots completed results', async function (t
     assert.equal((await rpc(f, 'failed', { fail: true })).text, failed.text);
     assert.equal(calls, 2);
     expectError(await rpc(f, 'snapshot', {}, 'read'), 409, 'REQUEST_ID_CONFLICT');
+});
+
+test('expires queued requests before dispatch without releasing an active mutation', async function (t) {
+    const gate = deferred();
+    t.after(function () { gate.resolve(); });
+    let now = Date.now();
+    t.mock.method(Date, 'now', function () { return now; });
+    const starts = [];
+    let checks = 0;
+    const f = await fixture(t, {
+        commands: function () { checks++; return ['write']; },
+        dispatch: async function (command, args) { starts.push(args.index); if (args.index === 1) await gate.promise; return args.index; },
+    });
+    const firstBody = Object.assign(rpcBody(f, 'active', { index: 1 }), { deadline: now + 100 });
+    const first = request(f, { path: '/rpc', data: firstBody });
+    await until(function () { return starts.length === 1; });
+    const baseline = checks;
+    const queuedBody = Object.assign(rpcBody(f, 'stale-write', { index: 2 }), { deadline: now + 100 });
+    const queued = request(f, { path: '/rpc', data: queuedBody });
+    await until(function () { return checks > baseline; });
+    now += 200;
+    assert.deepEqual(starts, [1]);
+    gate.resolve();
+    assert.equal((await first).body.result, 1);
+    const expired = await queued;
+    expectError(expired, 200, 'REQUEST_EXPIRED');
+    assert.equal(expired.body.error.details.outcome, 'not_applied');
+    assert.deepEqual(starts, [1]);
+    assert.equal((await request(f, { path: '/rpc', data: queuedBody })).text, expired.text);
+    assert.equal((await rpc(f, 'next', { index: 3 })).body.result, 3);
+});
+
+test('rejects invalid RPC deadlines before calling the editor', async function (t) {
+    let calls = 0;
+    const f = await fixture(t, { dispatch: async function () { calls++; } });
+    for (const deadline of [null, 0, -1, '123', 1.1, Number.MAX_SAFE_INTEGER + 1]) {
+        expectError(await request(f, { path: '/rpc', data: Object.assign(rpcBody(f), { deadline: deadline }) }), 400, 'INVALID_REQUEST');
+    }
+    assert.equal(calls, 0);
+});
+
+test('does not dispatch queued mutations after Editor project identity changes', async function (t) {
+    const gate = deferred();
+    t.after(function () { gate.resolve(); });
+    let checks = 0;
+    const starts = [];
+    const f = await fixture(t, {
+        commands: function () { checks++; return ['write']; },
+        dispatch: async function (command, args) { starts.push(args.index); await gate.promise; return args.index; },
+    });
+    const first = rpc(f, 'current-project', { index: 1 });
+    await until(function () { return starts.length === 1; });
+    const baseline = checks;
+    const queued = rpc(f, 'do-not-retarget', { index: 2 });
+    await until(function () { return checks > baseline; });
+    f.editor.Project.uuid = 'a-different-project';
+    gate.resolve();
+    assert.equal((await first).body.result, 1);
+    const rejected = await queued;
+    expectError(rejected, 200, 'PROJECT_CHANGED');
+    assert.equal(rejected.body.error.details.outcome, 'not_applied');
+    assert.deepEqual(starts, [1]);
+    expectError(await rpc(f, 'new-write', { index: 3 }), 409, 'PROJECT_CHANGED');
+    assert.deepEqual(starts, [1]);
+});
+
+test('bounds queued payload bytes while keeping accepted requests and their duplicates', async function (t) {
+    const gate = deferred();
+    t.after(function () { gate.resolve(); });
+    let checks = 0;
+    const starts = [];
+    const f = await fixture(t, {
+        commands: function () { checks++; return ['write']; },
+        dispatch: async function (command, args) { starts.push(args.index); await gate.promise; return args.index; },
+    });
+    const payload = 'x'.repeat(1900000);
+    const accepted = [];
+    for (let index = 0; index < 8; index++) {
+        const baseline = checks;
+        accepted.push(rpc(f, 'bytes-' + index, { payload: payload, index: index }));
+        await until(function () { return checks > baseline; });
+    }
+    expectError(await rpc(f, 'byte-overflow', { payload: payload, index: 8 }), 503, 'QUEUE_FULL');
+    const duplicate = rpc(f, 'bytes-0', { payload: payload, index: 0 });
+    assert.deepEqual(starts, [0]);
+    gate.resolve();
+    for (const response of await Promise.all(accepted.concat([duplicate]))) assert.equal(response.body.ok, true);
+    assert.deepEqual(starts, [0, 1, 2, 3, 4, 5, 6, 7]);
+    assert.equal((await rpc(f, 'after-drain', { index: 9 })).body.result, 9);
+});
+
+test('bounds cached response bytes while retaining the most recent completed result', async function (t) {
+    const calls = new Map();
+    const f = await fixture(t, { dispatch: async function (command, args) {
+        calls.set(args.key, (calls.get(args.key) || 0) + 1);
+        return { large: 'x'.repeat(4 * 1024 * 1024), calls: calls.get(args.key) };
+    } });
+    for (let index = 0; index < 5; index++) assert.equal((await rpc(f, 'cache-' + index, { key: index })).body.result.calls, 1);
+    assert.equal((await rpc(f, 'cache-4', { key: 4 })).body.result.calls, 1);
+    assert.equal((await rpc(f, 'cache-0', { key: 0 })).body.result.calls, 2);
+});
+
+test('oversized or unserializable dispatch results retain unknown outcomes and remain deduplicated', async function (t) {
+    let calls = 0;
+    const f = await fixture(t, { dispatch: async function (command, args) {
+        calls++;
+        if (args.mode === 'bigint') return 1n;
+        if (args.mode === 'error') throw Object.assign(new Error('large error'), { details: { text: 'x'.repeat(9 * 1024 * 1024) } });
+        return 'x'.repeat(9 * 1024 * 1024);
+    } });
+    for (const mode of ['large', 'bigint', 'error']) {
+        const first = await rpc(f, mode, { mode: mode });
+        expectError(first, 200, mode === 'bigint' ? 'SERIALIZATION_ERROR' : 'RESPONSE_TOO_LARGE');
+        assert.equal(first.body.error.details.outcome, 'unknown');
+        assert.equal(first.body.error.details.retryable, false);
+        assert.equal((await rpc(f, mode, { mode: mode })).text, first.text);
+    }
+    assert.equal(calls, 3);
 });
 
 test('expires completed request ids and bounds the completed cache', async function (t) {

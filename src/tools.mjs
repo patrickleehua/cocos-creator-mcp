@@ -50,7 +50,7 @@ const definitions = [
       }
     } },
   { name: 'node_edit', actions: { create: 'node.create', remove: 'node.remove', reparent: 'node.reparent', duplicate: 'node.duplicate' }, destructive: true,
-    description: 'Create, remove, reparent, or duplicate a scene node. Existing-node actions require uuid; reparent also requires parent.',
+    description: 'Create, remove, reparent, or duplicate a scene node. Create defaults to the current scene root when parent is omitted. Existing-node actions require uuid; reparent also requires parent.',
     shape: { uuid: optionalString('Existing node UUID.'), parent: optionalString('Parent node UUID.'), name: optionalString('New node name.'),
       components: z.array(string('Component class ID.')).optional(), position: vector.optional().describe('Local position.'),
       keepWorldTransform: z.boolean().optional().describe('Keep the world transform when reparenting.') },
@@ -86,7 +86,7 @@ const definitions = [
       requireField(args, { create: ['url'], save: ['asset', 'content'], import: ['source'], move: ['asset', 'url'], copy: ['asset', 'url'], delete: ['asset'], meta:['asset','userData'] }[args.action], context);
     } },
   { name: 'prefab_manage', actions: { create: 'prefab.create', instantiate: 'prefab.instantiate' },
-    description: 'Create a prefab asset from a node (uuid and url), or instantiate a prefab asset (asset or url) under an optional parent.',
+    description: 'Create a prefab asset from a node (uuid and url), or instantiate a prefab asset (asset or url) under a parent. An omitted parent uses the current scene root.',
     shape: { uuid: optionalString('Source scene node UUID for create.'), url: optionalString('Prefab db:// URL.'), asset: optionalString('Prefab asset UUID or db:// URL.'),
       parent: optionalString('Parent node UUID for instantiate.'), name: optionalString('Instance node name.') },
     validate(args, context) {

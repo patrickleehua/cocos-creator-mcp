@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 15720,
+  "startedAt": "2026-10-16T19:17:24.740Z",
+  "phase": "qualification",
+  "status": "failed",
+  "policy": {
+    "maxParallelEditors": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 7.5,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "d1ba0bf1e464815a04fa005bf696421770b2e8f9c7126b716ea30a91d922fee9"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "da74d9c0677b4ab39d80308c4b7bdaf70c219db5008aeb6c26431c3ccbefeef3"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.3",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 12460,
+      "stage": "soak-pilot",
+      "editorClosedAt": "2026-10-16T19:21:57.605Z",
+      "error": {
+        "message": "Another validation failed"
+      }
+    },
+    {
+      "version": "3.7.1",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 6808,
+      "stage": "core",
+      "forcedCleanup": {
+        "version": "3.7.1",
+        "ownedMain": 6808,
+        "stoppedProcessCount": 9,
+        "stoppedAt": "2026-10-16T19:19:48.6860415Z"
+      },
+      "editorClosedAt": "2026-10-16T19:19:49.196Z",
+      "error": {
+        "message": "scripts/integration.mjs failed (1): FAIL scene_save: Open a scene and wait for the scene editor to be ready {\n  error: {\n    code: 'SCENE_NOT_READY',\n    message: 'Open a scene and wait for the scene editor to be ready',\n    details: { outcome: 'not_applied', retryable: false }\n  }\n}\n PASS Real SDK handshake and tool discovery\nPASS Create native-template scenes and open the requested asset\nPASS Create UI node and verify requested components\nPASS Set and read text, zero values, booleans, vectors and colors\nPASS Reject invalid values before mutation\nPASS Undo and redo a native property edit\nPASS Protect unsaved scene changes\nPASS Add and remove a component by its verified instance\nPASS Duplicate, reparent and remove nodes through native messages\nPASS Create, save, copy, move and delete text assets\nPASS Build a nested UI subtree with component properties\nPASS Create and instantiate a native prefab preserving text\nReport: <WORKSPACE>\\.work\\production-endurance\\qualification\\3.7.1-core.json\n",
+        "exitCode": 1
+      }
+    },
+    {
+      "version": "3.7.2",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.0",
+      "status": "queued",
+      "phase": "qualification"
+    },
+    {
+      "version": "3.7.4",
+      "status": "queued",
+      "phase": "qualification"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-16T19:17:29.2175925Z",
+      "availableGiB": 13.68,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 52
+    },
+    {
+      "sampledAt": "2026-10-16T19:17:56.6416240Z",
+      "availableGiB": 12.91,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-16T19:18:16.4190000Z",
+      "availableGiB": 11.85,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    },
+    {
+      "sampledAt": "2026-10-16T19:18:29.6679732Z",
+      "availableGiB": 9.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 83
+    },
+    {
+      "sampledAt": "2026-10-16T19:18:43.3799205Z",
+      "availableGiB": 9.33,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 71
+    },
+    {
+      "sampledAt": "2026-10-16T19:18:59.3297161Z",
+      "availableGiB": 8.67,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 82
+    },
+    {
+      "sampledAt": "2026-10-16T19:19:13.7876075Z",
+      "availableGiB": 8.02,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    },
+    {
+      "sampledAt": "2026-10-16T19:19:27.3311841Z",
+      "availableGiB": 8.72,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 30
+    },
+    {
+      "sampledAt": "2026-10-16T19:19:43.2257294Z",
+      "availableGiB": 8.67,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 94
+    },
+    {
+      "sampledAt": "2026-10-16T19:19:58.6528531Z",
+      "availableGiB": 10.81,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    },
+    {
+      "sampledAt": "2026-10-16T19:20:13.3704663Z",
+      "availableGiB": 10.46,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 65
+    },
+    {
+      "sampledAt": "2026-10-16T19:20:28.1236679Z",
+      "availableGiB": 10.73,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 71
+    },
+    {
+      "sampledAt": "2026-10-16T19:20:43.8236773Z",
+      "availableGiB": 10.63,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 66
+    },
+    {
+      "sampledAt": "2026-10-16T19:20:57.8839419Z",
+      "availableGiB": 10.72,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 66
+    },
+    {
+      "sampledAt": "2026-10-16T19:21:13.0254786Z",
+      "availableGiB": 10.67,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 51
+    },
+    {
+      "sampledAt": "2026-10-16T19:21:28.1760626Z",
+      "availableGiB": 10.64,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 36
+    },
+    {
+      "sampledAt": "2026-10-16T19:21:46.3757422Z",
+      "availableGiB": 11.99,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 88
+    },
+    {
+      "sampledAt": "2026-10-16T19:21:58.3255580Z",
+      "availableGiB": 13.65,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 8.02,
+  "maximumCpuLoadPercent": 100,
+  "updatedAt": "2026-10-16T19:21:58.585Z",
+  "error": "3.7.1: scripts/integration.mjs failed (1): FAIL scene_save: Open a scene and wait for the scene editor to be ready {\n  error: {\n    code: 'SCENE_NOT_READY',\n    message: 'Open a scene and wait for the scene editor to be ready',\n    details: { outcome: 'not_applied', retryable: false }\n  }\n}\n PASS Real SDK handshake and tool discovery\nPASS Create native-template scenes and open the requested asset\nPASS Create UI node and verify requested components\nPASS Set and read text, zero values, booleans, vectors and colors\nPASS Reject invalid values before mutation\nPASS Undo and redo a native property edit\nPASS Protect unsaved scene changes\nPASS Add and remove a component by its verified instance\nPASS Duplicate, reparent and remove nodes through native messages\nPASS Create, save, copy, move and delete text assets\nPASS Build a nested UI subtree with component properties\nPASS Create and instantiate a native prefab preserving text\nReport: <WORKSPACE>\\.work\\production-endurance\\qualification\\3.7.1-core.json\n",
+  "finishedAt": "2026-10-16T19:21:58.585Z"
+}

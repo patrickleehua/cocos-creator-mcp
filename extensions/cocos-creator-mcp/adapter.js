@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { isDeepStrictEqual } = require('util');
+const { AsyncLocalStorage } = require('async_hooks');
 const { createExtras } = require('./extras');
 
 function fail(code, message, details) {
@@ -83,11 +84,18 @@ function componentInfo(dump) {
 }
 
 function createAdapter(editor) {
-  const call = (moduleName, message, ...args) => editor.Message.request(moduleName, message, ...args);
+  const operations = new AsyncLocalStorage();
+  const call = (moduleName, message, ...args) => {
+    const operation = operations.getStore();
+    if (operation && !message.startsWith('query-') && message !== 'check-and-complete-options') {
+      operation.mutationRequested = true;
+    }
+    return editor.Message.request(moduleName, message, ...args);
+  };
   const log = [];
   const handlers = {};
   const listeners = [];
-  const extras = createExtras(editor);
+  const extras = createExtras(editor, { request: call });
   let electron;
   try { electron = require('electron'); } catch (_) {}
   function singleSceneWindow() {
@@ -116,9 +124,29 @@ function createAdapter(editor) {
   }
   async function ready() {
     singleSceneWindow();
-    if (await call('scene', 'query-is-ready') !== true) fail('SCENE_NOT_READY', 'Open a scene and wait for the scene editor to be ready');
+    const deadline = Date.now() + 5000;
+    do {
+      if (await call('scene', 'query-is-ready') === true) { singleSceneWindow(); return; }
+      // Prefab/import/compiler work can briefly reload the scene worker.
+      // Wait only on this read-only precondition; never replay a mutation.
+      await new Promise(resolve => setTimeout(resolve, 50));
+    } while (Date.now() < deadline);
+    fail('SCENE_NOT_READY', 'Open a scene and wait for the scene editor to be ready');
   }
   async function tree() { await ready(); return call('scene', 'query-node-tree'); }
+  async function creationParent(parent) {
+    if (parent !== undefined) {
+      const selected = await resolveNode({ uuid: text(parent, 'parent') });
+      return selected.node.uuid;
+    }
+    const roots = childrenOf(await tree());
+    if (roots.length !== 1 || typeof roots[0].uuid !== 'string' || !roots[0].uuid) {
+      fail('SCENE_IDENTITY_UNAVAILABLE', 'Creation requires one current scene root or an explicit parent');
+    }
+    // Native 3.7 create-node's implicit parent can produce a detached UUID
+    // during repeated create/remove operations. Never inherit that UI state.
+    return roots[0].uuid;
+  }
   async function resolveNode(args) {
     if (['uuid', 'path', 'name'].filter(key => args[key] !== undefined).length !== 1) fail('INVALID_ARGUMENT', 'Supply exactly one node selector');
     const entries = flatten(await tree());
@@ -215,8 +243,24 @@ function createAdapter(editor) {
     const current = await handlers['scene.query']({});
     return { asset, scene: current };
   });
-  register('scene.save', [['scene', 'save-scene']], async () => {
+  register('scene.save', [['scene', 'save-scene'], ['scene', 'query-node-tree'], ['asset-db', 'query-ready'], ['asset-db', 'query-asset-info']], async () => {
     await ready();
+    await assetReady();
+    const roots = childrenOf(await call('scene', 'query-node-tree'));
+    if (roots.length !== 1 || !roots[0].uuid) fail('SCENE_IDENTITY_UNAVAILABLE', 'Saving requires one current scene asset');
+    const asset = await assetInfo(roots[0].uuid);
+    if (asset.type !== 'cc.SceneAsset') fail('INVALID_ASSET_TYPE', 'Saving requires an existing imported scene asset');
+    assetUrl(asset.url);
+    const dirty = await call('scene', 'query-dirty');
+    if (typeof dirty !== 'boolean') fail('INVALID_NATIVE_RESULT', 'Editor did not confirm the scene dirty state');
+    if (!dirty) {
+      const current = await handlers['scene.query']({});
+      const currentRoots = childrenOf(current.tree);
+      if (!current.ready || current.dirty !== false || currentRoots.length !== 1 || currentRoots[0].uuid !== asset.uuid) {
+        fail('SCENE_CHANGED', 'Scene changed while confirming its saved state');
+      }
+      return { saved: true, unchanged: true, scene: current };
+    }
     const result = await call('scene', 'save-scene');
     if (result === false) fail('EDITOR_REJECTED', 'Editor could not save the scene');
     await waitFor(async () => !await call('scene', 'query-dirty'), 'Scene remained dirty after save');
@@ -252,7 +296,7 @@ function createAdapter(editor) {
       if (['x','y','z'].some(key => !Object.prototype.hasOwnProperty.call(args.position, key))) fail('INVALID_ARGUMENT', 'position requires x, y, and z');
     }
     const options = { name: args.name === undefined ? 'Node' : text(args.name, 'name'), snapshot: true };
-    if (args.parent) { await resolveNode({ uuid: args.parent }); options.parent = args.parent; }
+    options.parent = await creationParent(args.parent);
     if (args.position) options.position = args.position;
     const result = await call('scene', 'create-node', options);
     const uuids = typeof result === 'string' ? [result] : result;
@@ -600,8 +644,8 @@ function createAdapter(editor) {
     await ready();
     const asset = await assetInfo(args.asset || args.url);
     if (asset.type !== 'cc.Prefab') fail('INVALID_ASSET_TYPE', 'Expected a successfully imported prefab asset');
-    if (args.parent) await resolveNode({ uuid: args.parent });
-    const result = await call('scene', 'create-node', { assetUuid: asset.uuid, type: 'cc.Prefab', parent: args.parent, name: args.name, snapshot: true });
+    const parent = await creationParent(args.parent);
+    const result = await call('scene', 'create-node', { assetUuid: asset.uuid, type: 'cc.Prefab', parent, name: args.name, snapshot: true });
     const uuids = typeof result === 'string' ? [result] : result;
     if (!Array.isArray(uuids) || !uuids.length) fail('EDITOR_REJECTED', 'Prefab instantiation returned no node UUIDs');
     const nodes = [];
@@ -667,7 +711,7 @@ function createAdapter(editor) {
 
   Object.assign(handlers, extras.handlers);
   const readOnlyCommands = new Set(['editor.info','editor.logs','scene.query','node.query','component.list','component.catalog','asset.query','preview.info','build.config','build.status']);
-  const dispatch = async (command, args) => {
+  const dispatch = (command, args) => operations.run({ mutationRequested: false }, async () => {
     if (!Object.prototype.hasOwnProperty.call(handlers, command)) fail('UNSUPPORTED_COMMAND', 'Command is not supported by this editor: ' + command);
     args = args || {};
     validateJson(args);
@@ -684,10 +728,17 @@ function createAdapter(editor) {
       return result;
     } catch (error) {
       if (!error.code) error.code = 'EDITOR_ERROR';
+      if (!readOnlyCommands.has(command)) {
+        const details = error.details && typeof error.details === 'object' && !Array.isArray(error.details)
+          ? error.details : error.details === undefined ? {} : { nativeDetails: error.details };
+        error.details = Object.assign({}, details, {
+          outcome: operations.getStore().mutationRequested ? 'unknown' : 'not_applied', retryable: false,
+        });
+      }
       record('error', command + ': ' + error.message, { code: error.code });
       throw error;
     }
-  };
+  });
   return {
     commands: () => Object.keys(handlers), dispatch,
     dispose: () => { extras.dispose(); for (const [event, listener] of listeners) editor.Message.removeBroadcastListener(event, listener); },

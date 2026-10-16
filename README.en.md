@@ -8,7 +8,9 @@ Control Cocos Creator 3.7 projects from an MCP client through native editor APIs
 
 The MCP server runs in an external modern Node.js process. A small project extension runs inside Creator's older runtime. The implementation defines **17 MCP tools and 36 bridge commands**, filtered by the capabilities of the connected editor session. The internal authenticated HTTP bridge is not an HTTP MCP endpoint; clients use **stdio MCP**.
 
-**Status: 0.1.0, experimental public testing.** Native Windows x64 workflows have been exercised on **3.7.0–3.7.4**, including actual **3.7.1 and 3.7.2** installations. A successful complete `web-desktop` build with `debug:true` is recorded only for the local, backported 3.7.3 installation. Long-running reliability, native macOS/Linux editors and all build targets have not been validated. Evaluate on a version-controlled project copy. This is not a production-stable claim.
+**Status: 0.1.0, experimental public testing.** The initial public source was exercised on native Windows x64 **3.7.0–3.7.4**, including actual **3.7.1 and 3.7.2** installations. Its successful complete `web-desktop` / `debug:true` build was recorded only for the local, backported 3.7.3 installation. That historical matrix belongs to that source; the hardening changes are undergoing a new full-version qualification. Evaluate on a version-controlled project copy. This is not a production-stable claim.
+
+A [Windows production qualification](docs/PRODUCTION-READINESS.md) is in progress for stock 3.7.0–3.7.4: the same fault, reconnect, debug/release Web build and eight-hour soak gates for every version. In-progress runs do not count as passes. Historical reports retain the identity of the source they actually exercised.
 
 ## Quick start
 
@@ -69,7 +71,7 @@ Native test launches previously used extra `--enable-logging` diagnostics and le
 | Area | MCP tools / operations |
 | --- | --- |
 | Editor | `editor_info`, `editor_logs`; known native log formats support level, count and millisecond timestamp filters. |
-| Scenes | `scene_query`, `scene_open`, `scene_save`, `scene_create` using the installed 2D template, `scene_history` undo/redo. |
+| Scenes | `scene_query`, `scene_open`, `scene_save`, `scene_create` using the installed 2D template, `scene_history` undo/redo. Saving verifies the imported scene asset and confirms already saved scenes without a redundant native save. |
 | Nodes | `node_query`; `node_edit` create/remove/reparent/duplicate. |
 | Components | `component_edit` catalog/list/add/remove, including exact instance selection. |
 | Properties | `property_set` with native types and readback, including tested Node/Component/Asset/array/event-reference paths. |

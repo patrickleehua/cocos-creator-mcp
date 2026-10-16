@@ -1,0 +1,59 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.3",
+  "startedAt": "2026-10-16T18:50:16.892Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 320,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "client timeout keeps native write serialized and expired queued writes never dispatch",
+      "passed": true,
+      "durationMs": 2079,
+      "evidence": {
+        "timedOutWrite": {
+          "code": "TIMEOUT",
+          "outcome": "unknown",
+          "retryable": false
+        },
+        "expiredQueuedWrite": {
+          "code": "REQUEST_EXPIRED",
+          "outcome": "not_applied"
+        },
+        "nativeWriteCalls": 2,
+        "healthResponsive": true,
+        "finalActive": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": false,
+      "error": "Bridge request timed out; outcome unknown. Do not automatically retry this write.",
+      "details": {
+        "stage": "rpc",
+        "command": "scene.save",
+        "outcome": "unknown",
+        "retryable": false
+      }
+    }
+  ],
+  "success": false,
+  "error": {
+    "message": "Bridge request timed out; outcome unknown. Do not automatically retry this write.",
+    "code": "TIMEOUT",
+    "details": {
+      "stage": "rpc",
+      "command": "scene.save",
+      "outcome": "unknown",
+      "retryable": false
+    }
+  },
+  "finishedAt": "2026-10-16T18:51:24.953Z"
+}

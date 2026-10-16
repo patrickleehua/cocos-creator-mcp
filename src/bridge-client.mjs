@@ -78,7 +78,8 @@ export class BridgeClient {
 
   async #operation(signal, command, run) {
     const controller = new AbortController();
-    const context = { signal: controller.signal, command, stage: 'discovery', dispatched: false };
+    const context = { signal: controller.signal, command, stage: 'discovery', dispatched: false,
+      deadline: Date.now() + this.timeout };
     const abort = () => controller.abort(signal.reason);
     if (signal?.aborted) abort();
     else signal?.addEventListener('abort', abort, { once: true });
@@ -213,7 +214,10 @@ export class BridgeClient {
       }
       const id = randomUUID();
       context.requestId = id;
-      const body = JSON.stringify({ id, sessionId: session.sessionId, command, args: JSON.parse(serializedArgs) });
+      const body = JSON.stringify({ id, sessionId: session.sessionId, command, args: JSON.parse(serializedArgs), deadline: context.deadline });
+      if (Buffer.byteLength(body) > 2 * 1024 * 1024) {
+        throw new BridgeError('PAYLOAD_TOO_LARGE', 'RPC payload exceeds 2 MiB.', { outcome: 'not_applied', retryable: false });
+      }
       context.stage = 'rpc';
       context.signal.throwIfAborted();
       context.dispatched = true;
@@ -225,7 +229,8 @@ export class BridgeClient {
       }
       if (!response.ok) {
         context.dispatched = false; // The adapter supplied an authoritative error envelope.
-        if (!isReadOnlyCommand(command) && /TIMEOUT|TIMED_OUT/iu.test(response.error.code)) {
+        if (!isReadOnlyCommand(command) && /TIMEOUT|TIMED_OUT/iu.test(response.error.code)
+          && response.error.details?.outcome === undefined) {
           const details = record(response.error.details) ? response.error.details
             : response.error.details === undefined ? {} : { adapterDetails: response.error.details };
           throw new BridgeError(response.error.code, `${response.error.message} Write outcome unknown. Do not automatically retry.`,

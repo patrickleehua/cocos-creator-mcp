@@ -1,0 +1,108 @@
+{
+  "startedFromScene": "e6ac8147-1d50-4845-a7d3-5685733b0577",
+  "result": [
+    {
+      "mode": "default",
+      "steps": [
+        {
+          "iteration": 1,
+          "uuid": "c99Z7t6DFLsLEWsUEOxTpc",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 2,
+          "uuid": "59crPWg8hCyre+AI9w0wDf",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 3,
+          "uuid": "15kOsQxzZH9oy0R5slUpUX",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 4,
+          "error": {
+            "code": "NODE_NOT_FOUND",
+            "message": "Node was not found in the current scene",
+            "details": {
+              "cause": {
+                "uuid": "67ydCmzCJKmKsqE6qGPqdh"
+              },
+              "partial": true,
+              "createdUuids": [
+                "67ydCmzCJKmKsqE6qGPqdh"
+              ],
+              "outcome": "unknown",
+              "retryable": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "root",
+      "steps": [
+        {
+          "iteration": 1,
+          "uuid": "23VIk6OXRN7KwbItIQnOZe",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 2,
+          "uuid": "81x5MOsDdCdrOFdCyZHub5",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 3,
+          "uuid": "8dFCDkvQ1OwIcHGhHS+2iB",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 4,
+          "uuid": "bcMmgYSBROHprvaH8+8W7/",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 5,
+          "uuid": "35J/B+WblHPprAes4rtutJ",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 6,
+          "uuid": "aeMqvQvZxKt7dXNAbACuxp",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 7,
+          "uuid": "18D56EcBhA/rm6PCZ22qyx",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 8,
+          "uuid": "efhymjYcFD+Z3sKC+56hCM",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 9,
+          "uuid": "169LRvMZBEgYBR3jOseYrr",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 10,
+          "uuid": "ce2nZTekpNyZ7inn5Yq3W+",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 11,
+          "uuid": "9dGoWvP31MIaq09Jcnawou",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        },
+        {
+          "iteration": 12,
+          "uuid": "b1nsDyhJJAJItpqQQkv958",
+          "parent": "e6ac8147-1d50-4845-a7d3-5685733b0577"
+        }
+      ]
+    }
+  ]
+}

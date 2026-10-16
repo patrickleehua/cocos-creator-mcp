@@ -1,0 +1,43 @@
+{
+  "events": [
+    {
+      "observed": "Implicit-parent node create/remove failed on official 3.7.3; returned UUID was still absent later",
+      "evidence": "investigation/3.7.3-create-parent-probe.json",
+      "handling": "Resolve an explicit scene-root parent when omitted. The control probe completed twelve explicit-root cycles; post-fix pilot completed 100 cycles. Cross-version final qualification remains separate."
+    },
+    {
+      "observed": "Scene save timeouts after older fault fixtures and on an already clean scene after a bridge restart",
+      "handling": "Retain all failures. Earlier fixtures changed a native global or reloaded the extension mid-scene; the current fault fixture uses only a real bounded compound edit. Save now checks asset readiness/identity and skips redundant native saving when verified clean.",
+      "limits": "The old timeout root cause is not conclusively established; a passing replacement fixture alone does not establish it."
+    },
+    {
+      "observed": "A transient not-ready scene worker rejected a 3.7.1 save before native mutation after prefab work",
+      "handling": "Bounded read-only readiness polling before mutation. No native write is replayed."
+    },
+    {
+      "observed": "A 3.7.1 core run timed out in its initial scene query; after restart, native readiness was true but query-node-tree returned undefined and dirty was false",
+      "handling": "Retain the failed run. Explicitly opening the fixture Main.scene succeeded and the unchanged implementation then passed all thirteen core steps. The supervisor now confirms an open scene UUID and boolean dirty state in three consecutive samples; a clean fixture with no open scene receives one explicit open request.",
+      "limits": "An empty ready worker was reproduced, but it alone does not conclusively explain the earlier 45-second query timeout."
+    },
+    {
+      "observed": "An early soak compared negative zero to JSON-normalized zero at cycle 37",
+      "handling": "Correct the test expectation; preserve its failed report. This was a fixture assertion, not evidence of corrupted scene coordinates."
+    },
+    {
+      "observed": "An early native workload requested 600 UI nodes although the API cap is 500",
+      "handling": "Correct the fixture to 400 nodes with position edits; retain the failed setup. The later real workload verified 400 unique nodes and an absent expired queued write."
+    },
+    {
+      "observed": "A preview fixture loaded an info URL without invoking native preview preparation and did not observe a running scene",
+      "handling": "Add SDK preview.open preparation and captured native URL before independent browser validation; retain failure and rerun."
+    },
+    {
+      "observed": "Creator add-on registry metadata appeared in the repository root during isolated-home setup",
+      "handling": "Restore only that known test-generated field, give isolated homes their own package metadata, and include root package.json in source immutability checks. Do not count a mutated source run."
+    },
+    {
+      "observed": "Host sleep could otherwise be mistaken for elapsed soak time",
+      "handling": "Use monotonic duration plus a continuity monitor; an eight-hour synthetic clock gap and backward clock change are covered by unit regressions."
+    }
+  ]
+}
