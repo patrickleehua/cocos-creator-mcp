@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "editorVersion": "3.7.3",
+  "project": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-3.7.3-test",
+  "result": {
+    "requested": true,
+    "url": "http://localhost:7456/?scene=342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+    "sceneUuid": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+    "source": "preview/preview-scene-in-browser"
+  },
+  "nativeRequestedUrls": [
+    "http://localhost:7456?scene=342dd685-f1f7-49c4-a878-ab06a3dcdc6d"
+  ],
+  "externalBrowserLaunchIntercepted": true,
+  "completedAt": "2026-10-16T14:19:03.726Z"
+}

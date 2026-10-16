@@ -1,0 +1,67 @@
+{
+  "engine": "3.7.3",
+  "scene": {
+    "name": "Main",
+    "uuid": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5"
+  },
+  "nodes": [
+    {
+      "name": "Main",
+      "uuid": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+      "label": null
+    },
+    {
+      "name": "Canvas",
+      "uuid": "beI88Z2HpFELqR4T5EMHpg",
+      "label": null
+    },
+    {
+      "name": "Camera",
+      "uuid": "Node.647",
+      "label": null
+    },
+    {
+      "name": "Panel",
+      "uuid": "Node.642",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "Container",
+      "uuid": "Node.648",
+      "label": null
+    },
+    {
+      "name": "BuiltRoot",
+      "uuid": "Node.643",
+      "label": null
+    },
+    {
+      "name": "Caption",
+      "uuid": "Node.644",
+      "label": "Nested caption"
+    },
+    {
+      "name": "PrefabInstance",
+      "uuid": "Node.645",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "PROFILER_NODE",
+      "uuid": "Node.639",
+      "label": null
+    },
+    {
+      "name": "Profiler_Root",
+      "uuid": "Node.640",
+      "label": null
+    }
+  ],
+  "frames": 10,
+  "canvas": true,
+  "url": "http://127.0.0.1:9282/",
+  "browser": "Chrome/155.0.8059.84",
+  "errors": [],
+  "warnings": [],
+  "completedAt": "2026-10-16T16:29:38.930Z",
+  "method": "Fresh isolated headless Chrome, fresh native Web build output, Chrome DevTools Protocol runtime inspection"
+}

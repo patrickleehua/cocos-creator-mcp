@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-16T15:41:22.132305+00:00",
+  "requestedVersions": [
+    "3.7.2"
+  ],
+  "purpose": "Official Windows portable Creator 3.7.x dependencies for independent compatibility tests.",
+  "policy": {
+    "maxPackageBytes": 1500000000,
+    "officialHttpsHostsOnly": true,
+    "systemInstallationModified": false,
+    "userConfigurationModified": false,
+    "editorOrInstallerStarted": false,
+    "packageContentsExecuted": false,
+    "scope": "Acquisition and extraction phase only; runtime verification is recorded separately below."
+  },
+  "releasePage": "https://www.cocos.com/creator-download",
+  "catalog": {
+    "url": "https://creator-api.cocos.com/api/cocoshub/editor_version_list?lang=zh&ver=2.3.2",
+    "httpStatus": 200,
+    "finalUrl": "https://creator-api.cocos.com/api/cocoshub/editor_version_list?lang=zh&ver=2.3.2",
+    "retrievedAt": "2026-10-16T15:41:22.489328+00:00",
+    "sha256": "085af5aed0f25205a12f30803cb9087fc6045740be177a2f7294c8f5dcdd8729",
+    "localPath": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\official-editor-version-list.json"
+  },
+  "disk": {
+    "root": "D:\\",
+    "freeBytesBefore": 312316854272,
+    "totalBytes": 484949618688
+  },
+  "versions": [
+    {
+      "version": "3.7.2",
+      "platform": "win32",
+      "source": "https://creator-api.cocos.com/api/cocoshub/editor_version_list?lang=zh&ver=2.3.2",
+      "status": "verified",
+      "catalogEntry": {
+        "version": "3.7.2",
+        "darwin": "https://download.cocos.com/CocosCreator/v3.7.2/CocosCreator-v3.7.2-mac-032211.zip",
+        "win32": "https://download.cocos.com/CocosCreator/v3.7.2/CocosCreator-v3.7.2-win-032211.zip"
+      },
+      "url": "https://download.cocos.com/CocosCreator/v3.7.2/CocosCreator-v3.7.2-win-032211.zip",
+      "channel": "stable exact version from official Dashboard catalog",
+      "head": {
+        "httpStatus": 200,
+        "finalUrl": "https://download.cocos.com/CocosCreator/v3.7.2/CocosCreator-v3.7.2-win-032211.zip",
+        "contentLength": 947140936,
+        "headers": {
+          "Server": "openresty",
+          "Date": "Fri, 16 Oct 2026 15:41:25 GMT",
+          "Content-Type": "application/zip",
+          "Content-Length": "947140936",
+          "Connection": "close",
+          "Last-Modified": "Thu, 23 Mar 2023 01:41:12 GMT",
+          "ETag": "\"641bae38-38743948\"",
+          "X-Cache": "MISS sal-ctc-gdmm-n-140-139",
+          "Expires": "Sun, 15 Nov 2026 15:41:25 GMT",
+          "Access-Control-Allow-Origin": "*",
+          "Accept-Ranges": "bytes"
+        },
+        "verifiedAt": "2026-10-16T15:41:22.668330+00:00"
+      },
+      "localArchive": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\CocosCreator-v3.7.2-win-032211.zip",
+      "downloadStartedAt": "2026-10-16T15:41:22.715376+00:00",
+      "diskFreeBytesBeforeDownload": 312316846080,
+      "get": {
+        "httpStatus": 200,
+        "finalUrl": "https://download.cocos.com/CocosCreator/v3.7.2/CocosCreator-v3.7.2-win-032211.zip",
+        "contentLength": 947140936,
+        "contentRange": null,
+        "etag": "\"641bae38-38743948\"",
+        "lastModified": "Thu, 23 Mar 2023 01:41:12 GMT"
+      },
+      "zip": {
+        "valid": true,
+        "magic": "504b0304",
+        "allMemberCrcsVerified": true,
+        "entries": 52863,
+        "totalUncompressedBytes": 3710586741,
+        "appAsar": [
+          {
+            "path": "resources/app.asar",
+            "size": 745154636,
+            "crc32": "c7d0565f"
+          }
+        ],
+        "creatorExecutables": [
+          "CocosCreator.exe"
+        ],
+        "extracted": false,
+        "packageContentsExecuted": false
+      },
+      "sha256": "a64d231162a5bf6b671c9bc5ece1fd7eaef191b1098d3712b223172e819be37d",
+      "size": 947140936,
+      "contentLengthMatches": true,
+      "verifiedAt": "2026-10-16T15:44:10.681134+00:00",
+      "extraction": {
+        "version": "3.7.2",
+        "archive": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\CocosCreator-v3.7.2-win-032211.zip",
+        "archiveSha256": "a64d231162a5bf6b671c9bc5ece1fd7eaef191b1098d3712b223172e819be37d",
+        "directory": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\3.7.2",
+        "startedAt": "2026-10-16T15:44:10.782406+00:00",
+        "status": "complete",
+        "allResolvedPathsInsideNewDirectory": true,
+        "existingDestinationOverwritten": false,
+        "packageContentsExecuted": false,
+        "symlinksRejected": true,
+        "entriesCheckedBeforeWriting": 52863,
+        "expectedBytes": 3710586741,
+        "completedAt": "2026-10-16T15:47:24.135490+00:00",
+        "filesExtracted": 48170,
+        "bytesExtracted": 3710586741,
+        "creatorExecutable": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\3.7.2\\CocosCreator.exe",
+        "creatorExecutables": [
+          "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\3.7.2\\CocosCreator.exe"
+        ],
+        "appAsar": [
+          "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\3.7.2\\resources\\app.asar"
+        ],
+        "allExtractedMemberCrcsVerified": true
+      }
+    }
+  ],
+  "updatedAt": "2026-10-16T15:47:24.292332+00:00",
+  "runtimeVerification": {
+    "editorsLaunched": true,
+    "installersRun": false,
+    "compatibilityRunsPerformed": true,
+    "report": "validation/manifest.json",
+    "completedAt": "2026-10-16T15:56:32.161Z"
+  }
+}

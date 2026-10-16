@@ -1,0 +1,61 @@
+{
+  "engine": "3.7.0",
+  "scene": {
+    "name": "Main",
+    "uuid": "93b1a854-835e-4bdb-b12f-9d63dafb61f4"
+  },
+  "nodes": [
+    {
+      "name": "Main",
+      "uuid": "93b1a854-835e-4bdb-b12f-9d63dafb61f4",
+      "label": null
+    },
+    {
+      "name": "Canvas",
+      "uuid": "beI88Z2HpFELqR4T5EMHpg",
+      "label": null
+    },
+    {
+      "name": "Camera",
+      "uuid": "ebFwiq8gBFaYpqYbdoDODe",
+      "label": null
+    },
+    {
+      "name": "Panel",
+      "uuid": "Node.674",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "Container",
+      "uuid": "8eG+DscuVDarFFnQJ5SwSF",
+      "label": null
+    },
+    {
+      "name": "BuiltRoot",
+      "uuid": "98iFK5ALdLAJSoyvevDXuq",
+      "label": null
+    },
+    {
+      "name": "Caption",
+      "uuid": "b0VDpxLDFHhpblaRWjuuZz",
+      "label": "Nested caption"
+    },
+    {
+      "name": "PrefabInstance",
+      "uuid": "Node.678",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "PROFILER_NODE",
+      "uuid": "Node.669",
+      "label": null
+    },
+    {
+      "name": "Profiler_Root",
+      "uuid": "Node.670",
+      "label": null
+    }
+  ],
+  "frames": 1557,
+  "canvas": true
+}

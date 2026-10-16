@@ -1,0 +1,22 @@
+{
+  "package_version": 2,
+  "name": "cocos-creator-mcp",
+  "version": "0.1.0",
+  "description": "Native editor bridge for Cocos Creator 3.7 MCP",
+  "type": "commonjs",
+  "editor": ">=3.7.0 <3.8.0",
+  "main": "./main.js",
+  "contributions": {
+    "menu": [
+      { "path": "i18n:menu.extension/Cocos MCP", "label": "Start bridge", "message": "start-bridge" },
+      { "path": "i18n:menu.extension/Cocos MCP", "label": "Stop bridge", "message": "stop-bridge" },
+      { "path": "i18n:menu.extension/Cocos MCP", "label": "Show status", "message": "bridge-status" }
+    ],
+    "messages": {
+      "start-bridge": { "methods": ["startBridge"] },
+      "stop-bridge": { "methods": ["stopBridge"] },
+      "bridge-status": { "methods": ["bridgeStatus"] }
+    },
+    "scene": { "script": "./scene.js" }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "startedAt": "2026-10-16T16:33:12.022Z",
+  "runId": "mvb6sdi1",
+  "project": "<WORKSPACE>\\.work\\creator-3.7.0-test",
+  "steps": [
+    {
+      "name": "Create the reference-test scene from the installed editor template",
+      "passed": true,
+      "durationMs": 969
+    },
+    {
+      "name": "Create and compile a custom component through asset-db",
+      "passed": false,
+      "durationMs": 1326,
+      "error": "component_edit: Open a scene and wait for the scene editor to be ready",
+      "details": {
+        "error": {
+          "code": "SCENE_NOT_READY",
+          "message": "Open a scene and wait for the scene editor to be ready"
+        }
+      }
+    }
+  ],
+  "success": false,
+  "editor": {
+    "editorVersion": "3.7.0",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "<WORKSPACE>\\.work\\creator-3.7.0-test",
+      "uuid": "d4523918-3085-4cba-a6d4-58d27a7cffce"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "error": {
+    "message": "component_edit: Open a scene and wait for the scene editor to be ready",
+    "details": {
+      "error": {
+        "code": "SCENE_NOT_READY",
+        "message": "Open a scene and wait for the scene editor to be ready"
+      }
+    }
+  },
+  "finishedAt": "2026-10-16T16:33:15.893Z",
+  "stderr": ""
+}

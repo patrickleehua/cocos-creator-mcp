@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "editorVersion": "3.7.4",
+  "project": "<WORKSPACE>\\.work\\creator-3.7.4-test",
+  "result": {
+    "requested": true,
+    "url": "http://localhost:7456/?scene=f2b760c3-99b5-4147-bfd4-c01c26b3bc6c",
+    "sceneUuid": "f2b760c3-99b5-4147-bfd4-c01c26b3bc6c",
+    "source": "preview/preview-scene-in-browser"
+  },
+  "nativeRequestedUrls": [
+    "http://localhost:7456?scene=f2b760c3-99b5-4147-bfd4-c01c26b3bc6c"
+  ],
+  "externalBrowserLaunchIntercepted": true,
+  "completedAt": "2026-10-16T17:01:44.619Z"
+}

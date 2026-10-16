@@ -1,0 +1,67 @@
+{
+  "engine": "3.7.2",
+  "scene": {
+    "name": "Main",
+    "uuid": "067f1801-09cd-422f-97f3-7c8447e086d2"
+  },
+  "nodes": [
+    {
+      "name": "Main",
+      "uuid": "067f1801-09cd-422f-97f3-7c8447e086d2",
+      "label": null
+    },
+    {
+      "name": "Canvas",
+      "uuid": "beI88Z2HpFELqR4T5EMHpg",
+      "label": null
+    },
+    {
+      "name": "Camera",
+      "uuid": "ebFwiq8gBFaYpqYbdoDODe",
+      "label": null
+    },
+    {
+      "name": "Panel",
+      "uuid": "Node.47",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "Container",
+      "uuid": "ebrTg7du5L9ImTc+x4dV2D",
+      "label": null
+    },
+    {
+      "name": "BuiltRoot",
+      "uuid": "82zGjv6shPJ68DBpMlBZzo",
+      "label": null
+    },
+    {
+      "name": "Caption",
+      "uuid": "70HwHuXt5JdpSCe2Ngq4Pe",
+      "label": "Nested caption"
+    },
+    {
+      "name": "PrefabInstance",
+      "uuid": "Node.51",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "PROFILER_NODE",
+      "uuid": "Node.42",
+      "label": null
+    },
+    {
+      "name": "Profiler_Root",
+      "uuid": "Node.43",
+      "label": null
+    }
+  ],
+  "frames": 36,
+  "canvas": true,
+  "url": "http://localhost:7456/?scene=067f1801-09cd-422f-97f3-7c8447e086d2",
+  "browser": "Chrome/155.0.8059.84",
+  "errors": [],
+  "warnings": [],
+  "completedAt": "2026-10-16T17:10:09.499Z",
+  "method": "Fresh isolated headless Chrome, native preview HTTP URL, Chrome DevTools Protocol runtime inspection"
+}

@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 2,
+  "completedAt": "2026-10-16T17:10:58.654Z",
+  "platform": "Windows x64",
+  "externalNode": "v24.21.0",
+  "tools": 17,
+  "commands": 36,
+  "editors": [
+    {
+      "version": "3.7.0",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "79510d288a70cd4bb516d10cb614da3aa7abb6c980d71226d158e956fd6a07a6",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4,
+      "previewOpenVerified": true,
+      "buildCancellationVerified": true,
+      "consoleHostCount": 0,
+      "previewRuntimeVerified": true
+    },
+    {
+      "version": "3.7.1",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "a1f5d0e290031a38f2ce2bbb1fec04dcb5bf5d68868762da84e86375abebb547",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4,
+      "previewRuntimeVerified": true,
+      "previewOpenVerified": true,
+      "buildCancellationVerified": true,
+      "acquisitionRecord": "../versions-download-3.7.1.json",
+      "consoleHostCount": 0
+    },
+    {
+      "version": "3.7.2",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "fcbafc883d548119bff56d42b38383ea78c7db859e42ad4c3e09b531b787cb9c",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4,
+      "previewRuntimeVerified": true,
+      "previewOpenVerified": true,
+      "buildCancellationVerified": true,
+      "acquisitionRecord": "../versions-download-3.7.2.json",
+      "consoleHostCount": 0
+    },
+    {
+      "version": "3.7.3",
+      "distribution": "local installation with repack.json backports",
+      "appAsarSha256": "c7f187cd4ebc816fc69b679655940a0897fdfc0f08e06e3112b1c85b736d8aea",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4,
+      "previewOpenVerified": true,
+      "buildCancellationVerified": true,
+      "consoleHostCount": 0,
+      "buildRuntimeVerified": true
+    },
+    {
+      "version": "3.7.4",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "9c6375a3286487791a1d97aee285b39ea55dcca83687cdf98ce5ca0274070ea1",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4,
+      "previewOpenVerified": true,
+      "buildCancellationVerified": true,
+      "consoleHostCount": 0
+    }
+  ],
+  "unitTests": {
+    "tests": 420,
+    "passed": 420,
+    "failed": 0,
+    "skipped": 0,
+    "report": "2026-10-17/unit-tests.txt"
+  },
+  "nativeBuild": {
+    "version": "3.7.3",
+    "distribution": "local installation with repack.json backports",
+    "platform": "web-desktop",
+    "code": 36,
+    "runtimeVerified": true,
+    "durationMs": 79120,
+    "debug": true
+  },
+  "reports": [
+    {
+      "file": "2026-10-17/3.7.0-core.json",
+      "sha256": "98cae658cfe93ad8835baaad27a49b7bc605f186d5e1402488a4f75664cbd174"
+    },
+    {
+      "file": "2026-10-17/3.7.0-references.json",
+      "sha256": "03df850951de410b1034f2b03c78c73b1a10809bcf04f94a139f73ad14764452"
+    },
+    {
+      "file": "2026-10-17/3.7.0-extras.json",
+      "sha256": "975592aa43e6ed94cbb46a657cf4025b4123735c5bf6b47dec2a1643a0e10da6"
+    },
+    {
+      "file": "2026-10-17/3.7.0-quiet-launch.json",
+      "sha256": "9d071c2881e86b3e66bde13c98e3317f8cb54c905a2338239ecbe21e3d4c73a8"
+    },
+    {
+      "file": "2026-10-17/3.7.0-preview-open.json",
+      "sha256": "5550226e02ed21a7998d03e75bfa4c48c7928a0592685f9a909e557ac5ca8942"
+    },
+    {
+      "file": "2026-10-17/3.7.0-preview-runtime.json",
+      "sha256": "808ec5be764561366cd2b1ae27b06781b849395b0008f962a0b2146cdacd97ab"
+    },
+    {
+      "file": "2026-10-17/3.7.1-core.json",
+      "sha256": "b9031aefda529508ea72bb40b3d37dfbfba4724d078123596c5f90863065caaa"
+    },
+    {
+      "file": "2026-10-17/3.7.1-references.json",
+      "sha256": "731528fc93ab999d206d7f736102dbe74c73a3d74cf06572d86b03a62ff77d80"
+    },
+    {
+      "file": "2026-10-17/3.7.1-extras.json",
+      "sha256": "903c6c44cc98f6e9da9b73ae3f9dcf6c22a6f22639a99a0d714e7c3dc13b841f"
+    },
+    {
+      "file": "2026-10-17/3.7.1-quiet-launch.json",
+      "sha256": "2ab0d1c0ae77838e0830b8d78804279d3d227c9589925998a9671fb10e00c89f"
+    },
+    {
+      "file": "2026-10-17/3.7.1-preview-open.json",
+      "sha256": "de8f011dc25670557f391b337652ba3739c49976e50d4bf3b41bc37ffb6a9de4"
+    },
+    {
+      "file": "2026-10-17/3.7.1-preview-runtime.json",
+      "sha256": "57c9e08b56f6541b218676e3c1e201e039f8d07f5f5116b71beaec1fc3b7795a"
+    },
+    {
+      "file": "2026-10-17/3.7.2-core.json",
+      "sha256": "5f631e02463bd4589fa18203fe8d42ea88a368cad994f2ac1bd649c25de2f6de"
+    },
+    {
+      "file": "2026-10-17/3.7.2-references.json",
+      "sha256": "4bcae78f94b5fdbb15d57fb285ecc16da819c6de798fb4f6a2ca23635a356245"
+    },
+    {
+      "file": "2026-10-17/3.7.2-extras.json",
+      "sha256": "523408c0e94bcd2213549276a84b986b41e2577f9fd869d4776bcf4f62c60ee5"
+    },
+    {
+      "file": "2026-10-17/3.7.2-quiet-launch.json",
+      "sha256": "d49e8eaf5aaaaa0216b7641d198c9e43f529f0df3fb9b6a8a2697c5c6909008d"
+    },
+    {
+      "file": "2026-10-17/3.7.2-preview-open.json",
+      "sha256": "991b1e1d3b7fd05344cfb4d31ddd10e78bd1e82740f76e11c8b5d30f410b764b"
+    },
+    {
+      "file": "2026-10-17/3.7.2-preview-runtime.json",
+      "sha256": "71fdc7c62efdcdfc6b3b08f27f30329c2089d656fa68c038b4e75bc9eda86eba"
+    },
+    {
+      "file": "2026-10-17/3.7.3-core.json",
+      "sha256": "284eed1c769e4d0cb044c8b73300c2cfabd1c7712afca29cf2860fe9189d80c3"
+    },
+    {
+      "file": "2026-10-17/3.7.3-references.json",
+      "sha256": "49731707ab369b27734ee96e9a46986ab1c9ea81b864502367e1c684e210d05d"
+    },
+    {
+      "file": "2026-10-17/3.7.3-extras.json",
+      "sha256": "5341a9fed4dd19b06abafc3ae0b979132c0aa2fea24316e00d566abc8776b4b3"
+    },
+    {
+      "file": "2026-10-17/3.7.3-quiet-launch.json",
+      "sha256": "56999e5578d11da377e4ad9be5ceef78b3b38f23759c499e5f0bb986d5449cf3"
+    },
+    {
+      "file": "2026-10-17/3.7.3-preview-open.json",
+      "sha256": "e112725d91a77612bfbef727ed11bf20001807fd30ff1fe5142cd5d268cb0b20"
+    },
+    {
+      "file": "2026-10-17/3.7.3-build.json",
+      "sha256": "965de8545a222d49c42ca8a5bdffe5a71ff55e968f5215172e370f8501f231e5"
+    },
+    {
+      "file": "2026-10-17/3.7.3-build-runtime.json",
+      "sha256": "5d6ab38d0b6ac177878d84926ee2730c16cbaf16f9f6b3a48fc65381b0b09381"
+    },
+    {
+      "file": "2026-10-17/3.7.3-reconnect.json",
+      "sha256": "12257b2384ae9b7e187357b66236ee5007ff491bbb350bd9444e554f89e7ccce"
+    },
+    {
+      "file": "2026-10-17/3.7.4-core.json",
+      "sha256": "3b4af686307fc698129447be85b4d2364515bfeebd7d9096e39aa0af8c0b7271"
+    },
+    {
+      "file": "2026-10-17/3.7.4-references.json",
+      "sha256": "bc8b875b3b4cedec119c5bdc241d99c00425ad34b66fd90773d37ec310ae3ca1"
+    },
+    {
+      "file": "2026-10-17/3.7.4-extras.json",
+      "sha256": "0f982a030fc573aba072a801b00e9e748bb4bf2497af2eaef8156606f0011201"
+    },
+    {
+      "file": "2026-10-17/3.7.4-quiet-launch.json",
+      "sha256": "c00836b0b496922f01fb3c6625ea8dd4b027c8437f480338e605e22077410157"
+    },
+    {
+      "file": "2026-10-17/3.7.4-preview-open.json",
+      "sha256": "604635b0aa418889bf40222b70a139dbde644a4c9bd8c226f609f56988cbb8dd"
+    },
+    {
+      "file": "2026-10-17/unit-tests.txt",
+      "sha256": "6a92eac54b142de322197793068817d84521d9d9eabbc55844e412a046892fc8"
+    },
+    {
+      "file": "2026-10-17/dependency-audit.json",
+      "sha256": "64857b61f9d4f5200251798eec0ab4b581474a672dd4deb42861e6ec1a211f6a"
+    },
+    {
+      "file": "2026-10-17/package-smoke.json",
+      "sha256": "efedf1ba2732c56915e693ecda4f8d28224bf7db21acfb4a3ebdeec62cb776bf"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.0-core.json",
+      "sha256": "51161568437627e5d3a9daa7713bf70fb11aab733614c2bb03afc3efbd3c797f"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.0-references-first-attempt.json",
+      "sha256": "14f8727dbb716f6f209fd43aef85b0112665dcc446677ff05f6bbc86959d7898"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.0-references.json",
+      "sha256": "a3b86dd25d18b7d0b1889c80d7e82310d32c950c2c905914fe146494a694c462"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.1-core.json",
+      "sha256": "8ce47e5cd1a4e3276ee1071f176298d692e920c1c297a6f5a979aed08cd9ffac"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.1-extras.json",
+      "sha256": "08527c0e08c765344387100e22cb4f59e0189a42066e2c99d13520ece4d22f70"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.1-preview-runtime.json",
+      "sha256": "aba6a538ede7b6cde1cae102439c8ff7d8243ca9fcd6e5d79a0286dce18b6940"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.1-references.json",
+      "sha256": "da9d50d5de6e5bfe39bb56ad75ded4ad194669fb32c9de3b13b2db8c7bcafcb8"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.2-core.json",
+      "sha256": "cfa899e76489633e0d0a3e5d9321fee8e32fc0ece66ff2ea3da35a6318d62451"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.2-extras.json",
+      "sha256": "722b924d94266ead3645dcfe2670dc35ae9d4a75dedade1c50490e1ad046e751"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.2-preview-runtime.json",
+      "sha256": "d915edb3548ea79febb76a5df169f36e4ce99779c63b286388d3ca86efcd4aec"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.2-references.json",
+      "sha256": "f3c4022b5474d79c1a608a4d8937393ceb497f7d433f8ee336d067a3a60064ae"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.3-build-runtime.json",
+      "sha256": "cb1ef4d1c106f3b90b0fc59062331687c7ebb2859dd6892a72f8447d4b35af9d"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.3-build.json",
+      "sha256": "ed96632c54f64a149ec555c5c6d6685aa556f3f8deff8bb526ce66503273069e"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.3-core.json",
+      "sha256": "a13e197d64118adf6b3e1aea0bac8af7de87c8b5153200ba5cac2633b6306713"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.3-extras-first-attempt.json",
+      "sha256": "10c602a2992978176fad0bf2c8da0a83639034bc2b60073c4e07259f4697ed80"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.3-extras.json",
+      "sha256": "0014937a42b54111bbcd66aea7117f71dff44b76fd8de88bd07774256c54145a"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.3-reconnect.json",
+      "sha256": "bd15cdbef752fdc64efda7ed59d6fd204a01a414e53bd96f62f8f1823caeabdc"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.3-references.json",
+      "sha256": "199f1a56a92e818c1506b04af6312824c7d00ca3de5ccb417822e704ed135e00"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.4-core.json",
+      "sha256": "a3d255c6c194a4bfff5e3f9bafa6904a98c97072136d0cc8a23b8849dfb201d0"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.4-extras.json",
+      "sha256": "e6920b49f199545ea7733a57101a5470e607d9ce79bd47f7c27b98a371cdece5"
+    },
+    {
+      "file": "2026-10-17/initial/3.7.4-references.json",
+      "sha256": "b397b74f1469312b5968243633abcd88f20404c156a5ffd2b555b897ffd76747"
+    },
+    {
+      "file": "2026-10-17/anomalies.json",
+      "sha256": "f19a486195f4a2da6b5edefeb403cbffbd4281feca973542a0216098868336b7"
+    }
+  ],
+  "sources": [
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "f9cbb0d7bcce148c35d46ba9f8a096844cb5609605d576a98f582a8dcf2b49a2"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "c9b155c737974beffb2351cab8c3a6c7ec3bc323e324b769ea329280d3133289"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "02db94c17451c249d7afe1702cbda8b71f2f5830565a2f1679679b61d93f0c93"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "package.json",
+      "sha256": "e41f9b397c068c2009a70e6ff26db12069a310fcb4fa5fe6c69f9acca347e3f6"
+    },
+    {
+      "file": "scripts/create-test-project.mjs",
+      "sha256": "146a7c7dbe566b08bf20efef35db80ee4332ceddf8631ef055d56afe7ecf7e02"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+    },
+    {
+      "file": "scripts/test.mjs",
+      "sha256": "5097c494f2bea30b6e4d45daaa9caaaaf782632ff4103bb19e77ad331775476e"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "b6e802c7cd63d33804de96c00c74556dd06557147f81a84f08f50c3b94b91731"
+    },
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "9482d0dcf35101d880ecf38412f04fabeaf0836225e1b76b30c20ca20cd93c53"
+    },
+    {
+      "file": "tests/adapter-native-contract.test.cjs",
+      "sha256": "d9eb12eae1b3829585fa50b955d0078e36d533bbb06b63bb8d7545f8fc284f18"
+    },
+    {
+      "file": "tests/bridge.test.cjs",
+      "sha256": "56a92a5b9940d9b8bb918f63b8122fb5b39f281dc7e576a0cf64d2b90f857cf0"
+    },
+    {
+      "file": "tests/client-bridge.test.mjs",
+      "sha256": "921d568587630b50617fa6219d69dc7a789442051d5b513d1bbb2f9d17b24f67"
+    },
+    {
+      "file": "tests/extension-lifecycle.test.cjs",
+      "sha256": "1745339e741f5aa313038daa33a3a622e4eea47924b0298fbd0a84ae2dea34c7"
+    },
+    {
+      "file": "tests/extras.test.cjs",
+      "sha256": "cc6f2226f3273782fd7f3ff174078683781ae512180e92f554ee2039637b9aeb"
+    },
+    {
+      "file": "tests/install-extension.test.mjs",
+      "sha256": "4b00ff94f460e4d1c855e55b90b44ad69a5480fc9114b90c23cb9597efa04589"
+    },
+    {
+      "file": "tests/mcp-server.test.mjs",
+      "sha256": "1c09fe5bf3a4d7c9cc5761cb0e24f8b165084def33a5fd8847ad9e08cd9395a1"
+    },
+    {
+      "file": "tools/compare-creator.cjs",
+      "sha256": "3da1a2ffd1a8656ac4d6635fd783235cebf9e0f40fbf2f67f75da31cf247b3b2"
+    },
+    {
+      "file": "tools/inspect-creator.cjs",
+      "sha256": "21a9f221913b48270cc364168a4d297ceb1aa46e71ef1a4f60fff8824cabf92f"
+    }
+  ],
+  "history": {
+    "baseline": "manifest-2026-10-16-baseline.json",
+    "initialRunNote": "Initial reports are retained for anomaly analysis, not asserted to match final source hashes."
+  },
+  "snapshotNote": "Final runtime sources were unchanged throughout the sequential editor regression. Source hashes capture the archived implementation and tests; reports retain execution timestamps. Documentation/package metadata may be finalized after test execution. Anomalies are not omitted.",
+  "redactions": [
+    "Workspace and Windows user directory prefixes replaced with placeholders in new JSON report exports; raw local reports remain in ignored .work.",
+    "New text report exports normalized to LF for reproducible Git checkouts."
+  ],
+  "limits": [
+    "Native editors tested only on Windows x64.",
+    "Local 3.7.3 has backports; stock 3.7.3 not claimed.",
+    "Only 3.7.3 web-desktop complete build and built runtime validated.",
+    "No long-run soak, exhaustive fault recovery or arbitrary nested Prefab graph coverage.",
+    "Initial unexplained SDK handshake disconnect retained; no production-stable claim.",
+    "Console-host inventory is point-in-time evidence, not a guarantee against every future build-tool window."
+  ]
+}

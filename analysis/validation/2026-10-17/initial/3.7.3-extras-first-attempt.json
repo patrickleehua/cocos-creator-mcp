@@ -1,0 +1,11 @@
+{
+  "startedAt": "2026-10-16T16:18:28.829Z",
+  "project": "<WORKSPACE>\\.work\\creator-3.7.3-test",
+  "steps": [],
+  "success": false,
+  "error": {
+    "message": "MCP error -32000: Connection closed"
+  },
+  "finishedAt": "2026-10-16T16:18:32.552Z",
+  "stderr": ""
+}

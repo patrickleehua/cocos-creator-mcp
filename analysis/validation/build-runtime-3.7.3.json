@@ -1,0 +1,52 @@
+{
+  "engine": "3.7.3",
+  "ready": "complete",
+  "canvas": 1,
+  "scene": {
+    "name": "Main",
+    "uuid": "8d3cd956-41cd-42f6-93ea-145fced0c106"
+  },
+  "nodes": [
+    {
+      "name": "Main",
+      "label": null
+    },
+    {
+      "name": "Canvas",
+      "label": null
+    },
+    {
+      "name": "Camera",
+      "label": null
+    },
+    {
+      "name": "Panel",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "Container",
+      "label": null
+    },
+    {
+      "name": "BuiltRoot",
+      "label": null
+    },
+    {
+      "name": "Caption",
+      "label": "Nested caption"
+    },
+    {
+      "name": "PrefabInstance",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "PROFILER_NODE",
+      "label": null
+    },
+    {
+      "name": "Profiler_Root",
+      "label": null
+    }
+  ],
+  "frames": 1139
+}

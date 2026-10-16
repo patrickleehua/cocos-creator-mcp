@@ -1,0 +1,169 @@
+{
+  "startedAt": "2026-10-16T14:17:27.793Z",
+  "project": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-3.7.4-test",
+  "steps": [
+    {
+      "name": "Read the native preview URL and request refresh",
+      "passed": true,
+      "durationMs": 365,
+      "evidence": {
+        "info": {
+          "url": "http://172.29.224.1:7458",
+          "source": "preview/query-preview-url"
+        },
+        "refresh": {
+          "requested": true,
+          "source": "preview/reload-terminal",
+          "result": null
+        }
+      }
+    },
+    {
+      "name": "Filter real editor logs with bounded normalized results",
+      "passed": true,
+      "durationMs": 74,
+      "evidence": {
+        "scope": "native Editor.Logger.query entries; normalized timestamp/level, no console interception",
+        "source": "Editor.Logger.query",
+        "entries": [
+          {
+            "process": "renderer",
+            "type": "info",
+            "message": "[Scene] Forward render pipeline initialized.",
+            "stack": "",
+            "time": 1792159560956,
+            "timestamp": 1792159560956,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "renderer",
+            "type": "info",
+            "message": "[Scene] [PHYSICS]: switch from builtin to bullet.",
+            "stack": "",
+            "time": 1792159561482,
+            "timestamp": 1792159561482,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "renderer",
+            "type": "info",
+            "message": "[Scene] [PHYSICS2D]: switch from builtin to box2d.",
+            "stack": "",
+            "time": 1792159561522,
+            "timestamp": 1792159561522,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "browser",
+            "type": "log",
+            "message": "[cocos-creator-mcp] Bridge ready for Cocos MCP Compatibility Lab at port 58662",
+            "stack": "",
+            "time": 1792159815112,
+            "timestamp": 1792159815112,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "browser",
+            "type": "log",
+            "message": "[cocos-creator-mcp] Bridge ready for Cocos MCP Compatibility Lab at port 57794",
+            "stack": "",
+            "time": 1792160238765,
+            "timestamp": 1792160238765,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          }
+        ],
+        "total": 12,
+        "limit": 5,
+        "truncated": true
+      }
+    },
+    {
+      "name": "Query registered web build platform configuration",
+      "passed": true,
+      "durationMs": 91,
+      "evidence": {
+        "source": "builder/query-platform-config",
+        "platform": "web-desktop",
+        "config": {
+          "textureCompressConfig": {
+            "platformType": "web",
+            "support": {
+              "rgb": [
+                "jpg",
+                "webp"
+              ],
+              "rgba": [
+                "png",
+                "webp"
+              ]
+            }
+          },
+          "name": "i18n:web-desktop.title"
+        }
+      }
+    }
+  ],
+  "success": true,
+  "editor": {
+    "editorVersion": "3.7.4",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-3.7.4-test",
+      "uuid": "0ac60ff6-365f-4b4e-8b01-b797ec3c5ec8"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "finishedAt": "2026-10-16T14:17:33.070Z",
+  "stderr": ""
+}

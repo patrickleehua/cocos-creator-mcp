@@ -1,0 +1,293 @@
+{
+  "checkedAt": "2026-10-16T16:47:42.029Z",
+  "method": "Read message declarations from installed ASAR package manifests; no editor implementation extracted or bundled",
+  "limits": [
+    "Message presence does not prove its signature, behavior, first introduced version or runtime success.",
+    "3.7.3 is locally backported, 3.8.7 is only a static reference.",
+    "Missing module manifest means inventory unknown, not absence of every associated feature."
+  ],
+  "editors": [
+    {
+      "version": "3.7.0",
+      "distribution": "official portable Windows ZIP",
+      "modules": {
+        "scene": {
+          "member": "builtin/scene/package.json",
+          "manifestSha256": "16ffc4a9b790d906437277bb889546cb5ae140505d1fc98101fef31ec3425c9a",
+          "messageCount": 186,
+          "messages": {
+            "begin-recording": false,
+            "end-recording": false,
+            "cancel-recording": false,
+            "snapshot": true,
+            "undo": true,
+            "redo": true,
+            "unlink-prefab": true,
+            "apply-prefab": true,
+            "restore-prefab": true,
+            "focus-camera": true,
+            "create-node": true,
+            "remove-component": true
+          }
+        },
+        "asset-db": {
+          "member": "builtin/asset-db/package.json",
+          "manifestSha256": "73bd8db0f9b9ab3a5e510f0151b66087012f2fb4a96df682d82c52caab217944",
+          "messageCount": 44,
+          "messages": {
+            "query-asset-dependencies": false,
+            "query-asset-users": false,
+            "generate-available-url": true,
+            "refresh-asset": true,
+            "reimport-asset": true
+          }
+        },
+        "project": {
+          "member": "builtin/project/package.json",
+          "manifestSha256": "9426ff24851cbc1a876e95efc946f7e26e2ec018699ec2a8c52b4ed359a0aafd",
+          "messageCount": 15,
+          "messages": {
+            "query-project-data": true,
+            "query-project-configs": false,
+            "set-config": false
+          }
+        }
+      }
+    },
+    {
+      "version": "3.7.1",
+      "distribution": "official portable Windows ZIP",
+      "modules": {
+        "scene": {
+          "member": "builtin/scene/package.json",
+          "manifestSha256": "16ffc4a9b790d906437277bb889546cb5ae140505d1fc98101fef31ec3425c9a",
+          "messageCount": 186,
+          "messages": {
+            "begin-recording": false,
+            "end-recording": false,
+            "cancel-recording": false,
+            "snapshot": true,
+            "undo": true,
+            "redo": true,
+            "unlink-prefab": true,
+            "apply-prefab": true,
+            "restore-prefab": true,
+            "focus-camera": true,
+            "create-node": true,
+            "remove-component": true
+          }
+        },
+        "asset-db": {
+          "member": "builtin/asset-db/package.json",
+          "manifestSha256": "73bd8db0f9b9ab3a5e510f0151b66087012f2fb4a96df682d82c52caab217944",
+          "messageCount": 44,
+          "messages": {
+            "query-asset-dependencies": false,
+            "query-asset-users": false,
+            "generate-available-url": true,
+            "refresh-asset": true,
+            "reimport-asset": true
+          }
+        },
+        "project": {
+          "member": "builtin/project/package.json",
+          "manifestSha256": "9426ff24851cbc1a876e95efc946f7e26e2ec018699ec2a8c52b4ed359a0aafd",
+          "messageCount": 15,
+          "messages": {
+            "query-project-data": true,
+            "query-project-configs": false,
+            "set-config": false
+          }
+        }
+      }
+    },
+    {
+      "version": "3.7.2",
+      "distribution": "official portable Windows ZIP",
+      "modules": {
+        "scene": {
+          "member": "builtin/scene/package.json",
+          "manifestSha256": "46bd2886bc792d46c9454001366358ea0e66483d42e8800c43593b8ce1d0e6e3",
+          "messageCount": 191,
+          "messages": {
+            "begin-recording": false,
+            "end-recording": false,
+            "cancel-recording": false,
+            "snapshot": true,
+            "undo": true,
+            "redo": true,
+            "unlink-prefab": true,
+            "apply-prefab": true,
+            "restore-prefab": true,
+            "focus-camera": true,
+            "create-node": true,
+            "remove-component": true
+          }
+        },
+        "asset-db": {
+          "member": "builtin/asset-db/package.json",
+          "manifestSha256": "4f9177760dde454574930791471af97dbb97130321a1e67b4b8758499f7b0a76",
+          "messageCount": 45,
+          "messages": {
+            "query-asset-dependencies": false,
+            "query-asset-users": false,
+            "generate-available-url": true,
+            "refresh-asset": true,
+            "reimport-asset": true
+          }
+        },
+        "project": {
+          "member": "builtin/project/package.json",
+          "manifestSha256": "9426ff24851cbc1a876e95efc946f7e26e2ec018699ec2a8c52b4ed359a0aafd",
+          "messageCount": 15,
+          "messages": {
+            "query-project-data": true,
+            "query-project-configs": false,
+            "set-config": false
+          }
+        }
+      }
+    },
+    {
+      "version": "3.7.3",
+      "distribution": "local installation with repack.json backports",
+      "modules": {
+        "scene": {
+          "member": "builtin/scene/package.json",
+          "manifestSha256": "46bd2886bc792d46c9454001366358ea0e66483d42e8800c43593b8ce1d0e6e3",
+          "messageCount": 191,
+          "messages": {
+            "begin-recording": false,
+            "end-recording": false,
+            "cancel-recording": false,
+            "snapshot": true,
+            "undo": true,
+            "redo": true,
+            "unlink-prefab": true,
+            "apply-prefab": true,
+            "restore-prefab": true,
+            "focus-camera": true,
+            "create-node": true,
+            "remove-component": true
+          }
+        },
+        "asset-db": {
+          "member": "builtin/asset-db/package.json",
+          "manifestSha256": "4f9177760dde454574930791471af97dbb97130321a1e67b4b8758499f7b0a76",
+          "messageCount": 45,
+          "messages": {
+            "query-asset-dependencies": false,
+            "query-asset-users": false,
+            "generate-available-url": true,
+            "refresh-asset": true,
+            "reimport-asset": true
+          }
+        },
+        "project": {
+          "member": "builtin/project/package.json",
+          "manifestSha256": "9426ff24851cbc1a876e95efc946f7e26e2ec018699ec2a8c52b4ed359a0aafd",
+          "messageCount": 15,
+          "messages": {
+            "query-project-data": true,
+            "query-project-configs": false,
+            "set-config": false
+          }
+        }
+      }
+    },
+    {
+      "version": "3.7.4",
+      "distribution": "official portable Windows ZIP",
+      "modules": {
+        "scene": {
+          "member": "builtin/scene/package.json",
+          "manifestSha256": "46bd2886bc792d46c9454001366358ea0e66483d42e8800c43593b8ce1d0e6e3",
+          "messageCount": 191,
+          "messages": {
+            "begin-recording": false,
+            "end-recording": false,
+            "cancel-recording": false,
+            "snapshot": true,
+            "undo": true,
+            "redo": true,
+            "unlink-prefab": true,
+            "apply-prefab": true,
+            "restore-prefab": true,
+            "focus-camera": true,
+            "create-node": true,
+            "remove-component": true
+          }
+        },
+        "asset-db": {
+          "member": "builtin/asset-db/package.json",
+          "manifestSha256": "4f9177760dde454574930791471af97dbb97130321a1e67b4b8758499f7b0a76",
+          "messageCount": 45,
+          "messages": {
+            "query-asset-dependencies": false,
+            "query-asset-users": false,
+            "generate-available-url": true,
+            "refresh-asset": true,
+            "reimport-asset": true
+          }
+        },
+        "project": {
+          "member": "builtin/project/package.json",
+          "manifestSha256": "9426ff24851cbc1a876e95efc946f7e26e2ec018699ec2a8c52b4ed359a0aafd",
+          "messageCount": 15,
+          "messages": {
+            "query-project-data": true,
+            "query-project-configs": false,
+            "set-config": false
+          }
+        }
+      }
+    },
+    {
+      "version": "3.8.7",
+      "distribution": "local installation, static comparison only",
+      "modules": {
+        "scene": {
+          "member": "builtin/scene/package.json",
+          "manifestSha256": "206a696b5ee776951ac9cf5a58bcbb141b62136d1be775dd2a1ecfb4fe9071d5",
+          "messageCount": 218,
+          "messages": {
+            "begin-recording": true,
+            "end-recording": true,
+            "cancel-recording": true,
+            "snapshot": true,
+            "undo": true,
+            "redo": true,
+            "unlink-prefab": true,
+            "apply-prefab": true,
+            "restore-prefab": true,
+            "focus-camera": true,
+            "create-node": true,
+            "remove-component": true
+          }
+        },
+        "asset-db": {
+          "member": "builtin/asset-db/package.json",
+          "manifestSha256": "3ea220cb12da923e901ef35a06a8ffd6ac70aff75316baab7ae65821d5bb6f95",
+          "messageCount": 66,
+          "messages": {
+            "query-asset-dependencies": true,
+            "query-asset-users": true,
+            "generate-available-url": true,
+            "refresh-asset": true,
+            "reimport-asset": true
+          }
+        },
+        "project": {
+          "member": "builtin/project/package.json",
+          "manifestSha256": "5a6736fb031c3f2eacb0f3f27a27a06ffb32e99192ab05529b09c02f67f43287",
+          "messageCount": 19,
+          "messages": {
+            "query-project-data": false,
+            "query-project-configs": true,
+            "set-config": true
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "project": "<WORKSPACE>\\.work\\creator-3.7.3-test",
+  "startedAt": "2026-10-16T16:17:49.828Z",
+  "runId": "mvb68lxi",
+  "steps": [
+    {
+      "name": "Real SDK handshake and tool discovery",
+      "passed": true,
+      "durationMs": 155,
+      "evidence": {
+        "toolNames": [
+          "editor_info",
+          "scene_query",
+          "scene_open",
+          "scene_save",
+          "scene_create",
+          "scene_history",
+          "node_query",
+          "node_edit",
+          "component_edit",
+          "property_set",
+          "asset_query",
+          "asset_edit",
+          "prefab_manage",
+          "ui_build",
+          "editor_preview",
+          "editor_logs",
+          "project_build"
+        ],
+        "runtime": {
+          "node": "14.16.0",
+          "electron": "13.1.4"
+        }
+      }
+    },
+    {
+      "name": "Create native-template scenes and open the requested asset",
+      "passed": true,
+      "durationMs": 15031,
+      "evidence": {
+        "scene": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+        "canvas": "beI88Z2HpFELqR4T5EMHpg"
+      }
+    },
+    {
+      "name": "Create UI node and verify requested components",
+      "passed": true,
+      "durationMs": 1157,
+      "evidence": {
+        "uuid": "31Th7lP35F6ruNIrog7P0b",
+        "label": "9cBw+ve3hG97HGU8kVdAIZ"
+      }
+    },
+    {
+      "name": "Set and read text, zero values, booleans, vectors and colors",
+      "passed": true,
+      "durationMs": 1155,
+      "evidence": {
+        "text": "Creator 3.7 MCP 测试",
+        "position": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        }
+      }
+    },
+    {
+      "name": "Reject invalid values before mutation",
+      "passed": true,
+      "durationMs": 163
+    },
+    {
+      "name": "Undo and redo a native property edit",
+      "passed": true,
+      "durationMs": 431
+    },
+    {
+      "name": "Protect unsaved scene changes",
+      "passed": true,
+      "durationMs": 103
+    },
+    {
+      "name": "Add and remove a component by its verified instance",
+      "passed": true,
+      "durationMs": 275
+    },
+    {
+      "name": "Duplicate, reparent and remove nodes through native messages",
+      "passed": true,
+      "durationMs": 644
+    },
+    {
+      "name": "Create, save, copy, move and delete text assets",
+      "passed": true,
+      "durationMs": 1020
+    },
+    {
+      "name": "Build a nested UI subtree with component properties",
+      "passed": true,
+      "durationMs": 880
+    },
+    {
+      "name": "Create and instantiate a native prefab preserving text",
+      "passed": true,
+      "durationMs": 947,
+      "evidence": {
+        "assetUuid": "a678fa59-07cc-486d-b744-36166f908dc4",
+        "instanceUuid": "77pSUW79xKj4rj7T+nzwLF"
+      }
+    },
+    {
+      "name": "Save to disk, switch scenes and verify reopened data",
+      "passed": true,
+      "durationMs": 1776
+    }
+  ],
+  "success": true,
+  "editor": {
+    "editorVersion": "3.7.3",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "<WORKSPACE>\\.work\\creator-3.7.3-test",
+      "uuid": "1a1c5c73-c48b-4dc7-bb03-02ed308c538b"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "finishedAt": "2026-10-16T16:18:15.606Z",
+  "stderr": ""
+}

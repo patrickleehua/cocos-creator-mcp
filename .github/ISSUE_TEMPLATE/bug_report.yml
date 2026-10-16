@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a reproducible MCP, bridge, adapter or test failure.
+title: '[Bug]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For suspected security vulnerabilities, follow SECURITY.md instead of opening a public issue.
+        Do not upload session.json, Bearer tokens, credentials, proprietary assets or unredacted project paths.
+        Use a minimal disposable project and redact logs before submitting.
+  - type: input
+    id: revision
+    attributes:
+      label: Package version or Git revision
+      placeholder: Package version and/or commit SHA; include local changes if relevant.
+    validations:
+      required: true
+  - type: dropdown
+    id: context
+    attributes:
+      label: Where does the failure occur?
+      options:
+        - MCP client connected to a real Creator editor
+        - Manual Creator integration suite
+        - Local unit tests
+        - GitHub Actions unit or packaging job
+        - Installation or packaging
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Use placeholders for usernames, installation directories and project paths.
+      value: |
+        - OS and architecture:
+        - External Node.js version (node --version):
+        - npm version (npm --version):
+        - Creator exact version (or not applicable):
+        - Creator distribution: stock / locally patched / unknown:
+        - Local repack.json backport module names, if any (no full paths):
+        - Editor Node/Electron versions from editor_info, if available:
+        - MCP client and version:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include exact tool/action arguments or test command, readiness/dirty state and numbered steps. Use synthetic assets and <PROJECT> path placeholders.
+      placeholder: |
+        1. Create a marked disposable fixture as described in CONTRIBUTING.md.
+        2. Open the saved scene and wait for the editor to become ready.
+        3. Call the tool with these redacted arguments, or run this exact test command...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and observed side effects
+      description: State whether files or scene state changed. For a timed-out write or build, report the subsequent readback or job status rather than retrying it.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted errors and test evidence
+      description: Include error code/details/outcome, command exit status, relevant log scope and failed suite step. Remove tokens, Authorization headers, personal paths and private asset names from reports and screenshots.
+      render: text
+  - type: checkboxes
+    id: public-safety
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked existing issues and CONTRIBUTING.md for reproduction guidance.
+          required: true
+        - label: This public report contains no credentials, session tokens, proprietary assets or unredacted private paths.
+          required: true
+        - label: This is not a confidential security disclosure; suspected vulnerabilities will be reported using SECURITY.md.
+          required: true

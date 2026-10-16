@@ -1,0 +1,43 @@
+name: Feature request
+description: Propose a concrete workflow or compatibility improvement.
+title: '[Feature]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the user workflow and its expected observable result.
+        Keep credentials, session data, proprietary assets and private paths out of this public issue.
+        Suspected vulnerabilities belong in the private reporting process in SECURITY.md.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or workflow
+      description: What task is blocked? Include a small synthetic example where useful.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe tool/action inputs, expected output, file/scene side effects and how success could be verified.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Creator versions and native evidence
+      description: List exact versions, OS and stock/modified distribution. If known, identify the builtin module and contributions.messages entry from its actual package.json. Clearly distinguish a proposal, static declarations and observed native behavior.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and validation
+      description: Describe current workarounds, potential failure cases, and which unit/manual integration checks would demonstrate the feature.
+  - type: checkboxes
+    id: public-safety
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked existing issues for a similar request.
+          required: true
+        - label: This request contains no credentials, session tokens, proprietary assets or unredacted private paths.
+          required: true

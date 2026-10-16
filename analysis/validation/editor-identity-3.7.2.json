@@ -1,0 +1,9 @@
+{
+  "version": "3.7.2",
+  "filename": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-versions\\3.7.2\\resources\\app.asar",
+  "size": 745154636,
+  "mtimeMs": 1792165480430.4597,
+  "sha256": "fcbafc883d548119bff56d42b38383ea78c7db859e42ad4c3e09b531b787cb9c",
+  "recordedAt": "2026-10-16T15:46:36.722Z",
+  "scope": "ASAR bytes and declared version observed before launch; runtime version is validated independently by MCP integration reports."
+}

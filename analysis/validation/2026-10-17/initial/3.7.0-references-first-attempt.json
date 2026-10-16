@@ -1,0 +1,100 @@
+{
+  "startedAt": "2026-10-16T16:31:44.253Z",
+  "runId": "mvb6qhs0",
+  "project": "<WORKSPACE>\\.work\\creator-3.7.0-test",
+  "steps": [
+    {
+      "name": "Create the reference-test scene from the installed editor template",
+      "passed": true,
+      "durationMs": 799
+    },
+    {
+      "name": "Create and compile a custom component through asset-db",
+      "passed": true,
+      "durationMs": 2995,
+      "evidence": {
+        "script": "80f5e1fd-b87a-482f-a596-35c02359a329",
+        "className": "McpReferences_mvb6qhs0"
+      }
+    },
+    {
+      "name": "Import PNG data and locate a native SpriteFrame subasset",
+      "passed": false,
+      "durationMs": 238,
+      "error": "asset_edit: Asset is not successfully imported: f4aebc0f-37bd-4288-b3ed-f3245876ca2d",
+      "details": {
+        "error": {
+          "code": "IMPORT_FAILED",
+          "message": "Asset is not successfully imported: f4aebc0f-37bd-4288-b3ed-f3245876ca2d"
+        }
+      }
+    }
+  ],
+  "success": false,
+  "editor": {
+    "editorVersion": "3.7.0",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "<WORKSPACE>\\.work\\creator-3.7.0-test",
+      "uuid": "d4523918-3085-4cba-a6d4-58d27a7cffce"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "error": {
+    "message": "asset_edit: Asset is not successfully imported: f4aebc0f-37bd-4288-b3ed-f3245876ca2d",
+    "details": {
+      "error": {
+        "code": "IMPORT_FAILED",
+        "message": "Asset is not successfully imported: f4aebc0f-37bd-4288-b3ed-f3245876ca2d"
+      }
+    }
+  },
+  "finishedAt": "2026-10-16T16:31:50.070Z",
+  "stderr": ""
+}

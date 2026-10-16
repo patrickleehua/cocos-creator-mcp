@@ -1,0 +1,218 @@
+{
+  "version": "3.7.3",
+  "project": "<WORKSPACE>\\.work\\creator-3.7.3-test",
+  "options": {
+    "platform": "web-desktop",
+    "debug": true,
+    "buildPath": "project://build",
+    "outputName": "mcp-web",
+    "startScene": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+    "scenes": [
+      {
+        "uuid": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+        "url": "db://assets/McpIntegration_mvb68lxi/Main.scene"
+      }
+    ]
+  },
+  "startedAt": "2026-10-16T16:23:49.975Z",
+  "success": true,
+  "started": {
+    "taskId": "mcp-build-b82e3fe35629d290c632b35f40a9bac1",
+    "state": "running",
+    "options": {
+      "platform": "web-desktop",
+      "debug": true,
+      "buildPath": "project://build",
+      "outputName": "mcp-web",
+      "startScene": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+      "scenes": [
+        {
+          "uuid": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+          "url": "db://assets/McpIntegration_mvb68lxi/Main.scene"
+        }
+      ]
+    },
+    "startedAt": 1792167830021,
+    "finishedAt": null,
+    "code": null,
+    "nativeResult": null,
+    "error": null,
+    "nativeTaskId": null,
+    "cancelRequested": false,
+    "deduplicated": false
+  },
+  "status": {
+    "isBuilding": false,
+    "task": {
+      "taskId": "mcp-build-b82e3fe35629d290c632b35f40a9bac1",
+      "state": "succeeded",
+      "options": {
+        "platform": "web-desktop",
+        "debug": true,
+        "buildPath": "project://build",
+        "outputName": "mcp-web",
+        "startScene": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+        "scenes": [
+          {
+            "uuid": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+            "url": "db://assets/McpIntegration_mvb68lxi/Main.scene"
+          }
+        ]
+      },
+      "startedAt": 1792167830021,
+      "finishedAt": 1792168084876,
+      "code": 36,
+      "nativeResult": 36,
+      "error": null,
+      "nativeTaskId": "1792167830024",
+      "cancelRequested": false
+    },
+    "native": {
+      "queue": {
+        "1792167592751": {
+          "type": "build",
+          "id": "1792167592751",
+          "progress": 1,
+          "state": "success",
+          "stage": "build",
+          "message": "2026-10-17 00:25:40 build success in 110081 ms!",
+          "options": {
+            "platform": "web-desktop",
+            "debug": true,
+            "buildPath": "project://build",
+            "outputName": "mcp-cancel-test",
+            "startScene": "fb0d7bb2-db01-47d6-adaa-ec6d25b95c63",
+            "scenes": [
+              {
+                "uuid": "fb0d7bb2-db01-47d6-adaa-ec6d25b95c63",
+                "url": "db://assets/McpReferences_mvb69702/References.scene"
+              }
+            ],
+            "id": "mcp-build-66f01d6376ec5f26280b5ffff0c2dfb1",
+            "mainBundleCompressionType": "merge_dep",
+            "packages": {
+              "web-desktop": {
+                "useWebGPU": false,
+                "resolution": {
+                  "designWidth": 1280,
+                  "designHeight": 960
+                }
+              }
+            },
+            "name": "Cocos MCP Compatibility Lab",
+            "md5Cache": false,
+            "skipCompressTexture": false,
+            "sourceMaps": false,
+            "polyfills": {
+              "asyncFunctions": true
+            },
+            "experimentalEraseModules": false,
+            "useBuiltinServer": false,
+            "mainBundleIsRemote": false,
+            "useSplashScreen": true,
+            "packAutoAtlas": true,
+            "web-desktop": []
+          },
+          "time": "2026-10-17 00:23",
+          "dirty": false
+        },
+        "1792167830024": {
+          "type": "build",
+          "id": "1792167830024",
+          "progress": 1,
+          "state": "success",
+          "stage": "build",
+          "message": "2026-10-17 00:28:04 build success in 144018 ms!",
+          "options": {
+            "platform": "web-desktop",
+            "debug": true,
+            "buildPath": "project://build",
+            "outputName": "mcp-web",
+            "startScene": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+            "scenes": [
+              {
+                "uuid": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+                "url": "db://assets/McpIntegration_mvb68lxi/Main.scene"
+              }
+            ],
+            "id": "mcp-build-b82e3fe35629d290c632b35f40a9bac1",
+            "mainBundleCompressionType": "merge_dep",
+            "packages": {
+              "web-desktop": {
+                "useWebGPU": false,
+                "resolution": {
+                  "designWidth": 1280,
+                  "designHeight": 960
+                }
+              }
+            },
+            "name": "Cocos MCP Compatibility Lab",
+            "md5Cache": false,
+            "skipCompressTexture": false,
+            "sourceMaps": false,
+            "polyfills": {
+              "asyncFunctions": true
+            },
+            "experimentalEraseModules": false,
+            "useBuiltinServer": false,
+            "mainBundleIsRemote": false,
+            "useSplashScreen": true,
+            "packAutoAtlas": true,
+            "web-desktop": []
+          },
+          "time": "2026-10-17 00:25",
+          "dirty": false
+        }
+      },
+      "free": true
+    },
+    "nativeTask": {
+      "type": "build",
+      "id": "1792167830024",
+      "progress": 1,
+      "state": "success",
+      "stage": "build",
+      "message": "2026-10-17 00:28:04 build success in 144018 ms!",
+      "options": {
+        "platform": "web-desktop",
+        "debug": true,
+        "buildPath": "project://build",
+        "outputName": "mcp-web",
+        "startScene": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+        "scenes": [
+          {
+            "uuid": "5c94f8d8-ea58-4e4c-a622-1af6934e23a5",
+            "url": "db://assets/McpIntegration_mvb68lxi/Main.scene"
+          }
+        ],
+        "id": "mcp-build-b82e3fe35629d290c632b35f40a9bac1",
+        "mainBundleCompressionType": "merge_dep",
+        "packages": {
+          "web-desktop": {
+            "useWebGPU": false,
+            "resolution": {
+              "designWidth": 1280,
+              "designHeight": 960
+            }
+          }
+        },
+        "name": "Cocos MCP Compatibility Lab",
+        "md5Cache": false,
+        "skipCompressTexture": false,
+        "sourceMaps": false,
+        "polyfills": {
+          "asyncFunctions": true
+        },
+        "experimentalEraseModules": false,
+        "useBuiltinServer": false,
+        "mainBundleIsRemote": false,
+        "useSplashScreen": true,
+        "packAutoAtlas": true,
+        "web-desktop": []
+      },
+      "time": "2026-10-17 00:25",
+      "dirty": false
+    }
+  },
+  "finishedAt": "2026-10-16T16:28:05.138Z"
+}

@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    name: Unit / ${{ matrix.os }} / Node ${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: ['20', '22', '24']
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: ${{ matrix.node }}
+          package-manager-cache: false
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Run unit tests (no Creator installation)
+        run: node scripts/test.mjs
+
+  package:
+    name: Package smoke / Node 20
+    needs: unit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '20'
+          package-manager-cache: false
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Check CLI entry point without an editor
+        run: node src/server.mjs --help
+      - name: Inspect package contents without lifecycle scripts
+        run: npm pack --dry-run --ignore-scripts
+      - name: Create local tarball without publishing
+        run: npm pack --ignore-scripts --pack-destination "$RUNNER_TEMP"
+
+# Real Creator integration is manual; see CONTRIBUTING.md. This workflow does
+# not download, start or claim to test Creator, and does not publish packages.

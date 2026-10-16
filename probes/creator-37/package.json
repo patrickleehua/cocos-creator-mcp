@@ -1,0 +1,25 @@
+{
+  "package_version": 2,
+  "name": "cocos-37-compat-probe",
+  "version": "0.1.0",
+  "description": "Read-only compatibility probe for a Cocos Creator 3.7 MCP adapter",
+  "editor": ">=3.7.0 <3.8.0",
+  "main": "./main.js",
+  "contributions": {
+    "menu": [
+      {
+        "path": "i18n:menu.extension/Cocos 3.7 MCP",
+        "label": "Run read-only compatibility probe",
+        "message": "run-probe"
+      }
+    ],
+    "messages": {
+      "run-probe": {
+        "methods": ["runProbe"]
+      }
+    },
+    "scene": {
+      "script": "./scene.js"
+    }
+  }
+}

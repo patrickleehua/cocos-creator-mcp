@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-10-16T15:56:32.231Z",
+  "platform": "Windows x64",
+  "tools": 17,
+  "commands": 36,
+  "editors": [
+    {
+      "version": "3.7.0",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "79510d288a70cd4bb516d10cb614da3aa7abb6c980d71226d158e956fd6a07a6",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 3
+    },
+    {
+      "version": "3.7.1",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "a1f5d0e290031a38f2ce2bbb1fec04dcb5bf5d68868762da84e86375abebb547",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4,
+      "previewRuntimeVerified": true,
+      "previewOpenVerified": true,
+      "buildCancellationVerified": true,
+      "acquisitionRecord": "../versions-download-3.7.1.json"
+    },
+    {
+      "version": "3.7.2",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "fcbafc883d548119bff56d42b38383ea78c7db859e42ad4c3e09b531b787cb9c",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4,
+      "previewRuntimeVerified": true,
+      "previewOpenVerified": true,
+      "buildCancellationVerified": true,
+      "acquisitionRecord": "../versions-download-3.7.2.json"
+    },
+    {
+      "version": "3.7.3",
+      "distribution": "local installation with repack.json backports",
+      "appAsarSha256": "c7f187cd4ebc816fc69b679655940a0897fdfc0f08e06e3112b1c85b736d8aea",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 4
+    },
+    {
+      "version": "3.7.4",
+      "distribution": "official portable Windows ZIP",
+      "appAsarSha256": "9c6375a3286487791a1d97aee285b39ea55dcca83687cdf98ce5ca0274070ea1",
+      "runtime": {
+        "node": "14.16.0",
+        "electron": "13.1.4"
+      },
+      "coreSteps": 13,
+      "referenceSteps": 7,
+      "extrasSteps": 3
+    }
+  ],
+  "unitTests": {
+    "tests": 311,
+    "passed": 311,
+    "failed": 0,
+    "report": "unit-tests.txt"
+  },
+  "nativeBuild": {
+    "version": "3.7.3",
+    "platform": "web-desktop",
+    "code": 36,
+    "runtimeVerified": true,
+    "firstBuildMs": 1200248
+  },
+  "previewRuntime": {
+    "version": "3.7.0",
+    "runtimeVerified": true
+  },
+  "previewOpen": {
+    "version": "3.7.3",
+    "sdkAndNativeRequestVerified": true,
+    "externalBrowserLaunchInterceptedAndRestored": true
+  },
+  "reports": [
+    "integration-3.7.0.json",
+    "reference-3.7.0.json",
+    "extras-3.7.0.json",
+    "integration-3.7.3.json",
+    "reference-3.7.3.json",
+    "extras-3.7.3.json",
+    "integration-3.7.4.json",
+    "reference-3.7.4.json",
+    "extras-3.7.4.json",
+    "build-3.7.3.json",
+    "build-runtime-3.7.3.json",
+    "preview-runtime-3.7.0.json",
+    "preview-open-3.7.3.json",
+    "unit-tests.txt",
+    "integration-3.7.1.json",
+    "reference-3.7.1.json",
+    "extras-3.7.1.json",
+    "preview-open-3.7.1.json",
+    "preview-runtime-3.7.1.json",
+    "editor-identity-3.7.1.json",
+    "integration-3.7.2.json",
+    "reference-3.7.2.json",
+    "extras-3.7.2.json",
+    "preview-open-3.7.2.json",
+    "preview-runtime-3.7.2.json",
+    "editor-identity-3.7.2.json"
+  ],
+  "sources": [
+    {
+      "file": "package.json",
+      "sha256": "84c6122dd7d94ce07dd3eb045ed8759500d87ec3179b11d6620569cb18c50c03"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "1f2a4f1e88b8fea6a04c5db3a80de8d74da6da1c1c2e7364e674acd57a0eb954"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "b6e802c7cd63d33804de96c00c74556dd06557147f81a84f08f50c3b94b91731"
+    },
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "9482d0dcf35101d880ecf38412f04fabeaf0836225e1b76b30c20ca20cd93c53"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "dbc7331dbba883efb137f6ebb271063c1292e59c7f9d4b7be6be67fbd7f7426e"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "c9b155c737974beffb2351cab8c3a6c7ec3bc323e324b769ea329280d3133289"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "56b5f559a24dc0744b0d90f78ea72e1a2de858c2b38000cfb56e0f8682d71915"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "7ed00634c73bd4be724cc9816742e16fcc3f3d75582823b317ba0a665cf86666"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "scripts/create-test-project.mjs",
+      "sha256": "146a7c7dbe566b08bf20efef35db80ee4332ceddf8631ef055d56afe7ecf7e02"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "da1fee026e66e43025133db0e5d3fff915651bd2aeff64944b8751caa5483323"
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "bf189d4a015c25fe0aec52fb91bf63559be0948533ed91c1d3615d6ae513e18a"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+    },
+    {
+      "file": "tests/adapter-native-contract.test.cjs",
+      "sha256": "ccc4d1773b6dbcce2f7b88cbb2983f0f0cb9c925b56f2e3b8aac8edce9f9ffd2"
+    },
+    {
+      "file": "tests/bridge.test.cjs",
+      "sha256": "56a92a5b9940d9b8bb918f63b8122fb5b39f281dc7e576a0cf64d2b90f857cf0"
+    },
+    {
+      "file": "tests/client-bridge.test.mjs",
+      "sha256": "921d568587630b50617fa6219d69dc7a789442051d5b513d1bbb2f9d17b24f67"
+    },
+    {
+      "file": "tests/extras.test.cjs",
+      "sha256": "53b073f0968e8610f6aaff422a43ad8485dfc40096a925123c989d40f5eb1a7b"
+    },
+    {
+      "file": "tests/mcp-server.test.mjs",
+      "sha256": "1c09fe5bf3a4d7c9cc5761cb0e24f8b165084def33a5fd8847ad9e08cd9395a1"
+    }
+  ],
+  "snapshotNote": "Source hashes record the final implementation at archival time. Individual reports retain their own execution times and capability snapshots.",
+  "limits": [
+    "macOS and Linux were not executed.",
+    "Web desktop build success does not validate Android, iOS, mini-game or other build targets.",
+    "Compound edits are not atomic and do not promise grouped undo."
+  ],
+  "sourceSnapshotAt": "2026-10-16T15:58:28.459Z",
+  "previousCompletedAt": "2026-10-16T14:21:38.178Z"
+}

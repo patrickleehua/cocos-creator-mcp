@@ -1,0 +1,50 @@
+{
+  "name": "cocos-creator-37-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP tools backed by native Cocos Creator 3.7 editor operations",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "cocos-creator-mcp": "src/server.mjs"
+  },
+  "files": [
+    "src",
+    "extensions",
+    "scripts",
+    "tools",
+    "tests",
+    "docs",
+    "analysis",
+    "README.md",
+    "probes",
+    "README.en.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node scripts/test.mjs",
+    "test:integration": "node scripts/integration.mjs",
+    "test:references": "node scripts/integration-references.mjs",
+    "test:extras": "node scripts/integration-extras.mjs",
+    "install-extension": "node scripts/install-extension.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "3.25.76"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickleehua/cocos-creator-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patrickleehua/cocos-creator-mcp/issues"
+  },
+  "homepage": "https://github.com/patrickleehua/cocos-creator-mcp#readme"
+}

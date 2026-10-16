@@ -1,0 +1,59 @@
+{
+  "success": true,
+  "completedAt": "2026-10-16T16:56:31.335Z",
+  "externalNode": "v24.21.0",
+  "checks": [
+    "Extract source ZIP into a new directory",
+    "npm ci --ignore-scripts --no-audit --no-fund: 95 packages, exit 0",
+    "node src/server.mjs --help: exit 0",
+    "Install extension from extracted source into a disposable 3.7.1 project",
+    "Compare installed extension, server sources, installer and lockfile with release workspace"
+  ],
+  "note": "Archive documents and evidence may be refreshed after this smoke test; these runtime and lockfile hashes must remain equal.",
+  "checked": [
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "f9cbb0d7bcce148c35d46ba9f8a096844cb5609605d576a98f582a8dcf2b49a2"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "c9b155c737974beffb2351cab8c3a6c7ec3bc323e324b769ea329280d3133289"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "02db94c17451c249d7afe1702cbda8b71f2f5830565a2f1679679b61d93f0c93"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "9482d0dcf35101d880ecf38412f04fabeaf0836225e1b76b30c20ca20cd93c53"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "b6e802c7cd63d33804de96c00c74556dd06557147f81a84f08f50c3b94b91731"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+    }
+  ]
+}

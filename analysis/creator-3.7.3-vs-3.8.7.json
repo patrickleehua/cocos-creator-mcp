@@ -1,0 +1,5025 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "offline ASAR manifest and declaration inspection; no editor code executed",
+  "limits": [
+    "Registration establishes declared availability, not runtime correctness or parameter compatibility.",
+    "Comparison is between these exact installed builds; it does not establish the first release of an API.",
+    "Encrypted .ccc implementations are not decompiled.",
+    "A repack marker means this installation may differ from a stock Cocos release."
+  ],
+  "before": {
+    "path": "C:\\ProgramData\\cocos\\editors\\Creator\\3.7.3\\resources\\app.asar",
+    "size": 714952502,
+    "sha256": "c7f187cd4ebc816fc69b679655940a0897fdfc0f08e06e3112b1c85b736d8aea",
+    "version": "3.7.3",
+    "memberCount": 96557,
+    "repack": {
+      "path": "C:\\ProgramData\\cocos\\editors\\Creator\\3.7.3\\resources\\repack.json",
+      "sha256": "0757052054341bd4f1cf8c92c0782b3926dc4cdc09faa6ca3c8adcdcb4d26aea",
+      "metadata": {
+        "schemaVersion": 1,
+        "repackedAt": "2026-10-01T00:22:38.497+08:00",
+        "creator": {
+          "version": "3.7.3",
+          "platform": "win32",
+          "arch": "x64",
+          "channel": "release"
+        },
+        "modules": [
+          {
+            "id": "builder-ui",
+            "version": "3.7.3-backport.1"
+          },
+          {
+            "id": "engine",
+            "version": "3.7.3-backport.1"
+          },
+          {
+            "id": "global-builtin-hot-update",
+            "version": "3.7.3-backport.5"
+          },
+          {
+            "id": "login",
+            "version": "3.7.3-backport.1"
+          },
+          {
+            "id": "openpaas-builder-support",
+            "version": "3.7.3-backport.1"
+          },
+          {
+            "id": "platform-extension",
+            "version": "3.7.3-backport.2"
+          },
+          {
+            "id": "utils-platform-defaults",
+            "version": "3.7.3-backport.1"
+          }
+        ]
+      }
+    },
+    "moduleMessages": {
+      "scene": {
+        "query-scene-bounds": {
+          "methods": [
+            "default.query-scene-bounds"
+          ]
+        },
+        "change-native-config": {
+          "methods": [
+            "default.change-native-config"
+          ]
+        },
+        "debug-view": {
+          "methods": [
+            "default.change-debug-view-option"
+          ]
+        },
+        "quit-editor": {
+          "methods": [
+            "default.quit-editor"
+          ]
+        },
+        "scene:preview-stop": {
+          "methods": [
+            "preview.onEditorPreviewStop"
+          ]
+        },
+        "open": {
+          "methods": [
+            "open"
+          ]
+        },
+        "full-screen": {
+          "methods": [
+            "default.fullScreen"
+          ]
+        },
+        "i18n:change": {
+          "methods": [
+            "default.i18n:change"
+          ]
+        },
+        "scene:ready": {
+          "methods": [
+            "default.scene:ready",
+            "onSceneReady",
+            "preview.onSceneReady"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.scene_ready",
+          "doc": "i18n:scene.contributions.messages.doc.scene_ready"
+        },
+        "scene:close": {
+          "methods": [
+            "default.scene:close",
+            "onSceneClosed"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.scene_close"
+        },
+        "asset-db:ready": {
+          "methods": [
+            "default.asset-db:ready"
+          ]
+        },
+        "asset-db:close": {
+          "methods": [
+            "default.asset-db:close"
+          ]
+        },
+        "selection:hover": {
+          "methods": [
+            "default.selection:hover"
+          ]
+        },
+        "selection:select": {
+          "methods": [
+            "default.selection:select"
+          ]
+        },
+        "selection:unselect": {
+          "methods": [
+            "default.selection:unselect"
+          ]
+        },
+        "asset-db:asset-add": {
+          "methods": [
+            "default.asset-db:asset-add"
+          ]
+        },
+        "asset-db:asset-change": {
+          "methods": [
+            "default.asset-db:asset-change"
+          ]
+        },
+        "asset-db:asset-delete": {
+          "methods": [
+            "default.asset-db:asset-delete"
+          ]
+        },
+        "programming:pack-build-end": {
+          "methods": [
+            "default.programming:pack-build-end"
+          ]
+        },
+        "project:change-design-resolution": {
+          "methods": [
+            "default.project:change-design-resolution"
+          ]
+        },
+        "project:change-custom-layer": {
+          "methods": [
+            "default.project:change-custom-layer"
+          ]
+        },
+        "project:change-sorting-layer": {
+          "methods": [
+            "default.project:change-sorting-layer"
+          ]
+        },
+        "project:update-physics-group": {
+          "methods": [
+            "default.project:update-physics-group"
+          ]
+        },
+        "project:change-high-quality": {
+          "methods": [
+            "default.project:change-high-quality"
+          ]
+        },
+        "engine:engine-modules-config-changed": {
+          "methods": [
+            "default.engine:engine-modules-config-changed"
+          ]
+        },
+        "open-devtools": {
+          "methods": [
+            "default.open-devtools"
+          ]
+        },
+        "open-preview-devtools": {
+          "methods": [
+            "default.open-preview-devtools"
+          ]
+        },
+        "graphical-tools": {
+          "methods": [
+            "default.graphicalTools"
+          ]
+        },
+        "open-scene": {
+          "public": true,
+          "methods": [
+            "default.open-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.open_scene",
+          "doc": "i18n:scene.contributions.messages.doc.open_scene"
+        },
+        "save-scene": {
+          "public": true,
+          "methods": [
+            "default.save-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.save_scene"
+        },
+        "save-as-scene": {
+          "public": true,
+          "methods": [
+            "default.save-as-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.save_as_scene"
+        },
+        "close-scene": {
+          "public": true,
+          "methods": [
+            "default.close-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.close_scene"
+        },
+        "set-property": {
+          "public": true,
+          "methods": [
+            "default.set-property"
+          ],
+          "description": "i18n:scene.contributions.messages.description.set_property",
+          "doc": "i18n:scene.contributions.messages.doc.set_property"
+        },
+        "reset-property": {
+          "public": true,
+          "methods": [
+            "default.reset-property"
+          ],
+          "description": "i18n:scene.contributions.messages.description.reset_property",
+          "doc": "i18n:scene.contributions.messages.doc.reset_property"
+        },
+        "preview-set-property": {
+          "methods": [
+            "default.preview-set-property"
+          ]
+        },
+        "cancel-preview-set-property": {
+          "methods": [
+            "default.cancel-preview-set-property"
+          ]
+        },
+        "update-property-from-null": {
+          "methods": [
+            "default.update-property-from-null"
+          ]
+        },
+        "set-node-and-children-layer": {
+          "methods": [
+            "default.set-node-and-children-layer"
+          ]
+        },
+        "move-array-element": {
+          "methods": [
+            "default.move-array-element"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.move_array_element",
+          "doc": "i18n:scene.contributions.messages.doc.move_array_element"
+        },
+        "remove-array-element": {
+          "methods": [
+            "default.remove-array-element"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.remove_array_element",
+          "doc": "i18n:scene.contributions.messages.doc.remove_array_element"
+        },
+        "select-all-nodes": {
+          "methods": [
+            "default.select-all-nodes"
+          ]
+        },
+        "copy-node": {
+          "methods": [
+            "default.copy-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.copy_node",
+          "doc": "i18n:scene.contributions.messages.doc.copy_node"
+        },
+        "duplicate-node": {
+          "methods": [
+            "default.duplicate-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.duplicate_node",
+          "doc": "i18n:scene.contributions.messages.doc.duplicate_node"
+        },
+        "paste-node": {
+          "methods": [
+            "default.paste-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.paste_node",
+          "doc": "i18n:scene.contributions.messages.doc.paste_node"
+        },
+        "cut-node": {
+          "methods": [
+            "default.cut-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.cut_node",
+          "doc": "i18n:scene.contributions.messages.doc.cut_node"
+        },
+        "set-parent": {
+          "methods": [
+            "default.set-parent"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_parent",
+          "doc": "i18n:scene.contributions.messages.doc.set_parent"
+        },
+        "create-node": {
+          "methods": [
+            "default.create-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.create_node",
+          "doc": "i18n:scene.contributions.messages.doc.create_node"
+        },
+        "reset-node": {
+          "methods": [
+            "default.reset-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.reset_node",
+          "doc": "i18n:scene.contributions.messages.doc.reset_node"
+        },
+        "reset-component": {
+          "methods": [
+            "default.reset-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.reset_component",
+          "doc": "i18n:scene.contributions.messages.doc.reset_component"
+        },
+        "restore-prefab": {
+          "methods": [
+            "default.restore-prefab"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.restore_prefab",
+          "doc": "i18n:scene.contributions.messages.doc.restore_prefab"
+        },
+        "remove-node": {
+          "methods": [
+            "default.remove-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.remove_node",
+          "doc": "i18n:scene.contributions.messages.doc.remove_node"
+        },
+        "create-component": {
+          "methods": [
+            "default.create-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.create_component",
+          "doc": "i18n:scene.contributions.messages.doc.create_component"
+        },
+        "remove-component": {
+          "methods": [
+            "default.remove-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.remove_component",
+          "doc": "i18n:scene.contributions.messages.doc.remove_component"
+        },
+        "execute-component-method": {
+          "methods": [
+            "default.execute-component-method"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.execute_component_method",
+          "doc": "i18n:scene.contributions.messages.doc.execute_component_method"
+        },
+        "execute-scene-script": {
+          "methods": [
+            "default.execute-scene-script"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.execute_scene_script",
+          "doc": "i18n:scene.contributions.messages.doc.execute_scene_script"
+        },
+        "snapshot": {
+          "methods": [
+            "default.snapshot"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.snapshot"
+        },
+        "snapshot-abort": {
+          "methods": [
+            "default.snapshot-abort"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.snapshot_abort"
+        },
+        "undo": {
+          "methods": [
+            "default.undo"
+          ]
+        },
+        "redo": {
+          "methods": [
+            "default.redo"
+          ]
+        },
+        "soft-reload": {
+          "methods": [
+            "default.soft-reload"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.soft_reload"
+        },
+        "preview-material": {
+          "methods": [
+            "default.preview-material"
+          ]
+        },
+        "light-probe-update-tetrahedron": {
+          "methods": [
+            "default.light-probe-update-tetrahedron"
+          ]
+        },
+        "change-gizmo-tool": {
+          "methods": [
+            "default.change-gizmo-tool"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_gizmo_tool",
+          "doc": "i18n:scene.contributions.messages.doc.change_gizmo_tool"
+        },
+        "query-gizmo-tool-name": {
+          "methods": [
+            "default.query-gizmo-tool-name"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_gizmo_tool_name",
+          "doc": "i18n:scene.contributions.messages.doc.query_gizmo_tool_name"
+        },
+        "change-gizmo-pivot": {
+          "methods": [
+            "default.change-gizmo-pivot"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_gizmo_pivot",
+          "doc": "i18n:scene.contributions.messages.doc.change_gizmo_pivot"
+        },
+        "query-gizmo-pivot": {
+          "methods": [
+            "default.query-gizmo-pivot"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_gizmo_pivot",
+          "doc": "i18n:scene.contributions.messages.doc.query_gizmo_pivot"
+        },
+        "change-gizmo-coordinate": {
+          "methods": [
+            "default.change-gizmo-coordinate"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_gizmo_coordinate",
+          "doc": "i18n:scene.contributions.messages.doc.change_gizmo_coordinate"
+        },
+        "query-gizmo-coordinate": {
+          "methods": [
+            "default.query-gizmo-coordinate"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_gizmo_coordinate",
+          "doc": "i18n:scene.contributions.messages.doc.query_gizmo_coordinate"
+        },
+        "change-is2D": {
+          "methods": [
+            "default.change-is2D"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_is2D",
+          "doc": "i18n:scene.contributions.messages.doc.change_is2D"
+        },
+        "query-is2D": {
+          "methods": [
+            "default.query-is2D"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is2D",
+          "doc": "i18n:scene.contributions.messages.doc.query_is2D"
+        },
+        "set-grid-visible": {
+          "methods": [
+            "default.set-grid-visible"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_grid_visible",
+          "doc": "i18n:scene.contributions.messages.doc.set_grid_visible"
+        },
+        "query-is-grid-visible": {
+          "methods": [
+            "default.query-is-grid-visible"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is_grid_visible",
+          "doc": "i18n:scene.contributions.messages.doc.query_is_grid_visible"
+        },
+        "set-icon-gizmo-3d": {
+          "methods": [
+            "default.set-icon-gizmo-3d"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_icon_gizmo_3d",
+          "doc": "i18n:scene.contributions.messages.doc.set_icon_gizmo_3d"
+        },
+        "query-is-icon-gizmo-3d": {
+          "methods": [
+            "default.query-is-icon-gizmo-3d"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is_icon_gizmo_3d",
+          "doc": "i18n:scene.contributions.messages.doc.query_is_icon_gizmo_3d"
+        },
+        "set-icon-gizmo-size": {
+          "methods": [
+            "default.set-icon-gizmo-size"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_icon_gizmo_size",
+          "doc": "i18n:scene.contributions.messages.doc.set_icon_gizmo_size"
+        },
+        "query-icon-gizmo-size": {
+          "methods": [
+            "default.query-icon-gizmo-size"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_icon_gizmo_size",
+          "doc": "i18n:scene.contributions.messages.doc.query_icon_gizmo_size"
+        },
+        "query-transform-snap-configs": {
+          "methods": [
+            "default.query-transform-snap-configs"
+          ]
+        },
+        "set-transform-snap-configs": {
+          "methods": [
+            "default.set-transform-snap-configs"
+          ]
+        },
+        "query-rect-snapping-configs": {
+          "methods": [
+            "default.query-rect-snapping-configs"
+          ]
+        },
+        "set-rect-snapping-configs": {
+          "methods": [
+            "default.set-rect-snapping-configs"
+          ]
+        },
+        "focus-camera": {
+          "methods": [
+            "default.focus-camera"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.focus_camera",
+          "doc": "i18n:scene.contributions.messages.doc.focus_camera"
+        },
+        "align-with-view": {
+          "methods": [
+            "default.align-with-view"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.align_with_view",
+          "doc": "i18n:scene.contributions.messages.doc.align_with_view"
+        },
+        "align-view-with-node": {
+          "methods": [
+            "default.align-view-with-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.align_view_with_node",
+          "doc": "i18n:scene.contributions.messages.doc.align_view_with_node"
+        },
+        "apply-material": {
+          "methods": [
+            "default.apply-material"
+          ]
+        },
+        "query-physics-material": {
+          "methods": [
+            "default.query-physics-material"
+          ]
+        },
+        "change-physics-material": {
+          "methods": [
+            "default.change-physics-material"
+          ]
+        },
+        "apply-physics-material": {
+          "methods": [
+            "default.apply-physics-material"
+          ]
+        },
+        "query-animation-graph-variant": {
+          "methods": [
+            "default.query-animation-graph-variant"
+          ]
+        },
+        "change-animation-graph-variant": {
+          "methods": [
+            "default.change-animation-graph-variant"
+          ]
+        },
+        "apply-animation-graph-variant": {
+          "methods": [
+            "default.apply-animation-graph-variant"
+          ]
+        },
+        "query-animation-mask": {
+          "methods": [
+            "default.query-animation-mask"
+          ]
+        },
+        "change-animation-mask": {
+          "methods": [
+            "default.change-animation-mask"
+          ]
+        },
+        "apply-animation-mask": {
+          "methods": [
+            "default.apply-animation-mask"
+          ]
+        },
+        "apply-render-texture": {
+          "methods": [
+            "default.apply-render-texture"
+          ]
+        },
+        "copy-camera-data-to-nodes": {
+          "methods": [
+            "default.copy-camera-data-to-nodes"
+          ]
+        },
+        "record-animation": {
+          "methods": [
+            "default.record-animation"
+          ]
+        },
+        "change-animation-root": {
+          "methods": [
+            "default.change-animation-root"
+          ]
+        },
+        "set-edit-time": {
+          "methods": [
+            "default.set-edit-time"
+          ]
+        },
+        "change-clip-state": {
+          "methods": [
+            "default.change-clip-state"
+          ]
+        },
+        "change-edit-clip": {
+          "methods": [
+            "default.change-edit-clip"
+          ]
+        },
+        "save-clip": {
+          "methods": [
+            "default.save-clip"
+          ]
+        },
+        "animation-operation": {
+          "methods": [
+            "default.animation-operation"
+          ]
+        },
+        "create-prefab": {
+          "methods": [
+            "default.create-prefab"
+          ]
+        },
+        "getdata-prefab": {
+          "methods": [
+            "default.getdata-prefab"
+          ]
+        },
+        "link-prefab": {
+          "methods": [
+            "default.link-prefab"
+          ]
+        },
+        "unlink-prefab": {
+          "methods": [
+            "default.unlink-prefab"
+          ]
+        },
+        "apply-prefab": {
+          "methods": [
+            "default.apply-prefab"
+          ]
+        },
+        "apply-removed-component": {
+          "methods": [
+            "default.apply-removed-component"
+          ]
+        },
+        "revert-removed-component": {
+          "methods": [
+            "default.revert-removed-component"
+          ]
+        },
+        "query-is-ready": {
+          "methods": [
+            "default.query-is-ready"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is_ready"
+        },
+        "query-node": {
+          "methods": [
+            "default.query-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_node",
+          "doc": "i18n:scene.contributions.messages.doc.query_node"
+        },
+        "query-component": {
+          "methods": [
+            "default.query-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_component",
+          "doc": "i18n:scene.contributions.messages.doc.query_component"
+        },
+        "query-node-tree": {
+          "methods": [
+            "default.query-node-tree"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_node_tree",
+          "doc": "i18n:scene.contributions.messages.doc.query_node_tree"
+        },
+        "query-nodes-by-asset-uuid": {
+          "methods": [
+            "default.query-nodes-by-asset-uuid"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_node_by_asset_uuid",
+          "doc": "i18n:scene.contributions.messages.doc.query_node_by_asset_uuid"
+        },
+        "query-nodes-miss-assets": {
+          "methods": [
+            "default.query-nodes-miss-assets"
+          ],
+          "public": false
+        },
+        "query-component-function-of-node": {
+          "methods": [
+            "default.query-component-function-of-node"
+          ]
+        },
+        "query-all-effects": {
+          "methods": [
+            "default.query-all-effects"
+          ]
+        },
+        "query-material": {
+          "methods": [
+            "default.query-material"
+          ]
+        },
+        "query-effect": {
+          "methods": [
+            "default.query-effect"
+          ]
+        },
+        "query-serialized-material": {
+          "methods": [
+            "default.query-serialized-material"
+          ]
+        },
+        "query-render-pipeline": {
+          "methods": [
+            "default.query-render-pipeline"
+          ]
+        },
+        "change-render-pipeline": {
+          "methods": [
+            "default.change-render-pipeline"
+          ]
+        },
+        "apply-render-pipeline": {
+          "methods": [
+            "default.apply-render-pipeline"
+          ]
+        },
+        "query-creatable-asset-types": {
+          "methods": [
+            "default.query-creatable-asset-types"
+          ]
+        },
+        "query-scene-json": {
+          "methods": [
+            "default.query-scene-json"
+          ]
+        },
+        "query-current-scene": {
+          "methods": [
+            "default.query-current-scene"
+          ]
+        },
+        "query-dirty": {
+          "methods": [
+            "default.query-dirty"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_dirty"
+        },
+        "query-classes": {
+          "methods": [
+            "default.query-classes"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_classes",
+          "doc": "i18n:scene.contributions.messages.doc.query_classes"
+        },
+        "query-components": {
+          "methods": [
+            "default.query-components"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_components",
+          "doc": "i18n:scene.contributions.messages.doc.query_components"
+        },
+        "query-component-has-script": {
+          "methods": [
+            "default.query-component-has-script"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_component_has_script",
+          "doc": "i18n:scene.contributions.messages.doc.query_component_has_script"
+        },
+        "query-script-name": {
+          "methods": [
+            "default.query-script-name"
+          ]
+        },
+        "query-script-cid": {
+          "methods": [
+            "default.query-script-cid"
+          ]
+        },
+        "query-layer-builtin": {
+          "methods": [
+            "default.query-layer-builtin"
+          ]
+        },
+        "query-sorting-layer-builtin": {
+          "methods": [
+            "default.query-sorting-layer-builtin"
+          ]
+        },
+        "query-scene-mode": {
+          "methods": [
+            "default.query-scene-mode"
+          ]
+        },
+        "query-animation-state": {
+          "methods": [
+            "default.query-animation-state"
+          ]
+        },
+        "query-current-animation-info": {
+          "methods": [
+            "default.query-current-animation-info"
+          ]
+        },
+        "query-animation-root": {
+          "methods": [
+            "default.query-animation-root"
+          ]
+        },
+        "query-animation-root-info": {
+          "methods": [
+            "default.query-animation-root-info"
+          ]
+        },
+        "query-animation-edit-info": {
+          "methods": [
+            "default.query-animation-edit-info"
+          ]
+        },
+        "query-animation-clip": {
+          "methods": [
+            "default.query-animation-clip"
+          ]
+        },
+        "query-animation-properties": {
+          "methods": [
+            "default.query-animation-properties"
+          ]
+        },
+        "query-animation-clips-info": {
+          "methods": [
+            "default.query-animation-clips-info"
+          ]
+        },
+        "query-animation-clips-time": {
+          "methods": [
+            "default.query-animation-clips-time"
+          ]
+        },
+        "query-property-value-at-frame": {
+          "methods": [
+            "default.query-property-value-at-frame"
+          ]
+        },
+        "generate-available-name": {
+          "methods": [
+            "default.generate-available-name"
+          ]
+        },
+        "editor-preview-set-play": {
+          "methods": [
+            "default.editor-preview-set-play"
+          ]
+        },
+        "editor-refresh-gizmo-config": {
+          "methods": [
+            "default.editor-refresh-gizmo-config"
+          ]
+        },
+        "editor-preview-call-method": {
+          "methods": [
+            "default.editor-preview-call-method"
+          ]
+        },
+        "editor-preview-change-style-web": {
+          "methods": [
+            "default.editor-preview-change-style"
+          ]
+        },
+        "editor-preview-change-style-native": {
+          "methods": [
+            "preview.editorPreviewChangeStyle"
+          ]
+        },
+        "editor-preview-change-config": {
+          "methods": [
+            "default.editor-preview-change-config",
+            "preview.editorPreviewChangeConfig"
+          ]
+        },
+        "scene:show-loading": {
+          "methods": [
+            "default.scene:show-loading"
+          ]
+        },
+        "scene:hide-loading": {
+          "methods": [
+            "default.scene:hide-loading"
+          ]
+        },
+        "execute-model-preview-animation-operation": {
+          "methods": [
+            "default.execute-model-preview-animation-operation"
+          ]
+        },
+        "regenerate-polygon-2d-points": {
+          "methods": [
+            "default.regenerate-polygon-2d-points"
+          ]
+        },
+        "export-particle-plist": {
+          "methods": [
+            "default.export-particle-plist"
+          ]
+        },
+        "change-node-lock": {
+          "methods": [
+            "default.change-node-lock"
+          ]
+        },
+        "unit-test": {
+          "methods": [
+            "default.unit-test"
+          ]
+        },
+        "change-target-resolution": {
+          "methods": [
+            "default.change-target-resolution"
+          ]
+        },
+        "query-latest-cache": {
+          "methods": [
+            "queryLatestCache"
+          ]
+        },
+        "clear-scene-cache": {
+          "methods": [
+            "clearSceneCache"
+          ]
+        },
+        "save-scene-cache-to-file": {
+          "methods": [
+            "saveSceneCacheToFile"
+          ]
+        },
+        "update-cache-config": {
+          "methods": [
+            "updateCacheConfig"
+          ]
+        },
+        "query-enum-list-with-path": {
+          "methods": [
+            "default.query-enum-list-with-path"
+          ]
+        },
+        "query-wrap-mode-enum-list": {
+          "methods": [
+            "default.query-wrap-mode-enum-list"
+          ]
+        },
+        "set-scene-light-on": {
+          "methods": [
+            "default.set-scene-light-on"
+          ]
+        },
+        "query-scene-light-on": {
+          "methods": [
+            "default.query-scene-light-on"
+          ]
+        },
+        "native-ipc": {
+          "methods": [
+            "default.native-ipc"
+          ]
+        },
+        "native-scene": {
+          "methods": [
+            "default.native-scene"
+          ]
+        },
+        "is-native": {
+          "methods": [
+            "default.query-is-native"
+          ]
+        },
+        "query-preview-data": {
+          "methods": [
+            "default.query-preview-data"
+          ]
+        },
+        "call-preview-function": {
+          "methods": [
+            "default.call-preview-function"
+          ]
+        },
+        "query-thumbnail": {
+          "methods": [
+            "default.query-thumbnail"
+          ]
+        },
+        "query-preview-game-view-data": {
+          "methods": [
+            "preview.getGameViewData"
+          ]
+        },
+        "set-preview-window-visible": {
+          "methods": [
+            "preview.setPreviewWindowVisible",
+            "setPreviewWindowVisible"
+          ]
+        },
+        "create-preview-window": {
+          "methods": [
+            "preview.createPreviewWindow"
+          ]
+        },
+        "resize-native-window": {
+          "methods": [
+            "resizeNativeWindow"
+          ]
+        },
+        "create-native-window": {
+          "methods": [
+            "createNativeWindow"
+          ]
+        },
+        "preview-panel-ready": {
+          "methods": [
+            "onPreviewPanelReady"
+          ]
+        },
+        "preview-panel-stop": {
+          "methods": [
+            "onPreviewPanelStop"
+          ]
+        },
+        "toggle-light-probe-edit-mode": {
+          "methods": [
+            "default.toggle-light-probe-edit-mode"
+          ]
+        },
+        "query-light-probe-edit-mode": {
+          "methods": [
+            "default.query-light-probe-edit-mode"
+          ]
+        },
+        "toggle-light-probe-bounding-box-edit-mode": {
+          "methods": [
+            "default.toggle-light-probe-bounding-box-edit-mode"
+          ]
+        },
+        "query-light-probe-bounding-box-edit-mode": {
+          "methods": [
+            "default.query-light-probe-bounding-box-edit-mode"
+          ]
+        },
+        "light-probe-info-changed": {
+          "methods": [
+            "default.light-probe-info-changed"
+          ]
+        },
+        "scene:light-probe-edit-mode-changed": {
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.light_probe_edit_mode_changed",
+          "doc": "i18n:scene.contributions.messages.doc.light_probe_edit_mode_changed"
+        },
+        "scene:light-probe-bounding-box-edit-mode-changed": {
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.light_probe_bounding_box_edit_mode_changed",
+          "doc": "i18n:scene.contributions.messages.doc.light_probe_bounding_box_edit_mode_changed"
+        },
+        "lod-apply-current-camera-size": {
+          "methods": [
+            "default.lod-apply-current-camera-size"
+          ]
+        },
+        "lod-insert": {
+          "methods": [
+            "default.lod-insert"
+          ]
+        },
+        "lod-erase": {
+          "methods": [
+            "default.lod-erase"
+          ]
+        }
+      },
+      "asset-db": {
+        "asset-db:ready": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_ready",
+          "doc": "i18n:asset-db.contributions.messages.doc.asset_db_ready",
+          "methods": [
+            "ready"
+          ]
+        },
+        "asset-db:close": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_close",
+          "methods": [
+            "close"
+          ]
+        },
+        "asset-db:asset-add": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_asset_add"
+        },
+        "asset-db:asset-change": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_asset_change"
+        },
+        "asset-db:asset-delete": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_asset_delete"
+        },
+        "project:change-high-quality": {
+          "methods": [
+            "projectChangeHighQuality"
+          ]
+        },
+        "query-ready": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_ready",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_ready",
+          "methods": [
+            "queryReady"
+          ]
+        },
+        "create-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.create_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.create_asset",
+          "methods": [
+            "createAsset"
+          ]
+        },
+        "import-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.import_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.import_asset",
+          "methods": [
+            "importAsset"
+          ]
+        },
+        "copy-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.copy_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.copy_asset",
+          "methods": [
+            "copyAsset"
+          ]
+        },
+        "move-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.move_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.move_asset",
+          "methods": [
+            "moveAsset"
+          ]
+        },
+        "delete-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.delete_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.delete_asset",
+          "methods": [
+            "deleteAsset"
+          ]
+        },
+        "open-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.open_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.open_asset",
+          "methods": [
+            "openAsset"
+          ]
+        },
+        "save-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.save_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.save_asset",
+          "methods": [
+            "saveAsset"
+          ]
+        },
+        "save-asset-meta": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.save_asset_meta",
+          "doc": "i18n:asset-db.contributions.messages.doc.save_asset_meta",
+          "methods": [
+            "saveAssetMeta"
+          ]
+        },
+        "reimport-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.reimport_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.reimport_asset",
+          "methods": [
+            "reimportAsset"
+          ]
+        },
+        "refresh-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.refresh_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.refresh_asset",
+          "methods": [
+            "refreshAsset"
+          ]
+        },
+        "refresh-all-effect": {
+          "methods": [
+            "refreshAllEffect"
+          ]
+        },
+        "query-path": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_path",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_path",
+          "methods": [
+            "queryPath"
+          ]
+        },
+        "query-url": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_url",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_url",
+          "methods": [
+            "queryUrl"
+          ]
+        },
+        "query-uuid": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_uuid",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_uuid",
+          "methods": [
+            "queryUUID"
+          ]
+        },
+        "query-assets": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_assets",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_assets",
+          "methods": [
+            "queryAssets"
+          ]
+        },
+        "query-asset-info": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_asset_info",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_asset_info",
+          "methods": [
+            "queryAssetInfo"
+          ]
+        },
+        "query-asset-meta": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_asset_meta",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_asset_meta",
+          "methods": [
+            "queryAssetMeta"
+          ]
+        },
+        "query-asset-dependinces": {
+          "methods": [
+            "queryAssetDependencies"
+          ]
+        },
+        "query-asset-used": {
+          "methods": [
+            "queryAssetUsed"
+          ]
+        },
+        "query-asset-data": {
+          "methods": [
+            "queryAssetData"
+          ]
+        },
+        "generate-available-url": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.generate_available_url",
+          "doc": "i18n:asset-db.contributions.messages.doc.generate_available_url",
+          "methods": [
+            "generateAvailableUrl"
+          ]
+        },
+        "query-asset-mtime": {
+          "methods": [
+            "queryAssetMtime"
+          ]
+        },
+        "refresh": {
+          "methods": [
+            "refresh"
+          ]
+        },
+        "is-busy": {
+          "methods": [
+            "isBusy"
+          ]
+        },
+        "pause": {
+          "methods": [
+            "pause"
+          ]
+        },
+        "resume": {
+          "methods": [
+            "resume"
+          ]
+        },
+        "open-devtools": {
+          "methods": [
+            "open-devtools"
+          ]
+        },
+        "query-db-info": {
+          "methods": [
+            "query-db-info"
+          ]
+        },
+        "query-db-list": {
+          "methods": [
+            "query-db-list"
+          ]
+        },
+        "create-asset-dialog": {
+          "methods": [
+            "create-asset-dialog"
+          ]
+        },
+        "init-asset": {
+          "methods": [
+            "init-asset"
+          ]
+        },
+        "query-all-importer": {
+          "methods": [
+            "query-all-importer"
+          ]
+        },
+        "query-all-asset-types": {
+          "methods": [
+            "query-all-asset-types"
+          ]
+        },
+        "execute-script": {
+          "methods": [
+            "executeScript"
+          ]
+        },
+        "notice-reload-editor": {
+          "methods": [
+            "noticeReloadEditor"
+          ]
+        },
+        "update-config": {
+          "methods": [
+            "updateConfig"
+          ]
+        },
+        "refresh-all-database": {
+          "methods": [
+            "refreshAllDatabase"
+          ]
+        },
+        "refresh-default-user-data-config": {
+          "methods": [
+            "refreshDefaultUserDataConfig"
+          ]
+        }
+      },
+      "builder": {
+        "open": {
+          "methods": [
+            "open"
+          ],
+          "public": true,
+          "description": "builder.messages.open"
+        },
+        "query-worker-ready": {
+          "methods": [
+            "query-worker-ready"
+          ],
+          "public": true,
+          "description": "builder.messages.query_worker_ready"
+        },
+        "excute-build-stage": {
+          "methods": [
+            "excute-build-stage"
+          ]
+        },
+        "open-platform-debug-tools": {
+          "methods": [
+            "open-platform-debug-tools"
+          ]
+        },
+        "create-build-plugin-template": {
+          "methods": [
+            "createBuildPluginTemplate"
+          ]
+        },
+        "create-application-template": {
+          "methods": [
+            "createApplicationTemplate"
+          ]
+        },
+        "open-devtools": {
+          "methods": [
+            "openWorkerDevTool"
+          ]
+        },
+        "generate-preview-setting": {
+          "methods": [
+            "generate-preview-setting"
+          ]
+        },
+        "query-tasks-info": {
+          "methods": [
+            "query-tasks-info"
+          ]
+        },
+        "add-task": {
+          "methods": [
+            "add-task"
+          ]
+        },
+        "recompile-task": {
+          "methods": [
+            "recompile-task"
+          ]
+        },
+        "remove-task": {
+          "methods": [
+            "remove-task"
+          ]
+        },
+        "break-task": {
+          "methods": [
+            "break-task"
+          ]
+        },
+        "query-task": {
+          "methods": [
+            "query-task"
+          ]
+        },
+        "update-task": {
+          "methods": [
+            "update-task"
+          ]
+        },
+        "preview-pac": {
+          "methods": [
+            "preview-pac"
+          ]
+        },
+        "query-atlas-files": {
+          "methods": [
+            "query-atlas-files"
+          ]
+        },
+        "command-build": {
+          "methods": [
+            "command-build"
+          ]
+        },
+        "asset-db:ready": {
+          "methods": [
+            "asset-db:ready"
+          ]
+        },
+        "asset-db:close": {
+          "methods": [
+            "asset-db:close"
+          ]
+        },
+        "request-to-build-worker": {
+          "methods": [
+            "request-to-build-worker"
+          ]
+        },
+        "preferences-changed": {
+          "methods": [
+            "preferences-changed"
+          ]
+        },
+        "query-compress-config": {
+          "methods": [
+            "query-compress-config"
+          ]
+        },
+        "query-platform-config": {
+          "methods": [
+            "query-platform-config"
+          ]
+        },
+        "query-bundle-config": {
+          "methods": [
+            "query-bundle-config"
+          ]
+        },
+        "migrate-options": {
+          "methods": [
+            "migrateOptions"
+          ]
+        },
+        "change-debug-mode": {
+          "methods": [
+            "changeDebugMode"
+          ]
+        },
+        "console:update-log-level": {
+          "methods": [
+            "console:update-log-level"
+          ]
+        },
+        "register-package": {
+          "methods": [
+            "registerPackage"
+          ]
+        },
+        "unregister-package": {
+          "methods": [
+            "unRegisterPackage"
+          ]
+        },
+        "programming:pack-build-end": {
+          "methods": [
+            "programming:pack-build-end"
+          ]
+        },
+        "open-docs": {
+          "methods": [
+            "openDocs"
+          ]
+        },
+        "check-and-complete-options": {
+          "methods": [
+            "check-and-complete-options"
+          ]
+        },
+        "open-panel-devtools": {
+          "methods": [
+            "openPanelDevTools"
+          ]
+        },
+        "open-worker-devtools": {
+          "methods": [
+            "openWorkerDevTool"
+          ]
+        },
+        "clear-all-cache": {
+          "methods": [
+            "clearAllCache"
+          ]
+        },
+        "clear-assets-cache": {
+          "methods": [
+            "clearProjectAssetsCache"
+          ]
+        },
+        "clear-engine-cache": {
+          "methods": [
+            "clearEngineCache"
+          ]
+        }
+      },
+      "preview": {
+        "open": {
+          "methods": [
+            "open"
+          ]
+        },
+        "generate-settings": {
+          "methods": [
+            "generateSettings"
+          ]
+        },
+        "query-preview-url": {
+          "methods": [
+            "queryPreviewUrl"
+          ]
+        },
+        "scene:save": {
+          "methods": [
+            "autoReload"
+          ]
+        },
+        "programming:compiled": {
+          "methods": [
+            "autoReload"
+          ]
+        },
+        "open-terminal": {
+          "methods": [
+            "open-terminal"
+          ]
+        },
+        "restart-simulator": {
+          "methods": [
+            "restart-simulator"
+          ]
+        },
+        "reload-terminal": {
+          "methods": [
+            "reload-terminal"
+          ]
+        },
+        "get-preview-ip": {
+          "methods": [
+            "get-preview-ip"
+          ]
+        },
+        "set-preview-ip": {
+          "methods": [
+            "set-preview-ip"
+          ]
+        },
+        "create-template": {
+          "methods": [
+            "create-template"
+          ]
+        },
+        "change-platform": {
+          "methods": [
+            "change-platform"
+          ]
+        },
+        "programming:pack-build-end": {
+          "methods": [
+            "on-pack-build-end"
+          ]
+        },
+        "build-native-engine": {
+          "methods": [
+            "buildNativeEngine"
+          ]
+        },
+        "preview-scene-in-browser": {
+          "methods": [
+            "previewSceneInBrowser"
+          ]
+        },
+        "write-setting-file": {
+          "methods": [
+            "writeSettingFile"
+          ]
+        }
+      },
+      "project": {
+        "open-settings": {
+          "public": true,
+          "description": "i18n:project.contributions.messages.description.open_settings",
+          "doc": "i18n:project.contributions.messages.doc.open_settings",
+          "methods": [
+            "openSettings"
+          ]
+        },
+        "open-joint": {
+          "methods": [
+            "openJoint"
+          ]
+        },
+        "change-settings-tab": {
+          "methods": [
+            "settings.changeTab"
+          ]
+        },
+        "refresh-settings-tab": {
+          "methods": [
+            "settings.refreshTab"
+          ]
+        },
+        "change-script-config": {
+          "methods": [
+            "changeScriptConfig"
+          ]
+        },
+        "change-design-resolution": {
+          "methods": [
+            "changeDesignResolution"
+          ]
+        },
+        "query-design-resolution": {
+          "methods": [
+            "queryDesignResolution"
+          ]
+        },
+        "change-custom-layer": {
+          "methods": [
+            "changeCustomLayer"
+          ]
+        },
+        "change-sorting-layer": {
+          "methods": [
+            "changeSortingLayer"
+          ]
+        },
+        "change-hight-quality": {
+          "methods": [
+            "changeHighQuality"
+          ]
+        },
+        "calc-joint-layout": {
+          "methods": [
+            "calcJointLayouts"
+          ]
+        },
+        "query-project-data": {
+          "methods": [
+            "queryProjectData"
+          ]
+        },
+        "query-config": {
+          "public": true,
+          "description": "i18n:project.contributions.messages.description.queryConfig",
+          "doc": "i18n:project.contributions.messages.doc.queryConfig",
+          "methods": [
+            "queryConfig"
+          ]
+        },
+        "import-config": {
+          "methods": [
+            "importConfig"
+          ]
+        },
+        "export-config": {
+          "methods": [
+            "exportConfig"
+          ]
+        }
+      }
+    },
+    "sourceMembers": [
+      {
+        "path": "builtin/scene/package.json",
+        "sha256": "46bd2886bc792d46c9454001366358ea0e66483d42e8800c43593b8ce1d0e6e3"
+      },
+      {
+        "path": "builtin/asset-db/package.json",
+        "sha256": "4f9177760dde454574930791471af97dbb97130321a1e67b4b8758499f7b0a76"
+      },
+      {
+        "path": "builtin/builder/package.json",
+        "sha256": "abe682a33ae0e338345fe0c8b08b6766718a5d2ee6771526e9e8d2359a50f856"
+      },
+      {
+        "path": "builtin/preview/package.json",
+        "sha256": "df9cb2e21709bdb915a3db78655b767fa2339d380d34b7213ccc9a39f4a31793"
+      },
+      {
+        "path": "builtin/project/package.json",
+        "sha256": "9426ff24851cbc1a876e95efc946f7e26e2ec018699ec2a8c52b4ed359a0aafd"
+      },
+      {
+        "path": "builtin/scene/@types/message.d.ts",
+        "sha256": "98ca97aa4cda331e7fadc886dc1b6ee7b68db6fc9bc4c67698aea2b6f63f27ca"
+      },
+      {
+        "path": "builtin/scene/@types/public.d.ts",
+        "sha256": "70e6028d7d5c21631329e03f71bebf3a86dbeba868db195a3a924c460f892c4e"
+      },
+      {
+        "path": "builtin/asset-db/@types/message.d.ts",
+        "sha256": "1072f938a629cfeff25ced92ba744e1c8265cdc3d3ca41cbdd45e506324b0d5f"
+      },
+      {
+        "path": "node_modules/@editor/creator/@types/editor.d.ts",
+        "sha256": "5472b8916353bdd4fcdda281f3e7e7722d476d0d486d52cf95dca21d262c7056"
+      }
+    ]
+  },
+  "after": {
+    "path": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.7\\resources\\app.asar",
+    "size": 764495802,
+    "sha256": "54b98ccb355997b6a4b059a14785295ed845812497839f459850958ee847d994",
+    "version": "3.8.7",
+    "memberCount": 73429,
+    "repack": {
+      "path": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.7\\resources\\repack.json",
+      "sha256": "c10b200d9ef12b27dd9d625a09794bb584d4d72b3a55fee6c34fcc41b0080394",
+      "metadata": {
+        "schemaVersion": 1,
+        "repackedAt": "2026-10-01T00:04:32.260+08:00",
+        "creator": {
+          "version": "3.8.7",
+          "platform": "win32",
+          "arch": "x64",
+          "channel": "release"
+        },
+        "modules": [
+          {
+            "id": "builder-ui",
+            "version": "3.8.7-backport.1"
+          },
+          {
+            "id": "engine",
+            "version": "3.8.7-backport.2"
+          },
+          {
+            "id": "global-builtin-hot-update",
+            "version": "3.8.7-backport.2"
+          },
+          {
+            "id": "login",
+            "version": "3.8.7-backport.1"
+          },
+          {
+            "id": "openpaas-builder-support",
+            "version": "3.8.7-backport.1"
+          },
+          {
+            "id": "platform-extension",
+            "version": "3.8.7-backport.2"
+          },
+          {
+            "id": "utils-platform-defaults",
+            "version": "3.8.7-backport.1"
+          }
+        ]
+      }
+    },
+    "moduleMessages": {
+      "scene": {
+        "query-scene-bounds": {
+          "methods": [
+            "default.query-scene-bounds"
+          ]
+        },
+        "change-native-config": {
+          "methods": [
+            "default.change-native-config"
+          ]
+        },
+        "debug-view": {
+          "methods": [
+            "default.change-debug-view-option"
+          ]
+        },
+        "quit-editor": {
+          "methods": [
+            "default.quit-editor"
+          ]
+        },
+        "scene:preview-stop": {
+          "methods": [
+            "preview.onEditorPreviewStop"
+          ]
+        },
+        "open": {
+          "methods": [
+            "open"
+          ]
+        },
+        "full-screen": {
+          "methods": [
+            "default.fullScreen"
+          ]
+        },
+        "i18n:change": {
+          "methods": [
+            "default.i18n:change"
+          ]
+        },
+        "scene:ready": {
+          "methods": [
+            "onSceneReady",
+            "default.scene:ready"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.scene_ready",
+          "doc": "i18n:scene.contributions.messages.doc.scene_ready",
+          "example": "i18n:scene.contributions.messages.example.scene_ready"
+        },
+        "scene:close": {
+          "methods": [
+            "default.scene:close",
+            "onSceneClosed"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.scene_close",
+          "example": "i18n:scene.contributions.messages.example.scene_close"
+        },
+        "asset-db:ready": {
+          "methods": [
+            "default.asset-db:ready"
+          ]
+        },
+        "asset-db:close": {
+          "methods": [
+            "default.asset-db:close"
+          ]
+        },
+        "selection:hover": {
+          "methods": [
+            "default.selection:hover"
+          ]
+        },
+        "selection:select": {
+          "methods": [
+            "default.selection:select"
+          ]
+        },
+        "selection:unselect": {
+          "methods": [
+            "default.selection:unselect"
+          ]
+        },
+        "asset-db:asset-add": {
+          "methods": [
+            "default.asset-db:asset-add"
+          ]
+        },
+        "asset-db:asset-change": {
+          "methods": [
+            "default.asset-db:asset-change"
+          ]
+        },
+        "asset-db:asset-delete": {
+          "methods": [
+            "default.asset-db:asset-delete"
+          ]
+        },
+        "programming:pack-build-end": {
+          "methods": [
+            "default.programming:pack-build-end"
+          ]
+        },
+        "project:change-design-resolution": {
+          "methods": [
+            "default.project:change-design-resolution"
+          ]
+        },
+        "project:change-custom-layer": {
+          "methods": [
+            "default.project:change-custom-layer"
+          ]
+        },
+        "project:change-sorting-layer": {
+          "methods": [
+            "default.project:change-sorting-layer"
+          ]
+        },
+        "project:update-physics-group": {
+          "methods": [
+            "default.project:update-physics-group"
+          ]
+        },
+        "project:change-high-quality": {
+          "methods": [
+            "default.project:change-high-quality"
+          ]
+        },
+        "engine:engine-modules-global-config-changed": {
+          "methods": [
+            "default.engine:engine-modules-global-config-changed"
+          ]
+        },
+        "open-devtools": {
+          "methods": [
+            "default.open-devtools"
+          ]
+        },
+        "open-preview-devtools": {
+          "methods": [
+            "default.open-preview-devtools"
+          ]
+        },
+        "graphical-tools": {
+          "methods": [
+            "default.graphicalTools"
+          ]
+        },
+        "open-scene": {
+          "public": true,
+          "methods": [
+            "default.open-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.open_scene",
+          "doc": "i18n:scene.contributions.messages.doc.open_scene",
+          "example": "i18n:scene.contributions.messages.example.open_scene"
+        },
+        "load-empty-scene": {
+          "public": false,
+          "methods": [
+            "default.load-empty-scene"
+          ]
+        },
+        "save-scene": {
+          "public": true,
+          "methods": [
+            "default.save-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.save_scene",
+          "example": "i18n:scene.contributions.messages.example.save_scene"
+        },
+        "save-as-scene": {
+          "public": true,
+          "methods": [
+            "default.save-as-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.save_as_scene",
+          "example": "i18n:scene.contributions.messages.example.save_as_scene"
+        },
+        "close-scene": {
+          "public": true,
+          "methods": [
+            "default.close-scene"
+          ],
+          "description": "i18n:scene.contributions.messages.description.close_scene",
+          "example": "i18n:scene.contributions.messages.example.close_scene"
+        },
+        "set-property": {
+          "public": true,
+          "methods": [
+            "default.set-property"
+          ],
+          "description": "i18n:scene.contributions.messages.description.set_property",
+          "doc": "i18n:scene.contributions.messages.doc.set_property",
+          "example": "i18n:scene.contributions.messages.example.set_property"
+        },
+        "reset-property": {
+          "public": true,
+          "methods": [
+            "default.reset-property"
+          ],
+          "description": "i18n:scene.contributions.messages.description.reset_property",
+          "doc": "i18n:scene.contributions.messages.doc.reset_property",
+          "example": "i18n:scene.contributions.messages.example.reset_property"
+        },
+        "preview-set-property": {
+          "methods": [
+            "default.preview-set-property"
+          ]
+        },
+        "cancel-preview-set-property": {
+          "methods": [
+            "default.cancel-preview-set-property"
+          ]
+        },
+        "update-property-from-null": {
+          "methods": [
+            "default.update-property-from-null"
+          ]
+        },
+        "set-node-and-children-layer": {
+          "methods": [
+            "default.set-node-and-children-layer"
+          ]
+        },
+        "move-array-element": {
+          "methods": [
+            "default.move-array-element"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.move_array_element",
+          "doc": "i18n:scene.contributions.messages.doc.move_array_element",
+          "example": "i18n:scene.contributions.messages.example.move_array_element"
+        },
+        "remove-array-element": {
+          "methods": [
+            "default.remove-array-element"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.remove_array_element",
+          "doc": "i18n:scene.contributions.messages.doc.remove_array_element",
+          "example": "i18n:scene.contributions.messages.example.remove_array_element"
+        },
+        "select-all-nodes": {
+          "methods": [
+            "default.select-all-nodes"
+          ]
+        },
+        "copy-node": {
+          "methods": [
+            "default.copy-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.copy_node",
+          "doc": "i18n:scene.contributions.messages.doc.copy_node",
+          "example": "i18n:scene.contributions.messages.example.copy_node"
+        },
+        "duplicate-node": {
+          "methods": [
+            "default.duplicate-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.duplicate_node",
+          "doc": "i18n:scene.contributions.messages.doc.duplicate_node",
+          "example": "i18n:scene.contributions.messages.example.duplicate_node"
+        },
+        "paste-node": {
+          "methods": [
+            "default.paste-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.paste_node",
+          "doc": "i18n:scene.contributions.messages.doc.paste_node",
+          "example": "i18n:scene.contributions.messages.example.paste_node"
+        },
+        "cut-node": {
+          "methods": [
+            "default.cut-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.cut_node",
+          "doc": "i18n:scene.contributions.messages.doc.cut_node",
+          "example": "i18n:scene.contributions.messages.example.cut_node"
+        },
+        "set-parent": {
+          "methods": [
+            "default.set-parent"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_parent",
+          "doc": "i18n:scene.contributions.messages.doc.set_parent",
+          "example": "i18n:scene.contributions.messages.example.set_parent"
+        },
+        "create-node": {
+          "methods": [
+            "default.create-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.create_node",
+          "doc": "i18n:scene.contributions.messages.doc.create_node",
+          "example": "i18n:scene.contributions.messages.example.create_node"
+        },
+        "reset-node": {
+          "methods": [
+            "default.reset-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.reset_node",
+          "doc": "i18n:scene.contributions.messages.doc.reset_node",
+          "example": "i18n:scene.contributions.messages.example.reset_node"
+        },
+        "reset-component": {
+          "methods": [
+            "default.reset-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.reset_component",
+          "doc": "i18n:scene.contributions.messages.doc.reset_component",
+          "example": "i18n:scene.contributions.messages.example.reset_component"
+        },
+        "restore-prefab": {
+          "methods": [
+            "default.restore-prefab"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.restore_prefab",
+          "doc": "i18n:scene.contributions.messages.doc.restore_prefab",
+          "example": "i18n:scene.contributions.messages.example.restore_prefab"
+        },
+        "remove-node": {
+          "methods": [
+            "default.remove-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.remove_node",
+          "doc": "i18n:scene.contributions.messages.doc.remove_node",
+          "example": "i18n:scene.contributions.messages.example.remove_node"
+        },
+        "create-component": {
+          "methods": [
+            "default.create-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.create_component",
+          "doc": "i18n:scene.contributions.messages.doc.create_component",
+          "example": "i18n:scene.contributions.messages.example.create_component"
+        },
+        "remove-component": {
+          "methods": [
+            "default.remove-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.remove_component",
+          "doc": "i18n:scene.contributions.messages.doc.remove_component",
+          "example": "i18n:scene.contributions.messages.example.remove_component"
+        },
+        "execute-component-method": {
+          "methods": [
+            "default.execute-component-method"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.execute_component_method",
+          "doc": "i18n:scene.contributions.messages.doc.execute_component_method",
+          "example": "i18n:scene.contributions.messages.example.execute_component_method"
+        },
+        "execute-scene-script": {
+          "methods": [
+            "default.execute-scene-script"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.execute_scene_script",
+          "doc": "i18n:scene.contributions.messages.doc.execute_scene_script",
+          "example": "i18n:scene.contributions.messages.example.execute_scene_script"
+        },
+        "snapshot": {
+          "methods": [
+            "default.snapshot"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.snapshot",
+          "example": "i18n:scene.contributions.messages.example.snapshot"
+        },
+        "snapshot-abort": {
+          "methods": [
+            "default.snapshot-abort"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.snapshot_abort",
+          "example": "i18n:scene.contributions.messages.example.snapshot_abort"
+        },
+        "begin-recording": {
+          "methods": [
+            "default.begin-recording"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.begin_recording",
+          "example": "i18n:scene.contributions.messages.example.begin_recording"
+        },
+        "end-recording": {
+          "methods": [
+            "default.end-recording"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.end_recording",
+          "example": "i18n:scene.contributions.messages.example.end_recording"
+        },
+        "cancel-recording": {
+          "methods": [
+            "default.cancel-recording"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.cancel_recording",
+          "example": "i18n:scene.contributions.messages.example.cancel_recording"
+        },
+        "undo": {
+          "methods": [
+            "default.undo"
+          ]
+        },
+        "redo": {
+          "methods": [
+            "default.redo"
+          ]
+        },
+        "soft-reload": {
+          "methods": [
+            "default.soft-reload"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.soft_reload",
+          "example": "i18n:scene.contributions.messages.example.soft_reload"
+        },
+        "preview-material": {
+          "methods": [
+            "default.preview-material"
+          ]
+        },
+        "light-probe-update-tetrahedron": {
+          "methods": [
+            "default.light-probe-update-tetrahedron"
+          ]
+        },
+        "change-gizmo-tool": {
+          "methods": [
+            "default.change-gizmo-tool"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_gizmo_tool",
+          "doc": "i18n:scene.contributions.messages.doc.change_gizmo_tool",
+          "example": "i18n:scene.contributions.messages.example.change_gizmo_tool"
+        },
+        "query-gizmo-tool-name": {
+          "methods": [
+            "default.query-gizmo-tool-name"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_gizmo_tool_name",
+          "doc": "i18n:scene.contributions.messages.doc.query_gizmo_tool_name",
+          "example": "i18n:scene.contributions.messages.example.query_gizmo_tool_name"
+        },
+        "change-gizmo-pivot": {
+          "methods": [
+            "default.change-gizmo-pivot"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_gizmo_pivot",
+          "doc": "i18n:scene.contributions.messages.doc.change_gizmo_pivot",
+          "example": "i18n:scene.contributions.messages.example.change_gizmo_pivot"
+        },
+        "query-gizmo-pivot": {
+          "methods": [
+            "default.query-gizmo-pivot"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_gizmo_pivot",
+          "doc": "i18n:scene.contributions.messages.doc.query_gizmo_pivot",
+          "example": "i18n:scene.contributions.messages.example.query_gizmo_pivot"
+        },
+        "query-gizmo-view-mode": {
+          "methods": [
+            "default.query-gizmo-view-mode"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_gizmo_view_mode",
+          "doc": "i18n:scene.contributions.messages.doc.query_gizmo_view_mode",
+          "example": "i18n:scene.contributions.messages.example.query_gizmo_view_mode"
+        },
+        "change-gizmo-coordinate": {
+          "methods": [
+            "default.change-gizmo-coordinate"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_gizmo_coordinate",
+          "doc": "i18n:scene.contributions.messages.doc.change_gizmo_coordinate",
+          "example": "i18n:scene.contributions.messages.example.change_gizmo_coordinate"
+        },
+        "query-gizmo-coordinate": {
+          "methods": [
+            "default.query-gizmo-coordinate"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_gizmo_coordinate",
+          "doc": "i18n:scene.contributions.messages.doc.query_gizmo_coordinate",
+          "example": "i18n:scene.contributions.messages.example.query_gizmo_coordinate"
+        },
+        "change-is2D": {
+          "methods": [
+            "default.change-is2D"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.change_is2D",
+          "doc": "i18n:scene.contributions.messages.doc.change_is2D",
+          "example": "i18n:scene.contributions.messages.example.change_is2D"
+        },
+        "query-is2D": {
+          "methods": [
+            "default.query-is2D"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is2D",
+          "doc": "i18n:scene.contributions.messages.doc.query_is2D",
+          "example": "i18n:scene.contributions.messages.example.query_is2D"
+        },
+        "set-grid-visible": {
+          "methods": [
+            "default.set-grid-visible"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_grid_visible",
+          "doc": "i18n:scene.contributions.messages.doc.set_grid_visible",
+          "example": "i18n:scene.contributions.messages.example.set_grid_visible"
+        },
+        "query-is-grid-visible": {
+          "methods": [
+            "default.query-is-grid-visible"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is_grid_visible",
+          "doc": "i18n:scene.contributions.messages.doc.query_is_grid_visible",
+          "example": "i18n:scene.contributions.messages.example.query_is_grid_visible"
+        },
+        "set-icon-gizmo-3d": {
+          "methods": [
+            "default.set-icon-gizmo-3d"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_icon_gizmo_3d",
+          "doc": "i18n:scene.contributions.messages.doc.set_icon_gizmo_3d",
+          "example": "i18n:scene.contributions.messages.example.set_icon_gizmo_3d"
+        },
+        "query-is-icon-gizmo-3d": {
+          "methods": [
+            "default.query-is-icon-gizmo-3d"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is_icon_gizmo_3d",
+          "doc": "i18n:scene.contributions.messages.doc.query_is_icon_gizmo_3d",
+          "example": "i18n:scene.contributions.messages.example.query_is_icon_gizmo_3d"
+        },
+        "set-icon-gizmo-size": {
+          "methods": [
+            "default.set-icon-gizmo-size"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.set_icon_gizmo_size",
+          "doc": "i18n:scene.contributions.messages.doc.set_icon_gizmo_size",
+          "example": "i18n:scene.contributions.messages.example.set_icon_gizmo_size"
+        },
+        "query-icon-gizmo-size": {
+          "methods": [
+            "default.query-icon-gizmo-size"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_icon_gizmo_size",
+          "doc": "i18n:scene.contributions.messages.doc.query_icon_gizmo_size",
+          "example": "i18n:scene.contributions.messages.example.query_icon_gizmo_size"
+        },
+        "query-transform-snap-configs": {
+          "methods": [
+            "default.query-transform-snap-configs"
+          ]
+        },
+        "set-transform-snap-configs": {
+          "methods": [
+            "default.set-transform-snap-configs"
+          ]
+        },
+        "query-rect-snapping-configs": {
+          "methods": [
+            "default.query-rect-snapping-configs"
+          ]
+        },
+        "set-rect-snapping-configs": {
+          "methods": [
+            "default.set-rect-snapping-configs"
+          ]
+        },
+        "focus-camera": {
+          "methods": [
+            "default.focus-camera"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.focus_camera",
+          "doc": "i18n:scene.contributions.messages.doc.focus_camera",
+          "example": "i18n:scene.contributions.messages.example.focus_camera"
+        },
+        "align-with-view": {
+          "methods": [
+            "default.align-with-view"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.align_with_view",
+          "doc": "i18n:scene.contributions.messages.doc.align_with_view",
+          "example": "i18n:scene.contributions.messages.example.align_with_view"
+        },
+        "align-view-with-node": {
+          "methods": [
+            "default.align-view-with-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.align_view_with_node",
+          "doc": "i18n:scene.contributions.messages.doc.align_view_with_node",
+          "example": "i18n:scene.contributions.messages.example.align_view_with_node"
+        },
+        "zoom-scene-view-down": {
+          "methods": [
+            "default.zoom-scene-view-down"
+          ]
+        },
+        "zoom-scene-view-up": {
+          "methods": [
+            "default.zoom-scene-view-up"
+          ]
+        },
+        "toggle-active-selected-node": {
+          "methods": [
+            "default.toggle-active-selected-node"
+          ]
+        },
+        "toggle-active-unselected-node": {
+          "methods": [
+            "default.toggle-active-unselected-node"
+          ]
+        },
+        "toggle-active-all-nodes": {
+          "methods": [
+            "default.toggle-active-all-nodes"
+          ]
+        },
+        "apply-material": {
+          "methods": [
+            "default.apply-material"
+          ]
+        },
+        "query-physics-material": {
+          "methods": [
+            "default.query-physics-material"
+          ]
+        },
+        "change-physics-material": {
+          "methods": [
+            "default.change-physics-material"
+          ]
+        },
+        "apply-physics-material": {
+          "methods": [
+            "default.apply-physics-material"
+          ]
+        },
+        "query-animation-graph-variant": {
+          "methods": [
+            "default.query-animation-graph-variant"
+          ]
+        },
+        "change-animation-graph-variant": {
+          "methods": [
+            "default.change-animation-graph-variant"
+          ]
+        },
+        "apply-animation-graph-variant": {
+          "methods": [
+            "default.apply-animation-graph-variant"
+          ]
+        },
+        "query-animation-mask": {
+          "methods": [
+            "default.query-animation-mask"
+          ]
+        },
+        "change-animation-mask": {
+          "methods": [
+            "default.change-animation-mask"
+          ]
+        },
+        "apply-animation-mask": {
+          "methods": [
+            "default.apply-animation-mask"
+          ]
+        },
+        "apply-render-texture": {
+          "methods": [
+            "default.apply-render-texture"
+          ]
+        },
+        "copy-camera-data-to-nodes": {
+          "methods": [
+            "default.copy-camera-data-to-nodes"
+          ]
+        },
+        "record-animation": {
+          "methods": [
+            "default.record-animation"
+          ]
+        },
+        "change-animation-root": {
+          "methods": [
+            "default.change-animation-root"
+          ]
+        },
+        "set-edit-time": {
+          "methods": [
+            "default.set-edit-time"
+          ]
+        },
+        "change-clip-state": {
+          "methods": [
+            "default.change-clip-state"
+          ]
+        },
+        "change-edit-clip": {
+          "methods": [
+            "default.change-edit-clip"
+          ]
+        },
+        "save-clip": {
+          "methods": [
+            "default.save-clip"
+          ]
+        },
+        "animation-operation": {
+          "methods": [
+            "default.animation-operation"
+          ]
+        },
+        "create-prefab": {
+          "methods": [
+            "default.create-prefab"
+          ],
+          "description": "i18n:scene.contributions.messages.description.create_prefab"
+        },
+        "getdata-prefab": {
+          "methods": [
+            "default.getdata-prefab"
+          ]
+        },
+        "link-prefab": {
+          "methods": [
+            "default.link-prefab"
+          ]
+        },
+        "unlink-prefab": {
+          "methods": [
+            "default.unlink-prefab"
+          ]
+        },
+        "apply-prefab": {
+          "methods": [
+            "default.apply-prefab"
+          ],
+          "description": "i18n:scene.contributions.messages.description.apply_prefab"
+        },
+        "apply-removed-component": {
+          "methods": [
+            "default.apply-removed-component"
+          ],
+          "description": "i18n:scene.contributions.messages.description.apply_removed_component"
+        },
+        "revert-removed-component": {
+          "methods": [
+            "default.revert-removed-component"
+          ],
+          "description": "i18n:scene.contributions.messages.description.revert_removed_component"
+        },
+        "query-is-ready": {
+          "methods": [
+            "default.query-is-ready"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_is_ready",
+          "example": "i18n:scene.contributions.messages.example.query_is_ready"
+        },
+        "query-node": {
+          "methods": [
+            "default.query-node"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_node",
+          "doc": "i18n:scene.contributions.messages.doc.query_node",
+          "example": "i18n:scene.contributions.messages.example.query_node"
+        },
+        "query-component": {
+          "methods": [
+            "default.query-component"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_component",
+          "doc": "i18n:scene.contributions.messages.doc.query_component",
+          "example": "i18n:scene.contributions.messages.example.query_component"
+        },
+        "query-node-tree": {
+          "methods": [
+            "default.query-node-tree"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_node_tree",
+          "doc": "i18n:scene.contributions.messages.doc.query_node_tree",
+          "example": "i18n:scene.contributions.messages.example.query_node_tree"
+        },
+        "query-nodes-by-asset-uuid": {
+          "methods": [
+            "default.query-nodes-by-asset-uuid"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_node_by_asset_uuid",
+          "doc": "i18n:scene.contributions.messages.doc.query_node_by_asset_uuid",
+          "example": "i18n:scene.contributions.messages.example.query_node_by_asset_uuid"
+        },
+        "query-nodes-miss-assets": {
+          "methods": [
+            "default.query-nodes-miss-assets"
+          ],
+          "public": false
+        },
+        "query-component-function-of-node": {
+          "methods": [
+            "default.query-component-function-of-node"
+          ]
+        },
+        "query-all-effects": {
+          "methods": [
+            "default.query-all-effects"
+          ]
+        },
+        "query-material": {
+          "methods": [
+            "default.query-material"
+          ]
+        },
+        "query-effect": {
+          "methods": [
+            "default.query-effect"
+          ]
+        },
+        "query-serialized-material": {
+          "methods": [
+            "default.query-serialized-material"
+          ]
+        },
+        "query-render-pipeline": {
+          "methods": [
+            "default.query-render-pipeline"
+          ]
+        },
+        "change-render-pipeline": {
+          "methods": [
+            "default.change-render-pipeline"
+          ]
+        },
+        "apply-render-pipeline": {
+          "methods": [
+            "default.apply-render-pipeline"
+          ]
+        },
+        "query-creatable-asset-types": {
+          "methods": [
+            "default.query-creatable-asset-types"
+          ]
+        },
+        "query-scene-json": {
+          "methods": [
+            "default.query-scene-json"
+          ]
+        },
+        "query-current-scene": {
+          "methods": [
+            "default.query-current-scene"
+          ]
+        },
+        "query-dirty": {
+          "methods": [
+            "default.query-dirty"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_dirty",
+          "example": "i18n:scene.contributions.messages.example.query_dirty"
+        },
+        "query-classes": {
+          "methods": [
+            "default.query-classes"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_classes",
+          "doc": "i18n:scene.contributions.messages.doc.query_classes",
+          "example": "i18n:scene.contributions.messages.example.query_classes"
+        },
+        "query-components": {
+          "methods": [
+            "default.query-components"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_components",
+          "doc": "i18n:scene.contributions.messages.doc.query_components",
+          "example": "i18n:scene.contributions.messages.example.query_components"
+        },
+        "query-component-has-script": {
+          "methods": [
+            "default.query-component-has-script"
+          ],
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.query_component_has_script",
+          "doc": "i18n:scene.contributions.messages.doc.query_component_has_script",
+          "example": "i18n:scene.contributions.messages.example.query_component_has_script"
+        },
+        "query-script-name": {
+          "methods": [
+            "default.query-script-name"
+          ]
+        },
+        "query-script-cid": {
+          "methods": [
+            "default.query-script-cid"
+          ]
+        },
+        "query-layer-builtin": {
+          "methods": [
+            "default.query-layer-builtin"
+          ]
+        },
+        "query-sorting-layer-builtin": {
+          "methods": [
+            "default.query-sorting-layer-builtin"
+          ]
+        },
+        "query-scene-mode": {
+          "methods": [
+            "default.query-scene-mode"
+          ]
+        },
+        "query-animation-state": {
+          "methods": [
+            "default.query-animation-state"
+          ]
+        },
+        "query-current-animation-info": {
+          "methods": [
+            "default.query-current-animation-info"
+          ]
+        },
+        "query-animation-root": {
+          "methods": [
+            "default.query-animation-root"
+          ]
+        },
+        "query-animation-root-info": {
+          "methods": [
+            "default.query-animation-root-info"
+          ]
+        },
+        "query-animation-edit-info": {
+          "methods": [
+            "default.query-animation-edit-info"
+          ]
+        },
+        "query-animation-clip": {
+          "methods": [
+            "default.query-animation-clip"
+          ]
+        },
+        "query-animation-properties": {
+          "methods": [
+            "default.query-animation-properties"
+          ]
+        },
+        "query-animation-clips-info": {
+          "methods": [
+            "default.query-animation-clips-info"
+          ]
+        },
+        "query-animation-clips-time": {
+          "methods": [
+            "default.query-animation-clips-time"
+          ]
+        },
+        "query-property-value-at-frame": {
+          "methods": [
+            "default.query-property-value-at-frame"
+          ]
+        },
+        "query-aux-curve-value-at-frame": {
+          "methods": [
+            "default.query-aux-curve-value-at-frame"
+          ]
+        },
+        "query-auxiliary-curves": {
+          "methods": [
+            "default.query-auxiliary-curves"
+          ]
+        },
+        "generate-available-name": {
+          "methods": [
+            "default.generate-available-name"
+          ]
+        },
+        "editor-preview-set-play": {
+          "methods": [
+            "default.editor-preview-set-play"
+          ]
+        },
+        "editor-refresh-gizmo-config": {
+          "methods": [
+            "default.editor-refresh-gizmo-config"
+          ]
+        },
+        "editor-preview-call-method": {
+          "methods": [
+            "default.editor-preview-call-method"
+          ]
+        },
+        "editor-preview-change-style-web": {
+          "methods": [
+            "default.editor-preview-change-style"
+          ]
+        },
+        "editor-preview-change-style-native": {
+          "methods": [
+            "preview.editorPreviewChangeStyle"
+          ]
+        },
+        "editor-preview-change-config": {
+          "methods": [
+            "default.editor-preview-change-config",
+            "preview.editorPreviewChangeConfig"
+          ]
+        },
+        "scene:show-loading": {
+          "methods": [
+            "default.scene:show-loading"
+          ]
+        },
+        "scene:hide-loading": {
+          "methods": [
+            "default.scene:hide-loading"
+          ]
+        },
+        "execute-model-preview-animation-operation": {
+          "methods": [
+            "default.execute-model-preview-animation-operation"
+          ]
+        },
+        "regenerate-polygon-2d-points": {
+          "methods": [
+            "default.regenerate-polygon-2d-points"
+          ]
+        },
+        "export-particle-plist": {
+          "methods": [
+            "default.export-particle-plist"
+          ]
+        },
+        "change-node-lock": {
+          "methods": [
+            "default.change-node-lock"
+          ]
+        },
+        "unit-test": {
+          "methods": [
+            "default.unit-test"
+          ]
+        },
+        "change-target-resolution": {
+          "methods": [
+            "default.change-target-resolution"
+          ]
+        },
+        "query-latest-cache": {
+          "methods": [
+            "queryLatestCache"
+          ]
+        },
+        "clear-scene-cache": {
+          "methods": [
+            "clearSceneCache"
+          ]
+        },
+        "save-scene-cache-to-file": {
+          "methods": [
+            "saveSceneCacheToFile"
+          ]
+        },
+        "update-cache-config": {
+          "methods": [
+            "updateCacheConfig"
+          ]
+        },
+        "query-enum-list-with-path": {
+          "methods": [
+            "default.query-enum-list-with-path"
+          ]
+        },
+        "query-wrap-mode-enum-list": {
+          "methods": [
+            "default.query-wrap-mode-enum-list"
+          ]
+        },
+        "set-scene-light-on": {
+          "methods": [
+            "default.set-scene-light-on"
+          ]
+        },
+        "query-scene-light-on": {
+          "methods": [
+            "default.query-scene-light-on"
+          ]
+        },
+        "native-ipc": {
+          "methods": [
+            "default.native-ipc"
+          ]
+        },
+        "native-scene": {
+          "methods": [
+            "default.native-scene"
+          ]
+        },
+        "panel-browser": {
+          "methods": [
+            "panelToBrowser"
+          ]
+        },
+        "browser-panel": {
+          "methods": [
+            "default.on-browser-panel"
+          ]
+        },
+        "is-native": {
+          "methods": [
+            "default.query-is-native"
+          ]
+        },
+        "query-preview-data": {
+          "methods": [
+            "default.query-preview-data"
+          ]
+        },
+        "call-preview-function": {
+          "methods": [
+            "default.call-preview-function"
+          ]
+        },
+        "query-thumbnail": {
+          "methods": [
+            "default.query-thumbnail"
+          ]
+        },
+        "query-preview-game-view-data": {
+          "methods": [
+            "preview.getGameViewData"
+          ]
+        },
+        "set-preview-window-visible": {
+          "methods": [
+            "preview.setPreviewWindowVisible",
+            "setPreviewWindowVisible"
+          ]
+        },
+        "create-preview-window": {
+          "methods": [
+            "preview.createPreviewWindow"
+          ]
+        },
+        "resize-native-window": {
+          "methods": [
+            "resizeNativeWindow"
+          ]
+        },
+        "create-native-window": {
+          "methods": [
+            "createNativeWindow"
+          ]
+        },
+        "preview-panel-ready": {
+          "methods": [
+            "onPreviewPanelReady"
+          ]
+        },
+        "preview-panel-stop": {
+          "methods": [
+            "onPreviewPanelStop"
+          ]
+        },
+        "toggle-light-probe-edit-mode": {
+          "methods": [
+            "default.toggle-light-probe-edit-mode"
+          ]
+        },
+        "query-light-probe-edit-mode": {
+          "methods": [
+            "default.query-light-probe-edit-mode"
+          ]
+        },
+        "toggle-light-probe-bounding-box-edit-mode": {
+          "methods": [
+            "default.toggle-light-probe-bounding-box-edit-mode"
+          ]
+        },
+        "query-light-probe-bounding-box-edit-mode": {
+          "methods": [
+            "default.query-light-probe-bounding-box-edit-mode"
+          ]
+        },
+        "scene:light-probe-edit-mode-changed": {
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.light_probe_edit_mode_changed",
+          "doc": "i18n:scene.contributions.messages.doc.light_probe_edit_mode_changed",
+          "example": "i18n:scene.contributions.messages.example.light_probe_edit_mode_changed"
+        },
+        "scene:light-probe-bounding-box-edit-mode-changed": {
+          "public": true,
+          "description": "i18n:scene.contributions.messages.description.light_probe_bounding_box_edit_mode_changed",
+          "doc": "i18n:scene.contributions.messages.doc.light_probe_bounding_box_edit_mode_changed",
+          "example": "i18n:scene.contributions.messages.example.light_probe_bounding_box_edit_mode_changed"
+        },
+        "lod-apply-current-camera-size": {
+          "methods": [
+            "default.lod-apply-current-camera-size"
+          ]
+        },
+        "lod-insert": {
+          "methods": [
+            "default.lod-insert"
+          ]
+        },
+        "lod-erase": {
+          "methods": [
+            "default.lod-erase"
+          ]
+        },
+        "shortcuts:change": {
+          "methods": [
+            "default.shortcuts:change"
+          ]
+        },
+        "window:zoom-level-change": {
+          "methods": [
+            "default.window:zoom-level-change"
+          ]
+        },
+        "window:focus-zoom-level-change": {
+          "methods": [
+            "default.window:focus-zoom-level-change"
+          ]
+        },
+        "multi-open-scene": {
+          "methods": [
+            "default.multi-open-scene"
+          ]
+        },
+        "multi-close-scene": {
+          "methods": [
+            "default.multi-close-scene"
+          ]
+        },
+        "multi-scene-dirty": {
+          "methods": [
+            "default.multi-scene-dirty"
+          ]
+        },
+        "multi-scene-query": {
+          "methods": [
+            "default.multi-scene-query"
+          ]
+        },
+        "multi-scene-focus": {
+          "methods": [
+            "default.multi-scene-focus"
+          ]
+        },
+        "multi-scene-focus-query": {
+          "methods": [
+            "default.multi-scene-focus-query"
+          ]
+        },
+        "multi-save-all-scene": {
+          "methods": [
+            "default.multi-save-all-scene"
+          ]
+        },
+        "multi-is-multi-edit-mode": {
+          "methods": [
+            "default.multi-is-multi-edit-mode"
+          ]
+        },
+        "multi-close-to-the-right": {
+          "methods": [
+            "default.multi-close-to-the-right"
+          ]
+        },
+        "multi-move-tabs-to": {
+          "methods": [
+            "default.multi-move-tabs-to"
+          ]
+        },
+        "multi-close-others": {
+          "methods": [
+            "default.multi-close-others"
+          ]
+        }
+      },
+      "asset-db": {
+        "asset-db:ready": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_ready",
+          "example": "i18n:asset-db.contributions.messages.example.asset_db_ready",
+          "methods": [
+            "ready"
+          ]
+        },
+        "asset-db:close": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_close",
+          "example": "i18n:asset-db.contributions.messages.example.asset_db_close",
+          "methods": [
+            "close"
+          ]
+        },
+        "asset-db:asset-add": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_asset_add",
+          "example": "i18n:asset-db.contributions.messages.example.asset_db_asset_add"
+        },
+        "asset-db:asset-change": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_asset_change",
+          "example": "i18n:asset-db.contributions.messages.example.asset_db_asset_change"
+        },
+        "asset-db:asset-delete": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.asset_db_asset_delete",
+          "example": "i18n:asset-db.contributions.messages.example.asset_db_asset_delete"
+        },
+        "project:change-high-quality": {
+          "methods": [
+            "projectChangeHighQuality"
+          ]
+        },
+        "query-ready": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_ready",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_ready",
+          "example": "i18n:asset-db.contributions.messages.example.query_ready",
+          "methods": [
+            "queryReady"
+          ]
+        },
+        "create-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.create_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.create_asset",
+          "example": "i18n:asset-db.contributions.messages.example.create_asset",
+          "methods": [
+            "createAsset"
+          ]
+        },
+        "new-asset": {
+          "description": "i18n:asset-db.contributions.messages.description.create_asset",
+          "methods": [
+            "newAsset"
+          ]
+        },
+        "import-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.import_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.import_asset",
+          "example": "i18n:asset-db.contributions.messages.example.import_asset",
+          "methods": [
+            "importAsset"
+          ]
+        },
+        "copy-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.copy_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.copy_asset",
+          "example": "i18n:asset-db.contributions.messages.example.copy_asset",
+          "methods": [
+            "copyAsset"
+          ]
+        },
+        "move-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.move_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.move_asset",
+          "example": "i18n:asset-db.contributions.messages.example.move_asset",
+          "methods": [
+            "moveAsset"
+          ]
+        },
+        "rename-asset": {
+          "description": "i18n:asset-db.contributions.messages.description.rename_asset",
+          "methods": [
+            "renameAsset"
+          ]
+        },
+        "delete-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.delete_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.delete_asset",
+          "example": "i18n:asset-db.contributions.messages.example.delete_asset",
+          "methods": [
+            "deleteAsset"
+          ]
+        },
+        "open-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.open_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.open_asset",
+          "example": "i18n:asset-db.contributions.messages.example.open_asset",
+          "methods": [
+            "openAsset"
+          ]
+        },
+        "save-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.save_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.save_asset",
+          "example": "i18n:asset-db.contributions.messages.example.save_asset",
+          "methods": [
+            "saveAsset"
+          ]
+        },
+        "save-asset-meta": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.save_asset_meta",
+          "doc": "i18n:asset-db.contributions.messages.doc.save_asset_meta",
+          "example": "i18n:asset-db.contributions.messages.example.save_asset_meta",
+          "methods": [
+            "saveAssetMeta"
+          ]
+        },
+        "reimport-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.reimport_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.reimport_asset",
+          "example": "i18n:asset-db.contributions.messages.example.reimport_asset",
+          "methods": [
+            "reimportAsset"
+          ]
+        },
+        "refresh-asset": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.refresh_asset",
+          "doc": "i18n:asset-db.contributions.messages.doc.refresh_asset",
+          "example": "i18n:asset-db.contributions.messages.example.refresh_asset",
+          "methods": [
+            "refreshAsset"
+          ]
+        },
+        "refresh-all-effect": {
+          "methods": [
+            "refreshAllEffect"
+          ]
+        },
+        "query-path": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_path",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_path",
+          "example": "i18n:asset-db.contributions.messages.example.query_path",
+          "methods": [
+            "queryPath"
+          ]
+        },
+        "query-url": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_url",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_url",
+          "example": "i18n:asset-db.contributions.messages.example.query_url",
+          "methods": [
+            "queryUrl"
+          ]
+        },
+        "query-uuid": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_uuid",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_uuid",
+          "example": "i18n:asset-db.contributions.messages.example.query_uuid",
+          "methods": [
+            "queryUUID"
+          ]
+        },
+        "query-assets": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_assets",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_assets",
+          "example": "i18n:asset-db.contributions.messages.example.query_assets",
+          "methods": [
+            "queryAssets"
+          ]
+        },
+        "query-asset-info": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_asset_info",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_asset_info",
+          "example": "i18n:asset-db.contributions.messages.example.query_asset_info",
+          "methods": [
+            "queryAssetInfo"
+          ]
+        },
+        "query-missing-asset-info": {
+          "methods": [
+            "queryMissingAssetInfo"
+          ]
+        },
+        "query-asset-meta": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.query_asset_meta",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_asset_meta",
+          "example": "i18n:asset-db.contributions.messages.example.query_asset_meta",
+          "methods": [
+            "queryAssetMeta"
+          ]
+        },
+        "query-asset-dependinces": {
+          "methods": [
+            "queryAssetDependencies"
+          ]
+        },
+        "query-asset-used": {
+          "methods": [
+            "queryAssetUsed"
+          ]
+        },
+        "query-asset-dependencies": {
+          "methods": [
+            "queryAssetDependencies"
+          ],
+          "description": "i18n:asset-db.contributions.messages.description.query_asset_dependencies",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_asset_dependencies",
+          "example": "i18n:asset-db.contributions.messages.example.query_asset_dependencies",
+          "public": true
+        },
+        "query-asset-users": {
+          "methods": [
+            "queryAssetUsers"
+          ],
+          "description": "i18n:asset-db.contributions.messages.description.query_asset_users",
+          "doc": "i18n:asset-db.contributions.messages.doc.query_asset_users",
+          "example": "i18n:asset-db.contributions.messages.example.query_asset_users",
+          "public": true
+        },
+        "query-asset-data": {
+          "methods": [
+            "queryAssetData"
+          ]
+        },
+        "generate-available-url": {
+          "public": true,
+          "description": "i18n:asset-db.contributions.messages.description.generate_available_url",
+          "doc": "i18n:asset-db.contributions.messages.doc.generate_available_url",
+          "example": "i18n:asset-db.contributions.messages.example.generate_available_url",
+          "methods": [
+            "generateAvailableUrl"
+          ]
+        },
+        "query-asset-mtime": {
+          "methods": [
+            "queryAssetMtime"
+          ]
+        },
+        "refresh": {
+          "methods": [
+            "refresh"
+          ]
+        },
+        "is-busy": {
+          "methods": [
+            "isBusy"
+          ]
+        },
+        "pause": {
+          "methods": [
+            "pause"
+          ]
+        },
+        "resume": {
+          "methods": [
+            "resume"
+          ]
+        },
+        "open-devtools": {
+          "methods": [
+            "open-devtools"
+          ]
+        },
+        "query-db-info": {
+          "methods": [
+            "query-db-info"
+          ]
+        },
+        "query-db-infos": {
+          "methods": [
+            "query-db-infos"
+          ]
+        },
+        "query-db-list": {
+          "methods": [
+            "query-db-list"
+          ]
+        },
+        "create-asset-dialog": {
+          "methods": [
+            "create-asset-dialog"
+          ]
+        },
+        "create-asset-template": {
+          "methods": [
+            "create-asset-template"
+          ]
+        },
+        "init-asset": {
+          "methods": [
+            "init-asset"
+          ]
+        },
+        "query-all-importer": {
+          "methods": [
+            "query-all-importer"
+          ]
+        },
+        "query-all-asset-types": {
+          "methods": [
+            "query-all-asset-types"
+          ]
+        },
+        "execute-script": {
+          "methods": [
+            "executeScript"
+          ]
+        },
+        "execute-custom-operation": {
+          "methods": [
+            "executeCustomOperation"
+          ]
+        },
+        "start-db": {
+          "methods": [
+            "startDatabase"
+          ]
+        },
+        "stop-db": {
+          "methods": [
+            "stopDatabase"
+          ]
+        },
+        "notice-reload-editor": {
+          "methods": [
+            "noticeReloadEditor"
+          ]
+        },
+        "notice-config-changed": {
+          "methods": [
+            "noticeConfigChanged"
+          ]
+        },
+        "update-config": {
+          "methods": [
+            "updateConfig"
+          ]
+        },
+        "refresh-all-database": {
+          "methods": [
+            "refreshAllDatabase"
+          ]
+        },
+        "refresh-default-user-data-config": {
+          "methods": [
+            "refreshDefaultUserDataConfig"
+          ]
+        },
+        "update-default-user-data": {
+          "methods": [
+            "updateDefaultUserData"
+          ]
+        },
+        "query-create-list": {
+          "methods": [
+            "queryCreateList"
+          ]
+        },
+        "query-icon-config-map": {
+          "methods": [
+            "queryIconConfigMap"
+          ]
+        },
+        "query-asset-config-map": {
+          "methods": [
+            "queryAssetConfigMap"
+          ]
+        },
+        "query-create-menu-list": {
+          "methods": [
+            "queryCreateMenuList"
+          ]
+        },
+        "query-asset-userData-config": {
+          "methods": [
+            "queryAssetUserDataConfig"
+          ]
+        },
+        "query-asset-thumbnail": {
+          "methods": [
+            "queryAssetThumbnail"
+          ]
+        },
+        "batch-message-handler": {
+          "methods": [
+            "batchMessageHandler"
+          ]
+        },
+        "show-asset-template-dir": {
+          "methods": [
+            "showAssetTemplateDir"
+          ]
+        },
+        "query-global-internal-library": {
+          "methods": [
+            "query-global-internal-library"
+          ]
+        }
+      },
+      "builder": {
+        "open": {
+          "methods": [
+            "open"
+          ],
+          "public": true,
+          "description": "i18n:builder.contributions.messages.open",
+          "doc": "i18n:builder.contributions.doc.open",
+          "example": "i18n:builder.contributions.example.open"
+        },
+        "open-bundle": {
+          "methods": [
+            "openBundle"
+          ]
+        },
+        "change-build-bundle": {
+          "methods": [
+            "build-bundle.changeBuildBundle"
+          ]
+        },
+        "open-page": {
+          "methods": [
+            "openPage"
+          ]
+        },
+        "query-worker-ready": {
+          "methods": [
+            "query-worker-ready"
+          ],
+          "public": true,
+          "description": "i18n:builder.contributions.messages.query_worker_ready",
+          "doc": "i18n:builder.contributions.doc.query_worker_ready",
+          "example": "i18n:builder.contributions.example.query_worker_ready"
+        },
+        "execute-build-stage": {
+          "methods": [
+            "execute-build-stage"
+          ]
+        },
+        "open-platform-debug-tools": {
+          "methods": [
+            "open-platform-debug-tools"
+          ]
+        },
+        "create-build-plugin-template": {
+          "methods": [
+            "createBuildPluginTemplate"
+          ]
+        },
+        "create-build-template": {
+          "methods": [
+            "create-build-template"
+          ]
+        },
+        "create-application-template": {
+          "methods": [
+            "createApplicationTemplate"
+          ]
+        },
+        "open-devtools": {
+          "methods": [
+            "openWorkerDevTool"
+          ]
+        },
+        "generate-preview-setting": {
+          "methods": [
+            "generate-preview-setting"
+          ]
+        },
+        "query-tasks-info": {
+          "methods": [
+            "query-tasks-info"
+          ]
+        },
+        "add-task": {
+          "methods": [
+            "add-task"
+          ]
+        },
+        "add-bundle-task": {
+          "methods": [
+            "add-bundle-task"
+          ]
+        },
+        "recompile-task": {
+          "methods": [
+            "recompile-task"
+          ]
+        },
+        "remove-task": {
+          "methods": [
+            "remove-task"
+          ]
+        },
+        "break-task": {
+          "methods": [
+            "break-task"
+          ]
+        },
+        "query-task": {
+          "methods": [
+            "query-task"
+          ]
+        },
+        "update-task": {
+          "methods": [
+            "update-task"
+          ]
+        },
+        "save-task": {
+          "methods": [
+            "save-task"
+          ]
+        },
+        "preview-pac": {
+          "methods": [
+            "preview-pac"
+          ]
+        },
+        "query-atlas-files": {
+          "methods": [
+            "query-atlas-files"
+          ]
+        },
+        "command-build": {
+          "methods": [
+            "command-build"
+          ]
+        },
+        "asset-db:ready": {
+          "methods": [
+            "asset-db:ready"
+          ]
+        },
+        "asset-db:close": {
+          "methods": [
+            "asset-db:close"
+          ]
+        },
+        "asset-db:asset-delete": {
+          "methods": [
+            "build-bundle.asset-db:asset-delete"
+          ]
+        },
+        "asset-db:asset-add": {
+          "methods": [
+            "build-bundle.asset-db:asset-add"
+          ]
+        },
+        "asset-db:asset-change": {
+          "methods": [
+            "build-bundle.asset-db:asset-change"
+          ]
+        },
+        "request-to-build-worker": {
+          "methods": [
+            "request-to-build-worker"
+          ]
+        },
+        "preferences-changed": {
+          "methods": [
+            "preferences-changed"
+          ]
+        },
+        "query-compress-config": {
+          "methods": [
+            "query-compress-config"
+          ]
+        },
+        "query-platform-config": {
+          "methods": [
+            "query-platform-config"
+          ]
+        },
+        "query-bundle-config": {
+          "methods": [
+            "query-bundle-config"
+          ]
+        },
+        "migrate-options": {
+          "methods": [
+            "migrateOptions"
+          ]
+        },
+        "builder:task-changed": {
+          "methods": [
+            "build-bundle.builder:task-changed"
+          ]
+        },
+        "builder:task-add": {
+          "methods": [
+            "build-bundle.builder:task-add"
+          ]
+        },
+        "builder:task-delete": {
+          "methods": [
+            "build-bundle.builder:task-delete"
+          ]
+        },
+        "builder:bundle-task-changed": {
+          "methods": [
+            "build-bundle.bundle-task:changed"
+          ]
+        },
+        "change-debug-mode": {
+          "methods": [
+            "changeDebugMode"
+          ]
+        },
+        "build-worker:ready": {
+          "methods": [
+            "build-bundle.onBuildWorkerReady"
+          ],
+          "public": true,
+          "description": "i18n:builder.contributions.messages.worker_ready",
+          "example": "i18n:builder.contributions.example.worker_ready"
+        },
+        "build-worker:closed": {
+          "methods": [
+            "build-bundle.onBuildWorkerClosed"
+          ],
+          "public": true,
+          "description": "i18n:builder.contributions.messages.worker_closed",
+          "example": "i18n:builder.contributions.example.worker_closed"
+        },
+        "build-by-shortcut": {
+          "methods": [
+            "buildByShortcut"
+          ]
+        },
+        "console:update-log-level": {
+          "methods": [
+            "console:update-log-level"
+          ]
+        },
+        "register-package": {
+          "methods": [
+            "registerPackage"
+          ]
+        },
+        "unregister-package": {
+          "methods": [
+            "unRegisterPackage"
+          ]
+        },
+        "programming:pack-build-end": {
+          "methods": [
+            "programming:pack-build-end"
+          ]
+        },
+        "open-docs": {
+          "methods": [
+            "openDocs"
+          ]
+        },
+        "check-and-complete-options": {
+          "methods": [
+            "check-and-complete-options"
+          ]
+        },
+        "open-panel-devtools": {
+          "methods": [
+            "openPanelDevTools"
+          ]
+        },
+        "open-worker-devtools": {
+          "methods": [
+            "openWorkerDevTool"
+          ]
+        },
+        "clear-all-cache": {
+          "methods": [
+            "clearAllCache"
+          ]
+        },
+        "clear-assets-cache": {
+          "methods": [
+            "clearProjectAssetsCache"
+          ]
+        },
+        "clear-engine-cache": {
+          "methods": [
+            "clearEngineCache"
+          ]
+        },
+        "copy-build-notice": {
+          "methods": [
+            "copy-build-notice"
+          ]
+        },
+        "export-bundle-config": {
+          "methods": [
+            "build-bundle.exportBundleBuildConfig"
+          ]
+        }
+      },
+      "preview": {
+        "open": {
+          "methods": [
+            "open"
+          ]
+        },
+        "ready": {
+          "methods": [
+            "ready"
+          ]
+        },
+        "generate-settings": {
+          "methods": [
+            "generateSettings"
+          ]
+        },
+        "query-preview-url": {
+          "methods": [
+            "queryPreviewUrl"
+          ]
+        },
+        "query-connect-num": {
+          "methods": [
+            "queryConnectNum"
+          ]
+        },
+        "scene:save": {
+          "methods": [
+            "currentSceneSave"
+          ]
+        },
+        "programming:compiled": {
+          "methods": [
+            "programming:compiled"
+          ]
+        },
+        "programming:compile-start": {
+          "methods": [
+            "programming:compile-start"
+          ]
+        },
+        "open-terminal": {
+          "methods": [
+            "open-terminal"
+          ]
+        },
+        "restart-simulator": {
+          "methods": [
+            "restart-simulator"
+          ]
+        },
+        "reload-terminal": {
+          "methods": [
+            "reload-terminal"
+          ]
+        },
+        "get-preview-ip": {
+          "methods": [
+            "get-preview-ip"
+          ]
+        },
+        "set-preview-ip": {
+          "methods": [
+            "set-preview-ip"
+          ]
+        },
+        "create-template": {
+          "methods": [
+            "create-template"
+          ]
+        },
+        "change-platform": {
+          "methods": [
+            "change-platform"
+          ]
+        },
+        "programming:pack-build-end": {
+          "methods": [
+            "on-pack-build-end"
+          ]
+        },
+        "build-simulator-engine-ts": {
+          "methods": [
+            "buildSimulatorEngineTS"
+          ]
+        },
+        "preview-scene-in-browser": {
+          "methods": [
+            "previewSceneInBrowser"
+          ]
+        },
+        "write-setting-file": {
+          "methods": [
+            "writeSettingFile"
+          ]
+        },
+        "asset-db:asset-change": {
+          "methods": [
+            "asset-db:asset-change"
+          ]
+        },
+        "build-worker:ready": {
+          "methods": [
+            "build-worker:ready"
+          ]
+        },
+        "build-worker:closed": {
+          "methods": [
+            "build-worker:closed"
+          ]
+        }
+      },
+      "project": {
+        "asset-db:ready": {
+          "methods": [
+            "settings.assetDbReady"
+          ]
+        },
+        "open-settings": {
+          "public": true,
+          "description": "i18n:project.contributions.messages.description.open_settings",
+          "doc": "i18n:project.contributions.messages.doc.open_settings",
+          "example": "i18n:project.contributions.messages.example.open_settings",
+          "methods": [
+            "openSettings"
+          ]
+        },
+        "open-joint": {
+          "methods": [
+            "openJoint"
+          ]
+        },
+        "change-settings-tab": {
+          "methods": [
+            "settings.changeTab"
+          ]
+        },
+        "refresh-settings-tab": {
+          "methods": [
+            "settings.refreshTab"
+          ]
+        },
+        "query-settings-tab": {
+          "methods": [
+            "settings.queryTab"
+          ]
+        },
+        "change-script-config": {
+          "methods": [
+            "changeScriptConfig"
+          ]
+        },
+        "change-design-resolution": {
+          "methods": [
+            "changeDesignResolution"
+          ]
+        },
+        "query-design-resolution": {
+          "methods": [
+            "queryDesignResolution"
+          ]
+        },
+        "change-custom-layer": {
+          "methods": [
+            "changeCustomLayer"
+          ]
+        },
+        "change-sorting-layer": {
+          "methods": [
+            "changeSortingLayer"
+          ]
+        },
+        "change-hight-quality": {
+          "methods": [
+            "changeHighQuality"
+          ]
+        },
+        "calc-joint-layout": {
+          "methods": [
+            "calcJointLayouts"
+          ]
+        },
+        "query-project-configs": {
+          "methods": [
+            "queryProjectConfigs"
+          ]
+        },
+        "query-configs-from-path": {
+          "methods": [
+            "queryConfigsFromPath"
+          ]
+        },
+        "query-config": {
+          "public": true,
+          "description": "i18n:project.contributions.messages.description.queryConfig",
+          "doc": "i18n:project.contributions.messages.doc.queryConfig",
+          "example": "i18n:project.contributions.messages.example.queryConfig",
+          "methods": [
+            "queryConfig"
+          ]
+        },
+        "set-config": {
+          "public": true,
+          "description": "i18n:project.contributions.messages.description.setConfig",
+          "doc": "i18n:project.contributions.messages.doc.setConfig",
+          "example": "i18n:project.contributions.messages.example.setConfig",
+          "methods": [
+            "setConfig"
+          ]
+        },
+        "import-config": {
+          "methods": [
+            "importConfig"
+          ]
+        },
+        "export-config": {
+          "methods": [
+            "exportConfig"
+          ]
+        }
+      }
+    },
+    "sourceMembers": [
+      {
+        "path": "builtin/scene/package.json",
+        "sha256": "206a696b5ee776951ac9cf5a58bcbb141b62136d1be775dd2a1ecfb4fe9071d5"
+      },
+      {
+        "path": "builtin/asset-db/package.json",
+        "sha256": "3ea220cb12da923e901ef35a06a8ffd6ac70aff75316baab7ae65821d5bb6f95"
+      },
+      {
+        "path": "builtin/builder/package.json",
+        "sha256": "08e85b509b1631cdc00b336cb3977f005d779d60c89135b9b6992e0874f684c5"
+      },
+      {
+        "path": "builtin/preview/package.json",
+        "sha256": "f01ef7843595ee643ca56b85617b9d059adbb07f255ee137d59b46aae8d6d6b0"
+      },
+      {
+        "path": "builtin/project/package.json",
+        "sha256": "5a6736fb031c3f2eacb0f3f27a27a06ffb32e99192ab05529b09c02f67f43287"
+      },
+      {
+        "path": "builtin/scene/@types/message.d.ts",
+        "sha256": "9cae1eb84d13514efa9c2209c135cf54d6bf6515cb9bb3746a02b757dc433880"
+      },
+      {
+        "path": "builtin/scene/@types/public.d.ts",
+        "sha256": "2b501c3fcabc836b0ec935c86e89a4bd479a28150b7a5f3e26382ba03e0759d7"
+      },
+      {
+        "path": "builtin/asset-db/@types/message.d.ts",
+        "sha256": "e9a69a264f3b88627f726f378d435c5bae581a64be099a4ab130ff25d085f3e2"
+      },
+      {
+        "path": "node_modules/@editor/creator/@types/editor.d.ts",
+        "sha256": "1ae915baea6c60544a5ace2354e11948221f3080298d1c329cf3d28eb7c1239a"
+      }
+    ]
+  },
+  "changes": [
+    {
+      "module": "scene",
+      "beforeCount": 191,
+      "afterCount": 218,
+      "added": [
+        "engine:engine-modules-global-config-changed",
+        "load-empty-scene",
+        "begin-recording",
+        "end-recording",
+        "cancel-recording",
+        "query-gizmo-view-mode",
+        "zoom-scene-view-down",
+        "zoom-scene-view-up",
+        "toggle-active-selected-node",
+        "toggle-active-unselected-node",
+        "toggle-active-all-nodes",
+        "query-aux-curve-value-at-frame",
+        "query-auxiliary-curves",
+        "panel-browser",
+        "browser-panel",
+        "shortcuts:change",
+        "window:zoom-level-change",
+        "window:focus-zoom-level-change",
+        "multi-open-scene",
+        "multi-close-scene",
+        "multi-scene-dirty",
+        "multi-scene-query",
+        "multi-scene-focus",
+        "multi-scene-focus-query",
+        "multi-save-all-scene",
+        "multi-is-multi-edit-mode",
+        "multi-close-to-the-right",
+        "multi-move-tabs-to",
+        "multi-close-others"
+      ],
+      "removed": [
+        "engine:engine-modules-config-changed",
+        "light-probe-info-changed"
+      ],
+      "core": [
+        {
+          "message": "query-is-ready",
+          "before": {
+            "methods": [
+              "default.query-is-ready"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_is_ready"
+          },
+          "after": {
+            "methods": [
+              "default.query-is-ready"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_is_ready",
+            "example": "i18n:scene.contributions.messages.example.query_is_ready"
+          }
+        },
+        {
+          "message": "query-dirty",
+          "before": {
+            "methods": [
+              "default.query-dirty"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_dirty"
+          },
+          "after": {
+            "methods": [
+              "default.query-dirty"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_dirty",
+            "example": "i18n:scene.contributions.messages.example.query_dirty"
+          }
+        },
+        {
+          "message": "query-node",
+          "before": {
+            "methods": [
+              "default.query-node"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_node",
+            "doc": "i18n:scene.contributions.messages.doc.query_node"
+          },
+          "after": {
+            "methods": [
+              "default.query-node"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_node",
+            "doc": "i18n:scene.contributions.messages.doc.query_node",
+            "example": "i18n:scene.contributions.messages.example.query_node"
+          }
+        },
+        {
+          "message": "query-node-tree",
+          "before": {
+            "methods": [
+              "default.query-node-tree"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_node_tree",
+            "doc": "i18n:scene.contributions.messages.doc.query_node_tree"
+          },
+          "after": {
+            "methods": [
+              "default.query-node-tree"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_node_tree",
+            "doc": "i18n:scene.contributions.messages.doc.query_node_tree",
+            "example": "i18n:scene.contributions.messages.example.query_node_tree"
+          }
+        },
+        {
+          "message": "query-component",
+          "before": {
+            "methods": [
+              "default.query-component"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_component",
+            "doc": "i18n:scene.contributions.messages.doc.query_component"
+          },
+          "after": {
+            "methods": [
+              "default.query-component"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.query_component",
+            "doc": "i18n:scene.contributions.messages.doc.query_component",
+            "example": "i18n:scene.contributions.messages.example.query_component"
+          }
+        },
+        {
+          "message": "create-node",
+          "before": {
+            "methods": [
+              "default.create-node"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.create_node",
+            "doc": "i18n:scene.contributions.messages.doc.create_node"
+          },
+          "after": {
+            "methods": [
+              "default.create-node"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.create_node",
+            "doc": "i18n:scene.contributions.messages.doc.create_node",
+            "example": "i18n:scene.contributions.messages.example.create_node"
+          }
+        },
+        {
+          "message": "remove-node",
+          "before": {
+            "methods": [
+              "default.remove-node"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.remove_node",
+            "doc": "i18n:scene.contributions.messages.doc.remove_node"
+          },
+          "after": {
+            "methods": [
+              "default.remove-node"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.remove_node",
+            "doc": "i18n:scene.contributions.messages.doc.remove_node",
+            "example": "i18n:scene.contributions.messages.example.remove_node"
+          }
+        },
+        {
+          "message": "set-parent",
+          "before": {
+            "methods": [
+              "default.set-parent"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.set_parent",
+            "doc": "i18n:scene.contributions.messages.doc.set_parent"
+          },
+          "after": {
+            "methods": [
+              "default.set-parent"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.set_parent",
+            "doc": "i18n:scene.contributions.messages.doc.set_parent",
+            "example": "i18n:scene.contributions.messages.example.set_parent"
+          }
+        },
+        {
+          "message": "create-component",
+          "before": {
+            "methods": [
+              "default.create-component"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.create_component",
+            "doc": "i18n:scene.contributions.messages.doc.create_component"
+          },
+          "after": {
+            "methods": [
+              "default.create-component"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.create_component",
+            "doc": "i18n:scene.contributions.messages.doc.create_component",
+            "example": "i18n:scene.contributions.messages.example.create_component"
+          }
+        },
+        {
+          "message": "remove-component",
+          "before": {
+            "methods": [
+              "default.remove-component"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.remove_component",
+            "doc": "i18n:scene.contributions.messages.doc.remove_component"
+          },
+          "after": {
+            "methods": [
+              "default.remove-component"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.remove_component",
+            "doc": "i18n:scene.contributions.messages.doc.remove_component",
+            "example": "i18n:scene.contributions.messages.example.remove_component"
+          }
+        },
+        {
+          "message": "set-property",
+          "before": {
+            "public": true,
+            "methods": [
+              "default.set-property"
+            ],
+            "description": "i18n:scene.contributions.messages.description.set_property",
+            "doc": "i18n:scene.contributions.messages.doc.set_property"
+          },
+          "after": {
+            "public": true,
+            "methods": [
+              "default.set-property"
+            ],
+            "description": "i18n:scene.contributions.messages.description.set_property",
+            "doc": "i18n:scene.contributions.messages.doc.set_property",
+            "example": "i18n:scene.contributions.messages.example.set_property"
+          }
+        },
+        {
+          "message": "execute-scene-script",
+          "before": {
+            "methods": [
+              "default.execute-scene-script"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.execute_scene_script",
+            "doc": "i18n:scene.contributions.messages.doc.execute_scene_script"
+          },
+          "after": {
+            "methods": [
+              "default.execute-scene-script"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.execute_scene_script",
+            "doc": "i18n:scene.contributions.messages.doc.execute_scene_script",
+            "example": "i18n:scene.contributions.messages.example.execute_scene_script"
+          }
+        },
+        {
+          "message": "open-scene",
+          "before": {
+            "public": true,
+            "methods": [
+              "default.open-scene"
+            ],
+            "description": "i18n:scene.contributions.messages.description.open_scene",
+            "doc": "i18n:scene.contributions.messages.doc.open_scene"
+          },
+          "after": {
+            "public": true,
+            "methods": [
+              "default.open-scene"
+            ],
+            "description": "i18n:scene.contributions.messages.description.open_scene",
+            "doc": "i18n:scene.contributions.messages.doc.open_scene",
+            "example": "i18n:scene.contributions.messages.example.open_scene"
+          }
+        },
+        {
+          "message": "save-scene",
+          "before": {
+            "public": true,
+            "methods": [
+              "default.save-scene"
+            ],
+            "description": "i18n:scene.contributions.messages.description.save_scene"
+          },
+          "after": {
+            "public": true,
+            "methods": [
+              "default.save-scene"
+            ],
+            "description": "i18n:scene.contributions.messages.description.save_scene",
+            "example": "i18n:scene.contributions.messages.example.save_scene"
+          }
+        },
+        {
+          "message": "snapshot",
+          "before": {
+            "methods": [
+              "default.snapshot"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.snapshot"
+          },
+          "after": {
+            "methods": [
+              "default.snapshot"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.snapshot",
+            "example": "i18n:scene.contributions.messages.example.snapshot"
+          }
+        },
+        {
+          "message": "snapshot-abort",
+          "before": {
+            "methods": [
+              "default.snapshot-abort"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.snapshot_abort"
+          },
+          "after": {
+            "methods": [
+              "default.snapshot-abort"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.snapshot_abort",
+            "example": "i18n:scene.contributions.messages.example.snapshot_abort"
+          }
+        },
+        {
+          "message": "undo",
+          "before": {
+            "methods": [
+              "default.undo"
+            ]
+          },
+          "after": {
+            "methods": [
+              "default.undo"
+            ]
+          }
+        },
+        {
+          "message": "redo",
+          "before": {
+            "methods": [
+              "default.redo"
+            ]
+          },
+          "after": {
+            "methods": [
+              "default.redo"
+            ]
+          }
+        },
+        {
+          "message": "begin-recording",
+          "before": null,
+          "after": {
+            "methods": [
+              "default.begin-recording"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.begin_recording",
+            "example": "i18n:scene.contributions.messages.example.begin_recording"
+          }
+        },
+        {
+          "message": "end-recording",
+          "before": null,
+          "after": {
+            "methods": [
+              "default.end-recording"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.end_recording",
+            "example": "i18n:scene.contributions.messages.example.end_recording"
+          }
+        },
+        {
+          "message": "cancel-recording",
+          "before": null,
+          "after": {
+            "methods": [
+              "default.cancel-recording"
+            ],
+            "public": true,
+            "description": "i18n:scene.contributions.messages.description.cancel_recording",
+            "example": "i18n:scene.contributions.messages.example.cancel_recording"
+          }
+        },
+        {
+          "message": "create-prefab",
+          "before": {
+            "methods": [
+              "default.create-prefab"
+            ]
+          },
+          "after": {
+            "methods": [
+              "default.create-prefab"
+            ],
+            "description": "i18n:scene.contributions.messages.description.create_prefab"
+          }
+        }
+      ]
+    },
+    {
+      "module": "asset-db",
+      "beforeCount": 45,
+      "afterCount": 66,
+      "added": [
+        "new-asset",
+        "rename-asset",
+        "query-missing-asset-info",
+        "query-asset-dependencies",
+        "query-asset-users",
+        "query-db-infos",
+        "create-asset-template",
+        "execute-custom-operation",
+        "start-db",
+        "stop-db",
+        "notice-config-changed",
+        "update-default-user-data",
+        "query-create-list",
+        "query-icon-config-map",
+        "query-asset-config-map",
+        "query-create-menu-list",
+        "query-asset-userData-config",
+        "query-asset-thumbnail",
+        "batch-message-handler",
+        "show-asset-template-dir",
+        "query-global-internal-library"
+      ],
+      "removed": [],
+      "core": [
+        {
+          "message": "query-ready",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_ready",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_ready",
+            "methods": [
+              "queryReady"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_ready",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_ready",
+            "example": "i18n:asset-db.contributions.messages.example.query_ready",
+            "methods": [
+              "queryReady"
+            ]
+          }
+        },
+        {
+          "message": "query-assets",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_assets",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_assets",
+            "methods": [
+              "queryAssets"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_assets",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_assets",
+            "example": "i18n:asset-db.contributions.messages.example.query_assets",
+            "methods": [
+              "queryAssets"
+            ]
+          }
+        },
+        {
+          "message": "query-asset-info",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_asset_info",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_asset_info",
+            "methods": [
+              "queryAssetInfo"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_asset_info",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_asset_info",
+            "example": "i18n:asset-db.contributions.messages.example.query_asset_info",
+            "methods": [
+              "queryAssetInfo"
+            ]
+          }
+        },
+        {
+          "message": "query-asset-meta",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_asset_meta",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_asset_meta",
+            "methods": [
+              "queryAssetMeta"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_asset_meta",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_asset_meta",
+            "example": "i18n:asset-db.contributions.messages.example.query_asset_meta",
+            "methods": [
+              "queryAssetMeta"
+            ]
+          }
+        },
+        {
+          "message": "query-uuid",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_uuid",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_uuid",
+            "methods": [
+              "queryUUID"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_uuid",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_uuid",
+            "example": "i18n:asset-db.contributions.messages.example.query_uuid",
+            "methods": [
+              "queryUUID"
+            ]
+          }
+        },
+        {
+          "message": "query-url",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_url",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_url",
+            "methods": [
+              "queryUrl"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.query_url",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_url",
+            "example": "i18n:asset-db.contributions.messages.example.query_url",
+            "methods": [
+              "queryUrl"
+            ]
+          }
+        },
+        {
+          "message": "create-asset",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.create_asset",
+            "doc": "i18n:asset-db.contributions.messages.doc.create_asset",
+            "methods": [
+              "createAsset"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.create_asset",
+            "doc": "i18n:asset-db.contributions.messages.doc.create_asset",
+            "example": "i18n:asset-db.contributions.messages.example.create_asset",
+            "methods": [
+              "createAsset"
+            ]
+          }
+        },
+        {
+          "message": "import-asset",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.import_asset",
+            "doc": "i18n:asset-db.contributions.messages.doc.import_asset",
+            "methods": [
+              "importAsset"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.import_asset",
+            "doc": "i18n:asset-db.contributions.messages.doc.import_asset",
+            "example": "i18n:asset-db.contributions.messages.example.import_asset",
+            "methods": [
+              "importAsset"
+            ]
+          }
+        },
+        {
+          "message": "save-asset",
+          "before": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.save_asset",
+            "doc": "i18n:asset-db.contributions.messages.doc.save_asset",
+            "methods": [
+              "saveAsset"
+            ]
+          },
+          "after": {
+            "public": true,
+            "description": "i18n:asset-db.contributions.messages.description.save_asset",
+            "doc": "i18n:asset-db.contributions.messages.doc.save_asset",
+            "example": "i18n:asset-db.contributions.messages.example.save_asset",
+            "methods": [
+              "saveAsset"
+            ]
+          }
+        },
+        {
+          "message": "query-asset-dependencies",
+          "before": null,
+          "after": {
+            "methods": [
+              "queryAssetDependencies"
+            ],
+            "description": "i18n:asset-db.contributions.messages.description.query_asset_dependencies",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_asset_dependencies",
+            "example": "i18n:asset-db.contributions.messages.example.query_asset_dependencies",
+            "public": true
+          }
+        },
+        {
+          "message": "query-asset-users",
+          "before": null,
+          "after": {
+            "methods": [
+              "queryAssetUsers"
+            ],
+            "description": "i18n:asset-db.contributions.messages.description.query_asset_users",
+            "doc": "i18n:asset-db.contributions.messages.doc.query_asset_users",
+            "example": "i18n:asset-db.contributions.messages.example.query_asset_users",
+            "public": true
+          }
+        }
+      ]
+    },
+    {
+      "module": "builder",
+      "beforeCount": 38,
+      "afterCount": 56,
+      "added": [
+        "open-bundle",
+        "change-build-bundle",
+        "open-page",
+        "execute-build-stage",
+        "create-build-template",
+        "add-bundle-task",
+        "save-task",
+        "asset-db:asset-delete",
+        "asset-db:asset-add",
+        "asset-db:asset-change",
+        "builder:task-changed",
+        "builder:task-add",
+        "builder:task-delete",
+        "builder:bundle-task-changed",
+        "build-worker:ready",
+        "build-worker:closed",
+        "build-by-shortcut",
+        "copy-build-notice",
+        "export-bundle-config"
+      ],
+      "removed": [
+        "excute-build-stage"
+      ],
+      "core": [
+        {
+          "message": "build",
+          "before": null,
+          "after": null
+        },
+        {
+          "message": "query-tasks-info",
+          "before": {
+            "methods": [
+              "query-tasks-info"
+            ]
+          },
+          "after": {
+            "methods": [
+              "query-tasks-info"
+            ]
+          }
+        },
+        {
+          "message": "excute-build-stage",
+          "before": {
+            "methods": [
+              "excute-build-stage"
+            ]
+          },
+          "after": null
+        },
+        {
+          "message": "execute-build-stage",
+          "before": null,
+          "after": {
+            "methods": [
+              "execute-build-stage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "module": "preview",
+      "beforeCount": 16,
+      "afterCount": 22,
+      "added": [
+        "ready",
+        "query-connect-num",
+        "programming:compile-start",
+        "build-simulator-engine-ts",
+        "asset-db:asset-change",
+        "build-worker:ready",
+        "build-worker:closed"
+      ],
+      "removed": [
+        "build-native-engine"
+      ],
+      "core": [
+        {
+          "message": "open",
+          "before": {
+            "methods": [
+              "open"
+            ]
+          },
+          "after": {
+            "methods": [
+              "open"
+            ]
+          }
+        },
+        {
+          "message": "refresh",
+          "before": null,
+          "after": null
+        }
+      ]
+    },
+    {
+      "module": "project",
+      "beforeCount": 15,
+      "afterCount": 19,
+      "added": [
+        "asset-db:ready",
+        "query-settings-tab",
+        "query-project-configs",
+        "query-configs-from-path",
+        "set-config"
+      ],
+      "removed": [
+        "query-project-data"
+      ],
+      "core": [
+        {
+          "message": "query-project-data",
+          "before": {
+            "methods": [
+              "queryProjectData"
+            ]
+          },
+          "after": null
+        },
+        {
+          "message": "query-project-configs",
+          "before": null,
+          "after": {
+            "methods": [
+              "queryProjectConfigs"
+            ]
+          }
+        },
+        {
+          "message": "set-config",
+          "before": null,
+          "after": {
+            "public": true,
+            "description": "i18n:project.contributions.messages.description.setConfig",
+            "doc": "i18n:project.contributions.messages.doc.setConfig",
+            "example": "i18n:project.contributions.messages.example.setConfig",
+            "methods": [
+              "setConfig"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

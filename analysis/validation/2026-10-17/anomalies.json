@@ -1,0 +1,51 @@
+{
+  "scope": "Initial runs retained, including failures; not evidence for the final runtime source snapshot",
+  "events": [
+    {
+      "version": "3.7.0",
+      "observed": "Native renderer OOM during five-editor parallel launch; next launch stalled with renderer killed",
+      "handling": "Closed owned test processes and stale orphan renderers, reset isolated layout/profile, reran sequentially",
+      "causeBoundary": "OOM was reported by Creator. Parallel resource load was present; no claim that all startup symptoms had the same root cause."
+    },
+    {
+      "version": "3.7.0",
+      "observed": "PNG workflow reported IMPORT_FAILED while an asset was not imported yet; next attempt hit SCENE_NOT_READY during script compilation",
+      "handling": "Bounded read-only post-write import verification, invalid remains terminal; integration script retries only read-only catalog queries during scene reload. Writes are not replayed.",
+      "calleeBoundary": "The original PNG step combined import and metadata reimport, so the original error does not uniquely identify which subcall failed."
+    },
+    {
+      "version": "3.7.3",
+      "observed": "SDK connection closed at extras handshake before any test step; stderr empty",
+      "handling": "Immediate suite rerun passed; 20 reconnections passed; final sequential run passed",
+      "status": "Not reproduced; root cause unconfirmed, retained for follow-up"
+    },
+    {
+      "platform": "Windows",
+      "observed": "Console windows and orphan Creator test renderer processes with extra --enable-logging",
+      "handling": "Removed extra logging switch, gracefully quit test editor and inspect child console hosts; final tests report zero attached console hosts"
+    }
+  ],
+  "initialReports": [
+    "2026-10-17/initial/3.7.0-core.json",
+    "2026-10-17/initial/3.7.0-references-first-attempt.json",
+    "2026-10-17/initial/3.7.0-references.json",
+    "2026-10-17/initial/3.7.1-core.json",
+    "2026-10-17/initial/3.7.1-extras.json",
+    "2026-10-17/initial/3.7.1-preview-runtime.json",
+    "2026-10-17/initial/3.7.1-references.json",
+    "2026-10-17/initial/3.7.2-core.json",
+    "2026-10-17/initial/3.7.2-extras.json",
+    "2026-10-17/initial/3.7.2-preview-runtime.json",
+    "2026-10-17/initial/3.7.2-references.json",
+    "2026-10-17/initial/3.7.3-build-runtime.json",
+    "2026-10-17/initial/3.7.3-build.json",
+    "2026-10-17/initial/3.7.3-core.json",
+    "2026-10-17/initial/3.7.3-extras-first-attempt.json",
+    "2026-10-17/initial/3.7.3-extras.json",
+    "2026-10-17/initial/3.7.3-reconnect.json",
+    "2026-10-17/initial/3.7.3-references.json",
+    "2026-10-17/initial/3.7.4-core.json",
+    "2026-10-17/initial/3.7.4-extras.json",
+    "2026-10-17/initial/3.7.4-references.json"
+  ]
+}

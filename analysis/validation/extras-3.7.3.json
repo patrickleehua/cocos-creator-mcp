@@ -1,0 +1,385 @@
+{
+  "startedAt": "2026-10-16T14:16:59.879Z",
+  "project": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-3.7.3-test",
+  "steps": [
+    {
+      "name": "Read the native preview URL and request refresh",
+      "passed": true,
+      "durationMs": 322,
+      "evidence": {
+        "info": {
+          "url": "http://172.29.224.1:7456",
+          "source": "preview/query-preview-url"
+        },
+        "refresh": {
+          "requested": true,
+          "source": "preview/reload-terminal",
+          "result": null
+        }
+      }
+    },
+    {
+      "name": "Filter real editor logs with bounded normalized results",
+      "passed": true,
+      "durationMs": 87,
+      "evidence": {
+        "scope": "native Editor.Logger.query entries; normalized timestamp/level, no console interception",
+        "source": "Editor.Logger.query",
+        "entries": [
+          {
+            "process": "renderer",
+            "type": "log",
+            "message": "[Scene] Cocos Creator v3.7.3",
+            "stack": "",
+            "time": 1792158635316,
+            "timestamp": 1792158635316,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "renderer",
+            "type": "info",
+            "message": "[Scene] Forward render pipeline initialized.",
+            "stack": "",
+            "time": 1792158635317,
+            "timestamp": 1792158635317,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "renderer",
+            "type": "info",
+            "message": "[Scene] [PHYSICS]: switch from builtin to bullet.",
+            "stack": "",
+            "time": 1792158636089,
+            "timestamp": 1792158636089,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "renderer",
+            "type": "info",
+            "message": "[Scene] [PHYSICS2D]: switch from builtin to box2d.",
+            "stack": "",
+            "time": 1792158636159,
+            "timestamp": 1792158636159,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          },
+          {
+            "process": "browser",
+            "type": "log",
+            "message": "[cocos-creator-mcp] Bridge ready for Cocos MCP Compatibility Lab at port 57662",
+            "stack": "",
+            "time": 1792160023026,
+            "timestamp": 1792160023026,
+            "level": "info",
+            "source": "Editor.Logger.query"
+          }
+        ],
+        "total": 10,
+        "limit": 5,
+        "truncated": true
+      }
+    },
+    {
+      "name": "Query registered web build platform configuration",
+      "passed": true,
+      "durationMs": 112,
+      "evidence": {
+        "source": "builder/query-platform-config",
+        "platform": "web-desktop",
+        "config": {
+          "textureCompressConfig": {
+            "platformType": "web",
+            "support": {
+              "rgb": [
+                "jpg",
+                "webp"
+              ],
+              "rgba": [
+                "png",
+                "webp"
+              ]
+            }
+          },
+          "name": "i18n:web-desktop.title"
+        }
+      }
+    },
+    {
+      "name": "Cancel only the native build owned by this job and await completion",
+      "passed": true,
+      "durationMs": 1645,
+      "evidence": {
+        "taskId": "mcp-build-c7c96adb171522d2909d0e7ea66009c7",
+        "state": "failed",
+        "options": {
+          "platform": "web-desktop",
+          "debug": true,
+          "buildPath": "project://build",
+          "outputName": "mcp-cancel-test",
+          "startScene": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+          "scenes": [
+            {
+              "uuid": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+              "url": "db://assets/McpIntegration_mvb1ua7n/Main.scene"
+            }
+          ]
+        },
+        "startedAt": 1792160225070,
+        "finishedAt": 1792160225245,
+        "code": 34,
+        "nativeResult": 34,
+        "error": {
+          "code": "BUILD_FAILED",
+          "message": "Native builder reported build failure (34)."
+        },
+        "nativeTaskId": "1792160225074",
+        "cancelRequested": true
+      }
+    }
+  ],
+  "success": true,
+  "editor": {
+    "editorVersion": "3.7.3",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-3.7.3-test",
+      "uuid": "1a1c5c73-c48b-4dc7-bb03-02ed308c538b"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "buildJob": {
+    "taskId": "mcp-build-c7c96adb171522d2909d0e7ea66009c7",
+    "state": "running",
+    "options": {
+      "platform": "web-desktop",
+      "debug": true,
+      "buildPath": "project://build",
+      "outputName": "mcp-cancel-test",
+      "startScene": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+      "scenes": [
+        {
+          "uuid": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+          "url": "db://assets/McpIntegration_mvb1ua7n/Main.scene"
+        }
+      ]
+    },
+    "startedAt": 1792160225070,
+    "finishedAt": null,
+    "code": null,
+    "nativeResult": null,
+    "error": null,
+    "nativeTaskId": null,
+    "cancelRequested": false,
+    "deduplicated": false
+  },
+  "cancellation": {
+    "taskId": "mcp-build-c7c96adb171522d2909d0e7ea66009c7",
+    "state": "failed",
+    "options": {
+      "platform": "web-desktop",
+      "debug": true,
+      "buildPath": "project://build",
+      "outputName": "mcp-cancel-test",
+      "startScene": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+      "scenes": [
+        {
+          "uuid": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+          "url": "db://assets/McpIntegration_mvb1ua7n/Main.scene"
+        }
+      ]
+    },
+    "startedAt": 1792160225070,
+    "finishedAt": 1792160225245,
+    "code": 34,
+    "nativeResult": 34,
+    "error": {
+      "code": "BUILD_FAILED",
+      "message": "Native builder reported build failure (34)."
+    },
+    "nativeTaskId": "1792160225074",
+    "cancelRequested": true
+  },
+  "buildStatus": {
+    "isBuilding": false,
+    "task": {
+      "taskId": "mcp-build-c7c96adb171522d2909d0e7ea66009c7",
+      "state": "failed",
+      "options": {
+        "platform": "web-desktop",
+        "debug": true,
+        "buildPath": "project://build",
+        "outputName": "mcp-cancel-test",
+        "startScene": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+        "scenes": [
+          {
+            "uuid": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+            "url": "db://assets/McpIntegration_mvb1ua7n/Main.scene"
+          }
+        ]
+      },
+      "startedAt": 1792160225070,
+      "finishedAt": 1792160225245,
+      "code": 34,
+      "nativeResult": 34,
+      "error": {
+        "code": "BUILD_FAILED",
+        "message": "Native builder reported build failure (34)."
+      },
+      "nativeTaskId": "1792160225074",
+      "cancelRequested": true
+    },
+    "native": {
+      "queue": {
+        "1792158725358": {
+          "type": "build",
+          "id": "1792158725358",
+          "progress": 1,
+          "state": "success",
+          "stage": "build",
+          "message": "2026-10-16 22:12:05 build success in 1197811 ms!",
+          "options": {
+            "platform": "web-desktop",
+            "debug": true,
+            "buildPath": "project://build",
+            "outputName": "mcp-web",
+            "startScene": "8d3cd956-41cd-42f6-93ea-145fced0c106",
+            "scenes": [
+              {
+                "uuid": "8d3cd956-41cd-42f6-93ea-145fced0c106",
+                "url": "db://assets/McpIntegration_mvb0oolm/Main.scene"
+              }
+            ],
+            "id": "mcp-build-d3ba49feace7567e78d261720b953d18",
+            "mainBundleCompressionType": "merge_dep",
+            "packages": {
+              "web-desktop": {
+                "useWebGPU": false,
+                "resolution": {
+                  "designWidth": 1280,
+                  "designHeight": 960
+                }
+              }
+            },
+            "name": "Cocos MCP Compatibility Lab",
+            "md5Cache": false,
+            "skipCompressTexture": false,
+            "sourceMaps": false,
+            "polyfills": {
+              "asyncFunctions": true
+            },
+            "experimentalEraseModules": false,
+            "useBuiltinServer": false,
+            "mainBundleIsRemote": false,
+            "useSplashScreen": true,
+            "packAutoAtlas": true,
+            "web-desktop": []
+          },
+          "time": "2026-10-16 21:52",
+          "dirty": false
+        },
+        "1792160225074": {
+          "type": "build",
+          "id": "1792160225074",
+          "progress": 1,
+          "state": "failure",
+          "stage": "build",
+          "message": "The build task was interrupted",
+          "options": {
+            "platform": "web-desktop",
+            "debug": true,
+            "buildPath": "project://build",
+            "outputName": "mcp-cancel-test",
+            "startScene": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+            "scenes": [
+              {
+                "uuid": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+                "url": "db://assets/McpIntegration_mvb1ua7n/Main.scene"
+              }
+            ],
+            "id": "mcp-build-c7c96adb171522d2909d0e7ea66009c7",
+            "mainBundleCompressionType": "merge_dep"
+          },
+          "time": "2026-10-16 22:17",
+          "dirty": false
+        }
+      },
+      "free": true
+    },
+    "nativeTask": {
+      "type": "build",
+      "id": "1792160225074",
+      "progress": 1,
+      "state": "failure",
+      "stage": "build",
+      "message": "The build task was interrupted",
+      "options": {
+        "platform": "web-desktop",
+        "debug": true,
+        "buildPath": "project://build",
+        "outputName": "mcp-cancel-test",
+        "startScene": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+        "scenes": [
+          {
+            "uuid": "342dd685-f1f7-49c4-a878-ab06a3dcdc6d",
+            "url": "db://assets/McpIntegration_mvb1ua7n/Main.scene"
+          }
+        ],
+        "id": "mcp-build-c7c96adb171522d2909d0e7ea66009c7",
+        "mainBundleCompressionType": "merge_dep"
+      },
+      "time": "2026-10-16 22:17",
+      "dirty": false
+    }
+  },
+  "finishedAt": "2026-10-16T14:17:06.502Z",
+  "stderr": ""
+}

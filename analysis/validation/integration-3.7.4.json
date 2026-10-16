@@ -1,0 +1,175 @@
+{
+  "project": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-3.7.4-test",
+  "startedAt": "2026-10-16T14:11:11.653Z",
+  "runId": "mvb1pr54",
+  "steps": [
+    {
+      "name": "Real SDK handshake and tool discovery",
+      "passed": true,
+      "durationMs": 131,
+      "evidence": {
+        "toolNames": [
+          "editor_info",
+          "scene_query",
+          "scene_open",
+          "scene_save",
+          "scene_create",
+          "scene_history",
+          "node_query",
+          "node_edit",
+          "component_edit",
+          "property_set",
+          "asset_query",
+          "asset_edit",
+          "prefab_manage",
+          "ui_build",
+          "editor_preview",
+          "editor_logs",
+          "project_build"
+        ],
+        "runtime": {
+          "node": "14.16.0",
+          "electron": "13.1.4"
+        }
+      }
+    },
+    {
+      "name": "Create native-template scenes and open the requested asset",
+      "passed": true,
+      "durationMs": 1422,
+      "evidence": {
+        "scene": "e494e77d-f466-4585-97d0-5b7eefbace50",
+        "canvas": "beI88Z2HpFELqR4T5EMHpg"
+      }
+    },
+    {
+      "name": "Create UI node and verify requested components",
+      "passed": true,
+      "durationMs": 746,
+      "evidence": {
+        "uuid": "5b3dskATRJYqDk7SHEIx8t",
+        "label": "5bJSmvt0JDeLI6+XXwLxf5"
+      }
+    },
+    {
+      "name": "Set and read text, zero values, booleans, vectors and colors",
+      "passed": true,
+      "durationMs": 1507,
+      "evidence": {
+        "text": "Creator 3.7 MCP 测试",
+        "position": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        }
+      }
+    },
+    {
+      "name": "Reject invalid values before mutation",
+      "passed": true,
+      "durationMs": 291
+    },
+    {
+      "name": "Undo and redo a native property edit",
+      "passed": true,
+      "durationMs": 459
+    },
+    {
+      "name": "Protect unsaved scene changes",
+      "passed": true,
+      "durationMs": 81
+    },
+    {
+      "name": "Add and remove a component by its verified instance",
+      "passed": true,
+      "durationMs": 331
+    },
+    {
+      "name": "Duplicate, reparent and remove nodes through native messages",
+      "passed": true,
+      "durationMs": 1153
+    },
+    {
+      "name": "Create, save, copy, move and delete text assets",
+      "passed": true,
+      "durationMs": 2160
+    },
+    {
+      "name": "Build a nested UI subtree with component properties",
+      "passed": true,
+      "durationMs": 1639
+    },
+    {
+      "name": "Create and instantiate a native prefab preserving text",
+      "passed": true,
+      "durationMs": 963,
+      "evidence": {
+        "assetUuid": "0d6e6578-df8e-4e62-88bd-754ab5d87bc0",
+        "instanceUuid": "27qM7k6yFJQ5gYW7kV4OZV"
+      }
+    },
+    {
+      "name": "Save to disk, switch scenes and verify reopened data",
+      "passed": true,
+      "durationMs": 2588
+    }
+  ],
+  "success": true,
+  "editor": {
+    "editorVersion": "3.7.4",
+    "adapter": "creator37",
+    "protocolVersion": 1,
+    "runtime": {
+      "node": "14.16.0",
+      "electron": "13.1.4"
+    },
+    "project": {
+      "name": "Cocos MCP Compatibility Lab",
+      "path": "D:\\workplace\\cocos-creator-mcp\\.work\\creator-3.7.4-test",
+      "uuid": "0ac60ff6-365f-4b4e-8b01-b797ec3c5ec8"
+    },
+    "capabilities": {
+      "commands": [
+        "editor.info",
+        "scene.query",
+        "node.query",
+        "scene.open",
+        "scene.save",
+        "scene.create",
+        "scene.undo",
+        "scene.redo",
+        "node.create",
+        "node.remove",
+        "node.reparent",
+        "node.duplicate",
+        "component.list",
+        "component.catalog",
+        "component.add",
+        "component.remove",
+        "property.set",
+        "asset.query",
+        "asset.meta",
+        "asset.create",
+        "asset.save",
+        "asset.import",
+        "asset.move",
+        "asset.copy",
+        "asset.delete",
+        "prefab.create",
+        "prefab.instantiate",
+        "ui.build",
+        "editor.logs",
+        "preview.info",
+        "preview.refresh",
+        "preview.open",
+        "build.config",
+        "build.start",
+        "build.status",
+        "build.cancel"
+      ],
+      "groupedUndo": false
+    }
+  },
+  "finishedAt": "2026-10-16T14:11:27.030Z",
+  "stderr": ""
+}
