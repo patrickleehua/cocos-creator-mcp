@@ -1,0 +1,83 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.0",
+  "startedAt": "2026-10-17T08:20:29.237Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 221,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": true,
+      "durationMs": 7878,
+      "evidence": {
+        "abruptOwnedServerExit": true,
+        "sdkReconnected": true,
+        "savedScenePreserved": true
+      }
+    },
+    {
+      "name": "real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated",
+      "passed": true,
+      "durationMs": 28844,
+      "evidence": {
+        "requestedNodes": 400,
+        "observedDuringDispatch": 1,
+        "timedOutWrite": {
+          "code": "TIMEOUT",
+          "outcome": "unknown",
+          "retryable": false
+        },
+        "expiredQueuedWrite": {
+          "code": "REQUEST_EXPIRED",
+          "outcome": "not_applied"
+        },
+        "verifiedNodes": 400,
+        "uniqueNames": 400,
+        "expiredNodeAbsent": true,
+        "healthResponsive": true,
+        "sceneQueryBytes": 190164,
+        "singleNodeReadbackMs": 40,
+        "savedAfterTimeout": true
+      }
+    },
+    {
+      "name": "native text assets round-trip Unicode names and spaces",
+      "passed": true,
+      "durationMs": 98,
+      "evidence": {
+        "unicodeAndSpaces": true,
+        "utf8ReadbackVerified": true
+      }
+    }
+  ],
+  "success": true,
+  "method": "Real 400-node compound mutation through the unmodified adapter, timeout during progress, expiring queued create, and readback barrier. No API overrides or extension reloads.",
+  "budgets": {
+    "timedOutClientMs": 1200,
+    "queuedWriteExpiresAfterMs": 200,
+    "observerAndCleanupMs": 600000
+  },
+  "note": "The larger observer budget permits slow native completion; it does not retry or extend the timed-out write client or the expired queued request.",
+  "currentStep": "native text assets round-trip Unicode names and spaces",
+  "compound": {
+    "tag": "McpRealFault_491552ddb47c486dbb744486c9d63325",
+    "parent": "32Rpsqbd9B3olefBZioH6N",
+    "requestedNodes": 400,
+    "writeRequestedAt": "2026-10-17T08:20:37.608Z",
+    "outcome": "verified_complete_and_saved"
+  },
+  "cleanup": {
+    "parent": "32Rpsqbd9B3olefBZioH6N",
+    "requestedAt": "2026-10-17T08:21:06.415Z",
+    "outcome": "removed_and_saved"
+  },
+  "finishedAt": "2026-10-17T08:21:06.566Z"
+}

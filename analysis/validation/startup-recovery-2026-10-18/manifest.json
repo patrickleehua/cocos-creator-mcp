@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-17T16:43:01.861Z",
+  "kind": "native-startup-and-recovery-investigation",
+  "status": "diagnostic_passed_formal_run_in_progress",
+  "productionStable": false,
+  "runtimeCommit": "eea441f19a4a8ff03cb206870419f98dc2a8bf0c",
+  "runtimeSources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "a098c8cb329927665b47630ffa12d6ec528eb9f8b74688818b557e1db1e3d116"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "unitTests": {
+    "tests": 444,
+    "passed": 444,
+    "failed": 0,
+    "skipped": 0,
+    "manifest": "../scene-open-2026-10-17/manifest.json"
+  },
+  "failedAttempt": {
+    "number": 12,
+    "startedAt": "2026-10-17T07:59:26.361Z",
+    "finishedAt": "2026-10-17T08:40:34.286Z",
+    "status": "failed",
+    "qualificationPassed": [
+      "3.7.4",
+      "3.7.1",
+      "3.7.2",
+      "3.7.0",
+      "3.7.3"
+    ],
+    "recoveryPassed": [],
+    "eightHourReports": 0,
+    "error": "3.7.4: 3.7.4 editor did not become ready"
+  },
+  "controls": {
+    "version": "3.7.4",
+    "startupReady": true,
+    "recoveryPassed": true,
+    "completedAt": "2026-10-17T10:34:49.361Z",
+    "savedSceneSha256": "308a6edf3a348d9138e247c86b4d6bb65ce67413c8940f9450521c43e9298abf",
+    "originalClientReconnected": true,
+    "sessionRotated": true,
+    "cleanupCompleted": true,
+    "exitInterpretation": "Both recorded exit codes4294967295 follow explicit diagnostic stop requests; they are expected forced cleanup, not new spontaneous crashes."
+  },
+  "nativeCrash": {
+    "recordedTime": "2026-10-17T08:30:36.000Z",
+    "code": "0xc0000005",
+    "moduleOffset": "0x337edd0",
+    "sha256": "785f98ee80a90cf8b060dc0c13ba21f2c6d5095333758d3dc44208c3b5b3d547",
+    "rootCause": "unknown",
+    "method": "Offline minidump header/stream interpretation; no symbols or stack unwind. The minidump remains private."
+  },
+  "formalFollowup": {
+    "attempt": 13,
+    "pipelineStartedAt": "2026-10-17T16:41:14.687Z",
+    "automaticStageTransition": [
+      "full five-version qualification",
+      "full five-version saved-scene recovery",
+      "five eight-hour soaks with at most two editors",
+      "serial Chinese and space project-root core smoke",
+      "explicit final evidence review required"
+    ],
+    "backgroundSetup": "Wait for a valid Editor project UUID/version before applying the owned hidden-editor background environment. Monitor startup PID liveness and record readiness samples; no API overrides or business mutation retries."
+  },
+  "reports": [
+    {
+      "file": "3.7.0-build-debug.json",
+      "sha256": "f3837e1a9e6e7c899e9601ed28f4a267e2741fa06533dc5b4f4f2da4306dcb1c"
+    },
+    {
+      "file": "3.7.0-build-release.json",
+      "sha256": "036ad766d8630b0afb609fe0c235e6688a98f679f165da43ace71e168f2b95e5"
+    },
+    {
+      "file": "3.7.0-core.json",
+      "sha256": "3083718491f5489c26b7937ddc9d19c6740e88691e1d962e97811bdaffe516b6"
+    },
+    {
+      "file": "3.7.0-debug-runtime.json",
+      "sha256": "1b8b4e9d5d4d073d11dc1abdc485c1cc2271ea180b81d2203cb7b128f6284010"
+    },
+    {
+      "file": "3.7.0-extras.json",
+      "sha256": "3d56f9226fc9a4ff0b1b19d5d7cccd8a989e14ff96a403561ff0635dd97ce274"
+    },
+    {
+      "file": "3.7.0-faults.json",
+      "sha256": "12adf7734c9d6408976417338a63a44a3f7a8f4b450e04993dbbeaa0b2ae7a8d"
+    },
+    {
+      "file": "3.7.0-preview-open.json",
+      "sha256": "7de9b16700fcb9e60608ca49fe4ed847d9e7249261ae05a012074efb7dfc992b"
+    },
+    {
+      "file": "3.7.0-preview-runtime.json",
+      "sha256": "f4f9ce604e7297e46dcb0665e7a5c7675d25007d358015cbed0eacc62c4cbab0"
+    },
+    {
+      "file": "3.7.0-references.json",
+      "sha256": "66437c96afa0bb5775bfd544ebf5c3958801c9454698c41b6e286bc254cabfd2"
+    },
+    {
+      "file": "3.7.0-release-runtime.json",
+      "sha256": "5393e47e666a6414cddecdf25a33e6a893b18feeb47bebf5f70f3ce84b8603ac"
+    },
+    {
+      "file": "3.7.0-soak-pilot.json",
+      "sha256": "1318d0a5b9dbc00cdab1d2a352cb207f36e12e17df27e9bebe47c2c75a093b46"
+    },
+    {
+      "file": "3.7.1-build-debug.json",
+      "sha256": "810e7fc5a01bfd9e621abd640490e905237253cec1fd864f8ebb47d7b3046afc"
+    },
+    {
+      "file": "3.7.1-build-release.json",
+      "sha256": "82abcc4748b14b62c2d2e15ab1a2d36048f7d8be0691d60991119f108f817115"
+    },
+    {
+      "file": "3.7.1-core.json",
+      "sha256": "ecff3e48a71f8b646d2d8b17470425b8fc633830c5432679ecb11d58565062f7"
+    },
+    {
+      "file": "3.7.1-debug-runtime.json",
+      "sha256": "e24f26d0462bbab87d81789d4066dc4583e0681a20d9ee550f6c93232d854675"
+    },
+    {
+      "file": "3.7.1-extras.json",
+      "sha256": "8121534f0fde6d1cc85ffb2e37d651446b0c3fdc17ee787629161765d003c41e"
+    },
+    {
+      "file": "3.7.1-faults.json",
+      "sha256": "5402586144bb80f670d305cacb5359c2286cd4921f2b341b9f74787df246dae4"
+    },
+    {
+      "file": "3.7.1-preview-open.json",
+      "sha256": "738975d1d2c76883d72a8a5b08b4045f85d53a0743ac9184ee57192afde98a5b"
+    },
+    {
+      "file": "3.7.1-preview-runtime.json",
+      "sha256": "34635fa55bb4959eae695e72a845af02d35b78163d67b2556714127bb16a04a2"
+    },
+    {
+      "file": "3.7.1-references.json",
+      "sha256": "57a0911b2a0be3ca8c83bcd54ad362867a38facc93622bdf32a4c964da000ca1"
+    },
+    {
+      "file": "3.7.1-release-runtime.json",
+      "sha256": "6a0d155d5feefa215345df7ae9f15889a28f173afe1a65764b2d57d1139b6984"
+    },
+    {
+      "file": "3.7.1-soak-pilot.json",
+      "sha256": "469cb0c8cb895f8870ad42c39a2730f82d783f874f8daa3c705f72f463ac3768"
+    },
+    {
+      "file": "3.7.2-build-debug.json",
+      "sha256": "6bd031170903f1a74a978527ae7b53f8e95b7928ba645e34ef4eea898486e243"
+    },
+    {
+      "file": "3.7.2-build-release.json",
+      "sha256": "fd0a29a30a10aa359275cf57bf71032c735be4f6bc0b248c73531a99fc96d387"
+    },
+    {
+      "file": "3.7.2-core.json",
+      "sha256": "d2d21a1d2a9f8ba7c7218377d12224fbc78202beb3c00d424b16cf30a95880cf"
+    },
+    {
+      "file": "3.7.2-debug-runtime.json",
+      "sha256": "f4ece5f3f6f2753fbc8f55355c053ade0c9cf19b4ad31b6859eb4e13caa2186a"
+    },
+    {
+      "file": "3.7.2-extras.json",
+      "sha256": "52024f1aed14d287ecba53d69a60b8f1d9a439431f7762f1b28cb4f7891d2992"
+    },
+    {
+      "file": "3.7.2-faults.json",
+      "sha256": "56b67bd6452888ab7b86080f3a2a0680865dd465cc4e5061e9f4d89f8166c390"
+    },
+    {
+      "file": "3.7.2-preview-open.json",
+      "sha256": "cbac5977bd8914e6015a647cf2dced315790f248ba7a301baebfa98d3ffa3ee7"
+    },
+    {
+      "file": "3.7.2-preview-runtime.json",
+      "sha256": "776c7a4f97128581305e111aafacb55bf1ea0e67a176446051f36e9520b96917"
+    },
+    {
+      "file": "3.7.2-references.json",
+      "sha256": "7dc7fc1be41367e18bbb0c3294f643650e6e76dc1fb935cc7e32d6e69371ed98"
+    },
+    {
+      "file": "3.7.2-release-runtime.json",
+      "sha256": "442c04f7c606b31ae2cbb794f6730b77a88b3bb07752bcda030de3b7bcd4d6e2"
+    },
+    {
+      "file": "3.7.2-soak-pilot.json",
+      "sha256": "15661318c4e5bf0f95037ead143681c9345cb64bc48f6fc0e128f8ac0a6de2a1"
+    },
+    {
+      "file": "3.7.3-build-debug.json",
+      "sha256": "526ebfce3e83a2c5a7419f2be584e42d807f6a522e633c14c1a5aece618ef2b4"
+    },
+    {
+      "file": "3.7.3-build-release.json",
+      "sha256": "f37d0713a30991c035c051818958d960cff9cb93d8f6f0f8610a0f638f214134"
+    },
+    {
+      "file": "3.7.3-core.json",
+      "sha256": "4e27ed9ad43c4d1fdfd613672efedd2619edbe878d0f19b61af1cbc0b3a411f6"
+    },
+    {
+      "file": "3.7.3-debug-runtime.json",
+      "sha256": "cfbf4a58bd262d6f26cf0104b07ce707e65da922a5e64241f0fbeb7e9d125d2b"
+    },
+    {
+      "file": "3.7.3-extras.json",
+      "sha256": "e583402f189256ed77b3810cf05a6ba7491542002e0bbb8b2a78aa82650f5487"
+    },
+    {
+      "file": "3.7.3-faults.json",
+      "sha256": "2b5539c7590608410aa5d9917298ac22ec345ba93d61eaf9e129cc9ec3bf47a7"
+    },
+    {
+      "file": "3.7.3-preview-open.json",
+      "sha256": "22446b0f06f691ca8386ce3ffe5eb3fb28184da6ce22ec4af38bd1d1f5c94562"
+    },
+    {
+      "file": "3.7.3-preview-runtime.json",
+      "sha256": "36d54f1235107bec736b3ef787875f640a6abfaef81696a5f5490108775e3ec6"
+    },
+    {
+      "file": "3.7.3-references.json",
+      "sha256": "78324122bd1e0737efe9dbd834a7ca77d2306dc58881f0530bafb5adbe29d5c6"
+    },
+    {
+      "file": "3.7.3-release-runtime.json",
+      "sha256": "063b5ec79b5e4579949e7035d3df0b8799e07ac313f77c21dfeb5df931e5f466"
+    },
+    {
+      "file": "3.7.3-soak-pilot.json",
+      "sha256": "4c4e4c8acf7cdca156253d258511f2e89739b2abd0c94e8402ae5c482cb8d3f8"
+    },
+    {
+      "file": "3.7.4-build-debug.json",
+      "sha256": "3774ec850ca82ee1b712a97691c5dce36e580d9dcfe50d8f3dd92037c4e2a39f"
+    },
+    {
+      "file": "3.7.4-build-release.json",
+      "sha256": "0e7cdc9e145171536e1ca5a06c7085c84d8f30dceeb6ca0d52d9f47fc9604ef6"
+    },
+    {
+      "file": "3.7.4-core.json",
+      "sha256": "ef3d62770d78a2f01b3a9ccf29c7be86bcdb281bf192f2599bb64b69b6f316fc"
+    },
+    {
+      "file": "3.7.4-debug-runtime.json",
+      "sha256": "f0f57fdc47dad79a3f8b8700b90647bf63170e34d832affd6c75de81fb9865de"
+    },
+    {
+      "file": "3.7.4-extras.json",
+      "sha256": "b100237dc76c0d9c9e6b90c595160ab18e958c00f161db12e0b1c5e7363e275b"
+    },
+    {
+      "file": "3.7.4-faults.json",
+      "sha256": "d7e6e8a372f0b64e2935c8fd18152397d530c530ab052e7ee6623a7d38914f0c"
+    },
+    {
+      "file": "3.7.4-preview-open.json",
+      "sha256": "934b17c61707f524f102c3f3bea699413afb3f80f7e37c8956c9e80c64489595"
+    },
+    {
+      "file": "3.7.4-preview-runtime.json",
+      "sha256": "f5bd16034633217a30cc234b627fee6d0d5c3b9835548260f55247d6438208a2"
+    },
+    {
+      "file": "3.7.4-references.json",
+      "sha256": "814e9df72f52c3b552c6873b77e1d19bcd365edab08a77fad50aef94d985e6d6"
+    },
+    {
+      "file": "3.7.4-release-runtime.json",
+      "sha256": "bde821fa14cc792709f0851b4ff98e2c24ff9e7a69ae2d79d70b681e314ab74f"
+    },
+    {
+      "file": "3.7.4-soak-pilot.json",
+      "sha256": "2c46da868efd7b2a44b0796973e3c884095b683bedbf6310bcae946ad20a3c12"
+    },
+    {
+      "file": "failed-controller.json",
+      "sha256": "79f0062347f9c19ab345379f9ab0cd7c26fcec7fca7a300e27bd1c2d4f6fd7ac"
+    },
+    {
+      "file": "startup-control.json",
+      "sha256": "d0ede246e51af09d36803d1fbc8edadeef2235ba03b55d32297b311ab438967b"
+    },
+    {
+      "file": "saved-scene-recovery-control.json",
+      "sha256": "e2ceb8a7940a60edc2d60dddac950e7348794340034fba9ae1dc19847e600f6a"
+    },
+    {
+      "file": "native-crash-header.json",
+      "sha256": "495a33740a886473c4ad0985af2a98f4c761165ebf96a77679335317548e4cd2"
+    }
+  ],
+  "limitations": [
+    "A successful diagnostic does not relabel the failed production run or establish the crash root cause.",
+    "The new complete frozen-harness run and all five eight-hour runs must pass; diagnostic duration is not counted.",
+    "No stable release or production-ready claim is made."
+  ]
+}

@@ -1,0 +1,1273 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 1536,
+  "startedAt": "2026-10-17T07:59:26.361Z",
+  "phase": "editor-recovery",
+  "status": "failed",
+  "policy": {
+    "maxParallelEditors": 2,
+    "qualificationParallelism": 1,
+    "recoveryParallelism": 1,
+    "enduranceParallelism": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 10,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "a098c8cb329927665b47630ffa12d6ec528eb9f8b74688818b557e1db1e3d116"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "harnessSources": [
+    {
+      "file": ".research/production-supervisor.mjs",
+      "sha256": "bd9ae16373d9ed3754958d1b8a8e75ab28cf102306c184c3d16ae3f507b8f3dc"
+    },
+    {
+      "file": ".research/start-production-supervisor.ps1",
+      "sha256": "077fbdb251e35bf1a3fcba784acb50fe2b3be7f0c0c7aa1f55afa7f21369de85"
+    },
+    {
+      "file": ".research/start-stability-version.ps1",
+      "sha256": "f3934f85d6b4bff0c3b860160034e4998811f771a422ac7511829329bf55c6f6"
+    },
+    {
+      "file": ".research/stop-stability-version.ps1",
+      "sha256": "561aa795dfd548fce407f044c03469b880d8beffa148eacd8ccfe5f50fb32afb"
+    },
+    {
+      "file": ".research/prioritize-test-editor.ps1",
+      "sha256": "cfaf4f8a93c94b2fc038a1af13dd340664f27daa31f88a940bf2f0cf7b0c9e37"
+    },
+    {
+      "file": ".research/resource-state.ps1",
+      "sha256": "7c570f109069808c5ccddf174a99cf0fff83c1834259dabecba5255c25ca330e"
+    },
+    {
+      "file": ".research/stability-cdp.mjs",
+      "sha256": "78f651bf6866f228ac69d73cec46c6a0ce5d1ea48be6b47676757c756c030592"
+    },
+    {
+      "file": ".research/native-faults-real.mjs",
+      "sha256": "59dd956f49b6448fdb55c7afe2804954448fda1adc7b8078fa2a40f62fabe7af"
+    },
+    {
+      "file": ".research/fault-http.mjs",
+      "sha256": "462ad2ff29370e3b2b3f4d401dbed8b83557f85916595d897381f711fe3c27e8"
+    },
+    {
+      "file": ".research/production-build.mjs",
+      "sha256": "89a4c78d4eac2eeb8d2658490ec6ac56baa8af7b9d62c284b6c39cee92850873"
+    },
+    {
+      "file": ".research/prepare-production-preview.mjs",
+      "sha256": "edfebd515451f3e5f8091e0df878a710d8206ff70d87a4e6b498a44832b0201b"
+    },
+    {
+      "file": ".research/production-browser.mjs",
+      "sha256": "58e12ecb218cac5c89083a63cff1d381fa1bca41bd4e24981a184130502cc81e"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.4",
+      "status": "failed",
+      "phase": "editor-recovery",
+      "editorPid": 12432,
+      "readinessLastError": "fetch failed",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false; no Editor.Message API overrides",
+        "editorPid": 7988,
+        "appliedAt": 1792223982072,
+        "changes": []
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T08:06:13.286Z",
+      "editorSessions": [
+        {
+          "editorPid": 7988,
+          "backgroundEnvironment": {
+            "policy": "Owned hidden test editor only: backgroundThrottling=false; no Editor.Message API overrides",
+            "editorPid": 7988,
+            "appliedAt": 1792223982072,
+            "changes": []
+          },
+          "initialReadyState": {
+            "assetReady": true,
+            "sceneReady": true,
+            "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+            "dirty": false,
+            "confirmedAt": "2026-10-17T08:01:34.424Z",
+            "consecutiveSamples": 3
+          },
+          "initialScenePreparation": {
+            "asset": "db://assets/Main.scene",
+            "requestedAt": "2026-10-17T08:01:26.623Z",
+            "openedUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69"
+          },
+          "closedAt": "2026-10-17T08:06:13.817Z"
+        }
+      ],
+      "error": {
+        "message": "3.7.4 editor did not become ready"
+      },
+      "editorClosedAt": "2026-10-17T08:40:34.286Z"
+    },
+    {
+      "version": "3.7.1",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 11508,
+      "readinessLastError": "{\"exceptionId\":6,\"text\":\"Uncaught (in promise) Error: Missing test extension\",\"lineNumber\":0,\"columnNumber\":0,\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Missing test extension\\n    at <anonymous>:1:98\\n    at <anonymous>:1:585\",\"objectId\":\"-1863434252272152615.1.1\"}}",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false; no Editor.Message API overrides",
+        "editorPid": 11508,
+        "appliedAt": 1792224383953,
+        "changes": []
+      },
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T08:07:47.931Z",
+        "openedUuid": "75152db2-0481-489a-a3e9-ab4402438380"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "75152db2-0481-489a-a3e9-ab4402438380",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T08:07:55.897Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T08:11:18.148Z",
+      "editorClosedAt": "2026-10-17T08:11:19.180Z"
+    },
+    {
+      "version": "3.7.2",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 4332,
+      "readinessLastError": "{\"exceptionId\":7,\"text\":\"Uncaught (in promise) Error: Missing test extension\",\"lineNumber\":0,\"columnNumber\":0,\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Missing test extension\\n    at <anonymous>:1:98\\n    at <anonymous>:1:585\\n    at ProfileManager.emit (events.js:264:44)\\n    at <WORKSPACE>\\\\.work\\\\creator-versions\\\\3.7.2\\\\resources\\\\app.asar\\\\node_modules\\\\@base\\\\electron-profile\\\\lib\\\\browser\\\\index.js:1:2225\\n    at Profile.set (<WORKSPACE>\\\\.work\\\\creator-versions\\\\3.7.2\\\\resources\\\\app.asar\\\\node_modules\\\\@base\\\\electron-profile\\\\lib\\\\browser\\\\profile.ccc:1:674)\\n    at Object.<anonymous> (<WORKSPACE>\\\\.work\\\\creator-versions\\\\3.7.2\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\profile\\\\browser\\\\index.ccc:1:1967)\\n    at Generator.next (<anonymous>)\\n    at <WORKSPACE>\\\\.work\\\\creator-versions\\\\3.7.2\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\profile\\\\browser\\\\index.ccc:1:327\\n    at new Promise (<anonymous>)\\n    at <WORKSPACE>\\\\.work\\\\creator-versions\\\\3.7.2\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\profile\\\\browser\\\\index.ccc:1:75\",\"objectId\":\"-2983792349034690195.1.1\"}}",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false; no Editor.Message API overrides",
+        "editorPid": 4332,
+        "appliedAt": 1792224690288,
+        "changes": []
+      },
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T08:13:02.823Z",
+        "openedUuid": "5c224dba-894c-4942-8d74-7cb31700291e"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "5c224dba-894c-4942-8d74-7cb31700291e",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T08:13:10.783Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T08:17:23.112Z",
+      "editorClosedAt": "2026-10-17T08:17:23.632Z"
+    },
+    {
+      "version": "3.7.0",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 22992,
+      "readinessLastError": "{\"exceptionId\":6,\"text\":\"Uncaught (in promise) Error: Missing test extension\",\"lineNumber\":0,\"columnNumber\":0,\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Missing test extension\\n    at <anonymous>:1:98\\n    at <anonymous>:1:585\",\"objectId\":\"5232842984319176691.1.1\"}}",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false; no Editor.Message API overrides",
+        "editorPid": 22992,
+        "appliedAt": 1792225054982,
+        "changes": []
+      },
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T08:19:34.380Z",
+        "openedUuid": "fbde3368-9efc-418e-922b-5bcc65540959"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "fbde3368-9efc-418e-922b-5bcc65540959",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T08:19:42.524Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T08:24:36.833Z",
+      "editorClosedAt": "2026-10-17T08:24:37.892Z"
+    },
+    {
+      "version": "3.7.3",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 33804,
+      "readinessLastError": "{\"exceptionId\":6,\"text\":\"Uncaught (in promise) Error: Missing test extension\",\"lineNumber\":0,\"columnNumber\":0,\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Missing test extension\\n    at <anonymous>:1:98\\n    at <anonymous>:1:585\",\"objectId\":\"-8585979943165000732.1.1\"}}",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false; no Editor.Message API overrides",
+        "editorPid": 33804,
+        "appliedAt": 1792225489150,
+        "changes": []
+      },
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T08:26:41.896Z",
+        "openedUuid": "770fcd7f-9738-417b-aa22-c0dc76c6dc39"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "770fcd7f-9738-417b-aa22-c0dc76c6dc39",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T08:26:49.945Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T08:30:28.125Z",
+      "editorClosedAt": "2026-10-17T08:30:28.653Z"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-17T07:59:30.5770091Z",
+      "availableGiB": 10.16,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 45
+    },
+    {
+      "sampledAt": "2026-10-17T08:00:44.0525605Z",
+      "availableGiB": 7.83,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 32
+    },
+    {
+      "sampledAt": "2026-10-17T08:00:58.8717059Z",
+      "availableGiB": 7.86,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 40
+    },
+    {
+      "sampledAt": "2026-10-17T08:01:13.9373384Z",
+      "availableGiB": 7.79,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T08:01:28.9158457Z",
+      "availableGiB": 7.07,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 24
+    },
+    {
+      "sampledAt": "2026-10-17T08:01:44.2464318Z",
+      "availableGiB": 6.2,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 67
+    },
+    {
+      "sampledAt": "2026-10-17T08:01:59.0768282Z",
+      "availableGiB": 6.17,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 71
+    },
+    {
+      "sampledAt": "2026-10-17T08:02:14.6054775Z",
+      "availableGiB": 4.21,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 80
+    },
+    {
+      "sampledAt": "2026-10-17T08:02:29.2014709Z",
+      "availableGiB": 6.7,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 37
+    },
+    {
+      "sampledAt": "2026-10-17T08:02:44.0221821Z",
+      "availableGiB": 7.21,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 10
+    },
+    {
+      "sampledAt": "2026-10-17T08:02:59.0010983Z",
+      "availableGiB": 7.42,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 17
+    },
+    {
+      "sampledAt": "2026-10-17T08:03:13.9614443Z",
+      "availableGiB": 7.48,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 33
+    },
+    {
+      "sampledAt": "2026-10-17T08:03:29.1136391Z",
+      "availableGiB": 7.34,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 27
+    },
+    {
+      "sampledAt": "2026-10-17T08:03:44.1086006Z",
+      "availableGiB": 8.26,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 48
+    },
+    {
+      "sampledAt": "2026-10-17T08:03:59.4023653Z",
+      "availableGiB": 7.45,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    },
+    {
+      "sampledAt": "2026-10-17T08:04:15.5196520Z",
+      "availableGiB": 6.14,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T08:04:41.9604050Z",
+      "availableGiB": 6.17,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 90
+    },
+    {
+      "sampledAt": "2026-10-17T08:04:59.2104526Z",
+      "availableGiB": 7.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 30
+    },
+    {
+      "sampledAt": "2026-10-17T08:05:14.0329767Z",
+      "availableGiB": 7.83,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 36
+    },
+    {
+      "sampledAt": "2026-10-17T08:05:29.0873816Z",
+      "availableGiB": 8.23,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T08:05:44.3731136Z",
+      "availableGiB": 8.14,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 66
+    },
+    {
+      "sampledAt": "2026-10-17T08:06:00.2483955Z",
+      "availableGiB": 5.38,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 82
+    },
+    {
+      "sampledAt": "2026-10-17T08:06:14.1665136Z",
+      "availableGiB": 8.3,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T08:06:29.2923440Z",
+      "availableGiB": 10.81,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 28
+    },
+    {
+      "sampledAt": "2026-10-17T08:06:44.1057000Z",
+      "availableGiB": 10,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 42
+    },
+    {
+      "sampledAt": "2026-10-17T08:06:59.1673962Z",
+      "availableGiB": 9.55,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 31
+    },
+    {
+      "sampledAt": "2026-10-17T08:07:14.1750869Z",
+      "availableGiB": 9.47,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 14
+    },
+    {
+      "sampledAt": "2026-10-17T08:07:29.1067646Z",
+      "availableGiB": 9.48,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 51
+    },
+    {
+      "sampledAt": "2026-10-17T08:07:44.1489901Z",
+      "availableGiB": 8.89,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 81
+    },
+    {
+      "sampledAt": "2026-10-17T08:07:59.2050403Z",
+      "availableGiB": 8.73,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 29
+    },
+    {
+      "sampledAt": "2026-10-17T08:08:14.4316754Z",
+      "availableGiB": 8.65,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 56
+    },
+    {
+      "sampledAt": "2026-10-17T08:08:29.5017962Z",
+      "availableGiB": 8.53,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 52
+    },
+    {
+      "sampledAt": "2026-10-17T08:08:44.3681857Z",
+      "availableGiB": 7.96,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 74
+    },
+    {
+      "sampledAt": "2026-10-17T08:08:59.3180191Z",
+      "availableGiB": 8.09,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 37
+    },
+    {
+      "sampledAt": "2026-10-17T08:09:14.3044653Z",
+      "availableGiB": 8.16,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 45
+    },
+    {
+      "sampledAt": "2026-10-17T08:09:29.3300098Z",
+      "availableGiB": 8.12,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 26
+    },
+    {
+      "sampledAt": "2026-10-17T08:09:44.3463121Z",
+      "availableGiB": 7.96,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 45
+    },
+    {
+      "sampledAt": "2026-10-17T08:09:59.4692445Z",
+      "availableGiB": 7.84,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 58
+    },
+    {
+      "sampledAt": "2026-10-17T08:10:15.3441265Z",
+      "availableGiB": 5.7,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 30
+    },
+    {
+      "sampledAt": "2026-10-17T08:10:29.4310246Z",
+      "availableGiB": 8.11,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 66
+    },
+    {
+      "sampledAt": "2026-10-17T08:10:45.5521362Z",
+      "availableGiB": 5.43,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 87
+    },
+    {
+      "sampledAt": "2026-10-17T08:10:59.2764967Z",
+      "availableGiB": 8.45,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 18
+    },
+    {
+      "sampledAt": "2026-10-17T08:11:14.3529523Z",
+      "availableGiB": 8.53,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 25
+    },
+    {
+      "sampledAt": "2026-10-17T08:11:29.2029063Z",
+      "availableGiB": 11.54,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 14
+    },
+    {
+      "sampledAt": "2026-10-17T08:11:44.2499383Z",
+      "availableGiB": 10.47,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 17
+    },
+    {
+      "sampledAt": "2026-10-17T08:11:59.3049613Z",
+      "availableGiB": 10.05,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 32
+    },
+    {
+      "sampledAt": "2026-10-17T08:12:14.2505766Z",
+      "availableGiB": 9.59,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 34
+    },
+    {
+      "sampledAt": "2026-10-17T08:12:29.2247317Z",
+      "availableGiB": 9.33,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T08:12:44.2659538Z",
+      "availableGiB": 9.73,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 20
+    },
+    {
+      "sampledAt": "2026-10-17T08:12:59.2968185Z",
+      "availableGiB": 9.63,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 17
+    },
+    {
+      "sampledAt": "2026-10-17T08:13:14.7967360Z",
+      "availableGiB": 9.31,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 48
+    },
+    {
+      "sampledAt": "2026-10-17T08:13:29.4413400Z",
+      "availableGiB": 9.18,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 74
+    },
+    {
+      "sampledAt": "2026-10-17T08:13:44.8918362Z",
+      "availableGiB": 9.34,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 46
+    },
+    {
+      "sampledAt": "2026-10-17T08:13:59.5594516Z",
+      "availableGiB": 8.82,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 35
+    },
+    {
+      "sampledAt": "2026-10-17T08:14:14.4383336Z",
+      "availableGiB": 9.27,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 31
+    },
+    {
+      "sampledAt": "2026-10-17T08:14:29.4323613Z",
+      "availableGiB": 9.15,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 39
+    },
+    {
+      "sampledAt": "2026-10-17T08:14:44.4135589Z",
+      "availableGiB": 9.11,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 41
+    },
+    {
+      "sampledAt": "2026-10-17T08:15:00.0975761Z",
+      "availableGiB": 9.14,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 68
+    },
+    {
+      "sampledAt": "2026-10-17T08:15:14.4943462Z",
+      "availableGiB": 9.18,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 40
+    },
+    {
+      "sampledAt": "2026-10-17T08:15:36.1924289Z",
+      "availableGiB": 9.09,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    },
+    {
+      "sampledAt": "2026-10-17T08:15:44.4141332Z",
+      "availableGiB": 9.05,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 5
+    },
+    {
+      "sampledAt": "2026-10-17T08:16:00.2025241Z",
+      "availableGiB": 7.83,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-17T08:16:14.6805544Z",
+      "availableGiB": 8.44,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 37
+    },
+    {
+      "sampledAt": "2026-10-17T08:16:29.4416721Z",
+      "availableGiB": 8.25,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 65
+    },
+    {
+      "sampledAt": "2026-10-17T08:16:44.5521363Z",
+      "availableGiB": 9.05,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    },
+    {
+      "sampledAt": "2026-10-17T08:16:59.5532330Z",
+      "availableGiB": 8.53,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 32
+    },
+    {
+      "sampledAt": "2026-10-17T08:17:14.9788214Z",
+      "availableGiB": 9.05,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 77
+    },
+    {
+      "sampledAt": "2026-10-17T08:17:29.6801951Z",
+      "availableGiB": 11.49,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T08:17:44.4234358Z",
+      "availableGiB": 10.59,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 10
+    },
+    {
+      "sampledAt": "2026-10-17T08:17:59.4731216Z",
+      "availableGiB": 9.7,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 67
+    },
+    {
+      "sampledAt": "2026-10-17T08:18:14.9422021Z",
+      "availableGiB": 8.59,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T08:18:36.0073026Z",
+      "availableGiB": 8.27,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 99
+    },
+    {
+      "sampledAt": "2026-10-17T08:18:47.9494664Z",
+      "availableGiB": 8.3,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T08:18:59.6127457Z",
+      "availableGiB": 7.77,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 82
+    },
+    {
+      "sampledAt": "2026-10-17T08:19:15.5900248Z",
+      "availableGiB": 8.25,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 85
+    },
+    {
+      "sampledAt": "2026-10-17T08:19:32.4173709Z",
+      "availableGiB": 7.15,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 93
+    },
+    {
+      "sampledAt": "2026-10-17T08:19:44.8899600Z",
+      "availableGiB": 6.34,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 85
+    },
+    {
+      "sampledAt": "2026-10-17T08:20:00.0049912Z",
+      "availableGiB": 6.43,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 73
+    },
+    {
+      "sampledAt": "2026-10-17T08:20:14.7521631Z",
+      "availableGiB": 6.57,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 79
+    },
+    {
+      "sampledAt": "2026-10-17T08:20:30.1579634Z",
+      "availableGiB": 5.53,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T08:20:45.6747383Z",
+      "availableGiB": 8.27,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 90
+    },
+    {
+      "sampledAt": "2026-10-17T08:20:59.8814048Z",
+      "availableGiB": 8.33,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 85
+    },
+    {
+      "sampledAt": "2026-10-17T08:21:14.6886420Z",
+      "availableGiB": 8.57,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 63
+    },
+    {
+      "sampledAt": "2026-10-17T08:21:29.7154612Z",
+      "availableGiB": 8.62,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 48
+    },
+    {
+      "sampledAt": "2026-10-17T08:21:47.9654373Z",
+      "availableGiB": 7.71,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 96
+    },
+    {
+      "sampledAt": "2026-10-17T08:22:04.7702119Z",
+      "availableGiB": 7.36,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 88
+    },
+    {
+      "sampledAt": "2026-10-17T08:22:18.5696641Z",
+      "availableGiB": 6.31,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 96
+    },
+    {
+      "sampledAt": "2026-10-17T08:22:29.7390378Z",
+      "availableGiB": 6.84,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 84
+    },
+    {
+      "sampledAt": "2026-10-17T08:22:45.0139141Z",
+      "availableGiB": 7.31,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 61
+    },
+    {
+      "sampledAt": "2026-10-17T08:22:59.7464731Z",
+      "availableGiB": 7.11,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 41
+    },
+    {
+      "sampledAt": "2026-10-17T08:23:14.7835723Z",
+      "availableGiB": 6.65,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T08:23:31.1465738Z",
+      "availableGiB": 10.63,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T08:23:44.8275243Z",
+      "availableGiB": 14.52,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 68
+    },
+    {
+      "sampledAt": "2026-10-17T08:23:59.7521026Z",
+      "availableGiB": 15.44,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 37
+    },
+    {
+      "sampledAt": "2026-10-17T08:24:14.7416417Z",
+      "availableGiB": 15.28,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 5
+    },
+    {
+      "sampledAt": "2026-10-17T08:24:30.1328755Z",
+      "availableGiB": 15.1,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 68
+    },
+    {
+      "sampledAt": "2026-10-17T08:24:44.6908181Z",
+      "availableGiB": 16.37,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 43
+    },
+    {
+      "sampledAt": "2026-10-17T08:24:59.7369650Z",
+      "availableGiB": 14.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 28
+    },
+    {
+      "sampledAt": "2026-10-17T08:25:14.7831536Z",
+      "availableGiB": 14.24,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-17T08:25:29.7644090Z",
+      "availableGiB": 14.2,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 31
+    },
+    {
+      "sampledAt": "2026-10-17T08:25:44.7750051Z",
+      "availableGiB": 13.72,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 21
+    },
+    {
+      "sampledAt": "2026-10-17T08:25:59.8607184Z",
+      "availableGiB": 13.08,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 76
+    },
+    {
+      "sampledAt": "2026-10-17T08:26:14.8110714Z",
+      "availableGiB": 11.87,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 57
+    },
+    {
+      "sampledAt": "2026-10-17T08:26:29.8422332Z",
+      "availableGiB": 13.5,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 49
+    },
+    {
+      "sampledAt": "2026-10-17T08:26:44.6925971Z",
+      "availableGiB": 13.38,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 2
+    },
+    {
+      "sampledAt": "2026-10-17T08:26:59.8285206Z",
+      "availableGiB": 13.22,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 24
+    },
+    {
+      "sampledAt": "2026-10-17T08:27:14.9386019Z",
+      "availableGiB": 13.16,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 71
+    },
+    {
+      "sampledAt": "2026-10-17T08:27:29.8640717Z",
+      "availableGiB": 13.12,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 47
+    },
+    {
+      "sampledAt": "2026-10-17T08:27:45.1049217Z",
+      "availableGiB": 12.61,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T08:27:59.8628731Z",
+      "availableGiB": 13.43,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 16
+    },
+    {
+      "sampledAt": "2026-10-17T08:28:14.9510504Z",
+      "availableGiB": 13.45,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 20
+    },
+    {
+      "sampledAt": "2026-10-17T08:28:30.1765444Z",
+      "availableGiB": 13.35,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 25
+    },
+    {
+      "sampledAt": "2026-10-17T08:28:44.9020007Z",
+      "availableGiB": 13.31,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 26
+    },
+    {
+      "sampledAt": "2026-10-17T08:28:59.7929845Z",
+      "availableGiB": 13.37,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T08:29:14.8800187Z",
+      "availableGiB": 13,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 11
+    },
+    {
+      "sampledAt": "2026-10-17T08:29:29.8394576Z",
+      "availableGiB": 13.24,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 8
+    },
+    {
+      "sampledAt": "2026-10-17T08:29:45.0191663Z",
+      "availableGiB": 13.11,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 34
+    },
+    {
+      "sampledAt": "2026-10-17T08:30:00.0025538Z",
+      "availableGiB": 13.33,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T08:30:14.9559426Z",
+      "availableGiB": 13.13,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 96
+    },
+    {
+      "sampledAt": "2026-10-17T08:30:29.9947582Z",
+      "availableGiB": 16.03,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 16
+    },
+    {
+      "sampledAt": "2026-10-17T08:30:44.5303005Z",
+      "availableGiB": 16.01,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 1
+    },
+    {
+      "sampledAt": "2026-10-17T08:30:59.5108824Z",
+      "availableGiB": 16.04,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 1
+    },
+    {
+      "sampledAt": "2026-10-17T08:31:14.5678949Z",
+      "availableGiB": 16.07,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 1
+    },
+    {
+      "sampledAt": "2026-10-17T08:31:29.5140412Z",
+      "availableGiB": 16.07,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 7
+    },
+    {
+      "sampledAt": "2026-10-17T08:31:44.5692296Z",
+      "availableGiB": 16.01,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 8
+    },
+    {
+      "sampledAt": "2026-10-17T08:31:59.5270887Z",
+      "availableGiB": 16.02,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 1
+    },
+    {
+      "sampledAt": "2026-10-17T08:32:14.6188138Z",
+      "availableGiB": 16.05,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 3
+    },
+    {
+      "sampledAt": "2026-10-17T08:32:29.5024719Z",
+      "availableGiB": 15.97,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T08:32:44.5442913Z",
+      "availableGiB": 15.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T08:32:59.5413013Z",
+      "availableGiB": 15.94,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T08:33:14.5163715Z",
+      "availableGiB": 15.96,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 3
+    },
+    {
+      "sampledAt": "2026-10-17T08:33:29.5843766Z",
+      "availableGiB": 15.95,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 5
+    },
+    {
+      "sampledAt": "2026-10-17T08:33:44.6573753Z",
+      "availableGiB": 15.89,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T08:33:59.5916085Z",
+      "availableGiB": 15.91,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T08:34:14.6477992Z",
+      "availableGiB": 15.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 8
+    },
+    {
+      "sampledAt": "2026-10-17T08:34:29.5776683Z",
+      "availableGiB": 15.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T08:34:44.5487043Z",
+      "availableGiB": 15.89,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 1
+    },
+    {
+      "sampledAt": "2026-10-17T08:34:59.5928980Z",
+      "availableGiB": 15.85,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 5
+    },
+    {
+      "sampledAt": "2026-10-17T08:35:14.6833178Z",
+      "availableGiB": 15.91,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T08:35:29.6678879Z",
+      "availableGiB": 15.9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 7
+    },
+    {
+      "sampledAt": "2026-10-17T08:35:44.6368642Z",
+      "availableGiB": 15.88,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 8
+    },
+    {
+      "sampledAt": "2026-10-17T08:35:59.7399608Z",
+      "availableGiB": 15.87,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 5
+    },
+    {
+      "sampledAt": "2026-10-17T08:36:14.6666026Z",
+      "availableGiB": 15.88,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T08:36:29.7900287Z",
+      "availableGiB": 15.9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 17
+    },
+    {
+      "sampledAt": "2026-10-17T08:36:44.7594047Z",
+      "availableGiB": 15.86,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 3
+    },
+    {
+      "sampledAt": "2026-10-17T08:36:59.6729357Z",
+      "availableGiB": 15.86,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 0
+    },
+    {
+      "sampledAt": "2026-10-17T08:37:14.7370638Z",
+      "availableGiB": 15.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T08:37:29.6668278Z",
+      "availableGiB": 15.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 10
+    },
+    {
+      "sampledAt": "2026-10-17T08:37:44.7374090Z",
+      "availableGiB": 15.88,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T08:37:59.7088845Z",
+      "availableGiB": 15.9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 2
+    },
+    {
+      "sampledAt": "2026-10-17T08:38:14.7943394Z",
+      "availableGiB": 15.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 9
+    },
+    {
+      "sampledAt": "2026-10-17T08:38:29.8310152Z",
+      "availableGiB": 15.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T08:38:44.8643283Z",
+      "availableGiB": 15.89,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 3
+    },
+    {
+      "sampledAt": "2026-10-17T08:38:59.8322795Z",
+      "availableGiB": 15.88,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 2
+    },
+    {
+      "sampledAt": "2026-10-17T08:39:14.8198982Z",
+      "availableGiB": 15.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T08:39:29.8508878Z",
+      "availableGiB": 15.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 2
+    },
+    {
+      "sampledAt": "2026-10-17T08:39:44.9922037Z",
+      "availableGiB": 15.87,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T08:39:59.8394113Z",
+      "availableGiB": 15.84,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 7
+    },
+    {
+      "sampledAt": "2026-10-17T08:40:14.8794883Z",
+      "availableGiB": 15.92,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 5
+    },
+    {
+      "sampledAt": "2026-10-17T08:40:29.8326764Z",
+      "availableGiB": 15.9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 1
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 4.21,
+  "maximumCpuLoadPercent": 100,
+  "updatedAt": "2026-10-17T08:40:34.286Z",
+  "error": "3.7.4: 3.7.4 editor did not become ready",
+  "finishedAt": "2026-10-17T08:40:34.286Z"
+}

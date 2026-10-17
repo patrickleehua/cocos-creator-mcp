@@ -1,0 +1,815 @@
+{
+  "startedAt": "2026-10-17T10:25:48.581Z",
+  "kind": "owned-editor-startup-diagnostic",
+  "version": "3.7.4",
+  "success": true,
+  "status": "ready",
+  "method": "One startup with captured process exit and read-only readiness samples; no scene open or business mutations.",
+  "samples": [
+    {
+      "at": "2026-10-17T10:25:56.283Z",
+      "error": "fetch failed"
+    },
+    {
+      "at": "2026-10-17T10:25:59.567Z",
+      "phase": "initializing",
+      "pid": 9796
+    },
+    {
+      "at": "2026-10-17T10:26:02.099Z",
+      "phase": "packages",
+      "pid": 9796
+    },
+    {
+      "at": "2026-10-17T10:26:04.669Z",
+      "phase": "packages",
+      "pid": 9796
+    },
+    {
+      "at": "2026-10-17T10:26:16.846Z",
+      "phase": "packages",
+      "pid": 9796
+    },
+    {
+      "at": "2026-10-17T10:26:19.366Z",
+      "phase": "packages",
+      "pid": 9796
+    },
+    {
+      "at": "2026-10-17T10:26:22.683Z",
+      "phase": "packages",
+      "pid": 9796
+    },
+    {
+      "at": "2026-10-17T10:26:25.198Z",
+      "phase": "packages",
+      "pid": 9796
+    },
+    {
+      "at": "2026-10-17T10:26:27.777Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:31.302Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:33.823Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:36.347Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:38.861Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:41.374Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:43.884Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:46.410Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:48.938Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:51.452Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:53.965Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:56.485Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:26:59.000Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:27:01.518Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:27:04.244Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:27:33.172Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": false,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:27:35.691Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": true,
+      "assetReady": false,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:27:38.205Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": true,
+      "assetReady": true,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:27:40.723Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": true,
+      "assetReady": true,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-17T10:27:43.570Z",
+      "phase": "ready-check",
+      "pid": 9796,
+      "extensionEnabled": true,
+      "assetReady": true,
+      "sceneReady": true,
+      "background": {
+        "at": 1792232762097,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 6,
+            "before": true,
+            "after": false
+          }
+        ]
+      }
+    }
+  ],
+  "resource": {
+    "sampledAt": "2026-10-17T10:25:52.8594293Z",
+    "availableGiB": 16.2,
+    "totalGiB": 27.76,
+    "cpuLoadPercent": 57
+  },
+  "pid": 9796,
+  "lastError": "fetch failed",
+  "exit": {
+    "code": 4294967295,
+    "signal": null,
+    "at": "2026-10-17T10:27:46.288Z"
+  },
+  "cleanup": {
+    "version": "3.7.4",
+    "ownedMain": 9796,
+    "stoppedProcessCount": 11,
+    "stoppedAt": "2026-10-17T10:27:46.2359076Z"
+  },
+  "finishedAt": "2026-10-17T10:27:46.734Z"
+}

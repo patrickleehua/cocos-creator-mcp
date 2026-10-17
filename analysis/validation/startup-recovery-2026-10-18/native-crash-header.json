@@ -1,0 +1,79 @@
+{
+  "capturedAt": "2026-10-17T10:27:44.765Z",
+  "artifact": ".work/production-3.7.4-test/temp/crash/reports/295849e0-89e5-497f-bd26-e65b1990e6ff.dmp",
+  "sha256": "785f98ee80a90cf8b060dc0c13ba21f2c6d5095333758d3dc44208c3b5b3d547",
+  "bytes": 1057616,
+  "recordedTime": "2026-10-17T08:30:36.000Z",
+  "streams": [
+    {
+      "type": 7,
+      "bytes": 56,
+      "rva": 164
+    },
+    {
+      "type": 15,
+      "bytes": 832,
+      "rva": 236
+    },
+    {
+      "type": 3,
+      "bytes": 1732,
+      "rva": 1068
+    },
+    {
+      "type": 6,
+      "bytes": 168,
+      "rva": 47152
+    },
+    {
+      "type": 4,
+      "bytes": 7348,
+      "rva": 48560
+    },
+    {
+      "type": 14,
+      "bytes": 36,
+      "rva": 63672
+    },
+    {
+      "type": 1129316353,
+      "bytes": 52,
+      "rva": 63732
+    },
+    {
+      "type": 16,
+      "bytes": 177952,
+      "rva": 64252
+    },
+    {
+      "type": 12,
+      "bytes": 19888,
+      "rva": 242204
+    },
+    {
+      "type": 5,
+      "bytes": 4340,
+      "rva": 262564
+    },
+    {
+      "type": 1265303554,
+      "bytes": 42,
+      "rva": 266904
+    }
+  ],
+  "exception": {
+    "threadId": 39052,
+    "code": "0xc0000005",
+    "flags": 0,
+    "address": "0x7ff7f498edd0",
+    "module": {
+      "name": "<WORKSPACE>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x337edd0"
+    }
+  },
+  "modules": 68,
+  "limitations": [
+    "Offline header/stream interpretation only; no symbols or stack unwind. This does not establish root cause.",
+    "File timestamp coincides with the failed attempt 12 restart. It is not proof of the cause of any different run."
+  ]
+}

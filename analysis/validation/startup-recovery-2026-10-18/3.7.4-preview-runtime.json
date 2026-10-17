@@ -1,0 +1,75 @@
+{
+  "version": "3.7.4",
+  "mode": "preview",
+  "success": true,
+  "url": "http://localhost:7456/?scene=08482c98-0a01-4fcc-b029-e75f4f124d5b",
+  "browser": "Chrome/155.0.8059.84",
+  "inspection": "Read-only engine/global or existing SystemJS registry in default frame contexts; no module imports",
+  "context": {
+    "id": 2,
+    "frameId": "CDA865A478DD5610EE3FB0CA4005A9C1",
+    "origin": "http://localhost:7456"
+  },
+  "engine": "3.7.4",
+  "scene": {
+    "name": "Main",
+    "uuid": "08482c98-0a01-4fcc-b029-e75f4f124d5b"
+  },
+  "nodes": [
+    {
+      "name": "Main",
+      "uuid": "08482c98-0a01-4fcc-b029-e75f4f124d5b",
+      "label": null
+    },
+    {
+      "name": "Canvas",
+      "uuid": "beI88Z2HpFELqR4T5EMHpg",
+      "label": null
+    },
+    {
+      "name": "Camera",
+      "uuid": "ebFwiq8gBFaYpqYbdoDODe",
+      "label": null
+    },
+    {
+      "name": "Panel",
+      "uuid": "Node.252",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "Container",
+      "uuid": "echtd2iANMk72vbt1bHHLy",
+      "label": null
+    },
+    {
+      "name": "BuiltRoot",
+      "uuid": "653yhiAXlFfrAp1JBAYDh6",
+      "label": null
+    },
+    {
+      "name": "Caption",
+      "uuid": "82NYmtM4JOY5+pIlDs48xd",
+      "label": "Nested caption"
+    },
+    {
+      "name": "PrefabInstance",
+      "uuid": "Node.256",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "PROFILER_NODE",
+      "uuid": "Node.247",
+      "label": null
+    },
+    {
+      "name": "Profiler_Root",
+      "uuid": "Node.248",
+      "label": null
+    }
+  ],
+  "frames": 34,
+  "canvas": true,
+  "frameUrl": "http://localhost:7456/?scene=08482c98-0a01-4fcc-b029-e75f4f124d5b",
+  "errors": [],
+  "completedAt": "2026-10-17T08:04:20.333Z"
+}

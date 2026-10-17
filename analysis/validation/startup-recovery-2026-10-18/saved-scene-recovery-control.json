@@ -1,0 +1,644 @@
+{
+  "startedAt": "2026-10-17T10:30:15.892Z",
+  "kind": "focused-native-recovery-diagnostic",
+  "success": true,
+  "status": "passed",
+  "version": "3.7.4",
+  "method": "One saved-scene forced-exit/restart control with process exit recording. Apply the owned background environment only after Editor project identity exists. No API overrides and no mutation retries.",
+  "limits": "Diagnostic control, not completion of the failed production attempt or eight-hour acceptance.",
+  "controllerStartedAt": "2026-10-17T07:59:26.361Z",
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "a098c8cb329927665b47630ffa12d6ec528eb9f8b74688818b557e1db1e3d116"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "launches": [
+    {
+      "number": 1,
+      "pid": 24064,
+      "startedAt": "2026-10-17T10:32:14.829Z",
+      "samples": [
+        {
+          "at": "2026-10-17T10:32:26.236Z",
+          "phase": "initializing",
+          "pid": 24064
+        },
+        {
+          "at": "2026-10-17T10:32:28.771Z",
+          "phase": "packages",
+          "pid": 24064
+        },
+        {
+          "at": "2026-10-17T10:32:31.309Z",
+          "phase": "packages",
+          "pid": 24064
+        },
+        {
+          "at": "2026-10-17T10:32:40.013Z",
+          "phase": "packages",
+          "pid": 24064
+        },
+        {
+          "at": "2026-10-17T10:32:42.546Z",
+          "phase": "packages",
+          "pid": 24064
+        },
+        {
+          "at": "2026-10-17T10:32:45.068Z",
+          "phase": "packages",
+          "pid": 24064
+        },
+        {
+          "at": "2026-10-17T10:32:47.649Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:32:50.170Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:32:52.696Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:32:55.224Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:32:58.395Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:33:00.911Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:33:03.432Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:33:05.954Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:33:08.947Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:33:14.092Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:33:16.606Z",
+          "phase": "loading",
+          "pid": 24064,
+          "assetReady": true
+        },
+        {
+          "at": "2026-10-17T10:33:29.943Z",
+          "phase": "ready-check",
+          "pid": 24064,
+          "assetReady": true,
+          "sceneReady": true,
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233148770,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        },
+        {
+          "at": "2026-10-17T10:33:32.969Z",
+          "phase": "ready-check",
+          "pid": 24064,
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233148770,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        },
+        {
+          "at": "2026-10-17T10:33:35.498Z",
+          "phase": "ready-check",
+          "pid": 24064,
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233148770,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        },
+        {
+          "at": "2026-10-17T10:33:38.028Z",
+          "phase": "ready-check",
+          "pid": 24064,
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233148770,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        }
+      ],
+      "lastReadError": "fetch failed",
+      "readyAt": "2026-10-17T10:33:38.030Z",
+      "stopReason": "deliberate_saved_scene_crash_control",
+      "stopRequestedAt": "2026-10-17T10:33:38.814Z",
+      "exit": {
+        "code": 4294967295,
+        "signal": null,
+        "at": "2026-10-17T10:33:41.242Z"
+      },
+      "stop": {
+        "version": "3.7.4",
+        "ownedMain": 24064,
+        "stoppedProcessCount": 11,
+        "stoppedAt": "2026-10-17T10:33:41.1761455Z"
+      }
+    },
+    {
+      "number": 2,
+      "pid": 2044,
+      "startedAt": "2026-10-17T10:33:44.363Z",
+      "samples": [
+        {
+          "at": "2026-10-17T10:33:47.490Z",
+          "phase": "initializing",
+          "pid": 2044
+        },
+        {
+          "at": "2026-10-17T10:33:50.003Z",
+          "phase": "packages",
+          "pid": 2044
+        },
+        {
+          "at": "2026-10-17T10:33:52.521Z",
+          "phase": "packages",
+          "pid": 2044
+        },
+        {
+          "at": "2026-10-17T10:33:59.443Z",
+          "phase": "packages",
+          "pid": 2044
+        },
+        {
+          "at": "2026-10-17T10:34:01.964Z",
+          "phase": "packages",
+          "pid": 2044
+        },
+        {
+          "at": "2026-10-17T10:34:05.589Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:08.103Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:10.623Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:13.137Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:15.655Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:18.172Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:21.414Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:23.988Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:26.508Z",
+          "phase": "loading",
+          "pid": 2044,
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T10:34:38.618Z",
+          "phase": "ready-check",
+          "pid": 2044,
+          "assetReady": true,
+          "sceneReady": true,
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233230001,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        },
+        {
+          "at": "2026-10-17T10:34:41.534Z",
+          "phase": "ready-check",
+          "pid": 2044,
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233230001,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        },
+        {
+          "at": "2026-10-17T10:34:44.060Z",
+          "phase": "ready-check",
+          "pid": 2044,
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233230001,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        },
+        {
+          "at": "2026-10-17T10:34:46.572Z",
+          "phase": "ready-check",
+          "pid": 2044,
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false,
+          "background": {
+            "appliedAt": 1792233230001,
+            "changes": [
+              {
+                "id": 2,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 1,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 3,
+                "before": false,
+                "after": false
+              },
+              {
+                "id": 4,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 5,
+                "before": true,
+                "after": false
+              },
+              {
+                "id": 6,
+                "before": true,
+                "after": false
+              }
+            ]
+          }
+        }
+      ],
+      "lastReadError": "fetch failed",
+      "readyAt": "2026-10-17T10:34:46.573Z",
+      "stopReason": "diagnostic_final_cleanup",
+      "stopRequestedAt": "2026-10-17T10:34:46.832Z",
+      "exit": {
+        "code": 4294967295,
+        "signal": null,
+        "at": "2026-10-17T10:34:48.933Z"
+      },
+      "stop": {
+        "version": "3.7.4",
+        "ownedMain": 2044,
+        "stoppedProcessCount": 11,
+        "stoppedAt": "2026-10-17T10:34:48.8504004Z"
+      }
+    }
+  ],
+  "resource": {
+    "sampledAt": "2026-10-17T10:33:44.1072662Z",
+    "availableGiB": 15.04,
+    "totalGiB": 27.76,
+    "cpuLoadPercent": 43
+  },
+  "savedSceneUuid": "08482c98-0a01-4fcc-b029-e75f4f124d5b",
+  "savedSceneSha256": "308a6edf3a348d9138e247c86b4d6bb65ce67413c8940f9450521c43e9298abf",
+  "staleDiscoveryRejected": true,
+  "originalClientReconnected": true,
+  "savedScenePreserved": true,
+  "sessionRotated": true,
+  "finishedAt": "2026-10-17T10:34:49.361Z"
+}

@@ -1,0 +1,75 @@
+{
+  "version": "3.7.3",
+  "mode": "debug",
+  "success": true,
+  "url": "http://127.0.0.1:51393/",
+  "browser": "Chrome/155.0.8059.84",
+  "inspection": "Read-only engine/global or existing SystemJS registry in default frame contexts; no module imports",
+  "context": {
+    "id": 2,
+    "frameId": "6BE82B67DD86B705F4FF32548875B708",
+    "origin": "http://127.0.0.1:51393"
+  },
+  "engine": "3.7.3",
+  "scene": {
+    "name": "Main",
+    "uuid": "c90596a6-55b9-4f69-87fd-92b22696e470"
+  },
+  "nodes": [
+    {
+      "name": "Main",
+      "uuid": "c90596a6-55b9-4f69-87fd-92b22696e470",
+      "label": null
+    },
+    {
+      "name": "Canvas",
+      "uuid": "beI88Z2HpFELqR4T5EMHpg",
+      "label": null
+    },
+    {
+      "name": "Camera",
+      "uuid": "Node.232",
+      "label": null
+    },
+    {
+      "name": "Panel",
+      "uuid": "Node.227",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "Container",
+      "uuid": "Node.233",
+      "label": null
+    },
+    {
+      "name": "BuiltRoot",
+      "uuid": "Node.228",
+      "label": null
+    },
+    {
+      "name": "Caption",
+      "uuid": "Node.229",
+      "label": "Nested caption"
+    },
+    {
+      "name": "PrefabInstance",
+      "uuid": "Node.230",
+      "label": "Creator 3.7 MCP 测试"
+    },
+    {
+      "name": "PROFILER_NODE",
+      "uuid": "Node.224",
+      "label": null
+    },
+    {
+      "name": "Profiler_Root",
+      "uuid": "Node.225",
+      "label": null
+    }
+  ],
+  "frames": 22,
+  "canvas": true,
+  "frameUrl": "http://127.0.0.1:51393/",
+  "errors": [],
+  "completedAt": "2026-10-17T08:29:47.418Z"
+}
