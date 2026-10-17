@@ -14,9 +14,9 @@
 test at tests\adapter-native-contract.test.cjs:638:1
 ✖ scene opening returns the verified snapshot without a second unverified readiness query (39.6191ms)
   AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-  
+
   false !== true
-  
+
       at TestContext.<anonymous> (<WORKSPACE>\tests\adapter-native-contract.test.cjs:648:10)
       at async Test.run (node:internal/test_runner/test:1409:7)
       at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
@@ -32,10 +32,10 @@ test at tests\adapter-native-contract.test.cjs:654:1
 ✖ scene opening waits for a boolean dirty state without replaying the native open (13.9592ms)
   AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
   + actual - expected
-  
+
   + undefined
   - false
-  
+
       at TestContext.<anonymous> (<WORKSPACE>\tests\adapter-native-contract.test.cjs:664:10)
       at async Test.run (node:internal/test_runner/test:1409:7)
       at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {

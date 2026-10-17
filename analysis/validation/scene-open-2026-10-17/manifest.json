@@ -517,19 +517,37 @@
     },
     {
       "file": "regression-before.txt",
-      "sha256": "415708e45a95e567898a0bd035638398ad863beacb4e0ebfe3942e1d07d928e8"
+      "sha256": "e2788b9b698a7f4e91377f7785575c52cd77e16d128fafb8be4151cebb5e5097"
     },
     {
       "file": "regression-after.txt",
-      "sha256": "ff1bf5c68c8228b3c26002780ccfb08e28e651895fe00a7821da1a700f72cfb1"
+      "sha256": "88f40114c88dedf1d68d4d94f7a62d25c0e3d902f250ef31710c4268257cc129"
     },
     {
       "file": "unit-tests.txt",
-      "sha256": "9eff31b236d800ee81508b22772c192089b16f70ef9bac20394abca26bbe1659"
+      "sha256": "b2f07aace51326c0a0db778c1017edbe4a4f75bf2a1d01f78d4a0b7ebaa3156b"
     }
   ],
   "limitations": [
     "All five functional/build passes and three recovery passes in the failed attempt belong to the previous runtime and frozen harness. They do not qualify the fixed runtime.",
     "Every required native gate must be rerun on the fixed source; all eight-hour tests and the additional Unicode/space project-root smoke remain pending."
-  ]
+  ],
+  "textNormalization": {
+    "reason": "Normalize Windows test output before hashing so the report digest matches the Git blob after LF checkout. Private raw logs are retained unchanged.",
+    "method": "CRLF to LF; remove trailing spaces and tabs from report lines.",
+    "rawReports": [
+      {
+        "file": "regression-before.txt",
+        "sha256": "415708e45a95e567898a0bd035638398ad863beacb4e0ebfe3942e1d07d928e8"
+      },
+      {
+        "file": "regression-after.txt",
+        "sha256": "ff1bf5c68c8228b3c26002780ccfb08e28e651895fe00a7821da1a700f72cfb1"
+      },
+      {
+        "file": "unit-tests.txt",
+        "sha256": "9eff31b236d800ee81508b22772c192089b16f70ef9bac20394abca26bbe1659"
+      }
+    ]
+  }
 }
