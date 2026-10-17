@@ -1,0 +1,19 @@
+▶ wrong or missing assets and unsaved scenes cannot trigger scene opening or prefab instantiation
+  ✔ scene.open missing ASSET_NOT_FOUND (16.488ms)
+  ✔ scene.open text-asset INVALID_ASSET_TYPE (8.7002ms)
+  ✔ scene.open text-asset INVALID_ASSET_TYPE (9.7805ms)
+  ✔ prefab.instantiate text-asset INVALID_ASSET_TYPE (10.9386ms)
+  ✔ prefab.instantiate text-asset INVALID_ASSET_TYPE (11.2149ms)
+  ✔ scene.open scene-asset UNSAVED_CHANGES (13.7362ms)
+✔ wrong or missing assets and unsaved scenes cannot trigger scene opening or prefab instantiation (73.385ms)
+✔ scene opening reads back the requested ready scene identity (13.2211ms)
+✔ scene opening returns the verified snapshot without a second unverified readiness query (10.2458ms)
+✔ scene opening waits for a boolean dirty state without replaying the native open (60.0693ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 290.6752

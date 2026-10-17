@@ -1,0 +1,18 @@
+{
+  "version": "3.7.0",
+  "startedAt": "2026-10-17T06:58:40.634Z",
+  "method": "Forced OS exit of the verified owned editor after acknowledged save; reopen the saved scene with the original BridgeClient",
+  "success": true,
+  "stop": {
+    "version": "3.7.0",
+    "ownedMain": 12496,
+    "stoppedProcessCount": 11,
+    "stoppedAt": "2026-10-17T06:58:42.7720874Z"
+  },
+  "staleDiscoveryRejected": true,
+  "savedSceneUuid": "aadace2b-aaeb-4879-8d7d-723e4b0bace0",
+  "savedSceneSha256": "0975d208bded31a8f8f226a7eb6fd93d2644deefed36439d853484f908e9c866",
+  "sessionRotated": true,
+  "oldClientReconnected": true,
+  "finishedAt": "2026-10-17T06:59:32.306Z"
+}

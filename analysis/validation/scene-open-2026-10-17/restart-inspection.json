@@ -1,0 +1,138 @@
+{
+  "at": "2026-10-17T07:21:43.100Z",
+  "allSourcesVerified": true,
+  "native": {
+    "pid": 34768,
+    "version": "3.7.4",
+    "project": "c834cc79-4fb5-4155-b14b-4f1d7030b15e",
+    "assetReady": true,
+    "sceneReady": true,
+    "tree": {
+      "name": "Main",
+      "active": true,
+      "locked": false,
+      "type": "cc.Scene",
+      "uuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+      "children": [
+        {
+          "name": "Canvas",
+          "active": true,
+          "locked": false,
+          "type": "cc.Node",
+          "uuid": "beI88Z2HpFELqR4T5EMHpg",
+          "children": [
+            {
+              "name": "Camera",
+              "active": true,
+              "locked": false,
+              "type": "cc.Node",
+              "uuid": "ebFwiq8gBFaYpqYbdoDODe",
+              "children": [],
+              "prefab": {
+                "state": 0,
+                "isUnwrappable": false,
+                "isRevertable": false,
+                "isApplicable": false,
+                "isAddedChild": false,
+                "assetUuid": ""
+              },
+              "parent": "beI88Z2HpFELqR4T5EMHpg",
+              "path": "Canvas/Camera",
+              "isScene": false,
+              "readonly": false,
+              "components": [
+                {
+                  "type": "cc.Camera",
+                  "value": "63WIch3o5BEYRlXzTT0oWc",
+                  "extends": [
+                    "cc.Component",
+                    "cc.Object"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prefab": {
+            "state": 0,
+            "isUnwrappable": false,
+            "isRevertable": false,
+            "isApplicable": false,
+            "isAddedChild": false,
+            "assetUuid": ""
+          },
+          "parent": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "path": "Canvas",
+          "isScene": false,
+          "readonly": false,
+          "components": [
+            {
+              "type": "cc.UITransform",
+              "value": "d6rUX5yfhMlKoWX2bSbawx",
+              "extends": [
+                "cc.Component",
+                "cc.Object"
+              ]
+            },
+            {
+              "type": "cc.Canvas",
+              "value": "12O/ljcVlEqLmVm3U2gEOQ",
+              "extends": [
+                "cc.RenderRoot2D",
+                "cc.Component",
+                "cc.Object"
+              ]
+            },
+            {
+              "type": "cc.Widget",
+              "value": "c5V1EV8IpMtrIvY1OE9t2u",
+              "extends": [
+                "cc.Component",
+                "cc.Object"
+              ]
+            }
+          ]
+        }
+      ],
+      "prefab": {
+        "state": 0,
+        "isUnwrappable": false,
+        "isRevertable": false,
+        "isApplicable": false,
+        "isAddedChild": false,
+        "assetUuid": ""
+      },
+      "parent": "",
+      "path": "/",
+      "isScene": true,
+      "readonly": false,
+      "components": []
+    },
+    "dirty": false,
+    "background": [
+      {
+        "id": 6,
+        "throttled": true
+      },
+      {
+        "id": 5,
+        "throttled": true
+      },
+      {
+        "id": 4,
+        "throttled": true
+      },
+      {
+        "id": 3,
+        "throttled": false
+      },
+      {
+        "id": 2,
+        "throttled": false
+      },
+      {
+        "id": 1,
+        "throttled": false
+      }
+    ]
+  }
+}

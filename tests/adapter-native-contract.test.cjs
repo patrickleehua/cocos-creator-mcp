@@ -635,6 +635,36 @@ test('scene opening reads back the requested ready scene identity', async () => 
   assert.ok(roots.some(current => current.uuid === 'scene-asset'));
 });
 
+test('scene opening returns the verified snapshot without a second unverified readiness query', async () => {
+  const f = editorFixture();
+  let readsAfterOpen = 0;
+  f.state.overrides.set('scene:query-is-ready', () => {
+    if (!f.nativeCalls('open-scene').length) return true;
+    // A later IPC read can observe another loading transition. The response
+    // must be the snapshot whose identity and readiness were actually checked.
+    return ++readsAfterOpen !== 2;
+  });
+  const result = await f.dispatch('scene.open', { asset: 'scene-asset' });
+  assert.equal(result.scene.ready, true);
+  assert.equal(result.scene.tree.uuid, result.asset.uuid);
+  assert.equal(typeof result.scene.dirty, 'boolean');
+  assert.equal(f.nativeCalls('open-scene').length, 1);
+});
+
+test('scene opening waits for a boolean dirty state without replaying the native open', async () => {
+  const f = editorFixture();
+  let dirtyReadsAfterOpen = 0;
+  f.state.overrides.set('scene:query-dirty', () => {
+    if (!f.nativeCalls('open-scene').length) return false;
+    return ++dirtyReadsAfterOpen === 1 ? undefined : false;
+  });
+  const result = await f.dispatch('scene.open', { asset: 'scene-asset' });
+  assert.equal(result.scene.ready, true);
+  assert.equal(result.scene.tree.uuid, result.asset.uuid);
+  assert.equal(result.scene.dirty, false);
+  assert.equal(f.nativeCalls('open-scene').length, 1);
+});
+
 test('failed imports are rejected before any existing invalid asset is saved or instantiated', async t => {
   for (const [command, args, uuid] of [
     ['asset.save', { asset: 'text-asset', content: '' }, 'text-asset'],

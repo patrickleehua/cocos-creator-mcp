@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-17T07:59:29.888Z",
+  "kind": "scene-open-snapshot-fix",
+  "status": "unit_regression_passed_native_revalidation_pending",
+  "productionStable": false,
+  "failedAttempt": {
+    "number": 11,
+    "runtimeCommit": "3bc71a2e99f6d7fcd9f65afa3f60fa56b0fd7e29",
+    "runtimeSources": [
+      {
+        "file": "src/server.mjs",
+        "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+      },
+      {
+        "file": "src/tools.mjs",
+        "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+      },
+      {
+        "file": "src/bridge-client.mjs",
+        "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+      },
+      {
+        "file": "scripts/soak.mjs",
+        "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+      },
+      {
+        "file": "package.json",
+        "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+      },
+      {
+        "file": "package-lock.json",
+        "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+      },
+      {
+        "file": "extensions/cocos-creator-mcp/main.js",
+        "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+      },
+      {
+        "file": "extensions/cocos-creator-mcp/bridge.js",
+        "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+      },
+      {
+        "file": "extensions/cocos-creator-mcp/adapter.js",
+        "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+      },
+      {
+        "file": "extensions/cocos-creator-mcp/extras.js",
+        "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+      },
+      {
+        "file": "extensions/cocos-creator-mcp/scene.js",
+        "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+      },
+      {
+        "file": "extensions/cocos-creator-mcp/package.json",
+        "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+      }
+    ],
+    "harnessSources": [
+      {
+        "file": ".research/production-supervisor.mjs",
+        "sha256": "c21abcb1d08d9d9644755bbad8048cde66fb288a6dd3e8ee07526b525914506f"
+      },
+      {
+        "file": ".research/start-production-supervisor.ps1",
+        "sha256": "077fbdb251e35bf1a3fcba784acb50fe2b3be7f0c0c7aa1f55afa7f21369de85"
+      },
+      {
+        "file": ".research/start-stability-version.ps1",
+        "sha256": "f3934f85d6b4bff0c3b860160034e4998811f771a422ac7511829329bf55c6f6"
+      },
+      {
+        "file": ".research/stop-stability-version.ps1",
+        "sha256": "561aa795dfd548fce407f044c03469b880d8beffa148eacd8ccfe5f50fb32afb"
+      },
+      {
+        "file": ".research/prioritize-test-editor.ps1",
+        "sha256": "cfaf4f8a93c94b2fc038a1af13dd340664f27daa31f88a940bf2f0cf7b0c9e37"
+      },
+      {
+        "file": ".research/resource-state.ps1",
+        "sha256": "7c570f109069808c5ccddf174a99cf0fff83c1834259dabecba5255c25ca330e"
+      },
+      {
+        "file": ".research/stability-cdp.mjs",
+        "sha256": "78f651bf6866f228ac69d73cec46c6a0ce5d1ea48be6b47676757c756c030592"
+      },
+      {
+        "file": ".research/native-faults-real.mjs",
+        "sha256": "59dd956f49b6448fdb55c7afe2804954448fda1adc7b8078fa2a40f62fabe7af"
+      },
+      {
+        "file": ".research/fault-http.mjs",
+        "sha256": "462ad2ff29370e3b2b3f4d401dbed8b83557f85916595d897381f711fe3c27e8"
+      },
+      {
+        "file": ".research/production-build.mjs",
+        "sha256": "89a4c78d4eac2eeb8d2658490ec6ac56baa8af7b9d62c284b6c39cee92850873"
+      },
+      {
+        "file": ".research/prepare-production-preview.mjs",
+        "sha256": "edfebd515451f3e5f8091e0df878a710d8206ff70d87a4e6b498a44832b0201b"
+      },
+      {
+        "file": ".research/production-browser.mjs",
+        "sha256": "58e12ecb218cac5c89083a63cff1d381fa1bca41bd4e24981a184130502cc81e"
+      },
+      {
+        "file": "scripts/integration.mjs",
+        "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+      },
+      {
+        "file": "scripts/integration-references.mjs",
+        "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+      },
+      {
+        "file": "scripts/integration-extras.mjs",
+        "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+      },
+      {
+        "file": "scripts/soak.mjs",
+        "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+      },
+      {
+        "file": "scripts/install-extension.mjs",
+        "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+      }
+    ],
+    "qualificationPassed": [
+      "3.7.3",
+      "3.7.2",
+      "3.7.0",
+      "3.7.4",
+      "3.7.1"
+    ],
+    "recoveryPassed": [
+      "3.7.3",
+      "3.7.2",
+      "3.7.0"
+    ],
+    "eightHourReports": 0,
+    "error": "3.7.4: Cannot read properties of null (reading 'uuid')"
+  },
+  "change": {
+    "before": "scene.open checked readiness and UUID, then returned a separate unverified scene.query snapshot. A later readiness transition could return success with tree:null or an unavailable dirty state.",
+    "after": "Poll read-only scene snapshots and return the exact snapshot verified as ready, with one matching scene root and a boolean dirty state. Issue the native open only once.",
+    "regressionReproducedBeforeFix": 2,
+    "regressionPassedAfterFix": 2
+  },
+  "harnessChange": {
+    "backgroundSetup": "Reapply backgroundThrottling=false per actual owned editor PID after every restart; the former job-level flag could survive editor replacement.",
+    "evidenceLimit": "Post-failure inspection found throttled contents in the restarted editor, but does not establish this as the cause of the native scene transition.",
+    "cleanup": "Clean up verified owned editors when startup or readiness fails before the qualification/recovery body begins; retain cleanup errors."
+  },
+  "sources": [
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "a098c8cb329927665b47630ffa12d6ec528eb9f8b74688818b557e1db1e3d116"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "scripts/create-test-project.mjs",
+      "sha256": "146a7c7dbe566b08bf20efef35db80ee4332ceddf8631ef055d56afe7ecf7e02"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "scripts/test.mjs",
+      "sha256": "5097c494f2bea30b6e4d45daaa9caaaaf782632ff4103bb19e77ad331775476e"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "tests/adapter-native-contract.test.cjs",
+      "sha256": "9dbcd597faa411d7fc7d0444627c38adab11e7df4ef6bfa0d3f20ea10b0eff9b"
+    },
+    {
+      "file": "tests/bridge.test.cjs",
+      "sha256": "3988dcb28b18de283a74a2a80095f2556a99be4d218d42d2d71f336bc2660478"
+    },
+    {
+      "file": "tests/client-bridge.test.mjs",
+      "sha256": "b632a647596623437588fdec03a5b4e3ce60762ddc38711617fc008ffe6e1e6b"
+    },
+    {
+      "file": "tests/extension-lifecycle.test.cjs",
+      "sha256": "1745339e741f5aa313038daa33a3a622e4eea47924b0298fbd0a84ae2dea34c7"
+    },
+    {
+      "file": "tests/extras.test.cjs",
+      "sha256": "e3a6d57a75c20f0c6a69d6d9657bc14a6889bebef46dc4d115f3292662717aeb"
+    },
+    {
+      "file": "tests/install-extension.test.mjs",
+      "sha256": "4b00ff94f460e4d1c855e55b90b44ad69a5480fc9114b90c23cb9597efa04589"
+    },
+    {
+      "file": "tests/mcp-server.test.mjs",
+      "sha256": "1c09fe5bf3a4d7c9cc5761cb0e24f8b165084def33a5fd8847ad9e08cd9395a1"
+    },
+    {
+      "file": "tests/soak.test.mjs",
+      "sha256": "5d8e22e881cd0a2a3cc407804551e48bd84d2358dc66dca32a61b6805fae3ce7"
+    },
+    {
+      "file": "tools/compare-creator.cjs",
+      "sha256": "3da1a2ffd1a8656ac4d6635fd783235cebf9e0f40fbf2f67f75da31cf247b3b2"
+    },
+    {
+      "file": "tools/inspect-creator.cjs",
+      "sha256": "21a9f221913b48270cc364168a4d297ceb1aa46e71ef1a4f60fff8824cabf92f"
+    }
+  ],
+  "unitTests": {
+    "tests": 444,
+    "passed": 444,
+    "failed": 0,
+    "skipped": 0,
+    "report": "unit-tests.txt"
+  },
+  "reports": [
+    {
+      "file": "3.7.0-build-debug.json",
+      "sha256": "7c11065545681dc171e60b1b4286dc9c1b450950a16e29a1ca888af75b3e9f61"
+    },
+    {
+      "file": "3.7.0-build-release.json",
+      "sha256": "e88814073b481ab99f2b8f0ac43e847ff4eafc0104387517b8f290ec25fbc508"
+    },
+    {
+      "file": "3.7.0-core.json",
+      "sha256": "84c07b034c48bafa0bd8d3a57818aa1b6212616aea83835063445d8e2000d27e"
+    },
+    {
+      "file": "3.7.0-debug-runtime.json",
+      "sha256": "d115a3e7d688184b23670498156757790c9bc4c852ed8364fd416a87cf103ab2"
+    },
+    {
+      "file": "3.7.0-editor-recovery.json",
+      "sha256": "44dff33c81a681fc06728a9b458af88a7fa58e64210f27242ac03bbc15c55fd8"
+    },
+    {
+      "file": "3.7.0-extras.json",
+      "sha256": "4b2510ef14a14a0211ed1c5f9b03046ada2c47a5d3bd61eb7d79ffc225a23641"
+    },
+    {
+      "file": "3.7.0-faults.json",
+      "sha256": "02b5e5b36e49f838048fc15ec67ed526f1fbc1739f485b7313f2fc1714723e03"
+    },
+    {
+      "file": "3.7.0-preview-open.json",
+      "sha256": "b1980b2be7c82fd528c934ed6f277a6c7c694a7241bd8260345abdee3a4222f9"
+    },
+    {
+      "file": "3.7.0-preview-runtime.json",
+      "sha256": "53aff0e8e7dbe7580e319b90c9dcf80cbc56a6ecad0c08a1dfb22a2c8f9b667f"
+    },
+    {
+      "file": "3.7.0-references.json",
+      "sha256": "4e7887280ba0eb8e0dfe230c5691434206218e545ee031941a85ccfbbee6f3c1"
+    },
+    {
+      "file": "3.7.0-release-runtime.json",
+      "sha256": "041a331b8986c86966a0fa42ce7dec9e73e159ab60d540dfcbd9394d531ea004"
+    },
+    {
+      "file": "3.7.0-soak-pilot.json",
+      "sha256": "95dc0bcc7434ef0fb1df92c9983abe41b2613d9a5c16436f82c4a7d535a18309"
+    },
+    {
+      "file": "3.7.1-build-debug.json",
+      "sha256": "3ac8c3a4b505785ac5d4a770a078353b72740e69601e9f279389dc46b8742557"
+    },
+    {
+      "file": "3.7.1-build-release.json",
+      "sha256": "2a1edcdfdd2e120feb75be1048671046f0aa9b454266a2b309c2df8842ebf359"
+    },
+    {
+      "file": "3.7.1-core.json",
+      "sha256": "353cc9f8ac1fcf02434e1d2a9661d3a931265530bd9e45665047fb4b33815476"
+    },
+    {
+      "file": "3.7.1-debug-runtime.json",
+      "sha256": "d166d44e74ebe5118db3f656a4a1ec0b4f0203ada2162b21ba806c385c9c296c"
+    },
+    {
+      "file": "3.7.1-extras.json",
+      "sha256": "c071fb500d1e56e42239608c2f19838aed956685162986e3e9f5ce9142d16176"
+    },
+    {
+      "file": "3.7.1-faults.json",
+      "sha256": "1a3ccd890fd3ce800c5b3cd7f200b310b0e387c6a5188844eb3b3f79be0f9f24"
+    },
+    {
+      "file": "3.7.1-preview-open.json",
+      "sha256": "9d415313f4e4f28e4651ad3e482bd8804ceaa17d4c2727f2eae0285abe76aa6a"
+    },
+    {
+      "file": "3.7.1-preview-runtime.json",
+      "sha256": "296a0986b16b3de3354745572d43e876e0e75880efeffc8c57dc5887c63f5f7d"
+    },
+    {
+      "file": "3.7.1-references.json",
+      "sha256": "a86c42acbdba0a7c5c1d42b80f7a5b3f285ae946f5b93ddcf145c6ee9ab3fad0"
+    },
+    {
+      "file": "3.7.1-release-runtime.json",
+      "sha256": "81bd0956c08bb980d8d07a052119ba19b9e62a3dee9637445707a197c8b15f04"
+    },
+    {
+      "file": "3.7.1-soak-pilot.json",
+      "sha256": "495734bd4d26ba9da58729b63f8589c5df13b4b2b02cce213c7ffccc8877f35c"
+    },
+    {
+      "file": "3.7.2-build-debug.json",
+      "sha256": "dcb7e079515af7590ca589aa56b1d9ceac8bdbea3fa508fe1a2ca181479e7cce"
+    },
+    {
+      "file": "3.7.2-build-release.json",
+      "sha256": "59493cd437cee53c4b13b168766ecefe0505185cb22dc13c641b06dc7fe488c4"
+    },
+    {
+      "file": "3.7.2-core.json",
+      "sha256": "f0c748dcf56194d33f617e76f59d785c07a1da5f62d3f9e14f490314df43d2e5"
+    },
+    {
+      "file": "3.7.2-debug-runtime.json",
+      "sha256": "d9e62b82748318d48806b28a1a3ec2c311f4f6f439fdda24802e25e47b78750e"
+    },
+    {
+      "file": "3.7.2-editor-recovery.json",
+      "sha256": "f5d9d3ec993c032a0f1e35491d2fe5f147e4939d8a4f786e3d78c46f35422fae"
+    },
+    {
+      "file": "3.7.2-extras.json",
+      "sha256": "e0e3ce4b7c664463ec7a9017e7457531c648e388f7ccc32272cb5c056456e11d"
+    },
+    {
+      "file": "3.7.2-faults.json",
+      "sha256": "e292f928efaa46ab02483b3e914bd2d5ab9dbfe70d6c46c697fe037e6b7470ff"
+    },
+    {
+      "file": "3.7.2-preview-open.json",
+      "sha256": "5b88cb6f0e8a470fc6a2c3bff762215b708f19adc194d37ceba5a3dbfa3ad726"
+    },
+    {
+      "file": "3.7.2-preview-runtime.json",
+      "sha256": "cc2e13f140646abb49821fbefd557b32836effed66e182428c4a46ec855c7bcd"
+    },
+    {
+      "file": "3.7.2-references.json",
+      "sha256": "8c58107ee3105355433c09425875d00f872059d59a85c8d7616b99ffa6409fb2"
+    },
+    {
+      "file": "3.7.2-release-runtime.json",
+      "sha256": "c7034ea00f33dce711a22bcae27d5a4f00c2c30842a2787bc5c4240aacf55da3"
+    },
+    {
+      "file": "3.7.2-soak-pilot.json",
+      "sha256": "4bb3bcdb3570e016f1bc36f42633543e070ae4264ae5762491591690b2f5d952"
+    },
+    {
+      "file": "3.7.3-build-debug.json",
+      "sha256": "ae854ff54d489aca082dfe47514773c3e53d73186588a0c8fa4b1e29c264aa9d"
+    },
+    {
+      "file": "3.7.3-build-release.json",
+      "sha256": "bc229c181e20b92c6ceee93c74be3f5a5b71fc751bb8df94d455f6924400f558"
+    },
+    {
+      "file": "3.7.3-core.json",
+      "sha256": "8208a34c9d523a62830a38fa8ef98a04c7ecaad4a5d3cb66b10a9f3848692220"
+    },
+    {
+      "file": "3.7.3-debug-runtime.json",
+      "sha256": "5385e0086128208fd6974ff059f784fc355223193da14caecda4718e9ab36be5"
+    },
+    {
+      "file": "3.7.3-editor-recovery.json",
+      "sha256": "3e7fa727c0af8014119229b041ec1ebf4ed86eb414e709f5f47d948a16496739"
+    },
+    {
+      "file": "3.7.3-extras.json",
+      "sha256": "e98b6be5564102da36753a2d1b50253ed07edc27775cec2752a408324d9626d4"
+    },
+    {
+      "file": "3.7.3-faults.json",
+      "sha256": "1d64d22f2f614b1935616dd0d4553dbd981f7fbb59448bb09723305e77312512"
+    },
+    {
+      "file": "3.7.3-preview-open.json",
+      "sha256": "f51d9ab0d7252a8f5fd05cf268c73904b804e30ffec1a0f23588b8ff13511530"
+    },
+    {
+      "file": "3.7.3-preview-runtime.json",
+      "sha256": "6878683fbe72e966de1fb4c5a4668a3656a9620ada1fe69e8d52dd20165e3c60"
+    },
+    {
+      "file": "3.7.3-references.json",
+      "sha256": "85751f0cbf39b9e4e95929530d4914cdc45bc810ae3de5694802e044cf2cdeab"
+    },
+    {
+      "file": "3.7.3-release-runtime.json",
+      "sha256": "059facb7f4af862ad8c33fb37fa1336e53edb9a581c760b94b431f47e5ae73e3"
+    },
+    {
+      "file": "3.7.3-soak-pilot.json",
+      "sha256": "a5ebe034bf2bb7a2cc98124e6678fad15de3f2febb71875a77900ff00b935b82"
+    },
+    {
+      "file": "3.7.4-build-debug.json",
+      "sha256": "6d79dcd5f49c9ed70be3407b39024b9d5ec805e82442e3504fa107117614f0a1"
+    },
+    {
+      "file": "3.7.4-build-release.json",
+      "sha256": "2eeac9de99ad4af88599d5ebbc6e2ea2d7fea325313442f8bfd0d91cfef29001"
+    },
+    {
+      "file": "3.7.4-core.json",
+      "sha256": "e3acd47f24a3a946702e76fa1b2e9890cd0e79acb1069faab45e99789a1f94dc"
+    },
+    {
+      "file": "3.7.4-debug-runtime.json",
+      "sha256": "1f61257611661a3a9946d996bf38c9f5ac35f59356ef02be9d2a973d542006ea"
+    },
+    {
+      "file": "3.7.4-extras.json",
+      "sha256": "fa0d957b509b968018c1154ccc448fcde030ffd1c12755872386681d420cbd44"
+    },
+    {
+      "file": "3.7.4-faults.json",
+      "sha256": "a3e7ae6d9b84c964f426940ad17f3d012c692b4cb8fbf21788de5d089c14a8a8"
+    },
+    {
+      "file": "3.7.4-preview-open.json",
+      "sha256": "49f551f7865e6581df0596510a5a2004f8c95f94afed79b83fb2e5b3f39a7ced"
+    },
+    {
+      "file": "3.7.4-preview-runtime.json",
+      "sha256": "fdfc376bbb31a646087d38f6dbf9b9c2213c3834e503541abeee92cfa1ba5d21"
+    },
+    {
+      "file": "3.7.4-references.json",
+      "sha256": "619726fbd90a6216d4a142d29f05592f9fc26b55830c4bf190d0c1c1b492ab14"
+    },
+    {
+      "file": "3.7.4-release-runtime.json",
+      "sha256": "f360bb5028d6930a10fb282125cb9807ba937cfcc998091595bfb2aa6d23cc59"
+    },
+    {
+      "file": "3.7.4-soak-pilot.json",
+      "sha256": "3879776bfc573c80323d55c8722918f2082a2b9f3749fa502484c9e65d2f1716"
+    },
+    {
+      "file": "controller-failed.json",
+      "sha256": "f524b22be81e1c949e90c39194ccf99c7e7d1e5f776e888c28ac3a7d50b03b31"
+    },
+    {
+      "file": "restart-inspection.json",
+      "sha256": "6ad9aa2e82667306c65b5493fb681cf103e004c1c48121f2ff4b3affe2d0d053"
+    },
+    {
+      "file": "regression-before.txt",
+      "sha256": "415708e45a95e567898a0bd035638398ad863beacb4e0ebfe3942e1d07d928e8"
+    },
+    {
+      "file": "regression-after.txt",
+      "sha256": "ff1bf5c68c8228b3c26002780ccfb08e28e651895fe00a7821da1a700f72cfb1"
+    },
+    {
+      "file": "unit-tests.txt",
+      "sha256": "9eff31b236d800ee81508b22772c192089b16f70ef9bac20394abca26bbe1659"
+    }
+  ],
+  "limitations": [
+    "All five functional/build passes and three recovery passes in the failed attempt belong to the previous runtime and frozen harness. They do not qualify the fixed runtime.",
+    "Every required native gate must be rerun on the fixed source; all eight-hour tests and the additional Unicode/space project-root smoke remain pending."
+  ]
+}

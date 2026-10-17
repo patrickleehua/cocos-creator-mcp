@@ -236,11 +236,13 @@ function createAdapter(editor) {
     }
     const result = await call('scene', 'open-scene', asset.uuid);
     if (result === false) fail('EDITOR_REJECTED', 'Editor rejected opening the scene');
-    await waitFor(async () => {
-      if (await call('scene', 'query-is-ready') !== true) return false;
-      return childrenOf(await call('scene', 'query-node-tree')).some(node => node.uuid === asset.uuid);
+    const current = await waitFor(async () => {
+      const scene = await handlers['scene.query']({});
+      const roots = childrenOf(scene.tree);
+      if (scene.ready !== true || typeof scene.dirty !== 'boolean' ||
+          roots.length !== 1 || roots[0].uuid !== asset.uuid) return false;
+      return scene;
     }, 'The requested scene did not become active');
-    const current = await handlers['scene.query']({});
     return { asset, scene: current };
   });
   register('scene.save', [['scene', 'save-scene'], ['scene', 'query-node-tree'], ['asset-db', 'query-ready'], ['asset-db', 'query-asset-info']], async () => {
