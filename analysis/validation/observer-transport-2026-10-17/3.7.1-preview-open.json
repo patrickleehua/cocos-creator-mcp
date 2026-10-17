@@ -1,0 +1,15 @@
+{
+  "version": "3.7.1",
+  "startedAt": "2026-10-16T21:08:16.138Z",
+  "success": true,
+  "result": {
+    "requested": true,
+    "url": "http://localhost:7456/?scene=660bcfe6-42ec-4cbf-90d8-cb47e38d2c24",
+    "sceneUuid": "660bcfe6-42ec-4cbf-90d8-cb47e38d2c24",
+    "source": "preview/preview-scene-in-browser"
+  },
+  "captured": [
+    "http://localhost:7456?scene=660bcfe6-42ec-4cbf-90d8-cb47e38d2c24"
+  ],
+  "finishedAt": "2026-10-16T21:08:20.311Z"
+}

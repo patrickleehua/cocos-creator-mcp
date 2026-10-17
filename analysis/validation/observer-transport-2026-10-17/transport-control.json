@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-17T06:12:38.820Z",
+  "kind": "observer-transport-local-control",
+  "success": true,
+  "steps": [
+    {
+      "name": "Delayed response accepted without changing the RPC deadline",
+      "passed": true
+    },
+    {
+      "name": "Total deadline, malformed response, correlation and size failures do not replay requests",
+      "passed": true
+    }
+  ],
+  "requests": 5,
+  "limit": "Synthetic observer transport checks; not native qualification or eight-hour acceptance."
+}

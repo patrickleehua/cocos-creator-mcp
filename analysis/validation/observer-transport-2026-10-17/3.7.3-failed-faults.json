@@ -1,0 +1,44 @@
+{
+  "kind": "native-reliability-faults",
+  "version": "3.7.3",
+  "startedAt": "2026-10-16T21:23:21.446Z",
+  "steps": [
+    {
+      "name": "same client follows a deliberate bridge stop/start without stale credentials",
+      "passed": true,
+      "durationMs": 215,
+      "evidence": {
+        "sessionChanged": true,
+        "tokenRotated": true,
+        "scenePreserved": true
+      }
+    },
+    {
+      "name": "an abruptly terminated owned stdio server can be replaced without changing the saved scene",
+      "passed": true,
+      "durationMs": 5206,
+      "evidence": {
+        "abruptOwnedServerExit": true,
+        "sdkReconnected": true,
+        "savedScenePreserved": true
+      }
+    },
+    {
+      "name": "real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated",
+      "passed": false,
+      "error": "fetch failed"
+    }
+  ],
+  "success": false,
+  "method": "Real 400-node compound mutation through the unmodified adapter, timeout during progress, expiring queued create, and readback barrier. No API overrides or extension reloads.",
+  "budgets": {
+    "timedOutClientMs": 1200,
+    "queuedWriteExpiresAfterMs": 200,
+    "observerAndCleanupMs": 600000
+  },
+  "note": "The larger observer budget permits slow native completion; it does not retry or extend the timed-out write client or the expired queued request.",
+  "error": {
+    "message": "fetch failed"
+  },
+  "finishedAt": "2026-10-16T21:30:22.518Z"
+}

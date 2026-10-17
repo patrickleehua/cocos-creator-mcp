@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-17T06:14:53.941Z",
+  "kind": "fault-observer-transport-repair",
+  "status": "local_transport_checks_passed_native_revalidation_pending",
+  "productionStable": false,
+  "runtimeCommit": "3bc71a2e99f6d7fcd9f65afa3f60fa56b0fd7e29",
+  "runtimeSources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "failedAttempt": {
+    "number": 10,
+    "startedAt": "2026-10-16T21:05:32.470Z",
+    "finishedAt": "2026-10-16T21:30:23.711Z",
+    "success": false,
+    "error": "3.7.3: .research/native-faults-real.mjs failed (1): node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\n[TypeError: fetch failed] {\r\n  [cause]: HeadersTimeoutError: Headers Timeout Error\r\n      at FastTimer.onParserTimeout [as _onTimeout] (node:internal/deps/undici/undici:7717:32)\r\n      at Timeout.onTick [as _onTimeout] (node:internal/deps/undici/undici:731:17)\r\n      at listOnTimeout (node:internal/timers:685:17)\r\n      at process.processTimers (node:internal/timers:618:7) {\r\n    code: 'UND_ERR_HEADERS_TIMEOUT'\r\n  }\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\nPASS an abruptly terminated owned stdio server can be replaced without changing the saved scene\nSTART real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated\n",
+    "qualification371": true,
+    "recoveryCompleted": false,
+    "eightHourReports": 0
+  },
+  "change": {
+    "scope": "Private fault observer only; MCP runtime unchanged",
+    "before": "The queued-expiry observer used fetch with a 600-second AbortSignal but failed earlier with UND_ERR_HEADERS_TIMEOUT.",
+    "after": "Use one native HTTP POST with an explicit 600-second total deadline, bounded response and correlation checking. Persist mutation identity and cleanup acknowledgement in the fault report.",
+    "budgets": {
+      "timedOutClientMs": 1200,
+      "queuedWriteExpiresAfterMs": 200,
+      "observerAndCleanupMs": 600000
+    },
+    "nodeCount": 400,
+    "assertionsWeakened": false,
+    "requestsRetried": false
+  },
+  "harnessSources": [
+    {
+      "file": ".research/native-faults-real.mjs",
+      "sha256": "59dd956f49b6448fdb55c7afe2804954448fda1adc7b8078fa2a40f62fabe7af"
+    },
+    {
+      "file": ".research/fault-http.mjs",
+      "sha256": "462ad2ff29370e3b2b3f4d401dbed8b83557f85916595d897381f711fe3c27e8"
+    },
+    {
+      "file": ".research/test-fault-http.mjs",
+      "sha256": "2fd50aeeb717d186140fe5f81f07ec7d5bbbb2ea3bb2ebb7a6f141245267c834"
+    }
+  ],
+  "reports": [
+    {
+      "file": "3.7.1-build-debug.json",
+      "sha256": "6684ab4b2e66bde04a72f7f2b8a28218362521111e25287f5d4598e58c6fdfb2"
+    },
+    {
+      "file": "3.7.1-build-release.json",
+      "sha256": "e0d44448803f638faa80ced9f95ac141ef70ebc11b79a3aace502a12470fe471"
+    },
+    {
+      "file": "3.7.1-core.json",
+      "sha256": "1c2fe827a0260fcb996da42805a191979edd2f7a51379059df36b192933bc3ce"
+    },
+    {
+      "file": "3.7.1-debug-runtime.json",
+      "sha256": "a6ad3eea264a4a678e6a40d8d4dfbb51dab136756f27e9ed67b3a72f7326826d"
+    },
+    {
+      "file": "3.7.1-extras.json",
+      "sha256": "f1a1ec574c2e149a659346b6acb589a62b7a4eb28645d603cdc4d1674fc72f40"
+    },
+    {
+      "file": "3.7.1-faults.json",
+      "sha256": "f5a1fb535a82ca018b75ecfebad2d879d7ad16bca06767de6b77911449531b2d"
+    },
+    {
+      "file": "3.7.1-preview-open.json",
+      "sha256": "8d46afd71528c31abdfb9aa264c1ede8bbbe4245106e99fa581a1981be662929"
+    },
+    {
+      "file": "3.7.1-preview-runtime.json",
+      "sha256": "46dfadda20811934aa57fb6974d16767ae328167ef8a7bf0a5d3d967775c9f6b"
+    },
+    {
+      "file": "3.7.1-references.json",
+      "sha256": "fb134528bb0d67dc738a51b56c2bcf6dd67523fec6091c28b469b46423000261"
+    },
+    {
+      "file": "3.7.1-release-runtime.json",
+      "sha256": "96f1b5ae32bb41a0bac74e360e306499b199d7dfdc01835ff2fcb06401058215"
+    },
+    {
+      "file": "3.7.1-soak-pilot.json",
+      "sha256": "1c407631f9aaa04906e85c542701a11f4db0c5216d6b8099bcdf56fadcd51934"
+    },
+    {
+      "file": "3.7.3-failed-faults.json",
+      "sha256": "633ab16c8c74be4bc6c4500d7ebe9da638ee4fc15584464916496a488b06edff"
+    },
+    {
+      "file": "transport-control.json",
+      "sha256": "a843cc92ee86be24617465cbe79c3a7408639428113a379255bf5c28a63f5f31"
+    },
+    {
+      "file": "attempt10-audit.json",
+      "sha256": "0f7a341e94f5f8644d96506c7d10848dc938b08d2b1a08ff4d86f521d95ff935"
+    }
+  ],
+  "limitations": [
+    "The transport control uses a local synthetic HTTP server, not a Creator scene. Native revalidation and every eight-hour run remain required.",
+    "3.7.1 qualification results belong to attempt 10 and its frozen harness; they are not combined with later results to mark a final run passed.",
+    "The failed report did not record a positive cleanup acknowledgement. A later disk inspection found no fault-named nodes in the saved scene, which cannot prove the earlier in-memory state. Attempt 10 remains failed."
+  ]
+}

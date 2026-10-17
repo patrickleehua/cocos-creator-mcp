@@ -1,0 +1,155 @@
+{
+  "at": "2026-10-17T06:11:04.071Z",
+  "attempt": 10,
+  "status": "failed",
+  "error": "3.7.3: .research/native-faults-real.mjs failed (1): node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\n[TypeError: fetch failed] {\r\n  [cause]: HeadersTimeoutError: Headers Timeout Error\r\n      at FastTimer.onParserTimeout [as _onTimeout] (node:internal/deps/undici/undici:7717:32)\r\n      at Timeout.onTick [as _onTimeout] (node:internal/deps/undici/undici:731:17)\r\n      at listOnTimeout (node:internal/timers:685:17)\r\n      at process.processTimers (node:internal/timers:618:7) {\r\n    code: 'UND_ERR_HEADERS_TIMEOUT'\r\n  }\r\n}\r\n\r\nNode.js v24.21.0\r\n START same client follows a deliberate bridge stop/start without stale credentials\nPASS same client follows a deliberate bridge stop/start without stale credentials\nSTART an abruptly terminated owned stdio server can be replaced without changing the saved scene\nPASS an abruptly terminated owned stdio server can be replaced without changing the saved scene\nSTART real compound mutation outlives its timed-out client; expired queued write is absent and no nodes are duplicated\n",
+  "allSourcesUnchanged": true,
+  "hashes": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c",
+      "matches": true
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c",
+      "matches": true
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817",
+      "matches": true
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02",
+      "matches": true
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704",
+      "matches": true
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591",
+      "matches": true
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780",
+      "matches": true
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9",
+      "matches": true
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "3df30d2c83f9a1031a9df93546c06c215e2aff8eb1e7580713e0572d207ae530",
+      "matches": true
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc",
+      "matches": true
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9",
+      "matches": true
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0",
+      "matches": true
+    },
+    {
+      "file": ".research/production-supervisor.mjs",
+      "sha256": "4cf315e0d3db3858e2dcfa16ca9ac8caede75293ba9d4997f9b33f5390c27cc8",
+      "matches": true
+    },
+    {
+      "file": ".research/start-production-supervisor.ps1",
+      "sha256": "077fbdb251e35bf1a3fcba784acb50fe2b3be7f0c0c7aa1f55afa7f21369de85",
+      "matches": true
+    },
+    {
+      "file": ".research/start-stability-version.ps1",
+      "sha256": "f3934f85d6b4bff0c3b860160034e4998811f771a422ac7511829329bf55c6f6",
+      "matches": true
+    },
+    {
+      "file": ".research/stop-stability-version.ps1",
+      "sha256": "561aa795dfd548fce407f044c03469b880d8beffa148eacd8ccfe5f50fb32afb",
+      "matches": true
+    },
+    {
+      "file": ".research/prioritize-test-editor.ps1",
+      "sha256": "cfaf4f8a93c94b2fc038a1af13dd340664f27daa31f88a940bf2f0cf7b0c9e37",
+      "matches": true
+    },
+    {
+      "file": ".research/resource-state.ps1",
+      "sha256": "7c570f109069808c5ccddf174a99cf0fff83c1834259dabecba5255c25ca330e",
+      "matches": true
+    },
+    {
+      "file": ".research/stability-cdp.mjs",
+      "sha256": "78f651bf6866f228ac69d73cec46c6a0ce5d1ea48be6b47676757c756c030592",
+      "matches": true
+    },
+    {
+      "file": ".research/native-faults-real.mjs",
+      "sha256": "1def6627153bd03d472a42961673f741d2bbc561d0f9bf2f04619c7786117247",
+      "matches": true
+    },
+    {
+      "file": ".research/production-build.mjs",
+      "sha256": "89a4c78d4eac2eeb8d2658490ec6ac56baa8af7b9d62c284b6c39cee92850873",
+      "matches": true
+    },
+    {
+      "file": ".research/prepare-production-preview.mjs",
+      "sha256": "edfebd515451f3e5f8091e0df878a710d8206ff70d87a4e6b498a44832b0201b",
+      "matches": true
+    },
+    {
+      "file": ".research/production-browser.mjs",
+      "sha256": "58e12ecb218cac5c89083a63cff1d381fa1bca41bd4e24981a184130502cc81e",
+      "matches": true
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa",
+      "matches": true
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a",
+      "matches": true
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3",
+      "matches": true
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02",
+      "matches": true
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886",
+      "matches": true
+    }
+  ],
+  "savedSceneInspection": {
+    "file": ".work/production-3.7.3-test/assets/McpReferences_mvbh52z5/References.scene",
+    "sha256": "21dadd1174ba5a4cb345aa6887aba33287d6bbb7f131f4995a6f4f93e331c7a3",
+    "faultNodeNames": [],
+    "limit": "Disk inspection after shutdown only; absence does not establish the pre-shutdown in-memory outcome. The failed run remains failed."
+  }
+}
