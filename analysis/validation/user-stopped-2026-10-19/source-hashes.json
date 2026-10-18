@@ -1,0 +1,213 @@
+{
+  "publication": "local_frozen_candidate_not_in_this_documentation_commit",
+  "sources": [
+    {
+      "file": ".research/fault-http.mjs",
+      "sha256": "462ad2ff29370e3b2b3f4d401dbed8b83557f85916595d897381f711fe3c27e8"
+    },
+    {
+      "file": ".research/final-scene-recovery-control-3.7.0.mjs",
+      "sha256": "608b6ff8f73541b522083b86d041b2497ac3fe1570561e4943bf6d28adf53081"
+    },
+    {
+      "file": ".research/final-scene-recovery-control-3.7.1.mjs",
+      "sha256": "e42943a5ba79c754955647ece3d216fc5d86a6501a0a5dec284e40f057c8e16d"
+    },
+    {
+      "file": ".research/final-scene-recovery-control-3.7.2.mjs",
+      "sha256": "8f6e98f84582f8e734bfc643782b886763a7bf04c2c3d74ef518db50f86fe32a"
+    },
+    {
+      "file": ".research/final-scene-recovery-control-3.7.3.mjs",
+      "sha256": "cd16629945e01292cec55a6bcd420bc0a1988a4b05d1c092e15e1a2ce7995820"
+    },
+    {
+      "file": ".research/final-scene-recovery-control-3.7.4.mjs",
+      "sha256": "aa9986507ee99f8f05f7ac821106a0e0c737ceefeb76fce887a6fbcc70810352"
+    },
+    {
+      "file": ".research/native-faults-real.mjs",
+      "sha256": "59dd956f49b6448fdb55c7afe2804954448fda1adc7b8078fa2a40f62fabe7af"
+    },
+    {
+      "file": ".research/path-gate-process.ps1",
+      "sha256": "3d03922ca50d12e6d3a32f4799b8cccc51548160087abb3b3cc003c7327b5f6c"
+    },
+    {
+      "file": ".research/prepare-production-preview.mjs",
+      "sha256": "edfebd515451f3e5f8091e0df878a710d8206ff70d87a4e6b498a44832b0201b"
+    },
+    {
+      "file": ".research/prioritize-test-editor.ps1",
+      "sha256": "cfaf4f8a93c94b2fc038a1af13dd340664f27daa31f88a940bf2f0cf7b0c9e37"
+    },
+    {
+      "file": ".research/production-browser.mjs",
+      "sha256": "58e12ecb218cac5c89083a63cff1d381fa1bca41bd4e24981a184130502cc81e"
+    },
+    {
+      "file": ".research/production-build.mjs",
+      "sha256": "89a4c78d4eac2eeb8d2658490ec6ac56baa8af7b9d62c284b6c39cee92850873"
+    },
+    {
+      "file": ".research/production-path-gate.mjs",
+      "sha256": "e5b1e11685dd69333d43ddfae93e40e2402cb4102d2137e54ccf94edb4a9d56b"
+    },
+    {
+      "file": ".research/production-pipeline.mjs",
+      "sha256": "651d2b045e0b366875f82fe861b6c7f65fb3fbe4ec2343db552a6eb51e912120"
+    },
+    {
+      "file": ".research/production-supervisor.mjs",
+      "sha256": "a8a470c26afc26b8b916c19eb332607280ba33c997d06059275026726946ebe4"
+    },
+    {
+      "file": ".research/resource-state.ps1",
+      "sha256": "7c570f109069808c5ccddf174a99cf0fff83c1834259dabecba5255c25ca330e"
+    },
+    {
+      "file": ".research/selected-soak-observed-process.ps1",
+      "sha256": "9b6c22f3de95ddc55bc97e6c06a26e41ed9f30df22761d7496b7da9b7064004a"
+    },
+    {
+      "file": ".research/stability-cdp.mjs",
+      "sha256": "78f651bf6866f228ac69d73cec46c6a0ce5d1ea48be6b47676757c756c030592"
+    },
+    {
+      "file": ".research/start-production-supervisor.ps1",
+      "sha256": "077fbdb251e35bf1a3fcba784acb50fe2b3be7f0c0c7aa1f55afa7f21369de85"
+    },
+    {
+      "file": ".research/start-stability-version.ps1",
+      "sha256": "451e92afe288a0607f713e4737397006ba3865966e91d980f821ca58ace57645"
+    },
+    {
+      "file": ".research/stop-stability-version.ps1",
+      "sha256": "561aa795dfd548fce407f044c03469b880d8beffa148eacd8ccfe5f50fb32afb"
+    },
+    {
+      "file": ".research/wait-owned-bridge.mjs",
+      "sha256": "6802207c13e1e0c03642d2df8386700cb01044db2fe69b649b78f7a5c18cf78a"
+    },
+    {
+      "file": ".work/owned-dialog-observation.ps1",
+      "sha256": "31f78497b489ec52114d213570fd62117ebe355cecc0570dc0fa520f8b89e58b"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "0889150b24818645df25038d30f14f73282b2f9e28879cc8be2e39eae9412757"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "scripts/create-test-project.mjs",
+      "sha256": "146a7c7dbe566b08bf20efef35db80ee4332ceddf8631ef055d56afe7ecf7e02"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "6894d566709e3b62db74940c863240d9840bf5d86cb9c58cc94b95d164f4b2dc"
+    },
+    {
+      "file": "scripts/test.mjs",
+      "sha256": "5097c494f2bea30b6e4d45daaa9caaaaf782632ff4103bb19e77ad331775476e"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "tests/adapter-native-contract.test.cjs",
+      "sha256": "ff10da7781c4376d2fab17aec167af4c5f01f99238485fc3a8247d971897e6e4"
+    },
+    {
+      "file": "tests/bridge.test.cjs",
+      "sha256": "3988dcb28b18de283a74a2a80095f2556a99be4d218d42d2d71f336bc2660478"
+    },
+    {
+      "file": "tests/client-bridge.test.mjs",
+      "sha256": "b632a647596623437588fdec03a5b4e3ce60762ddc38711617fc008ffe6e1e6b"
+    },
+    {
+      "file": "tests/extension-lifecycle.test.cjs",
+      "sha256": "1745339e741f5aa313038daa33a3a622e4eea47924b0298fbd0a84ae2dea34c7"
+    },
+    {
+      "file": "tests/extras.test.cjs",
+      "sha256": "e3a6d57a75c20f0c6a69d6d9657bc14a6889bebef46dc4d115f3292662717aeb"
+    },
+    {
+      "file": "tests/install-extension.test.mjs",
+      "sha256": "4b00ff94f460e4d1c855e55b90b44ad69a5480fc9114b90c23cb9597efa04589"
+    },
+    {
+      "file": "tests/mcp-server.test.mjs",
+      "sha256": "1c09fe5bf3a4d7c9cc5761cb0e24f8b165084def33a5fd8847ad9e08cd9395a1"
+    },
+    {
+      "file": "tests/soak.test.mjs",
+      "sha256": "5d8e22e881cd0a2a3cc407804551e48bd84d2358dc66dca32a61b6805fae3ce7"
+    },
+    {
+      "file": "tools/compare-creator.cjs",
+      "sha256": "3da1a2ffd1a8656ac4d6635fd783235cebf9e0f40fbf2f67f75da31cf247b3b2"
+    },
+    {
+      "file": "tools/inspect-creator.cjs",
+      "sha256": "21a9f221913b48270cc364168a4d297ceb1aa46e71ef1a4f60fff8824cabf92f"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene-recovery.js",
+      "sha256": "9ef86ecfa9b0667df76565501d08a0987731b40cf6453dd38dfb76fe7f00fac6"
+    }
+  ]
+}

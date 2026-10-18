@@ -1,0 +1,167 @@
+[
+  {
+    "version": "3.7.0",
+    "success": true,
+    "originalSha256": "8bc1520a6442161c65dfaa03d70e9d6f7756086647b9322fe2d5c2c5091dfab0",
+    "redundantArchiveReadback": true,
+    "singleOpenReadyClean": true,
+    "differentCacheRefusedBeforeOpen": true,
+    "genuineRecoveryPreserved": true,
+    "ownedCleanupAcknowledged": true,
+    "trigger": "injected newer timestamp",
+    "archiveFileHashes": [
+      {
+        "name": "saved.scene",
+        "bytes": 8170,
+        "sha256": "ec565c4e141abfd5518bbfef7795f9ecedf065d34d76638e0c2e331261ba8ff3"
+      },
+      {
+        "name": "latest-cache.scene",
+        "bytes": 8166,
+        "sha256": "3bc7b587179de59abfa90d38b8705f012b471110af8abfcab6081d4c57cf92a6"
+      },
+      {
+        "name": "latest-hint.json",
+        "bytes": 9600,
+        "sha256": "f7456f9a3868aa7ae239e79dd11426af0f6a7e5289e53f384a02fc26690ce6ee"
+      },
+      {
+        "name": "cache-files\\1792329566800.json",
+        "bytes": 9489,
+        "sha256": "baad72adda739e66c172e5dbd37c192b872103d12b5022ca57bbb00383a14f92"
+      }
+    ]
+  },
+  {
+    "version": "3.7.1",
+    "success": true,
+    "originalSha256": "a0cf6ea9063ddc33877c6a2a5d9c6f4f2b6caa43807cbdcfc7b409ad806000eb",
+    "redundantArchiveReadback": true,
+    "singleOpenReadyClean": true,
+    "differentCacheRefusedBeforeOpen": true,
+    "genuineRecoveryPreserved": true,
+    "ownedCleanupAcknowledged": true,
+    "trigger": "injected newer timestamp",
+    "archiveFileHashes": [
+      {
+        "name": "saved.scene",
+        "bytes": 8170,
+        "sha256": "83c9553bf16d7c60ca95bc442b1f153cee28de2674a89620f15c7396e51e3b56"
+      },
+      {
+        "name": "latest-cache.scene",
+        "bytes": 8166,
+        "sha256": "4434b84af41d022a4353317c374dafcf892960f9d2170e4731ae3b0207243377"
+      },
+      {
+        "name": "latest-hint.json",
+        "bytes": 9600,
+        "sha256": "39680af758b6aafb584229cc6f2e617bd7f9b0857bedd2045f8b64be1157385d"
+      },
+      {
+        "name": "cache-files\\1792329288359.json",
+        "bytes": 9489,
+        "sha256": "a4bca8bd3861b1c299e6404b6fd7be8d6ffb3263c910086d7f4b429f56f24cd0"
+      }
+    ]
+  },
+  {
+    "version": "3.7.2",
+    "success": true,
+    "originalSha256": "f89615709b01dbc71daf7d8236170ec9d1b89a07b78e68e52ffd44f412550915",
+    "redundantArchiveReadback": true,
+    "singleOpenReadyClean": true,
+    "differentCacheRefusedBeforeOpen": true,
+    "genuineRecoveryPreserved": true,
+    "ownedCleanupAcknowledged": true,
+    "trigger": "injected newer timestamp",
+    "archiveFileHashes": [
+      {
+        "name": "saved.scene",
+        "bytes": 8207,
+        "sha256": "0e988948f362c8ebc6a5d67c39b3612d153cd536b348b98ab63c0c6df83d9934"
+      },
+      {
+        "name": "latest-cache.scene",
+        "bytes": 8203,
+        "sha256": "dabb72ffd3209a12d66b3b0aa6036727ea0300c55bf0667242cf8fbf12f12b2f"
+      },
+      {
+        "name": "latest-hint.json",
+        "bytes": 9640,
+        "sha256": "b9e3d6bb648eb83a6eb5d13a85d9a7a63c3af24a7ee4be12c69f4751197cfeb2"
+      },
+      {
+        "name": "cache-files\\1792329429180.json",
+        "bytes": 9529,
+        "sha256": "5efd6bf56314fbf2166037a61b316e9a2ee4382704fc5fbb20c6ec0a2fab3146"
+      }
+    ]
+  },
+  {
+    "version": "3.7.3",
+    "success": true,
+    "originalSha256": "7e915d1cc04128c6aa60a72d47069851a3cd5f309ff3b5e06ee31b7591c1fd77",
+    "redundantArchiveReadback": true,
+    "singleOpenReadyClean": true,
+    "differentCacheRefusedBeforeOpen": true,
+    "genuineRecoveryPreserved": true,
+    "ownedCleanupAcknowledged": true,
+    "trigger": "injected newer timestamp",
+    "archiveFileHashes": [
+      {
+        "name": "saved.scene",
+        "bytes": 8207,
+        "sha256": "eb60a013ad61bb680f9759bc18bf10e03ad5c31ae7600b380557ca420b48f072"
+      },
+      {
+        "name": "latest-cache.scene",
+        "bytes": 8203,
+        "sha256": "e99c3ff83d2219090aeeb8823d92112600a70f9c300b4436215f2b69a899f153"
+      },
+      {
+        "name": "latest-hint.json",
+        "bytes": 9640,
+        "sha256": "86fec90f12f7982c7d7717299154bdce7f46da87fb712b62a8ebfe97fa1835b5"
+      },
+      {
+        "name": "cache-files\\1792328992609.json",
+        "bytes": 9529,
+        "sha256": "2918f2cf605580c6b5817ac69f33d2b56f7818dc708f7178f6980aed3a265f02"
+      }
+    ]
+  },
+  {
+    "version": "3.7.4",
+    "success": true,
+    "originalSha256": "847190dad881a3fbf259b8982653a04be111167beb56f2732e0ad70fd827f54f",
+    "redundantArchiveReadback": true,
+    "singleOpenReadyClean": true,
+    "differentCacheRefusedBeforeOpen": true,
+    "genuineRecoveryPreserved": true,
+    "ownedCleanupAcknowledged": true,
+    "trigger": "injected newer timestamp",
+    "archiveFileHashes": [
+      {
+        "name": "saved.scene",
+        "bytes": 8207,
+        "sha256": "a92d8bb0be3854f9f3aa48f6db003a0f51c709b839aca515a85f5f16fe2a3a43"
+      },
+      {
+        "name": "latest-cache.scene",
+        "bytes": 8203,
+        "sha256": "e2ab7ecd96b5587ceae7b38c0baf8c521a1c28b5adadb89974a301ddb92670b5"
+      },
+      {
+        "name": "latest-hint.json",
+        "bytes": 9640,
+        "sha256": "ce3449723d91679cd0592991f77d52801dcb996975a96413491de02529131f55"
+      },
+      {
+        "name": "cache-files\\1792329145159.json",
+        "bytes": 9529,
+        "sha256": "9f774bfd3bb2b996feeda4417cf026bac3ec0dbbf40ea50d7882da5f7b1bbc9c"
+      }
+    ]
+  }
+]

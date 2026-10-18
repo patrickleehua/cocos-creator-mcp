@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T16:36:32.227199+00:00",
+  "status": "user_stopped_with_partial_duration_coverage",
+  "productionStable": false,
+  "automation": "deleted_at_user_request",
+  "ownedEditorsControllersAndSoakProcessesRemaining": 0,
+  "ownedLocksRemaining": 0,
+  "cleanupVerifiedByActualProcessAudit": true,
+  "originalSourceManifestSha256": "d3892368eda866055578d9cad0e7eeb9ea660dd6dc3379f1f8402b11021186b8",
+  "unitTestsPassed": 470,
+  "qualifiedAndRecoveredVersions": [
+    "3.7.0",
+    "3.7.1",
+    "3.7.2",
+    "3.7.3",
+    "3.7.4"
+  ],
+  "eightHourPassedOnCandidate": [],
+  "projectRootGate": "not_run",
+  "runtimePublication": "local_frozen_candidate_not_in_this_documentation_commit",
+  "limits": [
+    "User ended testing before eight hours; raw failed/nonzero statuses are preserved and classified as user-requested stop, not a newly observed product fault.",
+    "This documentation commit does not publish the candidate runtime changes. Candidate results bind to the recorded hashes; repository HEAD CI cannot qualify unpublished source.",
+    "Five-version Chinese-and-space project-root gate was not executed. No production-stable or completed-eight-hour claim for the current candidate.",
+    "Original failure modal and scheduling remain inferred despite controlled reproduction.",
+    "Native cache clearing has no compare-and-swap token; concurrent manual editing is unsupported.",
+    "Public native recovery query exposes latest memory payload, not every older memory-only snapshot.",
+    "Memory and handle budgets cover sampled synthetic fixtures, not arbitrary production project capacity.",
+    "Only Web desktop debug/release builds are covered, not Android, iOS or mini-game platforms."
+  ],
+  "reports": [
+    {
+      "file": "cache-controls.json",
+      "sha256": "384ba3038216297e762a8f3c5cc656db49271ef93143298f5a4b4550c2bc99c5"
+    },
+    {
+      "file": "history.json",
+      "sha256": "a3c17e54d2585e468f5897a92e791c6f2d0c1bc2cee82d1383a748f463d44378"
+    },
+    {
+      "file": "qualification.json",
+      "sha256": "eacf3b089f852f895f2818889f1a71d20b8173fbc27cad35611375aadf183bad"
+    },
+    {
+      "file": "soaks.json",
+      "sha256": "dcf97f41a551f9a9cd1a8513800f9a1be71a983e3bde7153204ab41718f4a1b2"
+    },
+    {
+      "file": "source-hashes.json",
+      "sha256": "e24d522c39d8a4fc5620f706b82dc70d1ac842887961977e6f66b3b1c471f216"
+    },
+    {
+      "file": "unit.json",
+      "sha256": "8d12f02cedb9b716277299f7b3b18871c966167d92c95512b9f80ce98080d5b0"
+    }
+  ]
+}

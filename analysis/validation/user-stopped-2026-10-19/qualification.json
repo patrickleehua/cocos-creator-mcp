@@ -1,0 +1,612 @@
+[
+  {
+    "version": "3.7.0",
+    "distribution": "official Windows x64",
+    "qualificationPassed": true,
+    "recoveryPassed": true,
+    "reports": [
+      {
+        "check": "core",
+        "success": true,
+        "originalSha256": "c0dee20922f23ec9ec9dc597b54a81776cc48487af6a101852165360342e744a",
+        "stepsPassed": 13
+      },
+      {
+        "check": "references",
+        "success": true,
+        "originalSha256": "c970e0e523434c283ed17c15442e46d7ce3378d293a03b29e0264e8c88c11eca",
+        "stepsPassed": 7
+      },
+      {
+        "check": "extras",
+        "success": true,
+        "originalSha256": "5f912ee4f502140d83d842806e8646e05efbc5a03996d2aad100567d21910534",
+        "stepsPassed": 4
+      },
+      {
+        "check": "faults",
+        "success": true,
+        "originalSha256": "353ec3238fc786236a562d061409ce4f6a8374151b137545ee5e3ce7f642fc20",
+        "stepsPassed": 4,
+        "budgets": {
+          "timedOutClientMs": 1200,
+          "queuedWriteExpiresAfterMs": 200,
+          "observerAndCleanupMs": 600000
+        },
+        "compoundReadback": {
+          "requestedNodes": 400,
+          "observedDuringDispatch": 1,
+          "timedOutWrite": {
+            "code": "TIMEOUT",
+            "outcome": "unknown",
+            "retryable": false
+          },
+          "expiredQueuedWrite": {
+            "code": "REQUEST_EXPIRED",
+            "outcome": "not_applied"
+          },
+          "verifiedNodes": 400,
+          "uniqueNames": 400,
+          "expiredNodeAbsent": true,
+          "healthResponsive": true,
+          "sceneQueryBytes": 190164,
+          "singleNodeReadbackMs": 50,
+          "savedAfterTimeout": true
+        },
+        "cleanup": "removed_and_saved"
+      },
+      {
+        "check": "soak-pilot",
+        "success": true,
+        "originalSha256": "934805edf17466f64c7d07dd26834db917a23d27ea94a0a0776942f886f72561",
+        "cycles": 100,
+        "clientsClosed": true
+      },
+      {
+        "check": "preview-open",
+        "success": true,
+        "originalSha256": "b8b7240b6a52a00bd0a0fdcfd796077fd806e586f107aa0c5b0e90dc75aef7fa"
+      },
+      {
+        "check": "preview-runtime",
+        "success": true,
+        "originalSha256": "3f715cd58d71bd5f5bb40f5abb2429ac5275518bc40a58494dc3f9ca6deba12f",
+        "engine": "3.7.0",
+        "frames": 74,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-debug",
+        "success": true,
+        "originalSha256": "38b1d0c6eed0868d8b89724bf74e512062bfb5676e599a6025df7834beae2d68",
+        "platform": "web-desktop",
+        "debug": true,
+        "nativeCode": 36
+      },
+      {
+        "check": "debug-runtime",
+        "success": true,
+        "originalSha256": "9f665debb293a9724d884b50614579cc7536fdc9ce5226ffbd3d93c3f4feea72",
+        "engine": "3.7.0",
+        "frames": 34,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-release",
+        "success": true,
+        "originalSha256": "610e54f008f51483627e07dd53f79c94ddd748581ad67327adca46735cf9d939",
+        "platform": "web-desktop",
+        "debug": false,
+        "nativeCode": 36
+      },
+      {
+        "check": "release-runtime",
+        "success": true,
+        "originalSha256": "b29603cf18d1cadb3f5a61a8e8250568158d8db6f2bf950b9f9adba300174761",
+        "engine": "3.7.0",
+        "frames": 43,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "editor-recovery",
+        "success": true,
+        "originalSha256": "54d89ecc9237a7e328ebac49d3daa9d07f0b20d107747300dd8227a6504ed957",
+        "savedSceneSha256": "7d5cbdbddd75153b688d3651bc9e509e01061b7821bb41afebdd652b22bf2b0c",
+        "staleDiscoveryRejected": true,
+        "sessionRotated": true,
+        "oldClientReconnected": true
+      }
+    ]
+  },
+  {
+    "version": "3.7.1",
+    "distribution": "official Windows x64",
+    "qualificationPassed": true,
+    "recoveryPassed": true,
+    "reports": [
+      {
+        "check": "core",
+        "success": true,
+        "originalSha256": "80344eec63bb4477dffcdf7011ab09ee21786b356409bdda70e2f311d36cc9d9",
+        "stepsPassed": 13
+      },
+      {
+        "check": "references",
+        "success": true,
+        "originalSha256": "0fd587e9d219dac970c12842e7c11b49de6fc57fe832409628f93bfae140498f",
+        "stepsPassed": 7
+      },
+      {
+        "check": "extras",
+        "success": true,
+        "originalSha256": "c5ddea0e2510946effc35e88df643e892aeb9631c56deff858ad8ef6ffad87ae",
+        "stepsPassed": 4
+      },
+      {
+        "check": "faults",
+        "success": true,
+        "originalSha256": "89e27c530ed2aaa3537d14622109dd3aace6d5d6e8954db1cf0ddb89b3c28149",
+        "stepsPassed": 4,
+        "budgets": {
+          "timedOutClientMs": 1200,
+          "queuedWriteExpiresAfterMs": 200,
+          "observerAndCleanupMs": 600000
+        },
+        "compoundReadback": {
+          "requestedNodes": 400,
+          "observedDuringDispatch": 1,
+          "timedOutWrite": {
+            "code": "TIMEOUT",
+            "outcome": "unknown",
+            "retryable": false
+          },
+          "expiredQueuedWrite": {
+            "code": "REQUEST_EXPIRED",
+            "outcome": "not_applied"
+          },
+          "verifiedNodes": 400,
+          "uniqueNames": 400,
+          "expiredNodeAbsent": true,
+          "healthResponsive": true,
+          "sceneQueryBytes": 190164,
+          "singleNodeReadbackMs": 39,
+          "savedAfterTimeout": true
+        },
+        "cleanup": "removed_and_saved"
+      },
+      {
+        "check": "soak-pilot",
+        "success": true,
+        "originalSha256": "24a5679e1da2096dfe98f61b563afd047c5dcfbbda7ce78e8081747ec5e0e464",
+        "cycles": 100,
+        "clientsClosed": true
+      },
+      {
+        "check": "preview-open",
+        "success": true,
+        "originalSha256": "2d147a8165ae88c084f935972496ce629dbd1e21693ea95941846e091e82b906"
+      },
+      {
+        "check": "preview-runtime",
+        "success": true,
+        "originalSha256": "746fca286b4ca1e1e773d25f666183f0d1b313588effcbd914907d6dec5d3a48",
+        "engine": "3.7.1",
+        "frames": 76,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-debug",
+        "success": true,
+        "originalSha256": "71303855bef56411d385202cfd1309a0987c3c267e13490532de7809163f9309",
+        "platform": "web-desktop",
+        "debug": true,
+        "nativeCode": 36
+      },
+      {
+        "check": "debug-runtime",
+        "success": true,
+        "originalSha256": "fd14c428273b752b1c2fa9cccad47657e63b9fd5ee9bd4d0a00e7230fb58ecdc",
+        "engine": "3.7.1",
+        "frames": 31,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-release",
+        "success": true,
+        "originalSha256": "bc3fd2b6b7b4d0ecb8a23f619ebd982f1bfd6e5f5bdd588e6f82016aa2767293",
+        "platform": "web-desktop",
+        "debug": false,
+        "nativeCode": 36
+      },
+      {
+        "check": "release-runtime",
+        "success": true,
+        "originalSha256": "47a7c06f3a964384c8bbfc95aa9c0b1a5e7e87d4cb2ff7f08d1d54d8e9146d33",
+        "engine": "3.7.1",
+        "frames": 38,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "editor-recovery",
+        "success": true,
+        "originalSha256": "7479f579da9ade325b604d99e23152cffad840b98a795c65f0eb04dc6f7da483",
+        "savedSceneSha256": "2c59287425668937d57bb200e6577e2e587b9e8c194ae1fb99a02f084cb06a73",
+        "staleDiscoveryRejected": true,
+        "sessionRotated": true,
+        "oldClientReconnected": true
+      }
+    ]
+  },
+  {
+    "version": "3.7.2",
+    "distribution": "official Windows x64",
+    "qualificationPassed": true,
+    "recoveryPassed": true,
+    "reports": [
+      {
+        "check": "core",
+        "success": true,
+        "originalSha256": "458744d6716c30a8d0b06a7e301945d20d3dd3fbab3ed096f0853138c1f97723",
+        "stepsPassed": 13
+      },
+      {
+        "check": "references",
+        "success": true,
+        "originalSha256": "3d31739eab2d10b28907472208814cca5e6242537fd8e40527160c685ce768f0",
+        "stepsPassed": 7
+      },
+      {
+        "check": "extras",
+        "success": true,
+        "originalSha256": "e82c96c8ac27619ed2d53eec414f1c1fad3c3bcb13ea45afd72b2cf991febb9a",
+        "stepsPassed": 4
+      },
+      {
+        "check": "faults",
+        "success": true,
+        "originalSha256": "4891f1c4ad8a8e140de355f1eb22278607a586b407934ba4ee19eeb8d6e39de9",
+        "stepsPassed": 4,
+        "budgets": {
+          "timedOutClientMs": 1200,
+          "queuedWriteExpiresAfterMs": 200,
+          "observerAndCleanupMs": 600000
+        },
+        "compoundReadback": {
+          "requestedNodes": 400,
+          "observedDuringDispatch": 1,
+          "timedOutWrite": {
+            "code": "TIMEOUT",
+            "outcome": "unknown",
+            "retryable": false
+          },
+          "expiredQueuedWrite": {
+            "code": "REQUEST_EXPIRED",
+            "outcome": "not_applied"
+          },
+          "verifiedNodes": 400,
+          "uniqueNames": 400,
+          "expiredNodeAbsent": true,
+          "healthResponsive": true,
+          "sceneQueryBytes": 190164,
+          "singleNodeReadbackMs": 41,
+          "savedAfterTimeout": true
+        },
+        "cleanup": "removed_and_saved"
+      },
+      {
+        "check": "soak-pilot",
+        "success": true,
+        "originalSha256": "5fbd1b0c86d303e63790e9c4588d3a713f2f43c0ea2ec3dbc3179dd6462e2ed0",
+        "cycles": 100,
+        "clientsClosed": true
+      },
+      {
+        "check": "preview-open",
+        "success": true,
+        "originalSha256": "d456e83b79d766aba33703e9110e9cd077e01ae96872d15f97dd56834ee3b673"
+      },
+      {
+        "check": "preview-runtime",
+        "success": true,
+        "originalSha256": "3f7b7b4e1f07cc426291dc363c688574fc67dfc14503aeff51a827957082e36f",
+        "engine": "3.7.2",
+        "frames": 56,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-debug",
+        "success": true,
+        "originalSha256": "12dd9aad660e97215b9a02f2c8c08e444a0e44ce0dc011ee197415c6839eaa80",
+        "platform": "web-desktop",
+        "debug": true,
+        "nativeCode": 36
+      },
+      {
+        "check": "debug-runtime",
+        "success": true,
+        "originalSha256": "86b60541031bf5254309f446ff7e306bf27cae5a4bb63db17b3f21d9e03b295f",
+        "engine": "3.7.2",
+        "frames": 21,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-release",
+        "success": true,
+        "originalSha256": "7ee562e05faaca1405bc08bf1978c666fed5b4ca1c1b051bfbc1eea34c58e16c",
+        "platform": "web-desktop",
+        "debug": false,
+        "nativeCode": 36
+      },
+      {
+        "check": "release-runtime",
+        "success": true,
+        "originalSha256": "2338a5b3ab2686e942299279b0fdd5fe77bc3c7fdc606905b34c07fe95076513",
+        "engine": "3.7.2",
+        "frames": 37,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "editor-recovery",
+        "success": true,
+        "originalSha256": "7eead8b0481e1d9361f4b730672d64b086214a19e47683e2977c9ee96d1b7694",
+        "savedSceneSha256": "e55dd84e5f2171e87b9d3f7f9d8dd00124d487688bb54de84f6a5001cf86e413",
+        "staleDiscoveryRejected": true,
+        "sessionRotated": true,
+        "oldClientReconnected": true
+      }
+    ]
+  },
+  {
+    "version": "3.7.3",
+    "distribution": "official Windows x64",
+    "qualificationPassed": true,
+    "recoveryPassed": true,
+    "reports": [
+      {
+        "check": "core",
+        "success": true,
+        "originalSha256": "0329c1f9e1eabcbe5a95fc606b0cdd6758aa55f36222f8428db29c40d201226a",
+        "stepsPassed": 13
+      },
+      {
+        "check": "references",
+        "success": true,
+        "originalSha256": "d3ed497abf99b5029a9a953cc2a3c017f7bbad053444e43cd77cffdd0e73a575",
+        "stepsPassed": 7
+      },
+      {
+        "check": "extras",
+        "success": true,
+        "originalSha256": "cb6bbbbc7696c88f7ac4c8c7da116900962d9c890edd1eac1b6a3903191b4c9d",
+        "stepsPassed": 4
+      },
+      {
+        "check": "faults",
+        "success": true,
+        "originalSha256": "611342c58b1985b748b33ae81e65c8988046dd5e2472426c102638d9396b41cb",
+        "stepsPassed": 4,
+        "budgets": {
+          "timedOutClientMs": 1200,
+          "queuedWriteExpiresAfterMs": 200,
+          "observerAndCleanupMs": 600000
+        },
+        "compoundReadback": {
+          "requestedNodes": 400,
+          "observedDuringDispatch": 1,
+          "timedOutWrite": {
+            "code": "TIMEOUT",
+            "outcome": "unknown",
+            "retryable": false
+          },
+          "expiredQueuedWrite": {
+            "code": "REQUEST_EXPIRED",
+            "outcome": "not_applied"
+          },
+          "verifiedNodes": 400,
+          "uniqueNames": 400,
+          "expiredNodeAbsent": true,
+          "healthResponsive": true,
+          "sceneQueryBytes": 190164,
+          "singleNodeReadbackMs": 44,
+          "savedAfterTimeout": true
+        },
+        "cleanup": "removed_and_saved"
+      },
+      {
+        "check": "soak-pilot",
+        "success": true,
+        "originalSha256": "eb141b87e8358d60ea3d2bd3a5239af2aefca487785bad9f5791f66a84d83a29",
+        "cycles": 100,
+        "clientsClosed": true
+      },
+      {
+        "check": "preview-open",
+        "success": true,
+        "originalSha256": "8955ef7ba4cc50da55b52276ddc39d8bca6cbdb38c358bd09c162a7cdde53540"
+      },
+      {
+        "check": "preview-runtime",
+        "success": true,
+        "originalSha256": "3a465d6fa266e2936d54158c65df11bfe1d74c4d63f2c3cfe8edb175889685b7",
+        "engine": "3.7.3",
+        "frames": 65,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-debug",
+        "success": true,
+        "originalSha256": "c87a8f132e1d2f87ba4a3d163533a6b8329021054a679f52d1e6a4badda20636",
+        "platform": "web-desktop",
+        "debug": true,
+        "nativeCode": 36
+      },
+      {
+        "check": "debug-runtime",
+        "success": true,
+        "originalSha256": "21e236a118f3ec57b86341e8e98af53a935dfe710501c67e2b2c56e82f27f7de",
+        "engine": "3.7.3",
+        "frames": 26,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-release",
+        "success": true,
+        "originalSha256": "1ea02226b8867c896a7111b30c3a20e9b6577e18c4f76cf180cd4935292bdd08",
+        "platform": "web-desktop",
+        "debug": false,
+        "nativeCode": 36
+      },
+      {
+        "check": "release-runtime",
+        "success": true,
+        "originalSha256": "f11615f8a9e6df0d540d140252e0a1f70b7a5cdbb19a28580955cca8abd87ac8",
+        "engine": "3.7.3",
+        "frames": 41,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "editor-recovery",
+        "success": true,
+        "originalSha256": "ca819788e37fd5e1ea90aeec3671e687afb3ead681161191912f321d5afd57f4",
+        "savedSceneSha256": "2831dec91c5056a88ce3a0298908831b597673f99de785ffc98130e45d5bfd30",
+        "staleDiscoveryRejected": true,
+        "sessionRotated": true,
+        "oldClientReconnected": true
+      }
+    ]
+  },
+  {
+    "version": "3.7.4",
+    "distribution": "official Windows x64",
+    "qualificationPassed": true,
+    "recoveryPassed": true,
+    "reports": [
+      {
+        "check": "core",
+        "success": true,
+        "originalSha256": "800b7b6affee25733e4e8c8e3e59fe7ae13fa056a1c2e708d668b5738b5428e7",
+        "stepsPassed": 13
+      },
+      {
+        "check": "references",
+        "success": true,
+        "originalSha256": "1b562d27f08ceff868adb0772b2c19234c82756622086062ae39821af7bc828a",
+        "stepsPassed": 7
+      },
+      {
+        "check": "extras",
+        "success": true,
+        "originalSha256": "4a4d017de92c75b6b426f229e142983295e65170c0f33c0daf82303efee7f9ea",
+        "stepsPassed": 4
+      },
+      {
+        "check": "faults",
+        "success": true,
+        "originalSha256": "ea6bfe9d40c573ceb1b9e1e624170fb104018570bcbf223924bfe049d777f5e4",
+        "stepsPassed": 4,
+        "budgets": {
+          "timedOutClientMs": 1200,
+          "queuedWriteExpiresAfterMs": 200,
+          "observerAndCleanupMs": 600000
+        },
+        "compoundReadback": {
+          "requestedNodes": 400,
+          "observedDuringDispatch": 1,
+          "timedOutWrite": {
+            "code": "TIMEOUT",
+            "outcome": "unknown",
+            "retryable": false
+          },
+          "expiredQueuedWrite": {
+            "code": "REQUEST_EXPIRED",
+            "outcome": "not_applied"
+          },
+          "verifiedNodes": 400,
+          "uniqueNames": 400,
+          "expiredNodeAbsent": true,
+          "healthResponsive": true,
+          "sceneQueryBytes": 190164,
+          "singleNodeReadbackMs": 48,
+          "savedAfterTimeout": true
+        },
+        "cleanup": "removed_and_saved"
+      },
+      {
+        "check": "soak-pilot",
+        "success": true,
+        "originalSha256": "b6608281d592f9d569b4f8bf786fdaa0565e6dac241f1f13e474276cb3e69d2e",
+        "cycles": 100,
+        "clientsClosed": true
+      },
+      {
+        "check": "preview-open",
+        "success": true,
+        "originalSha256": "5bb5c5b5ccf844039eae51aae3dcf0a6f9dced87cd44980407a566d2f663e48f"
+      },
+      {
+        "check": "preview-runtime",
+        "success": true,
+        "originalSha256": "fb0ee6423fca3a7f6e2eb37054f396789272c8fec764fbb76e8c74ef8f103af9",
+        "engine": "3.7.4",
+        "frames": 48,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-debug",
+        "success": true,
+        "originalSha256": "bd30f8a84b4402931b0d01b42f4f31b2d923953ee6373d7cd64e94c7adf40aa0",
+        "platform": "web-desktop",
+        "debug": true,
+        "nativeCode": 36
+      },
+      {
+        "check": "debug-runtime",
+        "success": true,
+        "originalSha256": "a12b4ca3fd96840c4cfe770b1467102ca2072984cb2ea22be7d2d2160827d7e4",
+        "engine": "3.7.4",
+        "frames": 27,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "build-release",
+        "success": true,
+        "originalSha256": "1ee3d59385b0b243ed970fa9a60c54547a05277eaee033a810c3eaafe7c10bb6",
+        "platform": "web-desktop",
+        "debug": false,
+        "nativeCode": 36
+      },
+      {
+        "check": "release-runtime",
+        "success": true,
+        "originalSha256": "fc305f25ce489980c97bacd925a1bcd9b14dfe49c9941bd0c9b5a8c07a7647da",
+        "engine": "3.7.4",
+        "frames": 36,
+        "canvas": true,
+        "javascriptErrors": 0
+      },
+      {
+        "check": "editor-recovery",
+        "success": true,
+        "originalSha256": "7b0dd49f1a80daef7000faa18434a22b2c3400d194158bc81ff788d53a326250",
+        "savedSceneSha256": "c6fa6b52ae3b6b34c0847607caf6c7f911d96e15d4ede96e47a90f8421b13860",
+        "staleDiscoveryRejected": true,
+        "sessionRotated": true,
+        "oldClientReconnected": true
+      }
+    ]
+  }
+]
