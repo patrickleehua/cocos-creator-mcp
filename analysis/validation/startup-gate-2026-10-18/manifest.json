@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-18T03:04:55.805Z",
+  "kind": "native-startup-gate-investigation",
+  "status": "diagnostic_passed_new_formal_attempt_in_progress",
+  "productionStable": false,
+  "runtimeCommit": "eea441f19a4a8ff03cb206870419f98dc2a8bf0c",
+  "runtimeSources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "a098c8cb329927665b47630ffa12d6ec528eb9f8b74688818b557e1db1e3d116"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "failedAttempt": {
+    "number": 13,
+    "startedAt": "2026-10-17T16:41:15.196Z",
+    "finishedAt": "2026-10-17T17:01:58.617Z",
+    "status": "failed",
+    "qualificationPassedVersions": [
+      "3.7.4",
+      "3.7.1",
+      "3.7.2",
+      "3.7.0"
+    ],
+    "failedVersion": "3.7.3",
+    "eightHourRunsStarted": 0,
+    "eightHourRunsPassed": 0
+  },
+  "nativeCrashes": {
+    "3.7.3": {
+      "exception": "0x80000003",
+      "moduleOffset": "0x308b4ae",
+      "rootCause": "unknown"
+    },
+    "3.7.4": {
+      "exception": "0xc0000005",
+      "moduleOffset": "0x337edd0",
+      "rootCause": "unknown"
+    }
+  },
+  "controls": {
+    "nativeVersionsPassed": [
+      "3.7.3",
+      "3.7.4"
+    ],
+    "launchesPerVersion": 1,
+    "forcedCleanupExitCodesExpected": true,
+    "helperChecksPassed": 5,
+    "helperChecks": [
+      "Stale discovery PID is never contacted",
+      "Wrong project is rejected",
+      "Native exit fails before readiness",
+      "Non-boolean dirty state resets consecutive readiness",
+      "Readiness deadline remains bounded"
+    ],
+    "helperSources": [
+      {
+        "file": ".research/wait-owned-bridge.mjs",
+        "sha256": "6802207c13e1e0c03642d2df8386700cb01044db2fe69b649b78f7a5c18cf78a"
+      },
+      {
+        "file": ".research/test-wait-owned-bridge.mjs",
+        "sha256": "d50fdbf3d865767b0f9c9ae55e2bd54e4eec6b3fd23f180771548f049da0f124"
+      },
+      {
+        "file": ".research/diagnose-delayed-inspector.mjs",
+        "sha256": "3decae6e75ed07c671e3b1e9fb69b97bbc51e5095baeae28fa1ba3c59b06c283"
+      }
+    ]
+  },
+  "newAttempt": {
+    "number": 14,
+    "startedAt": "2026-10-18T03:03:45.519Z",
+    "statusAtCapture": "running",
+    "harnessSources": [
+      {
+        "file": ".research/production-supervisor.mjs",
+        "sha256": "872d7de1eb9f2041f0f814cbc0402dde964d938ce4a2636aca420c9d9ccdb4a7"
+      },
+      {
+        "file": ".research/wait-owned-bridge.mjs",
+        "sha256": "6802207c13e1e0c03642d2df8386700cb01044db2fe69b649b78f7a5c18cf78a"
+      },
+      {
+        "file": ".research/production-pipeline.mjs",
+        "sha256": "2853fccc35859112f6bfb6a354d1c4048b1ae8db10b8c519d9d8d287bc0cfcd2"
+      },
+      {
+        "file": ".research/production-path-gate.mjs",
+        "sha256": "39e68bd3f2e3ecae4057f35478aa1a3dfb786bb61db14d221267f37f5311d389"
+      },
+      {
+        "file": ".research/path-gate-process.ps1",
+        "sha256": "bbd9e889842127e035dbd9441863d6691d3fa84fd2c07667bba05f238b4874f4"
+      },
+      {
+        "file": ".research/start-production-supervisor.ps1",
+        "sha256": "077fbdb251e35bf1a3fcba784acb50fe2b3be7f0c0c7aa1f55afa7f21369de85"
+      },
+      {
+        "file": ".research/start-stability-version.ps1",
+        "sha256": "a947868353216d19804de17009492e671511a84b99c61c18cf062f68595d1e13"
+      },
+      {
+        "file": ".research/stop-stability-version.ps1",
+        "sha256": "561aa795dfd548fce407f044c03469b880d8beffa148eacd8ccfe5f50fb32afb"
+      },
+      {
+        "file": ".research/prioritize-test-editor.ps1",
+        "sha256": "cfaf4f8a93c94b2fc038a1af13dd340664f27daa31f88a940bf2f0cf7b0c9e37"
+      },
+      {
+        "file": ".research/resource-state.ps1",
+        "sha256": "7c570f109069808c5ccddf174a99cf0fff83c1834259dabecba5255c25ca330e"
+      },
+      {
+        "file": ".research/stability-cdp.mjs",
+        "sha256": "78f651bf6866f228ac69d73cec46c6a0ce5d1ea48be6b47676757c756c030592"
+      },
+      {
+        "file": ".research/native-faults-real.mjs",
+        "sha256": "59dd956f49b6448fdb55c7afe2804954448fda1adc7b8078fa2a40f62fabe7af"
+      },
+      {
+        "file": ".research/fault-http.mjs",
+        "sha256": "462ad2ff29370e3b2b3f4d401dbed8b83557f85916595d897381f711fe3c27e8"
+      },
+      {
+        "file": ".research/production-build.mjs",
+        "sha256": "89a4c78d4eac2eeb8d2658490ec6ac56baa8af7b9d62c284b6c39cee92850873"
+      },
+      {
+        "file": ".research/prepare-production-preview.mjs",
+        "sha256": "edfebd515451f3e5f8091e0df878a710d8206ff70d87a4e6b498a44832b0201b"
+      },
+      {
+        "file": ".research/production-browser.mjs",
+        "sha256": "58e12ecb218cac5c89083a63cff1d381fa1bca41bd4e24981a184130502cc81e"
+      },
+      {
+        "file": "scripts/integration.mjs",
+        "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+      },
+      {
+        "file": "scripts/integration-references.mjs",
+        "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+      },
+      {
+        "file": "scripts/integration-extras.mjs",
+        "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+      },
+      {
+        "file": "scripts/soak.mjs",
+        "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+      },
+      {
+        "file": "scripts/install-extension.mjs",
+        "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+      }
+    ],
+    "policy": "No native Inspector connection until fresh owned PID discovery, authenticated bridge identity and three ready scene-worker samples with boolean dirty state. Final valid scene UUID confirmation remains required after owned background configuration."
+  },
+  "limits": [
+    "Native crash roots remain unknown; different exception records do not establish a shared cause.",
+    "One successful startup per version does not establish absence of intermittent failures.",
+    "The original failed attempt, sources, reports and raw minidumps are preserved locally; raw memory dumps and editor binaries are not published.",
+    "The control uses no scene opens, business writes or API overrides. Expected forced editor stops after success are cleanup, not spontaneous crashes.",
+    "No version has yet passed eight continuous effective hours. New formal qualification, recovery, long tests and actual Chinese/space project-root checks remain required.",
+    "The five helper checks belong to a separate local harness control and do not increase the historical444 runtime-test count."
+  ],
+  "reports": [
+    {
+      "file": "attempt13-controller.json",
+      "sha256": "0cd9d1ebd2fa5acb0d80868fe66de1f33f642560f1304fa61a526adc38415ef9",
+      "originalSha256": "7956a125ab666ea93c45a16baf0021010679bd3fedbbfc8796f1806d64e87c89"
+    },
+    {
+      "file": "attempt13-pipeline.json",
+      "sha256": "b5222ac29794fd2d86969343cdffea7f3fa58c67aaadd7570250459aef4bc327",
+      "originalSha256": "173cab8745a0a833cf5be58e816905f66d1799cd041ae6b5c39f15408dbe1591"
+    },
+    {
+      "file": "3.7.3-crash-header.json",
+      "sha256": "ccfe64a2e30d4176dd0e7a0ad002bc5a7424102f4c55a0f3324d648ff3622ec5",
+      "originalSha256": "51d30babaf9b52859575715f9e6e64587a2ef607e479abbbd7baed6b3d248735"
+    },
+    {
+      "file": "3.7.4-crash-header.json",
+      "sha256": "2250bd808932821d4d432c1cbd47a12aaa3cd07ba69b1d878e10db1048f63659",
+      "originalSha256": "175d761d07c43b88587b308884436c1d006130f9f4ad98c8e49a5a7510e1073b"
+    },
+    {
+      "file": "delayed-inspector-control.json",
+      "sha256": "6fe69b911cd43cb2ba2fafdd963b5f764ba65afaea0ed93647b191aec299c812",
+      "originalSha256": "11b20b718558fb9d59772cc598eb4583a277ec059d6068b706f069c9d92fcef5"
+    }
+  ]
+}

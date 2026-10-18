@@ -1,0 +1,21 @@
+{
+  "pid": 24268,
+  "startedAt": "2026-10-17T16:41:14.687Z",
+  "status": "failed",
+  "phase": "controller",
+  "success": false,
+  "productionStable": false,
+  "stages": [
+    {
+      "script": ".research/production-supervisor.mjs",
+      "pid": 14724,
+      "startedAt": "2026-10-17T16:41:14.727Z",
+      "exitCode": 1,
+      "signal": null,
+      "finishedAt": "2026-10-17T17:01:58.641Z"
+    }
+  ],
+  "updatedAt": "2026-10-17T17:01:58.645Z",
+  "error": "Error: .research/production-supervisor.mjs stopped with 1 / null\n    at ChildProcess.<anonymous> (file:///<project-root>/.research/production-pipeline.mjs:14:260)",
+  "finishedAt": "2026-10-17T17:01:58.645Z"
+}

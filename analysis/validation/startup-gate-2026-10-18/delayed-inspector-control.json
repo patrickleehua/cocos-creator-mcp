@@ -1,0 +1,266 @@
+{
+  "startedAt": "2026-10-18T02:58:24.241Z",
+  "kind": "delayed-inspector-startup-control",
+  "status": "passed",
+  "success": true,
+  "productionAcceptance": false,
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "a098c8cb329927665b47630ffa12d6ec528eb9f8b74688818b557e1db1e3d116"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "launches": [
+    {
+      "version": "3.7.3",
+      "pid": 25624,
+      "startedAt": "2026-10-18T02:58:30.585Z",
+      "samples": [
+        {
+          "at": "2026-10-18T03:00:01.049Z",
+          "ready": false,
+          "dirty": null
+        },
+        {
+          "at": "2026-10-18T03:00:03.590Z",
+          "ready": false,
+          "dirty": null
+        },
+        {
+          "at": "2026-10-18T03:00:06.122Z",
+          "ready": false,
+          "dirty": null
+        },
+        {
+          "at": "2026-10-18T03:00:18.899Z",
+          "ready": true,
+          "dirty": false
+        },
+        {
+          "at": "2026-10-18T03:00:21.421Z",
+          "ready": true,
+          "treeUuid": "f46876e4-e81b-4931-b493-6d367be385e7",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-18T03:00:23.943Z",
+          "ready": true,
+          "treeUuid": "f46876e4-e81b-4931-b493-6d367be385e7",
+          "dirty": false
+        }
+      ],
+      "success": true,
+      "priority": {
+        "version": "3.7.3",
+        "mainPid": 25624,
+        "priority": "BelowNormal",
+        "processCount": 1
+      },
+      "lastReadError": "Discovery must belong to this launch\n\n33804 !== 25624\n",
+      "bridgeConfirmedAt": "2026-10-18T03:00:00.906Z",
+      "sessionId": "<redacted-session-id>",
+      "preInspectorReadyAt": "2026-10-18T03:00:23.943Z",
+      "firstInspectorRequestedAt": "2026-10-18T03:00:23.943Z",
+      "background": {
+        "pid": 25624,
+        "changes": [
+          {
+            "id": 6,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          }
+        ]
+      },
+      "readyAfterInspectorAt": "2026-10-18T03:00:31.512Z",
+      "cleanupRequestedAt": "2026-10-18T03:00:31.512Z",
+      "exit": {
+        "code": 4294967295,
+        "signal": null,
+        "at": "2026-10-18T03:00:33.867Z"
+      },
+      "cleanup": {
+        "version": "3.7.3",
+        "ownedMain": 25624,
+        "stoppedProcessCount": 11,
+        "stoppedAt": "2026-10-18T03:00:33.8187105Z"
+      },
+      "finishedAt": "2026-10-18T03:00:34.015Z"
+    },
+    {
+      "version": "3.7.4",
+      "pid": 18988,
+      "startedAt": "2026-10-18T03:00:39.064Z",
+      "samples": [
+        {
+          "at": "2026-10-18T03:01:43.858Z",
+          "ready": false,
+          "dirty": null
+        },
+        {
+          "at": "2026-10-18T03:01:46.390Z",
+          "ready": false,
+          "dirty": null
+        },
+        {
+          "at": "2026-10-18T03:01:57.132Z",
+          "ready": true,
+          "dirty": false
+        },
+        {
+          "at": "2026-10-18T03:01:59.648Z",
+          "ready": true,
+          "treeUuid": "f46876e4-e81b-4931-b493-6d367be385e7",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-18T03:02:02.181Z",
+          "ready": true,
+          "treeUuid": "f46876e4-e81b-4931-b493-6d367be385e7",
+          "dirty": false
+        }
+      ],
+      "success": true,
+      "priority": {
+        "version": "3.7.4",
+        "mainPid": 18988,
+        "priority": "BelowNormal",
+        "processCount": 1
+      },
+      "lastReadError": "Discovery must belong to this launch\n\n19524 !== 18988\n",
+      "bridgeConfirmedAt": "2026-10-18T03:01:43.822Z",
+      "sessionId": "<redacted-session-id>",
+      "preInspectorReadyAt": "2026-10-18T03:02:02.181Z",
+      "firstInspectorRequestedAt": "2026-10-18T03:02:02.181Z",
+      "background": {
+        "pid": 18988,
+        "changes": [
+          {
+            "id": 6,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 5,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 4,
+            "before": true,
+            "after": false
+          },
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          }
+        ]
+      },
+      "readyAfterInspectorAt": "2026-10-18T03:02:09.762Z",
+      "cleanupRequestedAt": "2026-10-18T03:02:09.762Z",
+      "exit": {
+        "code": 4294967295,
+        "signal": null,
+        "at": "2026-10-18T03:02:12.110Z"
+      },
+      "cleanup": {
+        "version": "3.7.4",
+        "ownedMain": 18988,
+        "stoppedProcessCount": 11,
+        "stoppedAt": "2026-10-18T03:02:12.0590799Z"
+      },
+      "finishedAt": "2026-10-18T03:02:12.270Z"
+    }
+  ],
+  "method": "Preserve failed attempt13. Serial one-start controls on3.7.3 and3.7.4 with Inspector listening but no connections before a fresh owned PID discovery and authenticated bridge health. Native read-only scene checks, then delayed owned background configuration. No scene opens, business writes, API overrides or launch retries.",
+  "limits": [
+    "Two successful controls do not prove absence of intermittent native crashes or establish root cause.",
+    "Not a replacement for five-version qualification, recovery or eight-hour acceptance."
+  ],
+  "resource": {
+    "sampledAt": "2026-10-18T03:00:36.8241865Z",
+    "availableGiB": 17.2,
+    "totalGiB": 27.76,
+    "cpuLoadPercent": 14
+  },
+  "finishedAt": "2026-10-18T03:02:12.272Z"
+}

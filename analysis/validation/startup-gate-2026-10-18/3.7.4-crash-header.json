@@ -1,0 +1,114 @@
+{
+  "version": "3.7.4",
+  "file": ".work\\startup-investigation-2026-10-17\\attempt12-crash.dmp",
+  "sha256": "785f98ee80a90cf8b060dc0c13ba21f2c6d5095333758d3dc44208c3b5b3d547",
+  "recordedTime": "2026-10-17T08:30:36+00:00",
+  "exception": {
+    "threadId": 39052,
+    "code": "0xc0000005",
+    "address": "0x7ff7f498edd0",
+    "location": {
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x337edd0"
+    },
+    "parameterCount": 2,
+    "parameters": [
+      "0x0",
+      "0x378"
+    ]
+  },
+  "context": {
+    "rip": "0x7ff7f498edd0",
+    "rsp": "0x5adfffa3d8"
+  },
+  "nearestPriorExportCandidates": [
+    {
+      "offset": "0x2eb4920",
+      "name": "?IncreaseAllocatedSize@EmbedderHeapTracer@v8@@QEAAX_K@Z",
+      "distance": 5022896
+    },
+    {
+      "offset": "0x2eb4970",
+      "name": "?RegisterEmbedderReference@EmbedderHeapTracer@v8@@QEAAXAEBV?$BasicTracedReference@VData@v8@@@2@@Z",
+      "distance": 5022816
+    },
+    {
+      "offset": "0x2ee9cd0",
+      "name": "?IsActive@Locker@v8@@SA_NXZ",
+      "distance": 4804864
+    }
+  ],
+  "instructionBytes": "488b8178030000488b80c8020000c3cc488b8178030000488b80c8020000488b",
+  "stackPointerCandidatesNotUnwound": [
+    {
+      "stackOffset": "0x0",
+      "address": "0x7ff7f1858e07",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x248e07"
+    },
+    {
+      "stackOffset": "0x20",
+      "address": "0x7ff7f190e21c",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x2fe21c"
+    },
+    {
+      "stackOffset": "0x30",
+      "address": "0x7ff7f648de36",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x4e7de36"
+    },
+    {
+      "stackOffset": "0x60",
+      "address": "0x7ff7f186fb95",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x25fb95"
+    },
+    {
+      "stackOffset": "0x108",
+      "address": "0x7ff7f186fa60",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x25fa60"
+    },
+    {
+      "stackOffset": "0x130",
+      "address": "0x7ff7f44d3612",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x2ec3612"
+    },
+    {
+      "stackOffset": "0x140",
+      "address": "0x7ff7f44d3729",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x2ec3729"
+    },
+    {
+      "stackOffset": "0x190",
+      "address": "0x7ff7f44e3659",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x2ed3659"
+    },
+    {
+      "stackOffset": "0x1c8",
+      "address": "0x7ff7f186fa60",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x25fa60"
+    },
+    {
+      "stackOffset": "0x208",
+      "address": "0x7ff7f80393f0",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x6a293f0"
+    },
+    {
+      "stackOffset": "0x2a0",
+      "address": "0x7ff7f44d32d0",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.4\\CocosCreator.exe",
+      "offset": "0x2ec32d0"
+    }
+  ],
+  "limitations": [
+    "Nearest exports and raw stack pointers are candidates, not symbolized frames or proof of a function boundary.",
+    "No stack unwinding or private symbols; crash root cause remains unknown."
+  ]
+}

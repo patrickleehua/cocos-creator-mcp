@@ -1,0 +1,1166 @@
+{
+  "schemaVersion": 1,
+  "supervisorPid": 14724,
+  "startedAt": "2026-10-17T16:41:15.196Z",
+  "phase": "qualification",
+  "status": "failed",
+  "policy": {
+    "maxParallelEditors": 2,
+    "qualificationParallelism": 1,
+    "recoveryParallelism": 1,
+    "enduranceParallelism": 2,
+    "minimumFreeGiB": 4,
+    "admitAtFreeGiB": 10,
+    "admitBelowCpuPercent": 85,
+    "soakSecondsPerVersion": 28800,
+    "resourcePauseExcludedFromSoakDuration": true
+  },
+  "sources": [
+    {
+      "file": "src/server.mjs",
+      "sha256": "06e12ee1567acfb3332e98a0d9d86a1c2bd4b4a416a633dd7f07cb130e14424c"
+    },
+    {
+      "file": "src/tools.mjs",
+      "sha256": "f7b51340d154b9766ff9c1c3b7c559a6f9855abc7e3dee11a61365cf49020c4c"
+    },
+    {
+      "file": "src/bridge-client.mjs",
+      "sha256": "d2b009eafd14e9ef56babf3610724ae437198deb92c98bda3ce72b52183b8817"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "package.json",
+      "sha256": "3b1eab542e1c7c5ef0f7e99b828068e4a05ad6bcd74567648f9b93ce3ca6d704"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "4713b627a20e3690dcf0b1781d921bd671fd48a3c4d3d0814b7e78889df56591"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/main.js",
+      "sha256": "68e865b310eaafff70a80c3b4e9dcb0acc946488b616989e3704f4255f6b9780"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/bridge.js",
+      "sha256": "137de832954c1c5e8457cdca58be7aab05c5ac1932a4aabf0f5274f6b8b9aed9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/adapter.js",
+      "sha256": "a098c8cb329927665b47630ffa12d6ec528eb9f8b74688818b557e1db1e3d116"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/extras.js",
+      "sha256": "74131bab28632779e6cabdac7e3207cd9ba30a9210805d6d49bc61b2e866bbbc"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/scene.js",
+      "sha256": "0e9287aa2756c4d5d3bf5c21b974650b7094d92a8cf9eb8252d7e3b058cb64b9"
+    },
+    {
+      "file": "extensions/cocos-creator-mcp/package.json",
+      "sha256": "071fe3d908a09dbbe4d21a9385a6e0e4a954f3218bfcb07d383c9ac19d0d02f0"
+    }
+  ],
+  "harnessSources": [
+    {
+      "file": ".research/production-supervisor.mjs",
+      "sha256": "2d2b1203e74eab3478faa87c81264b950cece230447ce2d063fb7e86c6dbc1a9"
+    },
+    {
+      "file": ".research/production-pipeline.mjs",
+      "sha256": "2853fccc35859112f6bfb6a354d1c4048b1ae8db10b8c519d9d8d287bc0cfcd2"
+    },
+    {
+      "file": ".research/production-path-gate.mjs",
+      "sha256": "3a673e49884d3e2928d461ceb3077ec5b930371dac2c9ca9c342f6f17d3aae8b"
+    },
+    {
+      "file": ".research/path-gate-process.ps1",
+      "sha256": "bbd9e889842127e035dbd9441863d6691d3fa84fd2c07667bba05f238b4874f4"
+    },
+    {
+      "file": ".research/start-production-supervisor.ps1",
+      "sha256": "077fbdb251e35bf1a3fcba784acb50fe2b3be7f0c0c7aa1f55afa7f21369de85"
+    },
+    {
+      "file": ".research/start-stability-version.ps1",
+      "sha256": "f3934f85d6b4bff0c3b860160034e4998811f771a422ac7511829329bf55c6f6"
+    },
+    {
+      "file": ".research/stop-stability-version.ps1",
+      "sha256": "561aa795dfd548fce407f044c03469b880d8beffa148eacd8ccfe5f50fb32afb"
+    },
+    {
+      "file": ".research/prioritize-test-editor.ps1",
+      "sha256": "cfaf4f8a93c94b2fc038a1af13dd340664f27daa31f88a940bf2f0cf7b0c9e37"
+    },
+    {
+      "file": ".research/resource-state.ps1",
+      "sha256": "7c570f109069808c5ccddf174a99cf0fff83c1834259dabecba5255c25ca330e"
+    },
+    {
+      "file": ".research/stability-cdp.mjs",
+      "sha256": "78f651bf6866f228ac69d73cec46c6a0ce5d1ea48be6b47676757c756c030592"
+    },
+    {
+      "file": ".research/native-faults-real.mjs",
+      "sha256": "59dd956f49b6448fdb55c7afe2804954448fda1adc7b8078fa2a40f62fabe7af"
+    },
+    {
+      "file": ".research/fault-http.mjs",
+      "sha256": "462ad2ff29370e3b2b3f4d401dbed8b83557f85916595d897381f711fe3c27e8"
+    },
+    {
+      "file": ".research/production-build.mjs",
+      "sha256": "89a4c78d4eac2eeb8d2658490ec6ac56baa8af7b9d62c284b6c39cee92850873"
+    },
+    {
+      "file": ".research/prepare-production-preview.mjs",
+      "sha256": "edfebd515451f3e5f8091e0df878a710d8206ff70d87a4e6b498a44832b0201b"
+    },
+    {
+      "file": ".research/production-browser.mjs",
+      "sha256": "58e12ecb218cac5c89083a63cff1d381fa1bca41bd4e24981a184130502cc81e"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "sha256": "bcef15b9060710bbeeba266f6fc65d9370c863ddf3e05ac8ea902c65f19dc2fa"
+    },
+    {
+      "file": "scripts/integration-references.mjs",
+      "sha256": "e6567ae935cad64ffb7662dba05c4bf109ea15ab4fefb1f751904f6ef32bbf8a"
+    },
+    {
+      "file": "scripts/integration-extras.mjs",
+      "sha256": "4916e3f9736c65b90314c7201521aabe8202b0aedb9df6908863511dd93c94b3"
+    },
+    {
+      "file": "scripts/soak.mjs",
+      "sha256": "8df21594255dd83d5f9e1be6611f9181461f18b36cc3f242e86ceb92583d1f02"
+    },
+    {
+      "file": "scripts/install-extension.mjs",
+      "sha256": "d364dd06dc2ae51b6784e742f7f79feee7f607ed982a97c0c40d72f68e185886"
+    }
+  ],
+  "jobs": [
+    {
+      "version": "3.7.4",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 19524,
+      "readinessLastError": "{\"exceptionId\":6,\"text\":\"Uncaught (in promise) Error: Message does not exist: asset-db - query-ready\",\"lineNumber\":93,\"columnNumber\":5,\"scriptId\":\"23\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"processTicksAndRejections\",\"scriptId\":\"23\",\"url\":\"internal/process/task_queues.js\",\"lineNumber\":92,\"columnNumber\":4}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Message does not exist: asset-db - query-ready\\n    at Object.<anonymous> (<project-root>\\\\.work\\\\creator-versions\\\\3.7.4\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\message\\\\browser\\\\index.ccc:1:1144)\\n    at Generator.next (<anonymous>)\\n    at <project-root>\\\\.work\\\\creator-versions\\\\3.7.4\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\message\\\\browser\\\\index.ccc:1:327\\n    at new Promise (<anonymous>)\\n    at <project-root>\\\\.work\\\\creator-versions\\\\3.7.4\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\message\\\\browser\\\\index.ccc:1:75\\n    at Object.request (<project-root>\\\\.work\\\\creator-versions\\\\3.7.4\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\message\\\\browser\\\\index.ccc:1:1060)\\n    at <project-root>\\\\.work\\\\creator-versions\\\\3.7.4\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\message\\\\index.ccc:1:421\\n    at new Promise (<anonymous>)\\n    at Object.request (<project-root>\\\\.work\\\\creator-versions\\\\3.7.4\\\\resources\\\\app.asar\\\\node_modules\\\\@editor\\\\creator\\\\dist\\\\message\\\\index.ccc:1:376)\\n    at <anonymous>:1:225\",\"objectId\":\"-3944642447528542964.1.1\"}}",
+      "readinessPhase": "scene-confirmation",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false after project identity is available; no Editor.Message API overrides",
+        "editorPid": 19524,
+        "appliedAt": 1792255292478,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          }
+        ]
+      },
+      "readinessSamples": [
+        {
+          "at": "2026-10-17T16:41:53.992Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:41:56.517Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:41:59.029Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:01.547Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:04.062Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:06.578Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:09.088Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:11.610Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:14.128Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:16.642Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:19.158Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:21.994Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:48.777Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:51.286Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:42:53.807Z",
+          "assetReady": true
+        },
+        {
+          "at": "2026-10-17T16:42:56.324Z",
+          "assetReady": true
+        },
+        {
+          "at": "2026-10-17T16:43:09.176Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:43:12.142Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:43:14.665Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:43:17.191Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+          "dirty": false
+        }
+      ],
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T16:43:09.176Z",
+        "openedUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "81161f35-fbf3-467d-9e7c-82210bda6a69",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T16:43:17.191Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T16:47:17.639Z",
+      "editorClosedAt": "2026-10-17T16:47:18.161Z"
+    },
+    {
+      "version": "3.7.1",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 18884,
+      "readinessLastError": "{\"exceptionId\":5,\"text\":\"Uncaught (in promise) Error: Missing test extension\",\"lineNumber\":0,\"columnNumber\":0,\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Missing test extension\\n    at <anonymous>:1:98\\n    at <anonymous>:1:585\",\"objectId\":\"1692133099365798905.1.1\"}}",
+      "readinessPhase": "scene-confirmation",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false after project identity is available; no Editor.Message API overrides",
+        "editorPid": 18884,
+        "appliedAt": 1792255651003,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          }
+        ]
+      },
+      "readinessSamples": [
+        {
+          "at": "2026-10-17T16:47:48.817Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:47:51.337Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:47:53.846Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:47:56.363Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:47:58.874Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:48:01.390Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:48:03.901Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:48:06.412Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:48:09.457Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:48:24.502Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:48:27.020Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:48:29.529Z",
+          "assetReady": true
+        },
+        {
+          "at": "2026-10-17T16:48:40.192Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:48:43.113Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "75152db2-0481-489a-a3e9-ab4402438380",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:48:45.636Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "75152db2-0481-489a-a3e9-ab4402438380",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:48:48.143Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "75152db2-0481-489a-a3e9-ab4402438380",
+          "dirty": false
+        }
+      ],
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T16:48:40.192Z",
+        "openedUuid": "75152db2-0481-489a-a3e9-ab4402438380"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "75152db2-0481-489a-a3e9-ab4402438380",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T16:48:48.143Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T16:52:01.483Z",
+      "editorClosedAt": "2026-10-17T16:52:02.513Z"
+    },
+    {
+      "version": "3.7.2",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 13492,
+      "readinessLastError": "{\"exceptionId\":4,\"text\":\"Uncaught (in promise) Error: Missing test extension\",\"lineNumber\":0,\"columnNumber\":0,\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Missing test extension\\n    at <anonymous>:1:98\\n    at <anonymous>:1:585\",\"objectId\":\"-8023505079277929125.1.1\"}}",
+      "readinessPhase": "scene-confirmation",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false after project identity is available; no Editor.Message API overrides",
+        "editorPid": 13492,
+        "appliedAt": 1792255936143,
+        "changes": [
+          {
+            "id": 3,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          }
+        ]
+      },
+      "readinessSamples": [
+        {
+          "at": "2026-10-17T16:52:33.053Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:35.574Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:38.085Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:40.599Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:43.112Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:45.631Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:48.146Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:50.665Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:53.183Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:52:55.701Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:53:11.938Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:53:14.448Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:53:16.961Z",
+          "assetReady": true
+        },
+        {
+          "at": "2026-10-17T16:53:28.481Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:53:31.495Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "5c224dba-894c-4942-8d74-7cb31700291e",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:53:34.011Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "5c224dba-894c-4942-8d74-7cb31700291e",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:53:36.522Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "5c224dba-894c-4942-8d74-7cb31700291e",
+          "dirty": false
+        }
+      ],
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T16:53:28.481Z",
+        "openedUuid": "5c224dba-894c-4942-8d74-7cb31700291e"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "5c224dba-894c-4942-8d74-7cb31700291e",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T16:53:36.522Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T16:57:13.514Z",
+      "editorClosedAt": "2026-10-17T16:57:14.046Z"
+    },
+    {
+      "version": "3.7.0",
+      "status": "qualified",
+      "phase": "qualification",
+      "editorPid": 27360,
+      "readinessLastError": "{\"exceptionId\":4,\"text\":\"Uncaught (in promise) Error: Missing test extension\",\"lineNumber\":0,\"columnNumber\":0,\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Missing test extension\\n    at <anonymous>:1:98\\n    at <anonymous>:1:585\",\"objectId\":\"-5927488147670665034.1.1\"}}",
+      "readinessPhase": "scene-confirmation",
+      "backgroundEnvironment": {
+        "policy": "Owned hidden test editor only: backgroundThrottling=false after project identity is available; no Editor.Message API overrides",
+        "editorPid": 27360,
+        "appliedAt": 1792256246772,
+        "changes": [
+          {
+            "id": 2,
+            "before": false,
+            "after": false
+          },
+          {
+            "id": 1,
+            "before": false,
+            "after": false
+          }
+        ]
+      },
+      "readinessSamples": [
+        {
+          "at": "2026-10-17T16:57:42.961Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:57:45.484Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:57:48.007Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:57:50.522Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:57:53.038Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:57:55.560Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:57:58.078Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:58:00.589Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:58:14.877Z",
+          "assetReady": false
+        },
+        {
+          "at": "2026-10-17T16:58:17.404Z",
+          "assetReady": true
+        },
+        {
+          "at": "2026-10-17T16:58:19.915Z",
+          "assetReady": true
+        },
+        {
+          "at": "2026-10-17T16:58:29.063Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:58:31.910Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "fbde3368-9efc-418e-922b-5bcc65540959",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:58:34.433Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "fbde3368-9efc-418e-922b-5bcc65540959",
+          "dirty": false
+        },
+        {
+          "at": "2026-10-17T16:58:36.948Z",
+          "assetReady": true,
+          "sceneReady": true,
+          "treeUuid": "fbde3368-9efc-418e-922b-5bcc65540959",
+          "dirty": false
+        }
+      ],
+      "initialScenePreparation": {
+        "asset": "db://assets/Main.scene",
+        "requestedAt": "2026-10-17T16:58:29.063Z",
+        "openedUuid": "fbde3368-9efc-418e-922b-5bcc65540959"
+      },
+      "initialReadyState": {
+        "assetReady": true,
+        "sceneReady": true,
+        "treeUuid": "fbde3368-9efc-418e-922b-5bcc65540959",
+        "dirty": false,
+        "confirmedAt": "2026-10-17T16:58:36.948Z",
+        "consecutiveSamples": 3
+      },
+      "stage": "release",
+      "qualificationPassed": true,
+      "qualificationCompletedAt": "2026-10-17T17:01:46.044Z",
+      "editorClosedAt": "2026-10-17T17:01:46.567Z"
+    },
+    {
+      "version": "3.7.3",
+      "status": "failed",
+      "phase": "qualification",
+      "editorPid": 6632,
+      "readinessLastError": "Native inspector disconnected",
+      "error": {
+        "message": "3.7.3 owned editor exited before readiness; inspect native crash evidence before another launch"
+      },
+      "editorClosedAt": "2026-10-17T17:01:58.617Z"
+    }
+  ],
+  "resources": [
+    {
+      "sampledAt": "2026-10-17T16:41:19.8036118Z",
+      "availableGiB": 16.37,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T16:41:32.6547029Z",
+      "availableGiB": 15.9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 32
+    },
+    {
+      "sampledAt": "2026-10-17T16:41:47.6436388Z",
+      "availableGiB": 14.88,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 12
+    },
+    {
+      "sampledAt": "2026-10-17T16:42:02.6611989Z",
+      "availableGiB": 14.06,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 17
+    },
+    {
+      "sampledAt": "2026-10-17T16:42:17.7135335Z",
+      "availableGiB": 14.01,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 10
+    },
+    {
+      "sampledAt": "2026-10-17T16:42:32.6321559Z",
+      "availableGiB": 13.9,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 18
+    },
+    {
+      "sampledAt": "2026-10-17T16:42:47.6235934Z",
+      "availableGiB": 13.89,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 63
+    },
+    {
+      "sampledAt": "2026-10-17T16:43:02.8311070Z",
+      "availableGiB": 13.39,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 18
+    },
+    {
+      "sampledAt": "2026-10-17T16:43:17.6527163Z",
+      "availableGiB": 13.27,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 45
+    },
+    {
+      "sampledAt": "2026-10-17T16:43:32.8723498Z",
+      "availableGiB": 13.2,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 20
+    },
+    {
+      "sampledAt": "2026-10-17T16:43:47.6185430Z",
+      "availableGiB": 13.15,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 22
+    },
+    {
+      "sampledAt": "2026-10-17T16:44:03.1060815Z",
+      "availableGiB": 12.99,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 60
+    },
+    {
+      "sampledAt": "2026-10-17T16:44:18.0290216Z",
+      "availableGiB": 12.58,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 8
+    },
+    {
+      "sampledAt": "2026-10-17T16:44:32.8142009Z",
+      "availableGiB": 12.95,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 25
+    },
+    {
+      "sampledAt": "2026-10-17T16:44:47.9747673Z",
+      "availableGiB": 12.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 14
+    },
+    {
+      "sampledAt": "2026-10-17T16:45:02.7542221Z",
+      "availableGiB": 12.87,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 27
+    },
+    {
+      "sampledAt": "2026-10-17T16:45:18.1083793Z",
+      "availableGiB": 12.71,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 37
+    },
+    {
+      "sampledAt": "2026-10-17T16:45:32.9773283Z",
+      "availableGiB": 12.76,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 20
+    },
+    {
+      "sampledAt": "2026-10-17T16:45:48.1470766Z",
+      "availableGiB": 12.47,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 45
+    },
+    {
+      "sampledAt": "2026-10-17T16:46:03.4398559Z",
+      "availableGiB": 11.11,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T16:46:17.8160585Z",
+      "availableGiB": 12.4,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 17
+    },
+    {
+      "sampledAt": "2026-10-17T16:46:32.9679967Z",
+      "availableGiB": 13.35,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 23
+    },
+    {
+      "sampledAt": "2026-10-17T16:46:48.4852909Z",
+      "availableGiB": 11.02,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 3
+    },
+    {
+      "sampledAt": "2026-10-17T16:47:04.0131598Z",
+      "availableGiB": 10.58,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 97
+    },
+    {
+      "sampledAt": "2026-10-17T16:47:18.0695507Z",
+      "availableGiB": 13.03,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 22
+    },
+    {
+      "sampledAt": "2026-10-17T16:47:32.9285263Z",
+      "availableGiB": 15.23,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 7
+    },
+    {
+      "sampledAt": "2026-10-17T16:47:47.7325538Z",
+      "availableGiB": 14.38,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 50
+    },
+    {
+      "sampledAt": "2026-10-17T16:48:02.6991415Z",
+      "availableGiB": 13.87,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 10
+    },
+    {
+      "sampledAt": "2026-10-17T16:48:17.6464270Z",
+      "availableGiB": 13.79,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 39
+    },
+    {
+      "sampledAt": "2026-10-17T16:48:32.8116755Z",
+      "availableGiB": 13.6,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 40
+    },
+    {
+      "sampledAt": "2026-10-17T16:48:47.5734711Z",
+      "availableGiB": 13.26,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T16:49:02.9034514Z",
+      "availableGiB": 13.08,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 27
+    },
+    {
+      "sampledAt": "2026-10-17T16:49:18.0062899Z",
+      "availableGiB": 13.1,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 46
+    },
+    {
+      "sampledAt": "2026-10-17T16:49:33.0324641Z",
+      "availableGiB": 12.66,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 24
+    },
+    {
+      "sampledAt": "2026-10-17T16:49:47.8837648Z",
+      "availableGiB": 12.94,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 24
+    },
+    {
+      "sampledAt": "2026-10-17T16:50:02.9126687Z",
+      "availableGiB": 12.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 25
+    },
+    {
+      "sampledAt": "2026-10-17T16:50:17.9137268Z",
+      "availableGiB": 12.85,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 16
+    },
+    {
+      "sampledAt": "2026-10-17T16:50:32.7933898Z",
+      "availableGiB": 12.99,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 23
+    },
+    {
+      "sampledAt": "2026-10-17T16:50:47.9788741Z",
+      "availableGiB": 12.54,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 23
+    },
+    {
+      "sampledAt": "2026-10-17T16:51:02.8262967Z",
+      "availableGiB": 12.78,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 18
+    },
+    {
+      "sampledAt": "2026-10-17T16:51:17.9281452Z",
+      "availableGiB": 12.63,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 26
+    },
+    {
+      "sampledAt": "2026-10-17T16:51:33.0667733Z",
+      "availableGiB": 12.8,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 3
+    },
+    {
+      "sampledAt": "2026-10-17T16:51:53.2243590Z",
+      "availableGiB": 12.57,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T16:52:03.0975160Z",
+      "availableGiB": 14.36,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 35
+    },
+    {
+      "sampledAt": "2026-10-17T16:52:17.9319565Z",
+      "availableGiB": 14.77,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T16:52:32.9157819Z",
+      "availableGiB": 14.01,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 9
+    },
+    {
+      "sampledAt": "2026-10-17T16:52:47.9143049Z",
+      "availableGiB": 13.58,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 43
+    },
+    {
+      "sampledAt": "2026-10-17T16:53:02.8744149Z",
+      "availableGiB": 13.48,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 52
+    },
+    {
+      "sampledAt": "2026-10-17T16:53:17.9077087Z",
+      "availableGiB": 13.46,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 7
+    },
+    {
+      "sampledAt": "2026-10-17T16:53:32.8317118Z",
+      "availableGiB": 12.98,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 48
+    },
+    {
+      "sampledAt": "2026-10-17T16:53:47.8520087Z",
+      "availableGiB": 12.86,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 19
+    },
+    {
+      "sampledAt": "2026-10-17T16:54:04.3660527Z",
+      "availableGiB": 10.47,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T16:54:18.1363537Z",
+      "availableGiB": 12.37,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 11
+    },
+    {
+      "sampledAt": "2026-10-17T16:54:33.0949030Z",
+      "availableGiB": 12.63,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 34
+    },
+    {
+      "sampledAt": "2026-10-17T16:54:48.0438815Z",
+      "availableGiB": 12.58,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 9
+    },
+    {
+      "sampledAt": "2026-10-17T16:55:03.0514373Z",
+      "availableGiB": 12.55,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 20
+    },
+    {
+      "sampledAt": "2026-10-17T16:55:18.0871541Z",
+      "availableGiB": 12.56,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 28
+    },
+    {
+      "sampledAt": "2026-10-17T16:55:33.0773424Z",
+      "availableGiB": 12.6,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 12
+    },
+    {
+      "sampledAt": "2026-10-17T16:55:51.5764587Z",
+      "availableGiB": 14.03,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 71
+    },
+    {
+      "sampledAt": "2026-10-17T16:56:03.7821984Z",
+      "availableGiB": 16.4,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 62
+    },
+    {
+      "sampledAt": "2026-10-17T16:56:18.6187319Z",
+      "availableGiB": 16.17,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T16:56:33.7091208Z",
+      "availableGiB": 15.89,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 23
+    },
+    {
+      "sampledAt": "2026-10-17T16:56:49.2886883Z",
+      "availableGiB": 14.32,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 7
+    },
+    {
+      "sampledAt": "2026-10-17T16:57:04.4101341Z",
+      "availableGiB": 16.21,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 54
+    },
+    {
+      "sampledAt": "2026-10-17T16:57:18.8083656Z",
+      "availableGiB": 17.36,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 4
+    },
+    {
+      "sampledAt": "2026-10-17T16:57:33.6448777Z",
+      "availableGiB": 16.07,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 6
+    },
+    {
+      "sampledAt": "2026-10-17T16:57:48.7075325Z",
+      "availableGiB": 15.14,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 67
+    },
+    {
+      "sampledAt": "2026-10-17T16:58:03.7072717Z",
+      "availableGiB": 15.04,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 12
+    },
+    {
+      "sampledAt": "2026-10-17T16:58:18.8006668Z",
+      "availableGiB": 14.91,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 26
+    },
+    {
+      "sampledAt": "2026-10-17T16:58:33.6475124Z",
+      "availableGiB": 14.38,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 7
+    },
+    {
+      "sampledAt": "2026-10-17T16:58:48.6250192Z",
+      "availableGiB": 14.29,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 13
+    },
+    {
+      "sampledAt": "2026-10-17T16:59:04.5953552Z",
+      "availableGiB": 11.75,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 36
+    },
+    {
+      "sampledAt": "2026-10-17T16:59:18.8915318Z",
+      "availableGiB": 13.73,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 15
+    },
+    {
+      "sampledAt": "2026-10-17T16:59:33.9048212Z",
+      "availableGiB": 14.07,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 25
+    },
+    {
+      "sampledAt": "2026-10-17T16:59:48.8951391Z",
+      "availableGiB": 13.96,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 15
+    },
+    {
+      "sampledAt": "2026-10-17T17:00:03.8902363Z",
+      "availableGiB": 14,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 17
+    },
+    {
+      "sampledAt": "2026-10-17T17:00:18.9058580Z",
+      "availableGiB": 13.93,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 10
+    },
+    {
+      "sampledAt": "2026-10-17T17:00:33.8919071Z",
+      "availableGiB": 13.65,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 27
+    },
+    {
+      "sampledAt": "2026-10-17T17:00:48.9689727Z",
+      "availableGiB": 13.98,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 14
+    },
+    {
+      "sampledAt": "2026-10-17T17:01:03.9581138Z",
+      "availableGiB": 13.63,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 45
+    },
+    {
+      "sampledAt": "2026-10-17T17:01:19.6527697Z",
+      "availableGiB": 12.16,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 100
+    },
+    {
+      "sampledAt": "2026-10-17T17:01:34.8302506Z",
+      "availableGiB": 11.82,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 42
+    },
+    {
+      "sampledAt": "2026-10-17T17:01:48.9539913Z",
+      "availableGiB": 16.65,
+      "totalGiB": 27.76,
+      "cpuLoadPercent": 18
+    }
+  ],
+  "success": false,
+  "minimumAvailableGiB": 10.47,
+  "maximumCpuLoadPercent": 100,
+  "updatedAt": "2026-10-17T17:01:58.617Z",
+  "error": "3.7.3: 3.7.3 owned editor exited before readiness; inspect native crash evidence before another launch",
+  "finishedAt": "2026-10-17T17:01:58.617Z"
+}

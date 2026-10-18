@@ -12,6 +12,8 @@ The MCP server runs in an external modern Node.js process. A small project exten
 
 A [Windows production qualification](docs/PRODUCTION-READINESS.md) is in progress for stock 3.7.0–3.7.4: the same fault, reconnect, debug/release Web build and eight-hour soak gates for every version. In-progress runs do not count as passes. Historical reports retain the identity of the source they actually exercised.
 
+As of October 18, 2026, native editor startup exits still require full revalidation. One delayed-Inspector startup control passed on each of 3.7.3 and 3.7.4, and a new five-version attempt has started. No version has completed an eight-hour soak; these controls do not establish production stability. See the [startup investigation evidence](analysis/validation/startup-gate-2026-10-18/manifest.json).
+
 ## Quick start
 
 Requirements: Creator **3.7.x**, a working project, external Node.js **20+** with npm, and a stdio MCP client. Node.js **22 or 24 LTS** is recommended for normal use; see the [official Node.js release schedule](https://github.com/nodejs/Release).

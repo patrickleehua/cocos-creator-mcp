@@ -1,0 +1,71 @@
+{
+  "version": "3.7.3",
+  "file": ".work\\production-3.7.3-test\\temp\\crash\\reports\\8375313c-8424-4c5f-9a21-066ffec2d71d.dmp",
+  "sha256": "204fbb569a046fe30fd1d01e482ffd0ccadd93ee373b7a46d9f6bbb1a4cea839",
+  "recordedTime": "2026-10-17T17:01:55+00:00",
+  "exception": {
+    "threadId": 13448,
+    "code": "0x80000003",
+    "address": "0x7ff6ec78b4ae",
+    "location": {
+      "module": "<project-root>\\.work\\creator-versions\\3.7.3\\CocosCreator.exe",
+      "offset": "0x308b4ae"
+    },
+    "parameterCount": 1,
+    "parameters": [
+      "0x0"
+    ]
+  },
+  "context": {
+    "rip": "0x7ff6ec78b4ae",
+    "rsp": "0xea063faaf8"
+  },
+  "nearestPriorExportCandidates": [
+    {
+      "offset": "0x2eb4920",
+      "name": "?IncreaseAllocatedSize@EmbedderHeapTracer@v8@@QEAAX_K@Z",
+      "distance": 1928078
+    },
+    {
+      "offset": "0x2eb4970",
+      "name": "?RegisterEmbedderReference@EmbedderHeapTracer@v8@@QEAAXAEBV?$BasicTracedReference@VData@v8@@@2@@Z",
+      "distance": 1927998
+    },
+    {
+      "offset": "0x2ee9cd0",
+      "name": "?IsActive@Locker@v8@@SA_NXZ",
+      "distance": 1710046
+    }
+  ],
+  "instructionBytes": "cc0f0bcccccccccccccccccccccccccccccc564883ec20488b3180be20020000",
+  "stackPointerCandidatesNotUnwound": [
+    {
+      "stackOffset": "0x0",
+      "address": "0x7ff6ec782a08",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.3\\CocosCreator.exe",
+      "offset": "0x3082a08"
+    },
+    {
+      "stackOffset": "0xe0",
+      "address": "0x7ff6ec78c953",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.3\\CocosCreator.exe",
+      "offset": "0x308c953"
+    },
+    {
+      "stackOffset": "0x1b0",
+      "address": "0x7ff6ea111b3d",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.3\\CocosCreator.exe",
+      "offset": "0xa11b3d"
+    },
+    {
+      "stackOffset": "0x2b0",
+      "address": "0x7ff6ea111870",
+      "module": "<project-root>\\.work\\creator-versions\\3.7.3\\CocosCreator.exe",
+      "offset": "0xa11870"
+    }
+  ],
+  "limitations": [
+    "Nearest exports and raw stack pointers are candidates, not symbolized frames or proof of a function boundary.",
+    "No stack unwinding or private symbols; crash root cause remains unknown."
+  ]
+}
